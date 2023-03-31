@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="84ED963C-701A-31F9-564C-506A5ECBA5FF" name="Employee">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 09:38:50 UTC</createdTime>
+<generatorID>BF688DC5-12FA-8A44-FA61-4946E5C624B7</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="employeeUUID" id="56B8D541-98F4-AA8B-7F44-8687C1C8633B">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 09:38:50 UTC</createdTime>
+<generatorID>B2299B15-D80C-1B33-76EC-EE7A08C2B3B9</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="username" id="DBAAE442-C92A-5469-2686-9411CEAA1770">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 09:38:50 UTC</createdTime>
+<generatorID>1B248FC1-E0AD-AB76-3BC2-1E3CB2C532B7</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="350A6836-6A63-2932-7B5A-24C7759BF76A">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 09:38:50 UTC</createdTime>
+<generatorID>996E6924-94BE-AEDB-DB7B-4B6C6E902BF8</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phoneNr" id="03F14C05-EC2D-FEDB-8F2B-C9EA9B3242BE">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 09:38:50 UTC</createdTime>
+<generatorID>4311F1F9-195D-6120-0959-29733071F846</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="2A6A8495-CBE6-07A7-FBE7-30DB39347E51">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>05C742E9-3995-B1EE-C673-7AA503EC7597</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="firstName" id="522EFD30-DD68-994A-A70D-D7CB7E3B0D46">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>67084C13-45E3-5779-365E-86DB49B84C02</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lastName" id="1F4219CC-956B-AD5D-B7AA-69A838913AD0">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>28E9267D-47ED-31EC-3588-B3B559052195</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="profileImageURL" id="175A33CE-5342-7D97-83FA-8813E5C5934B">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>56AD14E3-BBAD-6082-0101-DAE714572DC8</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tasksDone" id="59052C71-E340-8C20-E34D-EF2036237DF7">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>4005D238-00FC-7EC0-3FCE-E6A237EF9B47</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6701B2AC-4E87-78A0-A93B-9F7F0589BCCF" name="Employee_PK">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 09:38:50 UTC</createdTime>
+<generatorID>D227E165-DB72-9D97-B55B-58C5180F9409</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56B8D541-98F4-AA8B-7F44-8687C1C8633B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4CA12E42-0050-E8F4-5D68-086B705DB4C0" name="Employee_username_UN">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>7178F9B5-1959-03FF-A671-4BD956DF0E93</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBAAE442-C92A-5469-2686-9411CEAA1770"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

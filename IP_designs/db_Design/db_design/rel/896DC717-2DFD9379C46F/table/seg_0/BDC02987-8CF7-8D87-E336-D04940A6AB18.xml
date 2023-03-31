@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BDC02987-8CF7-8D87-E336-D04940A6AB18" name="Tasks">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 09:38:50 UTC</createdTime>
+<generatorID>2F229247-C044-8963-9318-735666046BD8</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="taskUUID" id="88F1C03B-1AB0-3E00-6001-59A89D06B0B0">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 09:38:50 UTC</createdTime>
+<generatorID>38D571E4-99A1-C2C6-0F42-4295FA879684</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="taskTitle" id="50070169-4BC5-0416-5911-94E0C6A133BE">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 09:38:50 UTC</createdTime>
+<generatorID>0AF5523E-7528-09FE-79A3-BCB14F664E7B</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="taskDescription" id="E2D4296B-F4D5-75F5-4C3F-2B5C607F7FA7">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 09:38:50 UTC</createdTime>
+<generatorID>8BFFD9B1-DF32-2BD7-4CC4-58A12C7F5B5C</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employeeUUID" id="56BE9576-A956-58E8-AE50-42C5DFDA0776">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 09:40:20 UTC</createdTime>
+<generatorID>DEAB2702-6773-46A2-DACB-E48EDCFD9194</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="02574423-C04F-DD16-D9F2-58F4B4DB6BEF" referredColumn="56B8D541-98F4-AA8B-7F44-8687C1C8633B"/>
+</associations>
+</Column>
+<Column name="status" id="1D80AE0E-E61E-8465-4ED2-CB438326B779">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>D9FC4DCC-FE6D-87AD-55BA-7EBEBB15954E</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<defaultValue>toDo</defaultValue>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="progress" id="DB20111C-E9A7-4B5D-DD3F-29EBE72F2BAA">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>1D0F195B-B27B-3F94-F654-FEC099080FBF</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="deadline" id="0D36CD8F-619C-6430-BCCB-4D557C4E963B">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 21:32:25 UTC</createdTime>
+<generatorID>8BB7EC1A-03CF-ED58-C6FB-1D3EE1C85344</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CC9D856F-414D-4DEB-5330-8633BF8E3542" name="Tasks_PK">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>3E4CB991-D2AC-31E5-09DE-C9F4E2DD98F9</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88F1C03B-1AB0-3E00-6001-59A89D06B0B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2EADEFCE-9B9D-8B04-55B0-C213B1A55D82" name="Tasks_Employee_FK">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 09:40:20 UTC</createdTime>
+<generatorID>90C94BDF-3B3F-4F13-A514-C622547EA7B4</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56BE9576-A956-58E8-AE50-42C5DFDA0776"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

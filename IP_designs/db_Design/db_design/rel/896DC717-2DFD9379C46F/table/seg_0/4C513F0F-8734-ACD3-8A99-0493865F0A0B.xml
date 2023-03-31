@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4C513F0F-8734-ACD3-8A99-0493865F0A0B" name="Comment">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>446161AA-03F3-6451-02C1-C75F054255EF</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="commentUUID" id="1C6E7132-13C3-A802-EE94-3C00AB90E3B1">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>D0E70721-589D-13CD-1311-1242479EBDE8</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="commentTitle" id="435BA9EB-E9C4-0C7B-ED2D-B2CCFE41B1F6">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>3C28746C-BFA1-5BC2-76BD-66581350BDF7</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="commentDescription" id="0ED0E5C9-9B2C-823C-E849-5A0690D76155">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>C9E4C1A4-DDDA-1F74-4246-5EF523F16852</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="subtaskUUID" id="07308F8B-1BFF-2DDB-4C60-8D723D07AC67">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>7ECC6790-79F2-90F4-3E21-B81CF49A6BCB</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4A28B172-74EE-9CEA-7215-1F05C4549FA2" referredColumn="51F114BC-DA4D-E166-D521-CDB819611F54"/>
+</associations>
+</Column>
+<Column name="timeReported" id="8E26C709-4BC0-4D78-A958-149973A99AA2">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 21:32:25 UTC</createdTime>
+<generatorID>C9D415F2-E8B8-DE13-F1FF-7FAC681EC2BC</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FDA39056-30DE-D03F-D070-BEB6626E04DC" name="Comment_PK">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>8AF7A237-F445-9151-2E3A-DD161C401641</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C6E7132-13C3-A802-EE94-3C00AB90E3B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9EF12866-BCA6-6247-6D86-92A3E0D9CDC3" name="Comment_Subtask_FK">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>94CC7DB4-4F76-7E2D-B218-3DFDD40CB279</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07308F8B-1BFF-2DDB-4C60-8D723D07AC67"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

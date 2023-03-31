@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AB885B8B-F74E-1385-9816-DD688A2DEF02" name="Subtask">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>E8DC20F5-81AE-25D7-3368-7E7CB3C7D703</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="subtaskUUID" id="51F114BC-DA4D-E166-D521-CDB819611F54">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>99B496D6-334B-E564-7094-6C9E2F8B696B</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="subtaskTitle" id="6F04625A-EBBC-0174-7339-0472658A7A42">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>4C02DF99-A36C-F8EA-6C7A-DFAAC242CDE9</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="subtaskDescription" id="0410BDD0-3341-05CE-E350-AA46F164AAC3">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>9712EAD4-2654-812D-103B-43F9B4A164EA</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="subtaskStatus" id="2FB03253-CFAB-ED60-882E-C55F9169FCB0">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>0CDE15ED-56EB-9D70-417D-A734E19AD74E</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<defaultValue>toDo</defaultValue>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="taskUUID" id="714A0FA6-BF46-C77A-014A-7757984FD773">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>6E6EB573-EAEA-1307-6BC2-1CA3D630F57B</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A9FF25FB-9A8E-4568-F3A0-AF7247CF46D0" referredColumn="88F1C03B-1AB0-3E00-6001-59A89D06B0B0"/>
+</associations>
+</Column>
+<Column name="employeeUUID" id="C7532BB2-CE9D-9D6C-0383-CFCAE79A47AA">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>64941C5E-BAFA-C42E-67A1-14C828847191</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3B37F542-EDAA-708E-ACB6-AFD3ACB16030" referredColumn="56B8D541-98F4-AA8B-7F44-8687C1C8633B"/>
+</associations>
+</Column>
+<Column name="subtaskEstimatedTime" id="DB624D82-7F04-52C4-240B-369348893B44">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 21:32:25 UTC</createdTime>
+<generatorID>79EFC400-C973-11F5-E942-099B83DC5D9F</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="93C48BEF-293A-4B95-24AD-66B9EAFE8872" name="Subtask_PK">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>CE121562-8754-678A-A37D-BFAAD0A36699</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="51F114BC-DA4D-E166-D521-CDB819611F54"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CE6DB0B8-083B-9815-5FA2-54D1845D3140" name="Subtask_Employee_FK">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>118BC8CC-FBF5-1DEF-8757-0F3592CE8F0E</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7532BB2-CE9D-9D6C-0383-CFCAE79A47AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AC1CF133-8303-E79E-761B-F0045979107B" name="Subtask_Tasks_FK">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 10:10:40 UTC</createdTime>
+<generatorID>D9537D11-0674-F11F-7041-1F1E801471D1</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="714A0FA6-BF46-C77A-014A-7757984FD773"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
