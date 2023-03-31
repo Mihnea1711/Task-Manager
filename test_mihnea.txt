@@ -8,3 +8,4 @@
 8. [review commit before accepting]
 9. [approve pull request and merge]
 10. merge request to main
+11. todo bien
