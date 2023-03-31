@@ -1,0 +1,10 @@
+1. make sure you are on your branch
+2. add and commit changes to your branch
+3. push changes to your branch
+4. from web-git -> branches -> create pull request from your branch to main
+5. looks like this: 	base: main	<-	compare:<branch_name>
+6. check what has been changed at the bottom of the page
+7. create pull request
+8. [review commit before accepting]
+9. [approve pull request and merge]
+10. merge request to main
