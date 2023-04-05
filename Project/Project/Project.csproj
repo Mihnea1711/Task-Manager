@@ -46,16 +46,74 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Models\Interfaces\ISubtaskModel.cs" />
+    <Compile Include="Models\Interfaces\ITaskModel.cs" />
+    <Compile Include="Models\SubtaskModel.cs" />
+    <Compile Include="Models\TaskModel.cs" />
+    <Compile Include="Public\Controls\AboutContentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Public\Controls\AboutContentControl.Designer.cs">
+      <DependentUpon>AboutContentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Public\Controls\BacklogContentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Public\Controls\BacklogContentControl.Designer.cs">
+      <DependentUpon>BacklogContentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Public\Controls\ProfileContentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Public\Controls\ProfileContentControl.Designer.cs">
+      <DependentUpon>ProfileContentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Public\Controls\TaskContentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Public\Controls\TaskContentControl.Designer.cs">
+      <DependentUpon>TaskContentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Public\Controls\TasksContentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Public\Controls\TasksContentControl.Designer.cs">
+      <DependentUpon>TasksContentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Public\Controls\UsersContentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Public\Controls\UsersContentControl.Designer.cs">
+      <DependentUpon>UsersContentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Public\Controls\AboutContentControl.resx">
+      <DependentUpon>AboutContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\Controls\BacklogContentControl.resx">
+      <DependentUpon>BacklogContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\Controls\ProfileContentControl.resx">
+      <DependentUpon>ProfileContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\Controls\TaskContentControl.resx">
+      <DependentUpon>TaskContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\Controls\TasksContentControl.resx">
+      <DependentUpon>TasksContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\Controls\UsersContentControl.resx">
+      <DependentUpon>UsersContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,8 +138,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Images\" />
-    <Folder Include="Pages\" />
+    <Folder Include="Models\Repositories\" />
+    <Folder Include="Presenters\Interfaces\" />
+    <Folder Include="Public\Images\" />
+    <Folder Include="Views\Interfaces\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

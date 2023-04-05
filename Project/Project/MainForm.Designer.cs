@@ -1,6 +1,6 @@
 ﻿namespace Project
 {
-    partial class MyProject
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyProject));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panelSideBar = new System.Windows.Forms.Panel();
             this.buttonAbout = new System.Windows.Forms.Button();
             this.buttonUsers = new System.Windows.Forms.Button();
@@ -36,17 +36,11 @@
             this.labelUsername = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonTasks = new System.Windows.Forms.Button();
-            this.panelNavBar = new System.Windows.Forms.Panel();
-            this.buttonSearch = new System.Windows.Forms.Button();
-            this.textBoxSearchBar = new System.Windows.Forms.TextBox();
-            this.pictureBoxPageLogo = new System.Windows.Forms.PictureBox();
-            this.labelPageTitle = new System.Windows.Forms.Label();
             this.panelFooter = new System.Windows.Forms.Panel();
             this.labelFooter = new System.Windows.Forms.Label();
+            this.panelPageContent = new System.Windows.Forms.Panel();
             this.panelSideBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panelNavBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPageLogo)).BeginInit();
             this.panelFooter.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,6 +76,7 @@
             this.buttonAbout.TabIndex = 5;
             this.buttonAbout.Text = "About";
             this.buttonAbout.UseVisualStyleBackColor = false;
+            this.buttonAbout.Click += new System.EventHandler(this.buttonAbout_Click);
             // 
             // buttonUsers
             // 
@@ -92,13 +87,14 @@
             this.buttonUsers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.buttonUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUsers.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUsers.Location = new System.Drawing.Point(57, 374);
+            this.buttonUsers.Location = new System.Drawing.Point(57, 370);
             this.buttonUsers.Margin = new System.Windows.Forms.Padding(0);
             this.buttonUsers.Name = "buttonUsers";
             this.buttonUsers.Size = new System.Drawing.Size(175, 41);
             this.buttonUsers.TabIndex = 4;
             this.buttonUsers.Text = "Users";
             this.buttonUsers.UseVisualStyleBackColor = false;
+            this.buttonUsers.Click += new System.EventHandler(this.buttonUsers_Click);
             // 
             // buttonBacklog
             // 
@@ -116,6 +112,7 @@
             this.buttonBacklog.TabIndex = 3;
             this.buttonBacklog.Text = "Backlog";
             this.buttonBacklog.UseVisualStyleBackColor = false;
+            this.buttonBacklog.Click += new System.EventHandler(this.buttonBacklog_Click);
             // 
             // labelUsername
             // 
@@ -152,115 +149,56 @@
             this.buttonTasks.TabIndex = 2;
             this.buttonTasks.Text = "Tasks";
             this.buttonTasks.UseVisualStyleBackColor = false;
-            // 
-            // panelNavBar
-            // 
-            this.panelNavBar.BackColor = System.Drawing.Color.LightGray;
-            this.panelNavBar.Controls.Add(this.buttonSearch);
-            this.panelNavBar.Controls.Add(this.textBoxSearchBar);
-            this.panelNavBar.Controls.Add(this.pictureBoxPageLogo);
-            this.panelNavBar.Controls.Add(this.labelPageTitle);
-            this.panelNavBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelNavBar.Location = new System.Drawing.Point(295, 0);
-            this.panelNavBar.Margin = new System.Windows.Forms.Padding(0);
-            this.panelNavBar.Name = "panelNavBar";
-            this.panelNavBar.Size = new System.Drawing.Size(984, 69);
-            this.panelNavBar.TabIndex = 0;
-            // 
-            // buttonSearch
-            // 
-            this.buttonSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.buttonSearch.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.buttonSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSearch.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSearch.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSearch.Location = new System.Drawing.Point(793, 23);
-            this.buttonSearch.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(75, 26);
-            this.buttonSearch.TabIndex = 1;
-            this.buttonSearch.Text = "Search";
-            this.buttonSearch.UseVisualStyleBackColor = false;
-            // 
-            // textBoxSearchBar
-            // 
-            this.textBoxSearchBar.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBoxSearchBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxSearchBar.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearchBar.Location = new System.Drawing.Point(345, 23);
-            this.textBoxSearchBar.Margin = new System.Windows.Forms.Padding(0);
-            this.textBoxSearchBar.Name = "textBoxSearchBar";
-            this.textBoxSearchBar.Size = new System.Drawing.Size(448, 30);
-            this.textBoxSearchBar.TabIndex = 0;
-            this.textBoxSearchBar.Text = "search smth";
-            this.textBoxSearchBar.WordWrap = false;
-            // 
-            // pictureBoxPageLogo
-            // 
-            this.pictureBoxPageLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBoxPageLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxPageLogo.Image")));
-            this.pictureBoxPageLogo.Location = new System.Drawing.Point(15, 12);
-            this.pictureBoxPageLogo.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBoxPageLogo.Name = "pictureBoxPageLogo";
-            this.pictureBoxPageLogo.Size = new System.Drawing.Size(44, 46);
-            this.pictureBoxPageLogo.TabIndex = 1;
-            this.pictureBoxPageLogo.TabStop = false;
-            // 
-            // labelPageTitle
-            // 
-            this.labelPageTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.labelPageTitle.AutoSize = true;
-            this.labelPageTitle.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPageTitle.Location = new System.Drawing.Point(72, 20);
-            this.labelPageTitle.Name = "labelPageTitle";
-            this.labelPageTitle.Size = new System.Drawing.Size(198, 33);
-            this.labelPageTitle.TabIndex = 0;
-            this.labelPageTitle.Text = "Page Name Here";
+            this.buttonTasks.Click += new System.EventHandler(this.buttonTasks_Click);
             // 
             // panelFooter
             // 
             this.panelFooter.BackColor = System.Drawing.Color.DarkGray;
             this.panelFooter.Controls.Add(this.labelFooter);
             this.panelFooter.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelFooter.Location = new System.Drawing.Point(0, 649);
+            this.panelFooter.Location = new System.Drawing.Point(0, 646);
+            this.panelFooter.Margin = new System.Windows.Forms.Padding(0);
             this.panelFooter.Name = "panelFooter";
-            this.panelFooter.Size = new System.Drawing.Size(1279, 33);
+            this.panelFooter.Size = new System.Drawing.Size(1279, 36);
             this.panelFooter.TabIndex = 3;
             // 
             // labelFooter
             // 
             this.labelFooter.AutoSize = true;
             this.labelFooter.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFooter.Location = new System.Drawing.Point(570, 8);
+            this.labelFooter.Location = new System.Drawing.Point(600, 8);
             this.labelFooter.Name = "labelFooter";
             this.labelFooter.Size = new System.Drawing.Size(115, 17);
             this.labelFooter.TabIndex = 4;
             this.labelFooter.Text = "@ Copyright 2023";
             this.labelFooter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // MyProject
+            // panelPageContent
+            // 
+            this.panelPageContent.Location = new System.Drawing.Point(295, 0);
+            this.panelPageContent.Margin = new System.Windows.Forms.Padding(0);
+            this.panelPageContent.Name = "panelPageContent";
+            this.panelPageContent.Size = new System.Drawing.Size(984, 646);
+            this.panelPageContent.TabIndex = 4;
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1279, 682);
-            this.Controls.Add(this.panelNavBar);
+            this.Controls.Add(this.panelPageContent);
             this.Controls.Add(this.panelSideBar);
             this.Controls.Add(this.panelFooter);
             this.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "MyProject";
+            this.Name = "MainForm";
             this.Text = "Task Management";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.panelSideBar.ResumeLayout(false);
             this.panelSideBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panelNavBar.ResumeLayout(false);
-            this.panelNavBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPageLogo)).EndInit();
             this.panelFooter.ResumeLayout(false);
             this.panelFooter.PerformLayout();
             this.ResumeLayout(false);
@@ -270,19 +208,15 @@
         #endregion
 
         private System.Windows.Forms.Panel panelSideBar;
-        private System.Windows.Forms.Panel panelNavBar;
-        private System.Windows.Forms.Label labelPageTitle;
         private System.Windows.Forms.Label labelUsername;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button buttonTasks;
         private System.Windows.Forms.Button buttonAbout;
         private System.Windows.Forms.Button buttonUsers;
         private System.Windows.Forms.Button buttonBacklog;
-        private System.Windows.Forms.PictureBox pictureBoxPageLogo;
-        private System.Windows.Forms.Button buttonSearch;
-        private System.Windows.Forms.TextBox textBoxSearchBar;
         private System.Windows.Forms.Panel panelFooter;
         private System.Windows.Forms.Label labelFooter;
+        private System.Windows.Forms.Panel panelPageContent;
     }
 }
 

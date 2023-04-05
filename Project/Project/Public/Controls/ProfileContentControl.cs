@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Project
+namespace Project.Controls
 {
-    public partial class MyProject : Form
+    public partial class ProfileContentControl : UserControl
     {
-        public MyProject()
+        public ProfileContentControl()
         {
             InitializeComponent();
         }
