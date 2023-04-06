@@ -116,14 +116,15 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "This is the backlog page";
             // 
-            // BacklogControl
+            // BacklogContentControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelNavBar);
             this.Controls.Add(this.label1);
-            this.Name = "BacklogControl";
+            this.Name = "BacklogContentControl";
             this.Size = new System.Drawing.Size(985, 645);
+            this.Load += new System.EventHandler(this.BacklogContentControl_Load);
             this.panelNavBar.ResumeLayout(false);
             this.panelNavBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPageLogo)).EndInit();

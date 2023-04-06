@@ -16,5 +16,10 @@ namespace Project.Controls
         {
             InitializeComponent();
         }
+
+        private void BacklogContentControl_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
