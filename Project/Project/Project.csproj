@@ -65,6 +65,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Interfaces\ISubtaskModel.cs" />
     <Compile Include="Models\Interfaces\ITaskModel.cs" />
     <Compile Include="Models\SubtaskModel.cs" />
@@ -81,11 +87,23 @@
     <Compile Include="Public\Controls\BacklogContentControl.Designer.cs">
       <DependentUpon>BacklogContentControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Public\Controls\LogInControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Public\Controls\LogInControl.Designer.cs">
+      <DependentUpon>LogInControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Public\Controls\ProfileContentControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Public\Controls\ProfileContentControl.Designer.cs">
       <DependentUpon>ProfileContentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Public\Controls\SignUpControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Public\Controls\SignUpControl.Designer.cs">
+      <DependentUpon>SignUpControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Public\Controls\TaskContentControl.cs">
       <SubType>UserControl</SubType>
@@ -105,22 +123,31 @@
     <Compile Include="Public\Controls\UsersContentControl.Designer.cs">
       <DependentUpon>UsersContentControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Public\Controls\AboutContentControl.resx">
       <DependentUpon>AboutContentControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Public\Controls\BacklogContentControl.resx">
       <DependentUpon>BacklogContentControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Public\Controls\LogInControl.resx">
+      <DependentUpon>LogInControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Public\Controls\ProfileContentControl.resx">
       <DependentUpon>ProfileContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\Controls\SignUpControl.resx">
+      <DependentUpon>SignUpControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Public\Controls\TaskContentControl.resx">
       <DependentUpon>TaskContentControl.cs</DependentUpon>
@@ -131,7 +158,7 @@
     <EmbeddedResource Include="Public\Controls\UsersContentControl.resx">
       <DependentUpon>UsersContentControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
