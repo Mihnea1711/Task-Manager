@@ -1,6 +1,6 @@
 ﻿namespace Project.Controls
 {
-    partial class TaskContentControl
+    partial class AboutContentControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -35,19 +35,21 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(342, 282);
+            this.label1.Location = new System.Drawing.Point(331, 314);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(434, 39);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Thi is the specific task page";
+            this.label1.Size = new System.Drawing.Size(351, 39);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "This is the about page";
             // 
-            // TaskContentControl
+            // AboutContentControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
-            this.Name = "TaskContentControl";
-            this.Size = new System.Drawing.Size(1168, 675);
+            this.Margin = new System.Windows.Forms.Padding(0);
+            this.Name = "AboutContentControl";
+            this.Size = new System.Drawing.Size(1027, 732);
+            this.Load += new System.EventHandler(this.AboutContentControl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

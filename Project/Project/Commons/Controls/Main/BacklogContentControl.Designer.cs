@@ -1,6 +1,6 @@
 ﻿namespace Project.Controls
 {
-    partial class UsersContentControl
+    partial class BacklogContentControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,15 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsersContentControl));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BacklogContentControl));
             this.panelNavBar = new System.Windows.Forms.Panel();
             this.buttonSearch = new System.Windows.Forms.Button();
             this.textBoxSearchBar = new System.Windows.Forms.TextBox();
             this.pictureBoxPageLogo = new System.Windows.Forms.PictureBox();
             this.labelPageTitle = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGridViewTasks = new System.Windows.Forms.DataGridView();
             this.panelNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPageLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTasks)).BeginInit();
             this.SuspendLayout();
             // 
             // panelNavBar
@@ -79,7 +81,7 @@
             this.textBoxSearchBar.Name = "textBoxSearchBar";
             this.textBoxSearchBar.Size = new System.Drawing.Size(448, 30);
             this.textBoxSearchBar.TabIndex = 0;
-            this.textBoxSearchBar.Text = "search user";
+            this.textBoxSearchBar.Text = "search tasks";
             this.textBoxSearchBar.WordWrap = false;
             // 
             // pictureBoxPageLogo
@@ -102,31 +104,48 @@
             this.labelPageTitle.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPageTitle.Location = new System.Drawing.Point(72, 20);
             this.labelPageTitle.Name = "labelPageTitle";
-            this.labelPageTitle.Size = new System.Drawing.Size(198, 33);
+            this.labelPageTitle.Size = new System.Drawing.Size(107, 33);
             this.labelPageTitle.TabIndex = 0;
-            this.labelPageTitle.Text = "Page Name Here";
+            this.labelPageTitle.Text = "Backlog";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(285, 291);
+            this.label1.Location = new System.Drawing.Point(259, 254);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(349, 39);
+            this.label1.Size = new System.Drawing.Size(384, 39);
             this.label1.TabIndex = 4;
-            this.label1.Text = "This is the users page";
+            this.label1.Text = "This is the backlog page";
             // 
-            // UsersContentControl
+            // dataGridViewTasks
+            // 
+            this.dataGridViewTasks.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewTasks.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridViewTasks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewTasks.Location = new System.Drawing.Point(28, 81);
+            this.dataGridViewTasks.Margin = new System.Windows.Forms.Padding(0);
+            this.dataGridViewTasks.Name = "dataGridViewTasks";
+            this.dataGridViewTasks.RowHeadersWidth = 51;
+            this.dataGridViewTasks.RowTemplate.Height = 24;
+            this.dataGridViewTasks.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dataGridViewTasks.Size = new System.Drawing.Size(929, 551);
+            this.dataGridViewTasks.TabIndex = 6;
+            // 
+            // BacklogContentControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.dataGridViewTasks);
             this.Controls.Add(this.panelNavBar);
             this.Controls.Add(this.label1);
-            this.Name = "UsersContentControl";
-            this.Size = new System.Drawing.Size(985, 695);
+            this.Name = "BacklogContentControl";
+            this.Size = new System.Drawing.Size(985, 645);
+            this.Load += new System.EventHandler(this.BacklogContentControl_Load);
             this.panelNavBar.ResumeLayout(false);
             this.panelNavBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPageLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTasks)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,5 +159,6 @@
         private System.Windows.Forms.PictureBox pictureBoxPageLogo;
         private System.Windows.Forms.Label labelPageTitle;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridViewTasks;
     }
 }

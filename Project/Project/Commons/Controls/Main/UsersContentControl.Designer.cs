@@ -1,6 +1,6 @@
 ﻿namespace Project.Controls
 {
-    partial class BacklogContentControl
+    partial class UsersContentControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BacklogContentControl));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsersContentControl));
             this.panelNavBar = new System.Windows.Forms.Panel();
             this.buttonSearch = new System.Windows.Forms.Button();
             this.textBoxSearchBar = new System.Windows.Forms.TextBox();
@@ -79,7 +79,7 @@
             this.textBoxSearchBar.Name = "textBoxSearchBar";
             this.textBoxSearchBar.Size = new System.Drawing.Size(448, 30);
             this.textBoxSearchBar.TabIndex = 0;
-            this.textBoxSearchBar.Text = "search tasks";
+            this.textBoxSearchBar.Text = "search user";
             this.textBoxSearchBar.WordWrap = false;
             // 
             // pictureBoxPageLogo
@@ -110,21 +110,20 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(259, 254);
+            this.label1.Location = new System.Drawing.Point(306, 326);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(384, 39);
+            this.label1.Size = new System.Drawing.Size(349, 39);
             this.label1.TabIndex = 4;
-            this.label1.Text = "This is the backlog page";
+            this.label1.Text = "This is the users page";
             // 
-            // BacklogContentControl
+            // UsersContentControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelNavBar);
             this.Controls.Add(this.label1);
-            this.Name = "BacklogContentControl";
-            this.Size = new System.Drawing.Size(985, 645);
-            this.Load += new System.EventHandler(this.BacklogContentControl_Load);
+            this.Name = "UsersContentControl";
+            this.Size = new System.Drawing.Size(985, 639);
             this.panelNavBar.ResumeLayout(false);
             this.panelNavBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPageLogo)).EndInit();
