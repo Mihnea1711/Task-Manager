@@ -29,28 +29,18 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TasksContentControl));
-            this.label1 = new System.Windows.Forms.Label();
             this.panelNavBar = new System.Windows.Forms.Panel();
             this.buttonSearch = new System.Windows.Forms.Button();
             this.textBoxSearchBar = new System.Windows.Forms.TextBox();
             this.pictureBoxPageLogo = new System.Windows.Forms.PictureBox();
             this.labelPageTitle = new System.Windows.Forms.Label();
             this.buttonAddTask = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTasks = new System.Windows.Forms.DataGridView();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.panelNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPageLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTasks)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 91);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(345, 39);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "This is the tasks page";
             // 
             // panelNavBar
             // 
@@ -115,62 +105,61 @@
             this.labelPageTitle.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPageTitle.Location = new System.Drawing.Point(72, 20);
             this.labelPageTitle.Name = "labelPageTitle";
-            this.labelPageTitle.Size = new System.Drawing.Size(198, 33);
+            this.labelPageTitle.Size = new System.Drawing.Size(77, 33);
             this.labelPageTitle.TabIndex = 0;
-            this.labelPageTitle.Text = "Page Name Here";
+            this.labelPageTitle.Text = "Tasks";
             // 
             // buttonAddTask
             // 
             this.buttonAddTask.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.buttonAddTask.Location = new System.Drawing.Point(846, 599);
+            this.buttonAddTask.Location = new System.Drawing.Point(842, 595);
             this.buttonAddTask.Name = "buttonAddTask";
             this.buttonAddTask.Size = new System.Drawing.Size(116, 34);
             this.buttonAddTask.TabIndex = 3;
             this.buttonAddTask.Text = "Add Task";
             this.buttonAddTask.UseVisualStyleBackColor = true;
+            this.buttonAddTask.Click += new System.EventHandler(this.buttonAddTask_Click);
             // 
-            // dataGridView1
+            // dataGridViewTasks
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(30, 157);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dataGridView1.Size = new System.Drawing.Size(915, 228);
-            this.dataGridView1.TabIndex = 4;
+            this.dataGridViewTasks.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewTasks.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridViewTasks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewTasks.Location = new System.Drawing.Point(29, 93);
+            this.dataGridViewTasks.Name = "dataGridViewTasks";
+            this.dataGridViewTasks.RowHeadersWidth = 51;
+            this.dataGridViewTasks.RowTemplate.Height = 24;
+            this.dataGridViewTasks.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dataGridViewTasks.Size = new System.Drawing.Size(929, 483);
+            this.dataGridViewTasks.TabIndex = 4;
+            this.dataGridViewTasks.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTasks_CellContentClick);
             // 
             // TasksContentControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewTasks);
             this.Controls.Add(this.buttonAddTask);
             this.Controls.Add(this.panelNavBar);
-            this.Controls.Add(this.label1);
             this.Name = "TasksContentControl";
-            this.Size = new System.Drawing.Size(985, 669);
+            this.Size = new System.Drawing.Size(985, 655);
             this.Load += new System.EventHandler(this.TasksContentControl_Load);
             this.panelNavBar.ResumeLayout(false);
             this.panelNavBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPageLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTasks)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelNavBar;
         private System.Windows.Forms.Button buttonSearch;
         private System.Windows.Forms.TextBox textBoxSearchBar;
         private System.Windows.Forms.PictureBox pictureBoxPageLogo;
         private System.Windows.Forms.Label labelPageTitle;
         private System.Windows.Forms.Button buttonAddTask;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewTasks;
+        private System.Windows.Forms.FontDialog fontDialog1;
     }
 }

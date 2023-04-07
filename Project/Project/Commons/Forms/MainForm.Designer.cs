@@ -34,13 +34,13 @@
             this.buttonUsers = new System.Windows.Forms.Button();
             this.buttonBacklog = new System.Windows.Forms.Button();
             this.labelUsername = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.buttonTasks = new System.Windows.Forms.Button();
             this.panelFooter = new System.Windows.Forms.Panel();
             this.labelFooter = new System.Windows.Forms.Label();
             this.panelPageContent = new System.Windows.Forms.Panel();
             this.panelSideBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panelFooter.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +51,7 @@
             this.panelSideBar.Controls.Add(this.buttonUsers);
             this.panelSideBar.Controls.Add(this.buttonBacklog);
             this.panelSideBar.Controls.Add(this.labelUsername);
-            this.panelSideBar.Controls.Add(this.pictureBox1);
+            this.panelSideBar.Controls.Add(this.pictureBoxLogo);
             this.panelSideBar.Controls.Add(this.buttonTasks);
             this.panelSideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideBar.Location = new System.Drawing.Point(0, 0);
@@ -124,14 +124,14 @@
             this.labelUsername.TabIndex = 2;
             this.labelUsername.Text = "Username";
             // 
-            // pictureBox1
+            // pictureBoxLogo
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 18);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(129, 108);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
+            this.pictureBoxLogo.Location = new System.Drawing.Point(12, 18);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(129, 108);
+            this.pictureBoxLogo.TabIndex = 1;
+            this.pictureBoxLogo.TabStop = false;
             // 
             // buttonTasks
             // 
@@ -198,7 +198,7 @@
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panelSideBar.ResumeLayout(false);
             this.panelSideBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panelFooter.ResumeLayout(false);
             this.panelFooter.PerformLayout();
             this.ResumeLayout(false);
@@ -209,7 +209,7 @@
 
         private System.Windows.Forms.Panel panelSideBar;
         private System.Windows.Forms.Label labelUsername;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
         private System.Windows.Forms.Button buttonTasks;
         private System.Windows.Forms.Button buttonAbout;
         private System.Windows.Forms.Button buttonUsers;

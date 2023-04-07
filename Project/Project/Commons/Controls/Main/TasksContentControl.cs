@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SQLite;
 using System.Windows.Forms;
@@ -38,10 +37,37 @@ namespace Project.Controls
             comboBoxColumn.DataSource = new List<string> { "Option 1", "Option 2", "Option 3" };
 
             // Step 10: Set the DataSource property of the DataGridView control
-            dataGridView1.DataSource = dataTable;
+            dataGridViewTasks.DataSource = dataTable;
 
             // Add the column to the DataGridView control
-            dataGridView1.Columns.Add(comboBoxColumn);
+            dataGridViewTasks.Columns.Add(comboBoxColumn);
         }
-    }
+
+        private void buttonAddTask_Click(object sender, EventArgs e)
+        {
+            Form addTaskDialog = new Form();
+            AddTaskDialogControl dialog = new AddTaskDialogControl();
+            dialog.Dock = DockStyle.Fill;
+            addTaskDialog.Height = dialog.Height + 50;
+            addTaskDialog.Width = dialog.Width;
+            addTaskDialog.Controls.Add(dialog);
+            addTaskDialog.ShowDialog();
+
+            if(addTaskDialog.DialogResult == DialogResult.OK)
+            {
+                string taskName = dialog.TaskName;
+                string taskDescription = dialog.TaskDescription;
+                string assignedEmployee = dialog.TaskEmployeeAssigned;
+                int deadlineDays = dialog.TaskDeadlineInDays;
+
+                // working
+            }
+
+        }
+
+        private void dataGridViewTasks_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            ((MainForm)this.TopLevelControl).LoadTaskContentPanel();
+        }
+    } 
 }
