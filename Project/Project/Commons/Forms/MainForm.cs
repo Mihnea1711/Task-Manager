@@ -48,6 +48,12 @@ namespace Project
             this.panelPageContent.Controls.Add(new TaskContentControl());
         }
 
+        public void LoadSubtaskContentPanel()
+        {
+            this.panelPageContent.Controls.Clear();
+            this.panelPageContent.Controls.Add(new SubtaskContentControl());
+        }
+
         private void MainForm_Load(object sender, EventArgs e)
         {
             LoadTasksPanel();

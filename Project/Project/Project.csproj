@@ -65,11 +65,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commons\Controls\Dialogs\AddSubtaskDialogControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Commons\Controls\Dialogs\AddSubtaskDialogControl.Designer.cs">
+      <DependentUpon>AddSubtaskDialogControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Commons\Controls\Dialogs\AddTaskDialogControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Commons\Controls\Dialogs\AddTaskDialogControl.Designer.cs">
       <DependentUpon>AddTaskDialogControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commons\Controls\Main\SubtaskContentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Commons\Controls\Main\SubtaskContentControl.Designer.cs">
+      <DependentUpon>SubtaskContentControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Commons\Forms\LoginPage.cs">
       <SubType>Form</SubType>
@@ -138,8 +150,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Commons\Controls\Dialogs\AddSubtaskDialogControl.resx">
+      <DependentUpon>AddSubtaskDialogControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Commons\Controls\Dialogs\AddTaskDialogControl.resx">
       <DependentUpon>AddTaskDialogControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commons\Controls\Main\SubtaskContentControl.resx">
+      <DependentUpon>SubtaskContentControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Commons\Forms\LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
