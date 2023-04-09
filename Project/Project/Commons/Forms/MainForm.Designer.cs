@@ -120,7 +120,7 @@
             this.labelUsername.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUsername.Location = new System.Drawing.Point(174, 47);
             this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(88, 22);
+            this.labelUsername.Size = new System.Drawing.Size(70, 19);
             this.labelUsername.TabIndex = 2;
             this.labelUsername.Text = "Username";
             // 
@@ -168,7 +168,7 @@
             this.labelFooter.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFooter.Location = new System.Drawing.Point(600, 8);
             this.labelFooter.Name = "labelFooter";
-            this.labelFooter.Size = new System.Drawing.Size(115, 17);
+            this.labelFooter.Size = new System.Drawing.Size(98, 15);
             this.labelFooter.TabIndex = 4;
             this.labelFooter.Text = "@ Copyright 2023";
             this.labelFooter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -183,7 +183,7 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1279, 682);
             this.Controls.Add(this.panelPageContent);
@@ -193,6 +193,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "Task Management";
             this.Load += new System.EventHandler(this.MainForm_Load);
