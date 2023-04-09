@@ -1,11 +1,11 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A9FF25FB-9A8E-4568-F3A0-AF7247CF46D0" containerWithKeyObject="AB885B8B-F74E-1385-9816-DD688A2DEF02" localFKIndex="AC1CF133-8303-E79E-761B-F0045979107B" name="Subtask_Tasks_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A9FF25FB-9A8E-4568-F3A0-AF7247CF46D0" containerWithKeyObject="AB885B8B-F74E-1385-9816-DD688A2DEF02" localFKIndex="AC1CF133-8303-E79E-761B-F0045979107B" name="Subtasks_Tasks_FK">
 <createdBy>user</createdBy>
 <createdTime>2023-03-27 10:10:40 UTC</createdTime>
 <generatorID>D9537D11-0674-F11F-7041-1F1E801471D1</generatorID>
 <ownerDesignName>db_design</ownerDesignName>
 <referredTableLongName>Tasks</referredTableLongName>
-<deleteRule>NO ACTION</deleteRule>
+<deleteRule>CASCADE</deleteRule>
 <referredTableID>BDC02987-8CF7-8D87-E336-D04940A6AB18</referredTableID>
 <keyObject>CC9D856F-414D-4DEB-5330-8633BF8E3542</keyObject>
 <referredKeyID>CC9D856F-414D-4DEB-5330-8633BF8E3542</referredKeyID>

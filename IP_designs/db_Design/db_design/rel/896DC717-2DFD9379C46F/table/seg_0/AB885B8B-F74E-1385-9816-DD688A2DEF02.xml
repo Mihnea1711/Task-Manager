@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AB885B8B-F74E-1385-9816-DD688A2DEF02" name="Subtask">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AB885B8B-F74E-1385-9816-DD688A2DEF02" name="Subtasks">
 <createdBy>user</createdBy>
 <createdTime>2023-03-27 10:10:40 UTC</createdTime>
 <generatorID>E8DC20F5-81AE-25D7-3368-7E7CB3C7D703</generatorID>
@@ -8,16 +8,19 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="subtaskUUID" id="51F114BC-DA4D-E166-D521-CDB819611F54">
+<Column name="subtaskID" id="51F114BC-DA4D-E166-D521-CDB819611F54">
 <createdBy>user</createdBy>
 <createdTime>2023-03-27 10:10:40 UTC</createdTime>
 <generatorID>99B496D6-334B-E564-7094-6C9E2F8B696B</generatorID>
 <ownerDesignName>db_design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>150</dataTypeSize>
-<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementMinValue>1</autoIncrementMinValue>
+<autoIncrementMaxValue>999</autoIncrementMaxValue>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="subtaskTitle" id="6F04625A-EBBC-0174-7339-0472658A7A42">
@@ -58,16 +61,27 @@
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="taskUUID" id="714A0FA6-BF46-C77A-014A-7757984FD773">
+<Column name="subtaskDeadline" id="DB624D82-7F04-52C4-240B-369348893B44">
+<createdBy>user</createdBy>
+<createdTime>2023-03-27 21:32:25 UTC</createdTime>
+<generatorID>79EFC400-C973-11F5-E942-099B83DC5D9F</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="taskID" id="714A0FA6-BF46-C77A-014A-7757984FD773">
 <createdBy>user</createdBy>
 <createdTime>2023-03-27 10:10:40 UTC</createdTime>
 <generatorID>6E6EB573-EAEA-1307-6BC2-1CA3D630F57B</generatorID>
 <ownerDesignName>db_design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>150</dataTypeSize>
-<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -83,24 +97,12 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>150</dataTypeSize>
-<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="3B37F542-EDAA-708E-ACB6-AFD3ACB16030" referredColumn="56B8D541-98F4-AA8B-7F44-8687C1C8633B"/>
 </associations>
-</Column>
-<Column name="subtaskEstimatedTime" id="DB624D82-7F04-52C4-240B-369348893B44">
-<createdBy>user</createdBy>
-<createdTime>2023-03-27 21:32:25 UTC</createdTime>
-<generatorID>79EFC400-C973-11F5-E942-099B83DC5D9F</generatorID>
-<ownerDesignName>db_design</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,2,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -116,7 +118,7 @@
 <colUsage columnID="51F114BC-DA4D-E166-D521-CDB819611F54"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CE6DB0B8-083B-9815-5FA2-54D1845D3140" name="Subtask_Employee_FK">
+<ind_PK_UK id="CE6DB0B8-083B-9815-5FA2-54D1845D3140" name="Subtasks_Employees_FK">
 <createdBy>user</createdBy>
 <createdTime>2023-03-27 10:10:40 UTC</createdTime>
 <generatorID>118BC8CC-FBF5-1DEF-8757-0F3592CE8F0E</generatorID>
@@ -127,7 +129,7 @@
 <colUsage columnID="C7532BB2-CE9D-9D6C-0383-CFCAE79A47AA"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="AC1CF133-8303-E79E-761B-F0045979107B" name="Subtask_Tasks_FK">
+<ind_PK_UK id="AC1CF133-8303-E79E-761B-F0045979107B" name="Subtasks_Tasks_FK">
 <createdBy>user</createdBy>
 <createdTime>2023-03-27 10:10:40 UTC</createdTime>
 <generatorID>D9537D11-0674-F11F-7041-1F1E801471D1</generatorID>

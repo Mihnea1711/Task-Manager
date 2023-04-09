@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BF688DC5-12FA-8A44-FA61-4946E5C624B7" name="Employee">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BF688DC5-12FA-8A44-FA61-4946E5C624B7" name="Employees">
 <createdBy>user</createdBy>
 <createdTime>2023-03-27 09:35:40 UTC</createdTime>
 <ownerDesignName>db_design</ownerDesignName>
@@ -106,19 +106,6 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="profileImageURL" id="56AD14E3-BBAD-6082-0101-DAE714572DC8">
-<createdBy>user</createdBy>
-<createdTime>2023-03-27 09:42:32 UTC</createdTime>
-<ownerDesignName>db_design</ownerDesignName>
-<engineerTo>
-<item key="896DC717-D087-F929-6A2B-2DFD9379C46F" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>150</dataTypeSize>
-<ownDataTypeParameters>150,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="tasksDone" id="4005D238-00FC-7EC0-3FCE-E6A237EF9B47">
 <createdBy>user</createdBy>
 <createdTime>2023-03-27 09:43:14 UTC</createdTime>
@@ -153,8 +140,9 @@
 <createdBy>user</createdBy>
 <createdTime>2023-03-27 09:56:07 UTC</createdTime>
 <ownerDesignName>db_design</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="896DC717-D087-F929-6A2B-2DFD9379C46F" value="true"/>
+<item key="896DC717-D087-F929-6A2B-2DFD9379C46F" value="false"/>
 </engineerTo>
 <newElementsIDs>1B248FC1-E0AD-AB76-3BC2-1E3CB2C532B7</newElementsIDs>
 <usedAttributes>

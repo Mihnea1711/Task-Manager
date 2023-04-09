@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E8DC20F5-81AE-25D7-3368-7E7CB3C7D703" name="Subtask">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E8DC20F5-81AE-25D7-3368-7E7CB3C7D703" name="Subtasks">
 <createdBy>user</createdBy>
 <createdTime>2023-03-27 09:58:21 UTC</createdTime>
 <ownerDesignName>db_design</ownerDesignName>
@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="subtaskUUID" id="99B496D6-334B-E564-7094-6C9E2F8B696B">
+<Attribute name="subtaskID" id="99B496D6-334B-E564-7094-6C9E2F8B696B">
 <createdBy>user</createdBy>
 <createdTime>2023-03-27 09:58:36 UTC</createdTime>
 <ownerDesignName>db_design</ownerDesignName>
@@ -24,9 +24,9 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>150</dataTypeSize>
-<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="subtaskTitle" id="4C02DF99-A36C-F8EA-6C7A-DFAAC242CDE9">
 <createdBy>user</createdBy>
@@ -69,25 +69,23 @@
 <defaultValue>toDo</defaultValue>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="taskUUID" id="6E6EB573-EAEA-1307-6BC2-1CA3D630F57B">
+<Attribute name="subtaskDeadline" id="4E33FCA8-FD17-C01E-B163-5DCBA9C17184">
 <createdBy>user</createdBy>
-<createdTime>2023-03-27 10:01:57 UTC</createdTime>
-<generatorID>D9537D11-0674-F11F-7041-1F1E801471D1</generatorID>
+<createdTime>2023-04-09 20:11:15 UTC</createdTime>
 <ownerDesignName>db_design</ownerDesignName>
 <engineerTo>
 <item key="896DC717-D087-F929-6A2B-2DFD9379C46F" value="true"/>
 </engineerTo>
-<referedAttribute>38D571E4-99A1-C2C6-0F42-4295FA879684</referedAttribute>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>150</dataTypeSize>
-<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="employeeUUID" id="64941C5E-BAFA-C42E-67A1-14C828847191">
+<Attribute name="employeeUUID" id="8D0B4E0B-562C-F971-1ACB-DA5C27DD0349">
 <createdBy>user</createdBy>
-<createdTime>2023-03-27 10:03:24 UTC</createdTime>
-<generatorID>118BC8CC-FBF5-1DEF-8757-0F3592CE8F0E</generatorID>
+<createdTime>2023-04-09 21:34:28 UTC</createdTime>
+<generatorID>DE7AB087-46D9-3BBB-3C00-DB07DB4C7BFE</generatorID>
 <ownerDesignName>db_design</ownerDesignName>
 <engineerTo>
 <item key="896DC717-D087-F929-6A2B-2DFD9379C46F" value="true"/>
@@ -97,7 +95,37 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>150</dataTypeSize>
-<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="taskID" id="9D2FD3DD-F25E-6514-A218-858D9D41D9EC">
+<createdBy>user</createdBy>
+<createdTime>2023-04-09 21:34:44 UTC</createdTime>
+<generatorID>EE9294B1-B238-4C12-BF74-CB13EF0918BF</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<engineerTo>
+<item key="896DC717-D087-F929-6A2B-2DFD9379C46F" value="true"/>
+</engineerTo>
+<referedAttribute>38D571E4-99A1-C2C6-0F42-4295FA879684</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employeeUUID1" id="27104439-624C-69E8-D1CA-8445561058A8">
+<createdBy>user</createdBy>
+<createdTime>2023-04-09 21:34:44 UTC</createdTime>
+<generatorID>EE9294B1-B238-4C12-BF74-CB13EF0918BF</generatorID>
+<ownerDesignName>db_design</ownerDesignName>
+<engineerTo>
+<item key="896DC717-D087-F929-6A2B-2DFD9379C46F" value="true"/>
+</engineerTo>
+<referedAttribute>A63DAD71-3990-1F80-79A8-1D72BBEB67A0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -105,12 +133,16 @@
 <createdBy>user</createdBy>
 <createdTime>2023-03-27 09:58:49 UTC</createdTime>
 <ownerDesignName>db_design</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="896DC717-D087-F929-6A2B-2DFD9379C46F" value="true"/>
+<item key="896DC717-D087-F929-6A2B-2DFD9379C46F" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>99B496D6-334B-E564-7094-6C9E2F8B696B</attributeRef>
+<attributeRef>8D0B4E0B-562C-F971-1ACB-DA5C27DD0349</attributeRef>
+<attributeRef>9D2FD3DD-F25E-6514-A218-858D9D41D9EC</attributeRef>
+<attributeRef>27104439-624C-69E8-D1CA-8445561058A8</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

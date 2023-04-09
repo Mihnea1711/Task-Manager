@@ -41,5 +41,10 @@ namespace Project.Controls
         {
             InitializeComponent();
         }
+
+        private void buttonAddTask_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

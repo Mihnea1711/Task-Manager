@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Project.Controls
@@ -36,17 +29,14 @@ namespace Project.Controls
             }
         }
 
-        public int SubtaskDeadlineInDays
-        {
-            get
-            {
-                return (this.dateTimePickerDeadline.Value - DateTime.Now).Days;
-            }
-        }
-
         public AddSubtaskDialogControl()
         {
             InitializeComponent();
+        }
+
+        private void buttonAddSubtask_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

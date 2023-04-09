@@ -48,6 +48,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ProfileContentControl";
             this.Size = new System.Drawing.Size(1048, 719);
+            this.Load += new System.EventHandler(this.ProfileContentControl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
