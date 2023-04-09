@@ -124,6 +124,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UsersContentControl";
             this.Size = new System.Drawing.Size(985, 639);
+            this.Load += new System.EventHandler(this.UsersContentControl_Load);
             this.panelNavBar.ResumeLayout(false);
             this.panelNavBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPageLogo)).EndInit();

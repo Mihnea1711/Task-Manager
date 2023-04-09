@@ -147,6 +147,7 @@
             this.buttonAddTask.TabIndex = 11;
             this.buttonAddTask.Text = "Create Task";
             this.buttonAddTask.UseVisualStyleBackColor = true;
+            this.buttonAddTask.Click += new System.EventHandler(this.buttonAddTask_Click);
             // 
             // dateTimePickerDeadline
             // 

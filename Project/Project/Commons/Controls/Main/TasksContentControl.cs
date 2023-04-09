@@ -16,10 +16,12 @@ namespace Project.Controls
         private void TasksContentControl_Load(object sender, EventArgs e)
         {
             // Step 5: Create a connection string to your database
-            string connectionString = "Data Source=beer.db;Version=3;";
+            string connectionString = "Data Source=project.db;Version=3;";
 
             // Step 6: Write a SELECT statement to retrieve data
-            string selectStatement = "SELECT * FROM beers";
+            string selectStatement = "SELECT * FROM tasks";
+
+            Console.WriteLine(selectStatement);
 
             // Step 7: Create a SQLiteDataAdapter object
             SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(selectStatement, connectionString);

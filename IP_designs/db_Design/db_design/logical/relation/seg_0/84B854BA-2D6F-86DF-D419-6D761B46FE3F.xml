@@ -1,13 +1,13 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="subtask_comments_fk" directorySegmentName="seg_0" id="94CC7DB4-4F76-7E2D-B218-3DFDD40CB279">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="subtask_comment_fk" directorySegmentName="seg_0" id="84B854BA-2D6F-86DF-D419-6D761B46FE3F">
 <createdBy>user</createdBy>
-<createdTime>2023-03-27 10:02:13 UTC</createdTime>
+<createdTime>2023-04-09 21:34:08 UTC</createdTime>
 <ownerDesignName>db_design</ownerDesignName>
 <engineerTo>
 <item key="896DC717-D087-F929-6A2B-2DFD9379C46F" value="true"/>
 </engineerTo>
 <sourcePk>CE121562-8754-678A-A37D-BFAAD0A36699</sourcePk>
-<identifying>false</identifying>
+<identifying>true</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
@@ -15,5 +15,5 @@
 <targetCardinalityString>*</targetCardinalityString>
 <targetEntity>446161AA-03F3-6451-02C1-C75F054255EF</targetEntity>
 <transferable>true</transferable>
-<deleteRule>NO ACTION</deleteRule>
+<deleteRule>CASCADE</deleteRule>
 </Relation>
