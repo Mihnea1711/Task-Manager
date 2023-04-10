@@ -73,22 +73,22 @@
     <Compile Include="Business\Services\EmployeeService.cs" />
     <Compile Include="Business\Services\SubtaskService.cs" />
     <Compile Include="Business\Services\TaskService.cs" />
-    <Compile Include="Commons\Controls\Dialogs\AddSubtaskDialogControl.cs">
+    <Compile Include="Views\Commons\Controls\Dialogs\AddSubtaskDialogControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Commons\Controls\Dialogs\AddSubtaskDialogControl.Designer.cs">
+    <Compile Include="Views\Commons\Controls\Dialogs\AddSubtaskDialogControl.Designer.cs">
       <DependentUpon>AddSubtaskDialogControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Commons\Controls\Dialogs\AddTaskDialogControl.cs">
+    <Compile Include="Views\Commons\Controls\Dialogs\AddTaskDialogControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Commons\Controls\Dialogs\AddTaskDialogControl.Designer.cs">
+    <Compile Include="Views\Commons\Controls\Dialogs\AddTaskDialogControl.Designer.cs">
       <DependentUpon>AddTaskDialogControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Commons\Controls\Main\SubtaskContentControl.cs">
+    <Compile Include="Views\Commons\Controls\Main\SubtaskContentControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Commons\Controls\Main\SubtaskContentControl.Designer.cs">
+    <Compile Include="Views\Commons\Controls\Main\SubtaskContentControl.Designer.cs">
       <DependentUpon>SubtaskContentControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Persistence\Interfaces\ICommentRepository.cs" />
@@ -110,52 +110,52 @@
     <Compile Include="Business\Models\Comment.cs" />
     <Compile Include="Business\Models\SubtaskModel.cs" />
     <Compile Include="Business\Models\TaskModel.cs" />
-    <Compile Include="Commons\Controls\Main\AboutContentControl.cs">
+    <Compile Include="Views\Commons\Controls\Main\AboutContentControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Commons\Controls\Main\AboutContentControl.Designer.cs">
+    <Compile Include="Views\Commons\Controls\Main\AboutContentControl.Designer.cs">
       <DependentUpon>AboutContentControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Commons\Controls\Main\BacklogContentControl.cs">
+    <Compile Include="Views\Commons\Controls\Main\BacklogContentControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Commons\Controls\Main\BacklogContentControl.Designer.cs">
+    <Compile Include="Views\Commons\Controls\Main\BacklogContentControl.Designer.cs">
       <DependentUpon>BacklogContentControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Commons\Controls\Login\LogInControl.cs">
+    <Compile Include="Views\Commons\Controls\Login\LogInControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Commons\Controls\Login\LogInControl.Designer.cs">
+    <Compile Include="Views\Commons\Controls\Login\LogInControl.Designer.cs">
       <DependentUpon>LogInControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Commons\Controls\Main\ProfileContentControl.cs">
+    <Compile Include="Views\Commons\Controls\Main\ProfileContentControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Commons\Controls\Main\ProfileContentControl.Designer.cs">
+    <Compile Include="Views\Commons\Controls\Main\ProfileContentControl.Designer.cs">
       <DependentUpon>ProfileContentControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Commons\Controls\Login\SignUpControl.cs">
+    <Compile Include="Views\Commons\Controls\Login\SignUpControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Commons\Controls\Login\SignUpControl.Designer.cs">
+    <Compile Include="Views\Commons\Controls\Login\SignUpControl.Designer.cs">
       <DependentUpon>SignUpControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Commons\Controls\Main\TaskContentControl.cs">
+    <Compile Include="Views\Commons\Controls\Main\TaskContentControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Commons\Controls\Main\TaskContentControl.Designer.cs">
+    <Compile Include="Views\Commons\Controls\Main\TaskContentControl.Designer.cs">
       <DependentUpon>TaskContentControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Commons\Controls\Main\TasksContentControl.cs">
+    <Compile Include="Views\Commons\Controls\Main\TasksContentControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Commons\Controls\Main\TasksContentControl.Designer.cs">
+    <Compile Include="Views\Commons\Controls\Main\TasksContentControl.Designer.cs">
       <DependentUpon>TasksContentControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Commons\Controls\Main\UsersContentControl.cs">
+    <Compile Include="Views\Commons\Controls\Main\UsersContentControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Commons\Controls\Main\UsersContentControl.Designer.cs">
+    <Compile Include="Views\Commons\Controls\Main\UsersContentControl.Designer.cs">
       <DependentUpon>UsersContentControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Forms\MainForm.cs">
@@ -167,40 +167,40 @@
     <Compile Include="Business\Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Commons\Controls\Dialogs\AddSubtaskDialogControl.resx">
+    <EmbeddedResource Include="Views\Commons\Controls\Dialogs\AddSubtaskDialogControl.resx">
       <DependentUpon>AddSubtaskDialogControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Commons\Controls\Dialogs\AddTaskDialogControl.resx">
+    <EmbeddedResource Include="Views\Commons\Controls\Dialogs\AddTaskDialogControl.resx">
       <DependentUpon>AddTaskDialogControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Commons\Controls\Main\SubtaskContentControl.resx">
+    <EmbeddedResource Include="Views\Commons\Controls\Main\SubtaskContentControl.resx">
       <DependentUpon>SubtaskContentControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Forms\LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Commons\Controls\Main\AboutContentControl.resx">
+    <EmbeddedResource Include="Views\Commons\Controls\Main\AboutContentControl.resx">
       <DependentUpon>AboutContentControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Commons\Controls\Main\BacklogContentControl.resx">
+    <EmbeddedResource Include="Views\Commons\Controls\Main\BacklogContentControl.resx">
       <DependentUpon>BacklogContentControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Commons\Controls\Login\LogInControl.resx">
+    <EmbeddedResource Include="Views\Commons\Controls\Login\LogInControl.resx">
       <DependentUpon>LogInControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Commons\Controls\Main\ProfileContentControl.resx">
+    <EmbeddedResource Include="Views\Commons\Controls\Main\ProfileContentControl.resx">
       <DependentUpon>ProfileContentControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Commons\Controls\Login\SignUpControl.resx">
+    <EmbeddedResource Include="Views\Commons\Controls\Login\SignUpControl.resx">
       <DependentUpon>SignUpControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Commons\Controls\Main\TaskContentControl.resx">
+    <EmbeddedResource Include="Views\Commons\Controls\Main\TaskContentControl.resx">
       <DependentUpon>TaskContentControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Commons\Controls\Main\TasksContentControl.resx">
+    <EmbeddedResource Include="Views\Commons\Controls\Main\TasksContentControl.resx">
       <DependentUpon>TasksContentControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Commons\Controls\Main\UsersContentControl.resx">
+    <EmbeddedResource Include="Views\Commons\Controls\Main\UsersContentControl.resx">
       <DependentUpon>UsersContentControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Forms\MainForm.resx">
@@ -230,8 +230,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Commons\Images\" />
-    <Folder Include="Views\Interfaces\" />
+    <Folder Include="Views\Commons\Images\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

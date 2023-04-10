@@ -14,6 +14,8 @@ namespace Project
         public void LoadTasksPanel()
         {
             this.panelPageContent.Controls.Clear();
+            TasksContentControl tasksContentControl = new TasksContentControl();
+            tasks
             this.panelPageContent.Controls.Add(new TasksContentControl());
         }
 
