@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.Models.Interfaces
+namespace Project.Persistence.Interfaces
 {
-    internal interface ISubtaskModel
+    internal class CommentRepository
     {
     }
 }

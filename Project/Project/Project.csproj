@@ -65,6 +65,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\Interfaces\ICommentService.cs" />
+    <Compile Include="Business\Interfaces\IEmployeeService.cs" />
+    <Compile Include="Business\Interfaces\ISubtaskService.cs" />
+    <Compile Include="Business\Interfaces\ITaskService.cs" />
+    <Compile Include="Business\Services\CommentService.cs" />
+    <Compile Include="Business\Services\EmployeeService.cs" />
+    <Compile Include="Business\Services\SubtaskService.cs" />
+    <Compile Include="Business\Services\TaskService.cs" />
     <Compile Include="Commons\Controls\Dialogs\AddSubtaskDialogControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -83,17 +91,25 @@
     <Compile Include="Commons\Controls\Main\SubtaskContentControl.Designer.cs">
       <DependentUpon>SubtaskContentControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Commons\Forms\LoginPage.cs">
+    <Compile Include="Persistence\Interfaces\ICommentRepository.cs" />
+    <Compile Include="Persistence\Interfaces\IEmployeeRepository.cs" />
+    <Compile Include="Persistence\Interfaces\ISubtaskRepository.cs" />
+    <Compile Include="Persistence\Interfaces\ITaskRepository.cs" />
+    <Compile Include="Persistence\Repositories\CommentRepository.cs" />
+    <Compile Include="Persistence\Repositories\EmployeeRepository.cs" />
+    <Compile Include="Persistence\Repositories\SubtaskRepository.cs" />
+    <Compile Include="Persistence\Repositories\TaskRepository.cs" />
+    <Compile Include="Presenters\Interfaces\IPresenter.cs" />
+    <Compile Include="Presenters\Presenter.cs" />
+    <Compile Include="Views\Forms\LoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Commons\Forms\LoginPage.Designer.cs">
+    <Compile Include="Views\Forms\LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Comment.cs" />
-    <Compile Include="Models\Interfaces\ISubtaskModel.cs" />
-    <Compile Include="Models\Interfaces\ITaskModel.cs" />
-    <Compile Include="Models\SubtaskModel.cs" />
-    <Compile Include="Models\TaskModel.cs" />
+    <Compile Include="Business\Models\Comment.cs" />
+    <Compile Include="Business\Models\SubtaskModel.cs" />
+    <Compile Include="Business\Models\TaskModel.cs" />
     <Compile Include="Commons\Controls\Main\AboutContentControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -142,13 +158,13 @@
     <Compile Include="Commons\Controls\Main\UsersContentControl.Designer.cs">
       <DependentUpon>UsersContentControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Commons\Forms\MainForm.cs">
+    <Compile Include="Views\Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Commons\Forms\MainForm.Designer.cs">
+    <Compile Include="Views\Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\User.cs" />
+    <Compile Include="Business\Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Commons\Controls\Dialogs\AddSubtaskDialogControl.resx">
@@ -160,7 +176,7 @@
     <EmbeddedResource Include="Commons\Controls\Main\SubtaskContentControl.resx">
       <DependentUpon>SubtaskContentControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Commons\Forms\LoginPage.resx">
+    <EmbeddedResource Include="Views\Forms\LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Commons\Controls\Main\AboutContentControl.resx">
@@ -187,7 +203,7 @@
     <EmbeddedResource Include="Commons\Controls\Main\UsersContentControl.resx">
       <DependentUpon>UsersContentControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Commons\Forms\MainForm.resx">
+    <EmbeddedResource Include="Views\Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -215,8 +231,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Commons\Images\" />
-    <Folder Include="Models\Repositories\" />
-    <Folder Include="Presenters\Interfaces\" />
     <Folder Include="Views\Interfaces\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
