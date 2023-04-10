@@ -1,0 +1,49 @@
+DROP TABLE comments;
+DROP TABLE subtasks;
+DROP TABLE tasks;
+DROP TABLE employees;
+
+--DELETE FROM sqlite_sequence;
+
+CREATE TABLE comments (
+    commentid          INTEGER PRIMARY KEY AUTOINCREMENT,
+    commenttitle       VARCHAR2(50) NOT NULL,
+    commentdescription VARCHAR2(100) NOT NULL,
+    timereported       NUMBER(2) NOT NULL,
+    subtaskid          INTEGER NOT NULL,
+    CONSTRAINT comments_subtasks_fk FOREIGN KEY ( subtaskid ) REFERENCES subtasks ( subtaskid ) ON DELETE CASCADE
+);
+
+CREATE TABLE employees (
+    employeeuuid VARCHAR2(150) PRIMARY KEY,
+    username     VARCHAR2(50) UNIQUE NOT NULL,
+    password     VARCHAR2(50) NOT NULL,
+    firstname    VARCHAR2(50) NOT NULL,
+    lastname     VARCHAR2(50) NOT NULL,
+    email        VARCHAR2(50) NOT NULL,
+    phonenr      VARCHAR2(50) NOT NULL,
+    tasksdone    NUMBER(3) DEFAULT 0
+);
+
+CREATE TABLE subtasks (
+    subtaskid          INTEGER PRIMARY KEY AUTOINCREMENT,
+    subtasktitle       VARCHAR2(50) NOT NULL,
+    subtaskdescription VARCHAR2(100) NOT NULL,
+    subtaskstatus      VARCHAR2(20) DEFAULT 'toDo',
+    subtaskdeadline    datetime NOT NULL,
+    taskid             INTEGER NOT NULL,
+    employeeuuid       VARCHAR2(150) NOT NULL,
+    CONSTRAINT subtasks_employees_fk FOREIGN KEY ( employeeuuid ) REFERENCES employees ( employeeuuid ),
+    CONSTRAINT subtasks_tasks_fk FOREIGN KEY ( taskid ) REFERENCES tasks ( taskid ) ON DELETE CASCADE
+);
+
+CREATE TABLE tasks (
+    taskid          INTEGER PRIMARY KEY AUTOINCREMENT,
+    tasktitle       VARCHAR2(50) NOT NULL,
+    taskdescription VARCHAR2(100) NOT NULL,
+    taskstatus      VARCHAR2(20) DEFAULT 'toDo',
+    taskprogress    NUMBER(2) DEFAULT 0,
+    taskdeadline    datetime NOT NULL,
+    employeeuuid    VARCHAR2(150) NOT NULL,
+    CONSTRAINT tasks_employees_fk FOREIGN KEY ( employeeuuid ) REFERENCES employees ( employeeuuid )
+);
