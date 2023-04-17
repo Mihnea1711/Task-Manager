@@ -41,7 +41,6 @@ namespace Project
             this.panelLogInContent.Name = "panelLogInContent";
             this.panelLogInContent.Size = new System.Drawing.Size(645, 506);
             this.panelLogInContent.TabIndex = 0;
-            this.panelLogInContent.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogInContent_Paint);
             // 
             // LoginPage
             // 

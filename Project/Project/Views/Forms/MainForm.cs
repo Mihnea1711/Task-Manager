@@ -15,7 +15,6 @@ namespace Project
         {
             this.panelPageContent.Controls.Clear();
             TasksContentControl tasksContentControl = new TasksContentControl();
-            tasks
             this.panelPageContent.Controls.Add(new TasksContentControl());
         }
 
