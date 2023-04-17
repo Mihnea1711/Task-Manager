@@ -1,21 +1,28 @@
 ﻿using System;
 using System.Windows.Forms;
 using Project.Controls;
+using Project.Models;
 
 namespace Project
 {
     public partial class MainForm : Form
     {
-        public MainForm()
+        private Employee currrentEmployee;
+
+        public Employee CurrentEmployee { get { return currrentEmployee; } }
+
+        public MainForm(Employee employee)
         {
             InitializeComponent();
+            this.currrentEmployee = employee;
+            this.labelUsername.Text = employee.Username;
         }
 
         public void LoadTasksPanel()
         {
             this.panelPageContent.Controls.Clear();
             TasksContentControl tasksContentControl = new TasksContentControl();
-            this.panelPageContent.Controls.Add(new TasksContentControl());
+            this.panelPageContent.Controls.Add(tasksContentControl);
         }
 
         public void LoadBacklogPanel()
@@ -48,9 +55,18 @@ namespace Project
             this.panelPageContent.Controls.Add(new SubtaskContentControl());
         }
 
+        public void LoadProfilePage()
+        {
+            this.panelPageContent.Controls.Clear();
+            ProfileContentControl profileContentControl = new ProfileContentControl();
+            profileContentControl.Dock = DockStyle.Fill;
+            this.panelPageContent.Controls.Add(profileContentControl);
+        }
+
         private void MainForm_Load(object sender, EventArgs e)
         {
-            LoadTasksPanel();
+            //LoadTasksPanel();
+            LoadProfilePage();
         }
 
         private void buttonTasks_Click(object sender, EventArgs e)

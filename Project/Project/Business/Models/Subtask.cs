@@ -1,6 +1,6 @@
 ﻿namespace Project.Models
 {
-    internal class SubtaskModel
+    internal class Subtask
     {
     }
 }

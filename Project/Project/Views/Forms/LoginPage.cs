@@ -1,6 +1,5 @@
 ﻿using Project.Business.Services;
 using Project.Controls;
-using Project.Persistence.Interfaces;
 using System;
 using System.Windows.Forms;
 
@@ -8,33 +7,41 @@ namespace Project
 {
     public partial class LoginPage : Form
     {
+        /// <summary>
+        /// Instance of the employee service that will handle all the employee related operations.
+        /// </summary>
         private EmployeeService employeeService;
+
+        /// <summary>
+        /// Constructor. Initializes the employee service.
+        /// </summary>
         public LoginPage()
         {
             InitializeComponent();
             this.employeeService = new EmployeeService();
         }
 
+        /// <summary>
+        /// Getter for the employee service.
+        /// </summary>
         public EmployeeService EmployeeSRV {
            get { return employeeService; }
         }
 
-        private void buttonLogin_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-
-            MainForm mainForm = new MainForm();
-            mainForm.ShowDialog();
-
-            this.Close();
-        }
-
+        /// <summary>
+        /// Callback for the onload event of the form. Adds the login control when the form is loaded.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LoginPage_Load(object sender, EventArgs e)
         {
             this.panelLogInContent.Controls.Clear();
             this.panelLogInContent.Controls.Add(new LogInControl());
         }
 
+        /// <summary>
+        /// Method to change the content panel to the signup control.
+        /// </summary>
         public void ChangeToSignUp()
         {
             this.panelLogInContent.Controls.Clear();
@@ -50,6 +57,9 @@ namespace Project
             this.panelLogInContent.Controls.Add(signUpControl);
         }
 
+        /// <summary>
+        /// Method to change the content panel to the login control.
+        /// </summary>
         public void ChangeToLogIn()
         {
             this.panelLogInContent.Controls.Clear();

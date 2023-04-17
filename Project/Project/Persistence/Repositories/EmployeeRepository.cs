@@ -1,18 +1,23 @@
 ﻿using Project.Models;
 using System;
 using System.Data.SQLite;
-using System.Diagnostics;
 
 namespace Project.Persistence.Interfaces
 {
-    public class EmployeeRepository
+    public class EmployeeRepository : IEmployeeRepository
     {
+        /// <summary>
+        /// Class constructor. Checks the connection to the db and creates the employee table if it does not exist.
+        /// </summary>
         public EmployeeRepository() {
             CheckConnection();
 
             CreateEmployeeTable();
         }
 
+        /// <summary>
+        /// Method to check the connection to the database. If the connection is not running, it opens the connection.
+        /// </summary>
         private void CheckConnection()
         {
             if(Program.DbConnection == null)
@@ -21,6 +26,10 @@ namespace Project.Persistence.Interfaces
             }
         }
 
+        /// <summary>
+        /// Method to create the employee table in the database, in case it is not created yet.
+        /// </summary>
+        /// <returns>Returns an exception if the statement did not execute properly.</returns>
         public Exception CreateEmployeeTable()
         {
             string stmt = "" +
@@ -46,6 +55,12 @@ namespace Project.Persistence.Interfaces
             }            
         }
 
+        /// <summary>
+        /// Method to check if there is already an employee with this username in the database.
+        /// </summary>
+        /// <param name="username">Employee username.</param>
+        /// <returns>Returns true if the username is valid, otherwise false. 
+        /// Also returns an exception if an error happened while executing the statement.</returns>
         public (bool, Exception) IsValidUsername(string username) 
         {
             string stmt = $"SELECT * FROM employees where username = '{username}'";
@@ -65,80 +80,197 @@ namespace Project.Persistence.Interfaces
             }
         }
 
+        /// <summary>
+        /// Method to add an employee to the database.
+        /// </summary>
+        /// <param name="employee">Employee data model.</param>
+        /// <returns>Returns an exception if an error happened while executing the statement.</returns>
         public Exception RegisterUser(Employee employee)
         {
             string stmt = $"INSERT INTO employees(employeeuuid, username, password, firstname, lastname, email, phonenr) VALUES ('{employee.UUID}', '{employee.Username}', '{employee.Password}', '{employee.FirstName}', " +
                 $"'{employee.LastName}', '{employee.Email}', '{employee.Phone}')";
 
-            SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection);
-            try
+            using (SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection))
             {
-                cmd.ExecuteNonQuery();
+                try
+                {
+                    cmd.ExecuteNonQuery();
 
-                return null;
-            }
-            catch (Exception ex)
-            {
-                return new RegisterEmployeeException(ex.Message);
+                    return null;
+                }
+                catch (Exception ex)
+                {
+                    return new RegisterEmployeeException(ex.Message);
+                }
             }
         }
 
-        public (string, Exception) GetUUIDByUsername(string username)
+        /// <summary>
+        /// Method to retrieve employee data based on its username.
+        /// </summary>
+        /// <param name="username">Employee username.</param>
+        /// <returns>Returns the employee data if it was found, otherwise null. 
+        /// Also returns an exception in case an error happened while executing the statement.</returns>
+        public (Employee, Exception) GetEmployeeByUsername(string username)
         {
-            string stmt = $"SELECT employeeuuid FROM employees WHERE username = '{username}'";
+            string stmt = $"SELECT * FROM employees WHERE username = '{username}'";
             using (SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection))
             {
                 try
                 {
                     using (SQLiteDataReader dataReader = cmd.ExecuteReader())
                     {
-                        string uuid = "";
+                        Employee employee = null;
                         while (dataReader.Read())
                         {
-                            uuid = dataReader.GetString(0);
+                            string employeeUUID = dataReader.GetString(0);
+                            string employeeUsername = dataReader.GetString(1);
+                            string employeePassword = dataReader.GetString(2);
+                            string employeeFName = dataReader.GetString(3);
+                            string employeeLName = dataReader.GetString(4);
+                            string employeeEmail = dataReader.GetString(5);
+                            string employeePhoneNr = dataReader.GetString(6);
+                            int employeeTasksDone = dataReader.GetInt32(7);
+
+                            employee = new Employee(employeeUUID, employeeUsername, employeePassword, employeeFName, employeeLName, employeeEmail, employeePhoneNr, employeeTasksDone);
                         }
-                        if (uuid == "") return ("", new QueryForUUIDException("uuid is empty"));
-                        return (uuid, null);
+                        if (employee == null) throw new Exception("employee is null");
+                        return (employee, null);
                     }
 
                 }
                 catch (Exception ex)
                 {
-                    return ("", new QueryForUUIDException(ex.Message));
+                    return (null, new QueryForEmployeeException(ex.Message));
                 }
             }
         }
 
-        class EmployeeTableCreationException : Exception
+        /// <summary>
+        /// Method to check if there is an employee account created with the username and password provided.
+        /// </summary>
+        /// <param name="username">Employee username.</param>
+        /// <param name="password">Employee password</param>
+        /// <returns>Returns the employee data model object in case the account was found, otherwise null. 
+        /// Also returns an exception in case an error happened while exuting the statement.</returns>
+        public (Employee, Exception) CheckEmployeeLogIn(string username, string password)
         {
-            public EmployeeTableCreationException(string message)
-                : base(message)
+            string stmt = $"SELECT * FROM employees WHERE username = '{username}' and password = '{password}'";
+
+            using (SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection))
             {
+                try
+                {
+                    using (SQLiteDataReader dataReader = cmd.ExecuteReader())
+                    {
+                        Employee employee = null;
+                        while (dataReader.Read())
+                        {
+                            string employeeUUID = dataReader.GetString(0);
+                            string employeeUsername = dataReader.GetString(1);
+                            string employeePassword = dataReader.GetString(2);
+                            string employeeFName = dataReader.GetString(3);
+                            string employeeLName = dataReader.GetString(4);
+                            string employeeEmail = dataReader.GetString(5);
+                            string employeePhoneNr = dataReader.GetString(6);
+                            int employeeTasksDone = dataReader.GetInt32(7);
+
+                            employee = new Employee(employeeUUID, employeeUsername, employeePassword, employeeFName, employeeLName, employeeEmail, employeePhoneNr, employeeTasksDone);
+                        }
+                        if (employee == null) throw new Exception("employee is null");
+                        return (employee, null);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    return (null, new LogInException(ex.Message));
+                }
             }
         }
 
-        class ValidateUsernameException : Exception
+        
+        /*
+        public (List<Task>, Exception) GetEmployeeTasks(string employeeUUID)
         {
-            public ValidateUsernameException(string message)
-                : base(message)
-            {
-            }
-        }
+            string stmt = $"SELECT * from tasks WHERE employeeuuid = '{employeeUUID}'";
 
-        class RegisterEmployeeException : Exception
-        {
-            public RegisterEmployeeException(string message)
-                : base(message)
+            using (SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection))
             {
-            }
-        }
+                try
+                {
+                    using (SQLiteDataReader dataReader = cmd.ExecuteReader())
+                    {
+                        List<Task> tasks = new List<Task>();
+                        while (dataReader.Read())
+                        {
+                            int taskID = dataReader.GetInt32(0);
+                            string taskTitle = dataReader.GetString(1);
+                            string taskDescription = dataReader.GetString(2);
+                            string taskStatus = dataReader.GetString(3);
+                            int taskProgress = dataReader.GetInt32(4);
+                            DateTime taskDeadline = dataReader.GetDateTime(5);
 
-        class QueryForUUIDException : Exception
-        {
-            public QueryForUUIDException(string message)
-                : base(message)
-            {
+                            Task task = new Task(taskID, taskTitle, taskDescription, taskStatus, taskProgress, taskDeadline, employeeUUID);
+                            tasks.Add(task);
+                        }
+                        return (tasks, null);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    return (null, new GetTasksException(ex.Message));
+                }
             }
+        }    
+        */
+    }
+
+
+    class EmployeeTableCreationException : Exception
+    {
+        public EmployeeTableCreationException(string message)
+            : base(message)
+        {
+        }
+    }
+
+    class ValidateUsernameException : Exception
+    {
+        public ValidateUsernameException(string message)
+            : base(message)
+        {
+        }
+    }
+
+    class LogInException: Exception
+    {
+        public LogInException(string message)
+            : base(message)
+        {
+        }
+    }
+
+    class RegisterEmployeeException : Exception
+    {
+        public RegisterEmployeeException(string message)
+            : base(message)
+        {
+        }
+    }
+
+    class QueryForEmployeeException : Exception
+    {
+        public QueryForEmployeeException(string message)
+            : base(message)
+        {
+        }
+    }
+
+    class GetTasksException : Exception
+    {
+        public GetTasksException(string message)
+            : base(message)
+        {
         }
     }
 }

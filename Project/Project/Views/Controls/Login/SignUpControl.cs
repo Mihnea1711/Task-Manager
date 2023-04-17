@@ -2,16 +2,25 @@
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using System.Net.Mail;
+using Project.Models;
 
 namespace Project.Controls
 {
     public partial class SignUpControl : UserControl
     {
+        /// <summary>
+        /// Constructor.
+        /// </summary>
         public SignUpControl()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Callback for the click event on the "SignUp" button. Gets the input from the textboxes and runs a series of tests before storing the employee in the database.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonSignUp_Click(object sender, EventArgs e)
         {
             string username = textBoxUsername.Text.Trim();
@@ -79,7 +88,7 @@ namespace Project.Controls
                 // if everything is right
                 // store user in db
                 // create a user model and save it to the form
-                (string userUUID, Exception registerEx) = ((LoginPage)this.TopLevelControl).EmployeeSRV.RegisterUser(username, password, firstName, lastName, email, phoneNr);
+                (Employee employee, Exception registerEx) = ((LoginPage)this.TopLevelControl).EmployeeSRV.RegisterUser(username, password, firstName, lastName, email, phoneNr);
                 if(registerEx != null) 
                 {
                     throw registerEx;
@@ -87,7 +96,7 @@ namespace Project.Controls
 
                 ((LoginPage)this.TopLevelControl).Hide();
 
-                MainForm mainForm = new MainForm();
+                MainForm mainForm = new MainForm(employee);
                 mainForm.ShowDialog();
 
                 ((LoginPage)this.TopLevelControl).Close();
@@ -105,6 +114,11 @@ namespace Project.Controls
             }            
         }
 
+        /// <summary>
+        /// Callback for the click event on the "back" button. Back to login page.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void pictureBoxBack_Click(object sender, EventArgs e)
         {
             ((LoginPage)this.TopLevelControl).ChangeToLogIn();

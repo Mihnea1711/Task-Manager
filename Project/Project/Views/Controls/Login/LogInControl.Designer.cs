@@ -49,7 +49,7 @@ namespace Project.Controls
             this.panelLogIn.Controls.Add(this.pictureBox1);
             this.panelLogIn.Controls.Add(this.groupBox1);
             this.panelLogIn.Location = new System.Drawing.Point(0, 0);
-            this.panelLogIn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelLogIn.Margin = new System.Windows.Forms.Padding(4);
             this.panelLogIn.Name = "panelLogIn";
             this.panelLogIn.Size = new System.Drawing.Size(621, 523);
             this.panelLogIn.TabIndex = 3;
@@ -80,7 +80,7 @@ namespace Project.Controls
             this.groupBox1.Location = new System.Drawing.Point(217, 102);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(27, 25, 27, 25);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(368, 273);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -89,7 +89,7 @@ namespace Project.Controls
             // buttonLogin
             // 
             this.buttonLogin.Location = new System.Drawing.Point(128, 213);
-            this.buttonLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonLogin.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(100, 28);
             this.buttonLogin.TabIndex = 5;
@@ -100,7 +100,7 @@ namespace Project.Controls
             // buttonSignUp
             // 
             this.buttonSignUp.Location = new System.Drawing.Point(95, 180);
-            this.buttonSignUp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonSignUp.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSignUp.Name = "buttonSignUp";
             this.buttonSignUp.Size = new System.Drawing.Size(164, 26);
             this.buttonSignUp.TabIndex = 4;
@@ -113,8 +113,9 @@ namespace Project.Controls
             this.textBoxPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxPassword.Location = new System.Drawing.Point(43, 133);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(255, 22);
             this.textBoxPassword.TabIndex = 3;
             // 
@@ -123,7 +124,7 @@ namespace Project.Controls
             this.textBoxUsername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxUsername.Location = new System.Drawing.Point(43, 64);
-            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(255, 22);
             this.textBoxUsername.TabIndex = 2;
@@ -153,7 +154,7 @@ namespace Project.Controls
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelLogIn);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LogInControl";
             this.Size = new System.Drawing.Size(620, 505);
             this.panelLogIn.ResumeLayout(false);
