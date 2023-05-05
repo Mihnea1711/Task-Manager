@@ -1,6 +1,7 @@
 ﻿using Project.Models;
 using System;
 using System.Data.SQLite;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Project.Persistence.Interfaces
 {
@@ -146,6 +147,40 @@ namespace Project.Persistence.Interfaces
             }
         }
 
+        public (Employee, Exception) GetEmployeeByUuid(string employeeUUID)
+        {
+            string stmt = $"SELECT * FROM employees WHERE employeeuuid = '{employeeUUID}'";
+            using (SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection))
+            {
+                try
+                {
+                    using (SQLiteDataReader dataReader = cmd.ExecuteReader())
+                    {
+                        Employee employee = null;
+                        while (dataReader.Read())
+                        {
+                            string employeeUsername = dataReader.GetString(1);
+                            string employeePassword = dataReader.GetString(2);
+                            string employeeFName = dataReader.GetString(3);
+                            string employeeLName = dataReader.GetString(4);
+                            string employeeEmail = dataReader.GetString(5);
+                            string employeePhoneNr = dataReader.GetString(6);
+                            int employeeTasksDone = dataReader.GetInt32(7);
+
+                            employee = new Employee(employeeUUID, employeeUsername, employeePassword, employeeFName, employeeLName, employeeEmail, employeePhoneNr, employeeTasksDone);
+                        }
+                        if (employee == null) throw new Exception("employee is null");
+                        return (employee, null);
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    return (null, new QueryForEmployeeException(ex.Message));
+                }
+            }
+        }
+
         /// <summary>
         /// Method to check if there is an employee account created with the username and password provided.
         /// </summary>
@@ -187,42 +222,6 @@ namespace Project.Persistence.Interfaces
                 }
             }
         }
-
-        
-        /*
-        public (List<Task>, Exception) GetEmployeeTasks(string employeeUUID)
-        {
-            string stmt = $"SELECT * from tasks WHERE employeeuuid = '{employeeUUID}'";
-
-            using (SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection))
-            {
-                try
-                {
-                    using (SQLiteDataReader dataReader = cmd.ExecuteReader())
-                    {
-                        List<Task> tasks = new List<Task>();
-                        while (dataReader.Read())
-                        {
-                            int taskID = dataReader.GetInt32(0);
-                            string taskTitle = dataReader.GetString(1);
-                            string taskDescription = dataReader.GetString(2);
-                            string taskStatus = dataReader.GetString(3);
-                            int taskProgress = dataReader.GetInt32(4);
-                            DateTime taskDeadline = dataReader.GetDateTime(5);
-
-                            Task task = new Task(taskID, taskTitle, taskDescription, taskStatus, taskProgress, taskDeadline, employeeUUID);
-                            tasks.Add(task);
-                        }
-                        return (tasks, null);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    return (null, new GetTasksException(ex.Message));
-                }
-            }
-        }    
-        */
     }
 
 

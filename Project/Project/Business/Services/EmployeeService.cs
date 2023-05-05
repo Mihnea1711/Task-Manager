@@ -12,7 +12,7 @@ namespace Project.Business.Services
         /// <summary>
         /// Instance of the EmployeeRepository class that handles the database operations.
         /// </summary>
-        private EmployeeRepository employeeRepository;
+        private IEmployeeRepository employeeRepository;
 
         /// <summary>
         /// Constructor. Initializes the employee repository instance.

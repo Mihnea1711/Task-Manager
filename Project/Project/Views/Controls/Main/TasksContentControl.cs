@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.SQLite;
 using System.Windows.Forms;
+using Project.Models;
 
 namespace Project.Controls
 {
@@ -15,6 +14,7 @@ namespace Project.Controls
 
         private void TasksContentControl_Load(object sender, EventArgs e)
         {
+            /*
             // Step 5: Create a connection string to your database
             string connectionString = "Data Source=project.db;Version=3;";
 
@@ -37,12 +37,18 @@ namespace Project.Controls
             comboBoxColumn.Name = "MyComboBoxColumn";
             comboBoxColumn.DataPropertyName = "MyComboBoxColumnData";
             comboBoxColumn.DataSource = new List<string> { "Option 1", "Option 2", "Option 3" };
+            
 
             // Step 10: Set the DataSource property of the DataGridView control
             dataGridViewTasks.DataSource = dataTable;
 
             // Add the column to the DataGridView control
             dataGridViewTasks.Columns.Add(comboBoxColumn);
+            */
+
+            (List<Task> tasks, Exception exc) = ((MainForm)this.TopLevelControl).TaskService.GetTasks();
+
+            //gut
         }
 
         private void buttonAddTask_Click(object sender, EventArgs e)

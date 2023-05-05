@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using Project.Business.Interfaces;
+using Project.Business.Services;
 using Project.Controls;
 using Project.Models;
 
@@ -8,14 +10,25 @@ namespace Project
     public partial class MainForm : Form
     {
         private Employee currrentEmployee;
+        private TaskService taskService;
 
         public Employee CurrentEmployee { get { return currrentEmployee; } }
+
+        public TaskService TaskService
+        {
+            get
+            {
+                return this.taskService;
+            }
+        }
 
         public MainForm(Employee employee)
         {
             InitializeComponent();
             this.currrentEmployee = employee;
             this.labelUsername.Text = employee.Username;
+
+            this.taskService = new TaskService();
         }
 
         public void LoadTasksPanel()
@@ -65,8 +78,7 @@ namespace Project
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            //LoadTasksPanel();
-            LoadProfilePage();
+            LoadTasksPanel();
         }
 
         private void buttonTasks_Click(object sender, EventArgs e)

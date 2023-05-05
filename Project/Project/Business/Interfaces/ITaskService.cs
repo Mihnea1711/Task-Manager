@@ -1,12 +1,27 @@
-﻿using System;
+﻿using Project.Models;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Project.Business.Interfaces
 {
-    internal interface ITaskService
+    public interface ITaskService
     {
+        Exception CreateTask(string taskName, string taskDescription, DateTime taskDeadline, string employeeUUID);
+
+        (List<Task>, Exception) GetTasks();
+
+        (List<Task>, Exception) GetTasksByEmpUUID(string empUUID);
+
+        Exception UpdateTaskDetails(int taskID, string taskTitle, string taskDescription, DateTime taskDeadline);
+
+        Exception UpdateTaskStatus(int taskID, string newStatus);
+
+        Exception UpdateTaskProgress(int taskID, int progress);
+
+        Exception DeleteTask(int taskID);
+
+        Exception UnassignTasksFromEmployee(string empUUID);
+
+        Exception AssignTaskToEmployee(int taskID, string empUUID);
     }
 }
