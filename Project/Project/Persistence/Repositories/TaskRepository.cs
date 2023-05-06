@@ -68,8 +68,8 @@ namespace Project.Persistence.Interfaces
         /// <returns></returns>
         public Exception CreateTask(string taskName, string taskDescription, DateTime taskDeadline, string employeeUUID)
         {
-            string stmt = $"INSERT INTO tasks (taskname, taskdescription, taskdeadline, employeeuuid) " +
-                $"VALUES ({taskName}, {taskDescription}, {taskDeadline}, {employeeUUID});";
+            string stmt = $"INSERT INTO tasks (tasktitle, taskdescription, taskdeadline, employeeuuid) " +
+                $"VALUES ('{taskName}', '{taskDescription}', '{taskDeadline}', '{employeeUUID}');";
             SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection);
             try
             {
@@ -84,52 +84,13 @@ namespace Project.Persistence.Interfaces
         }
 
         /// <summary>
-        /// Method to retrieve task data based on its username.
-        /// </summary>
-        /// <param name="taskID">Task ID.</param>
-        /// <returns>Returns the task data if it was found, otherwise null. 
-        /// Also returns an exception in case an error happened while executing the statement.</returns>
-        public (Task, Exception) GetTask(int taskID)
-        {
-            string stmt = $"SELECT * FROM tasks WHERE taskid = {taskID};";
-            using (SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection))
-            {
-                try
-                {
-                    using (SQLiteDataReader dataReader = cmd.ExecuteReader())
-                    {
-                        Task task = null;
-                        while (dataReader.Read())
-                        {
-                            string taskTitle = dataReader.GetString(1);
-                            string taskDescription = dataReader.GetString(2);
-                            string taskStatus = dataReader.GetString(3);
-                            int taskProgress = dataReader.GetInt32(4);
-                            DateTime taskDeadline = dataReader.GetDateTime(5);
-                            string employeeUUID = dataReader.GetString(6);
-
-                            task = new Task(taskID, taskTitle, taskDescription, taskStatus, taskProgress, taskDeadline, employeeUUID);
-                        }
-                        if (task == null) throw new Exception("task is null");
-                        return (task, null);
-                    }
-
-                }
-                catch (Exception ex)
-                {
-                    return (null, new QueryForTaskException(ex.Message));
-                }
-            }
-        }
-
-        /// <summary>
         /// Method to retrieve all tasks from the database.
         /// </summary>
         /// <returns>Returns the tasks if there are any, otherwise null. 
         /// Also returns an exception in case an error happened while executing the statement.</returns>
-        public (List<Task>, Exception) GetTasks()
+        public (List<Task>, Exception) GetAssignedTasks()
         {
-            string stmt = "SELECT * FROM tasks;";
+            string stmt = "SELECT * FROM tasks WHERE employeeuuid != '';";
             using (SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection))
             {
                 try
@@ -144,10 +105,93 @@ namespace Project.Persistence.Interfaces
                             string taskDescription = dataReader.GetString(2);
                             string taskStatus = dataReader.GetString(3);
                             int taskProgress = dataReader.GetInt32(4);
-                            DateTime taskDeadline = dataReader.GetDateTime(5);
+                            string taskDeadline = dataReader.GetString(5);
+                            DateTime deadline = DateTime.Parse(taskDeadline);
                             string employeeUUID = dataReader.GetString(6);
 
-                            Task task = new Task(taskID, taskTitle, taskDescription, taskStatus, taskProgress, taskDeadline, employeeUUID);
+                            Task task = new Task(taskID, taskTitle, taskDescription, taskStatus, taskProgress, deadline, employeeUUID);
+                            tasks.Add(task);
+                        }
+                        if (tasks == null) throw new Exception("tasks is null");
+                        return (tasks, null);
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    return (null, new QueryForAllTasksException(ex.Message));
+                }
+            }
+        }
+
+        /// <summary>
+        /// Method to retrieve all tasks from the database.
+        /// </summary>
+        /// <returns>Returns the tasks if there are any, otherwise null. 
+        /// Also returns an exception in case an error happened while executing the statement.</returns>
+        public (List<Task>, Exception) GetUnassignedTasks()
+        {
+            string stmt = "SELECT * FROM tasks WHERE employeeuuid == '';";
+            using (SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection))
+            {
+                try
+                {
+                    using (SQLiteDataReader dataReader = cmd.ExecuteReader())
+                    {
+                        List<Task> tasks = new List<Task>();
+                        while (dataReader.Read())
+                        {
+                            int taskID = dataReader.GetInt32(0);
+                            string taskTitle = dataReader.GetString(1);
+                            string taskDescription = dataReader.GetString(2);
+                            string taskStatus = dataReader.GetString(3);
+                            int taskProgress = dataReader.GetInt32(4);
+                            string taskDeadline = dataReader.GetString(5);
+                            DateTime deadline = DateTime.Parse(taskDeadline);
+                            string employeeUUID = dataReader.GetString(6);
+
+                            Task task = new Task(taskID, taskTitle, taskDescription, taskStatus, taskProgress, deadline, employeeUUID);
+                            tasks.Add(task);
+                        }
+                        if (tasks == null) throw new Exception("tasks is null");
+                        return (tasks, null);
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    return (null, new QueryForAllTasksException(ex.Message));
+                }
+            }
+        }
+
+        /// <summary>
+        /// Method to case-insensitive search for tasks by title.
+        /// </summary>
+        /// <param name="title"></param>
+        /// <returns></returns>
+        public (List<Task>, Exception) SearchTasksByName(string title)
+        {
+            string stmt = $"SELECT * FROM tasks WHERE LOWER(tasktitle) LIKE '%{title}%';";
+            using (SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection))
+            {
+                try
+                {
+                    using (SQLiteDataReader dataReader = cmd.ExecuteReader())
+                    {
+                        List<Task> tasks = new List<Task>();
+                        while (dataReader.Read())
+                        {
+                            int taskID = dataReader.GetInt32(0);
+                            string taskTitle = dataReader.GetString(1);
+                            string taskDescription = dataReader.GetString(2);
+                            string taskStatus = dataReader.GetString(3);
+                            int taskProgress = dataReader.GetInt32(4);
+                            string taskDeadline = dataReader.GetString(5);
+                            DateTime deadline = DateTime.Parse(taskDeadline);
+                            string employeeUUID = dataReader.GetString(6);
+
+                            Task task = new Task(taskID, taskTitle, taskDescription, taskStatus, taskProgress, deadline, employeeUUID);
                             tasks.Add(task);
                         }
                         if (tasks == null) throw new Exception("tasks is null");
@@ -185,10 +229,10 @@ namespace Project.Persistence.Interfaces
                             string taskDescription = dataReader.GetString(2);
                             string taskStatus = dataReader.GetString(3);
                             int taskProgress = dataReader.GetInt32(4);
-                            DateTime taskDeadline = dataReader.GetDateTime(5);
-                            string employeeUUID = dataReader.GetString(6);
+                            string taskDeadline = dataReader.GetString(5);
+                            DateTime deadline = DateTime.Parse(taskDeadline);
 
-                            Task task = new Task(taskID, taskTitle, taskDescription, taskStatus, taskProgress, taskDeadline, employeeUUID);
+                            Task task = new Task(taskID, taskTitle, taskDescription, taskStatus, taskProgress, deadline, empUUID);
                             tasks.Add(task);
                         }
                         if (tasks == null) throw new Exception("tasks is null");
@@ -215,7 +259,7 @@ namespace Project.Persistence.Interfaces
         {
             string stmt = $"" +
                 $"UPDATE tasks " +
-                $"SET tasktitle = '{taskTitle}',taskdescription = '{taskDescription}', taskdeadline = '{taskDeadline}'" +
+                $"SET tasktitle = '{taskTitle}', taskdescription = '{taskDescription}', taskdeadline = '{taskDeadline}'" +
                 $"WHERE taskid = {taskID};";
             SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection);
             try
@@ -336,7 +380,7 @@ namespace Project.Persistence.Interfaces
             string stmt = $"" +
             $"UPDATE tasks " +
             $"SET employeeuuid = '' " +
-            $"WHERE employeeuuid = {empUUID};";
+            $"WHERE employeeuuid = '{empUUID}';";
             SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection);
             try
             {

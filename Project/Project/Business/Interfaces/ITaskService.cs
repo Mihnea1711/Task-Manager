@@ -8,7 +8,11 @@ namespace Project.Business.Interfaces
     {
         Exception CreateTask(string taskName, string taskDescription, DateTime taskDeadline, string employeeUUID);
 
-        (List<Task>, Exception) GetTasks();
+        (List<Task>, Exception) GetAssignedTasks();
+
+        (List<Task>, Exception) GetUnassignedTasks();
+
+        (List<Task>, Exception) SearchTasksByName(string title);
 
         (List<Task>, Exception) GetTasksByEmpUUID(string empUUID);
 

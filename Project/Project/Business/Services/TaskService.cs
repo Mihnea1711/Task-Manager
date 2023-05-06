@@ -20,12 +20,23 @@ namespace Project.Business.Services
             return this.taskRepository.CreateTask(taskName, taskDescription, taskDeadline, employeeUUID);
         }
 
-        public (List<Task>, Exception) GetTasks()
+        public (List<Task>, Exception) GetAssignedTasks()
         {
-            return this.taskRepository.GetTasks();
+            return this.taskRepository.GetAssignedTasks();
         }
 
-        public (List<Models.Task>, Exception) GetTasksByEmpUUID(string empUUID)
+        public (List<Task>, Exception) GetUnassignedTasks()
+        {
+            return this.taskRepository.GetUnassignedTasks();
+        }
+
+        public (List<Task>, Exception) SearchTasksByName(string title)
+        {
+            return this.taskRepository.SearchTasksByName(title);
+        }
+
+
+        public (List<Task>, Exception) GetTasksByEmpUUID(string empUUID)
         {
             return this.taskRepository.GetTasksByEmpUUID(empUUID);
         }
@@ -37,7 +48,7 @@ namespace Project.Business.Services
 
         public Exception UpdateTaskProgress(int taskID, int progress)
         {
-            return this.UpdateTaskProgress(taskID, progress);
+            return this.taskRepository.UpdateTaskProgress(taskID, progress);
         }
 
         public Exception UpdateTaskStatus(int taskID, string newStatus)

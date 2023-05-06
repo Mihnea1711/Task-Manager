@@ -10,9 +10,11 @@ namespace Project.Persistence.Interfaces
 
         Exception CreateTask(string taskName, string taskDescription, DateTime taskDeadline, string employeeUUID);
 
-        (Task, Exception) GetTask(int taskID);
+        (List<Task>, Exception) GetAssignedTasks();
 
-        (List<Task>, Exception) GetTasks();
+        (List<Task>, Exception) GetUnassignedTasks();
+
+        (List<Task>, Exception) SearchTasksByName(string title);
 
         (List<Task>, Exception) GetTasksByEmpUUID(string empUUID);
 

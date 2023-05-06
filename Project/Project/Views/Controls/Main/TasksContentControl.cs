@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using Project.Models;
@@ -46,7 +47,21 @@ namespace Project.Controls
             dataGridViewTasks.Columns.Add(comboBoxColumn);
             */
 
-            (List<Task> tasks, Exception exc) = ((MainForm)this.TopLevelControl).TaskService.GetTasks();
+            //(List<Task> tasks, Exception exc) = ((MainForm)this.TopLevelControl).TaskService.GetAssignedTasks();
+            //(List<Task> taskss, Exception excs) = ((MainForm)this.TopLevelControl).TaskService.GetUnassignedTasks();
+            (List<Task> tasks, Exception exc) = ((MainForm)this.TopLevelControl).TaskService.SearchTasksByName("task");
+            //Exception exception = ((MainForm)this.TopLevelControl).TaskService.CreateTask("task1", "descriere1", new DateTime(2023, 7, 21), "2e63341a-e627-48ac-bb1a-9d56e2e9cc4f");
+            //(List<Task> tasksEmp, Exception excEmp) = ((MainForm)this.TopLevelControl).TaskService.GetTasksByEmpUUID("2e63341a-e627-48ac-bb1a-9d56e2e9cc4f");
+            //Exception ex = ((MainForm)this.TopLevelControl).TaskService.DeleteTask(2);
+            //Exception ex = ((MainForm)this.TopLevelControl).TaskService.UnassignTasksFromEmployee("2e63341a-e627-48ac-bb1a-9d56e2e9cc4f");
+            //Exception ex = ((MainForm)this.TopLevelControl).TaskService.AssignTaskToEmployee(1, "2e63341a-e627-48ac-bb1a-9d56e2e9cc4f");
+            //Exception exception = ((MainForm)this.TopLevelControl).TaskService.UpdateTaskDetails(3, "task1", "descriere1", new DateTime(2023, 7, 21));
+            //Exception exception = ((MainForm)this.TopLevelControl).TaskService.UpdateTaskStatus(3, "in-progress");
+            //Exception exception = ((MainForm)this.TopLevelControl).TaskService.UpdateTaskProgress(3, 75);
+
+            BindingSource bindingSource = new BindingSource();
+            bindingSource.DataSource = tasks;
+            dataGridViewTasks.DataSource = bindingSource;
 
             //gut
         }
