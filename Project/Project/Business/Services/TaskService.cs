@@ -1,12 +1,74 @@
-﻿using System;
+﻿using Project.Business.Interfaces;
+using Project.Models;
+using Project.Persistence.Interfaces;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Project.Business.Services
 {
-    internal class TaskService
+    public class TaskService : ITaskService
     {
+        private ITaskRepository taskRepository;
+
+        public TaskService() 
+        {        
+            this.taskRepository = new TaskRepository();
+        }
+
+        public Exception CreateTask(string taskName, string taskDescription, DateTime taskDeadline, string employeeUUID)
+        {
+            return this.taskRepository.CreateTask(taskName, taskDescription, taskDeadline, employeeUUID);
+        }
+
+        public (List<Task>, Exception) GetAssignedTasks()
+        {
+            return this.taskRepository.GetAssignedTasks();
+        }
+
+        public (List<Task>, Exception) GetUnassignedTasks()
+        {
+            return this.taskRepository.GetUnassignedTasks();
+        }
+
+        public (List<Task>, Exception) SearchTasksByName(string title)
+        {
+            return this.taskRepository.SearchTasksByName(title);
+        }
+
+
+        public (List<Task>, Exception) GetTasksByEmpUUID(string empUUID)
+        {
+            return this.taskRepository.GetTasksByEmpUUID(empUUID);
+        }
+
+        public Exception UpdateTaskDetails(int taskID, string taskTitle, string taskDescription, DateTime taskDeadline)
+        {
+            return this.taskRepository.UpdateTaskDetails(taskID, taskTitle, taskDescription, taskDeadline);
+        }
+
+        public Exception UpdateTaskProgress(int taskID, int progress)
+        {
+            return this.taskRepository.UpdateTaskProgress(taskID, progress);
+        }
+
+        public Exception UpdateTaskStatus(int taskID, string newStatus)
+        {
+            return this.taskRepository.UpdateTaskStatus(taskID, newStatus);
+        }
+
+        public Exception DeleteTask(int taskID)
+        {
+            return this.taskRepository.DeleteTask(taskID);
+        }
+
+        public Exception AssignTaskToEmployee(int taskID, string empUUID)
+        {
+            return this.taskRepository.AssignTaskToEmployee(taskID, empUUID);
+        }
+
+        public Exception UnassignTasksFromEmployee(string empUUID)
+        {
+            return this.taskRepository.UnassignTasksFromEmployee(empUUID);
+        }
     }
 }
