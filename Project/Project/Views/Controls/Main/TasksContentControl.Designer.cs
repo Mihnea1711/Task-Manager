@@ -132,7 +132,7 @@
             this.dataGridViewTasks.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dataGridViewTasks.Size = new System.Drawing.Size(929, 483);
             this.dataGridViewTasks.TabIndex = 4;
-            this.dataGridViewTasks.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTasks_CellContentClick);
+            this.dataGridViewTasks.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTasks_CellContentDoubleClick);
             // 
             // TasksContentControl
             // 

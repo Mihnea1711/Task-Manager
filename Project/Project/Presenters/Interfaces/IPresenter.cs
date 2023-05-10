@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Project.Models;
+using System.Windows.Forms;
 
 namespace Project.Presenters.Interfaces
 {
-    internal interface IPresenter
+    public interface IPresenter
     {
+        DataGridViewRow makeTaskRow(Task task);
+        DataGridViewRow makeSubtaskRow(Subtask subtask);
+        DataGridViewRow makeEmployeeRow(Employee employee);
+
+        DataGridViewRow makeCommentRow(Comment comment);
+
     }
 }

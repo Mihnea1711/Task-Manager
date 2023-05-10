@@ -13,9 +13,9 @@ namespace Project.Business.Services
     {
         private CommentRepository commentRepository;
 
-        public CommentService(CommentRepository commentRepository)
+        public CommentService()
         {
-            this.commentRepository = commentRepository;
+            this.commentRepository = new CommentRepository();
         }
 
         public (bool, Exception) AddComment(string title, string description, int timeReported, int subtaskId)
