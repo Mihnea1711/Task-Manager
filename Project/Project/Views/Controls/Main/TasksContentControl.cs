@@ -33,11 +33,7 @@ namespace Project.Controls
             // Step 9: Fill the DataTable with the data
             dataAdapter.Fill(dataTable);
 
-            var comboBoxColumn = new DataGridViewComboBoxColumn();
-            comboBoxColumn.HeaderText = "My ComboBox Column";
-            comboBoxColumn.Name = "MyComboBoxColumn";
-            comboBoxColumn.DataPropertyName = "MyComboBoxColumnData";
-            comboBoxColumn.DataSource = new List<string> { "Option 1", "Option 2", "Option 3" };
+            
             
 
             // Step 10: Set the DataSource property of the DataGridView control
@@ -61,7 +57,15 @@ namespace Project.Controls
 
             BindingSource bindingSource = new BindingSource();
             bindingSource.DataSource = tasks;
+
+            var seeMoreButton = new DataGridViewButtonColumn();
+            seeMoreButton.HeaderText = "My Button Column";
+            seeMoreButton.Name = "MyButtonColumn";
+            seeMoreButton.Text = "See more";
+
             dataGridViewTasks.DataSource = bindingSource;
+
+            dataGridViewTasks.Columns.Add(seeMoreButton);
 
             //gut
         }
@@ -88,7 +92,7 @@ namespace Project.Controls
 
         }
 
-        private void dataGridViewTasks_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridViewTasks_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             ((MainForm)this.TopLevelControl).LoadTaskContentPanel();
         }

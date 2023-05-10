@@ -4,21 +4,23 @@ using Project.Business.Interfaces;
 using Project.Business.Services;
 using Project.Controls;
 using Project.Models;
+using Project.Presenters;
+using Project.Presenters.Interfaces;
 
 namespace Project
 {
     public partial class MainForm : Form
     {
         private Employee currrentEmployee;
-        private TaskService taskService;
+        private Presenter presenter;
 
         public Employee CurrentEmployee { get { return currrentEmployee; } }
 
-        public TaskService TaskService
+        public Presenter Presenter
         {
             get
             {
-                return this.taskService;
+                return this.presenter;
             }
         }
 
@@ -28,7 +30,7 @@ namespace Project
             this.currrentEmployee = employee;
             this.labelUsername.Text = employee.Username;
 
-            this.taskService = new TaskService();
+            this.presenter = new Presenter();
         }
 
         public void LoadTasksPanel()

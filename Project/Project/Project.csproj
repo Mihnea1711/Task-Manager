@@ -81,6 +81,15 @@
     <Compile Include="Persistence\Repositories\EmployeeRepository.cs" />
     <Compile Include="Persistence\Repositories\SubtaskRepository.cs" />
     <Compile Include="Persistence\Repositories\TaskRepository.cs" />
+    <Compile Include="Presenters\Builders\CommentBuilder.cs" />
+    <Compile Include="Presenters\Builders\EmployeeBuilder.cs" />
+    <Compile Include="Presenters\Builders\Interfaces\ICommentBuilder.cs" />
+    <Compile Include="Presenters\Builders\SubtaskBuilder.cs" />
+    <Compile Include="Presenters\Builders\TaskBuilder.cs" />
+    <Compile Include="Presenters\Builders\Interfaces\IBuilder.cs" />
+    <Compile Include="Presenters\Builders\Interfaces\IEmployeeBuilder.cs" />
+    <Compile Include="Presenters\Builders\Interfaces\ISubtaskBuilder.cs" />
+    <Compile Include="Presenters\Builders\Interfaces\ITaskBuilder.cs" />
     <Compile Include="Presenters\Interfaces\IPresenter.cs" />
     <Compile Include="Presenters\Presenter.cs" />
     <Compile Include="Views\Controls\Dialogs\AddSubtaskDialogControl.cs">

@@ -10,9 +10,9 @@ namespace Project.Business.Services
     {
         private SubtaskRepository subtaskRepository;
 
-        public SubtaskService(SubtaskRepository subtaskRepository)
+        public SubtaskService()
         {
-            this.subtaskRepository = subtaskRepository;
+            this.subtaskRepository = new SubtaskRepository();
         }
 
         public (bool, Exception) AddSubstask(string title, string description, string status, DateTime deadline, int taskId, string employeeId)
