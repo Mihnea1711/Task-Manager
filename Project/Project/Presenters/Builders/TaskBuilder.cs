@@ -2,6 +2,9 @@
 using Project.Presenters.Interfaces;
 using System;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Project.Presenters.Builders
 {
@@ -16,32 +19,92 @@ namespace Project.Presenters.Builders
 
         public void Reset()
         {
-            throw new NotImplementedException();
+            this.taskRow = new DataGridViewRow();
         }
 
         public void SetDeadline(DateTime deadline)
         {
-            throw new NotImplementedException();
+            DataGridViewTextBoxColumn deadlineColumn = new DataGridViewTextBoxColumn();
+            DataGridViewCell deadlineCell = new DataGridViewTextBoxCell();
+            deadlineCell.Value = deadline.ToString("dd/MM/yyyy");
+
+            //custom styling
+            //..
+            //
+
+            this.taskRow.Cells.Add(deadlineCell);
         }
 
-        public void SetDescription(string title)
+        public void SetDescription(string description)
         {
-            throw new NotImplementedException();
+            DataGridViewCell descriptionCell = new DataGridViewTextBoxCell();
+            descriptionCell.Value = description;
+
+            //custom styling
+            //..
+            //
+
+            this.taskRow.Cells.Add(descriptionCell);
+        }
+
+        public void SetGoToButton()
+        {
+            DataGridViewButtonCell btnCell = new DataGridViewButtonCell();
+            btnCell.Value = "See More..";
+
+            //custom styling
+            //..
+            //
+
+            this.taskRow.Cells.Add(btnCell);
+        }
+
+        public void SetID(string ID)
+        {
+            DataGridViewTextBoxCell idCell = new DataGridViewTextBoxCell();
+            idCell.Value = ID;
+
+            //custom styling
+            //..
+            //
+
+            this.taskRow.Cells.Add(idCell);
         }
 
         public void SetProgress(int progress)
         {
-            throw new NotImplementedException();
+            DataGridViewCell progressCell = new DataGridViewTextBoxCell();
+            progressCell.Value = progress;
+
+            //custom styling
+            //..
+            //
+
+            this.taskRow.Cells.Add(progressCell);
         }
 
         public void SetStatus(string status)
         {
-            throw new NotImplementedException();
+            DataGridViewCell statusCell = new DataGridViewTextBoxCell();
+            statusCell.Value = status;
+
+            //custom styling
+            //..
+            //
+
+            this.taskRow.Cells.Add(statusCell);
         }
 
         public void SetTitle(string title)
         {
-            throw new NotImplementedException();
+            DataGridViewCell titleCell = new DataGridViewTextBoxCell();
+            titleCell.Value = title;
+
+            //custom styling
+            //..
+            //
+
+            this.taskRow.Cells.Add(titleCell);
         }
     }
 }

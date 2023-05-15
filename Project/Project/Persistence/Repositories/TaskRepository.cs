@@ -84,6 +84,45 @@ namespace Project.Persistence.Interfaces
         }
 
         /// <summary>
+        /// Method to get specific task data by ID
+        /// </summary>
+        /// <param name="taskID"></param>
+        /// <returns></returns>
+        public (Task, Exception) GetTaskByID(int taskID)
+        {
+            string stmt = $"SELECT * FROM tasks WHERE taskid = {taskID}";
+            using (SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection))
+            {
+                try
+                {
+                    using (SQLiteDataReader dataReader = cmd.ExecuteReader())
+                    {
+                        Task task = null;
+                        while (dataReader.Read())
+                        {
+                            string taskTitle = dataReader.GetString(1);
+                            string taskDescription = dataReader.GetString(2);
+                            string taskStatus = dataReader.GetString(3);
+                            int taskProgress = dataReader.GetInt32(4);
+                            string taskDeadline = dataReader.GetString(5);
+                            DateTime deadline = DateTime.Parse(taskDeadline);
+                            string employeeUUID = dataReader.GetString(6);
+
+                            task = new Task(taskID, taskTitle, taskDescription, taskStatus, taskProgress, deadline, employeeUUID);
+                        }
+                        if (task == null) throw new Exception("task is null");
+                        return (task, null);
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    return (null, new QueryForTaskException(ex.Message));
+                }
+            }
+        }
+
+        /// <summary>
         /// Method to retrieve all tasks from the database.
         /// </summary>
         /// <returns>Returns the tasks if there are any, otherwise null. 

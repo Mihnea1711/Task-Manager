@@ -5,34 +5,70 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Project.Presenters.Builders
 {
     public class EmployeeBuilder : IEmployeeBuilder
     {
+        private DataGridViewRow employeeRow;
         public DataGridViewRow GetResult()
         {
-            throw new NotImplementedException();
+            return this.employeeRow;
         }
 
         public void Reset()
         {
-            throw new NotImplementedException();
+            this.employeeRow = new DataGridViewRow();
         }
 
         public void SetEmail(string email)
         {
-            throw new NotImplementedException();
+            DataGridViewCell emailCell = new DataGridViewTextBoxCell();
+            emailCell.Value = email;
+
+            //custom styling
+            //..
+            //
+
+            this.employeeRow.Cells.Add(emailCell);
+        }
+
+        public void SetGoToButton()
+        {
+            DataGridViewButtonCell btnCell = new DataGridViewButtonCell();
+            btnCell.Value = "See More";
+
+            //custom styling
+            //..
+            //
+
+            this.employeeRow.Cells.Add(btnCell);
         }
 
         public void SetName(string name)
         {
-            throw new NotImplementedException();
+            DataGridViewCell nameCell = new DataGridViewTextBoxCell();
+            nameCell.Value = name;
+
+            //custom styling
+            //..
+            //
+
+            this.employeeRow.Cells.Add(nameCell);
         }
 
         public void SetPhoneNr(string phoneNr)
         {
-            throw new NotImplementedException();
+            DataGridViewCell phoneCell = new DataGridViewTextBoxCell();
+            phoneCell.Value = phoneNr;
+
+            //custom styling
+            //..
+            //
+
+            this.employeeRow.Cells.Add(phoneCell);
         }
     }
 }

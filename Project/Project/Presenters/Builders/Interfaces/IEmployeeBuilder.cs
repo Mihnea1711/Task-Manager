@@ -11,5 +11,6 @@ namespace Project.Presenters.Interfaces
         void SetName(string name);
         void SetEmail(string email);
         void SetPhoneNr(string phoneNr);
+        void SetGoToButton();
     }
 }

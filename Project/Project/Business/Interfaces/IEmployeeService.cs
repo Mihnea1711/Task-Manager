@@ -14,5 +14,7 @@ namespace Project.Business.Interfaces
         (Employee, Exception) RegisterUser(string username, string password, string firstName, string lastName, string email, string phoneNr);
 
         (Employee, Exception) CheckEmployeeLogIn(string username, string password);
+
+        (Employee, Exception) GetEmployeeByUUID(string uuid);
     }
 }

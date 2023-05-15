@@ -1,7 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
-using Project.Business.Interfaces;
-using Project.Business.Services;
 using Project.Controls;
 using Project.Models;
 using Project.Presenters;
@@ -34,9 +33,11 @@ namespace Project
         }
 
         public void LoadTasksPanel()
-        {
+        { 
             this.panelPageContent.Controls.Clear();
+            
             TasksContentControl tasksContentControl = new TasksContentControl();
+
             this.panelPageContent.Controls.Add(tasksContentControl);
         }
 
@@ -58,10 +59,10 @@ namespace Project
             this.panelPageContent.Controls.Add(new AboutContentControl());
         }
 
-        public void LoadTaskContentPanel()
+        public void LoadTaskContentPanel(Task task)
         {
             this.panelPageContent.Controls.Clear();
-            this.panelPageContent.Controls.Add(new TaskContentControl());
+            this.panelPageContent.Controls.Add(new TaskContentControl(task));
         }
 
         public void LoadSubtaskContentPanel()

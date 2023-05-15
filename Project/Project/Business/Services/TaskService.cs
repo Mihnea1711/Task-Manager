@@ -20,6 +20,11 @@ namespace Project.Business.Services
             return this.taskRepository.CreateTask(taskName, taskDescription, taskDeadline, employeeUUID);
         }
 
+        public (Task, Exception) GetTaskByID(int taskID)
+        {
+            return this.taskRepository.GetTaskByID(taskID);
+        }
+
         public (List<Task>, Exception) GetAssignedTasks()
         {
             return this.taskRepository.GetAssignedTasks();

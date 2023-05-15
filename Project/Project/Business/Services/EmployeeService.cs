@@ -107,5 +107,10 @@ namespace Project.Business.Services
                 return hash;
             }
         }
+
+        public (Employee, Exception) GetEmployeeByUUID(string uuid)
+        {
+            return this.employeeRepository.GetEmployeeByUuid(uuid);
+        }
     }
 }
