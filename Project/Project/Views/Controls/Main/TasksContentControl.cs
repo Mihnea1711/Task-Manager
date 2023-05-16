@@ -91,7 +91,6 @@ namespace Project.Controls
                 ((MainForm)this.TopLevelControl).Presenter.TaskSRV.CreateTask(taskName, taskDescription, taskDeadline, assignedEmployee);
                 ((MainForm)this.TopLevelControl).LoadTasksPanel();
             }
-
         }
 
         private void dataGridViewTasks_CellClick(object sender, DataGridViewCellEventArgs e)

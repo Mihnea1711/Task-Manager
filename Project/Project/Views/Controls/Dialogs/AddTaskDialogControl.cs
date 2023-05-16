@@ -10,6 +10,7 @@ namespace Project.Controls
     {
         private List<Employee> _availableEmployees;
         private Employee _currentEmployee;
+        private string _assignedEmployeeUUID = null;
         private int _currentEmployeeIndex;
 
         public string TaskName
@@ -17,6 +18,10 @@ namespace Project.Controls
             get
             {
                 return this.textBoxTaskName.Text;
+            }
+            set
+            {
+                this.textBoxTaskName.Text = value;
             }
         }
 
@@ -26,6 +31,10 @@ namespace Project.Controls
             {
                 return this.textBoxTaskDesc.Text;
             }
+            set
+            {
+                this.textBoxTaskDesc.Text = value;
+            }
         }
 
         public string TaskEmployeeAssigned
@@ -33,6 +42,10 @@ namespace Project.Controls
             get
             {
                 return this.comboBoxAssign.SelectedValue as string;
+            }
+            set
+            {
+                this._assignedEmployeeUUID = value;
             }
         }
 
@@ -42,6 +55,20 @@ namespace Project.Controls
             {
                 return this.dateTimePickerDeadline.Value;
             }
+            set
+            {
+                this.dateTimePickerDeadline.Value = value;
+            }
+        }
+
+        public void SetLabelTitle(string title)
+        {
+            this.labelAddTaskHeader.Text = title;   
+        }
+
+        public void SetSubmitBtnText(string text)
+        {
+            this.buttonAddTask.Text = text;
         }
 
         public AddTaskDialogControl(List<Employee> employees, Employee currentEmployee)
@@ -65,7 +92,15 @@ namespace Project.Controls
             this.comboBoxAssign.DisplayMember = "Fullname";
             this.comboBoxAssign.ValueMember = "UUID";
             this.comboBoxAssign.DataSource = this._availableEmployees;
-            this.comboBoxAssign.SelectedIndex = 0;
+
+            for (int i = 0; i < this._availableEmployees.Count; i++)
+            {
+                if (this._availableEmployees[i].UUID == this._assignedEmployeeUUID)
+                {
+                    this.comboBoxAssign.SelectedIndex = i;
+                    break;
+                }
+            }
         }
 
         private void buttonAssignToMe_Click(object sender, EventArgs e)

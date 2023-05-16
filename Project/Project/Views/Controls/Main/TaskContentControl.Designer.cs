@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.labelName = new System.Windows.Forms.Label();
             this.textBoxDescription = new System.Windows.Forms.TextBox();
             this.dataGridViewSubtasks = new System.Windows.Forms.DataGridView();
@@ -37,7 +36,6 @@
             this.labelAssignedEmployee = new System.Windows.Forms.Label();
             this.labelDeadline = new System.Windows.Forms.Label();
             this.progressBarProgress = new System.Windows.Forms.ProgressBar();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.label5 = new System.Windows.Forms.Label();
             this.buttonToSubtask = new System.Windows.Forms.Button();
             this.buttonAssignToMe = new System.Windows.Forms.Button();
@@ -45,7 +43,6 @@
             this.buttonEdit = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSubtasks)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelName
@@ -73,7 +70,7 @@
             // 
             this.dataGridViewSubtasks.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewSubtasks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSubtasks.Location = new System.Drawing.Point(19, 327);
+            this.dataGridViewSubtasks.Location = new System.Drawing.Point(19, 344);
             this.dataGridViewSubtasks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewSubtasks.Name = "dataGridViewSubtasks";
             this.dataGridViewSubtasks.RowHeadersWidth = 51;
@@ -96,7 +93,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 276);
+            this.label2.Location = new System.Drawing.Point(13, 293);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 25);
@@ -130,10 +127,6 @@
             this.progressBarProgress.Size = new System.Drawing.Size(100, 23);
             this.progressBarProgress.TabIndex = 9;
             this.progressBarProgress.Value = 50;
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
             // 
             // label5
             // 
@@ -188,6 +181,7 @@
             this.buttonEdit.TabIndex = 14;
             this.buttonEdit.Text = "Edit";
             this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonDelete
             // 
@@ -197,6 +191,7 @@
             this.buttonDelete.TabIndex = 15;
             this.buttonDelete.Text = "Delete";
             this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // TaskContentControl
             // 
@@ -222,7 +217,6 @@
             this.Size = new System.Drawing.Size(933, 580);
             this.Load += new System.EventHandler(this.TaskContentControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSubtasks)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,7 +232,6 @@
         private System.Windows.Forms.Label labelAssignedEmployee;
         private System.Windows.Forms.Label labelDeadline;
         private System.Windows.Forms.ProgressBar progressBarProgress;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button buttonToSubtask;
         private System.Windows.Forms.Button buttonAssignToMe;

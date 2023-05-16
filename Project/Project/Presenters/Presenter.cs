@@ -9,19 +9,22 @@ namespace Project.Presenters
 {
     public class Presenter : IPresenter
     {
+        /// <summary>
+        /// The view builder. 
+        /// </summary>
         private IBuilder _builder;
+
+        /// <summary>
+        /// Instances of the services needed.
+        /// </summary>
+        #region services
         private ITaskService _taskService;
         private ISubtaskService _subtaskService;
         private IEmployeeService _employeeService;
         private ICommentService _commentService;
+        #endregion
 
-        public Presenter() {
-            this._taskService = new TaskService();
-            this._subtaskService = new SubtaskService();
-            this._employeeService = new EmployeeService();
-            this._commentService = new CommentService();
-        }
-
+        #region service getters
         public TaskService TaskSRV
         {
             get
@@ -45,7 +48,23 @@ namespace Project.Presenters
                 return (SubtaskService)this._subtaskService;
             }
         }
+        #endregion
 
+        /// <summary>
+        /// Constructor. Initializes all the services.
+        /// </summary>
+        public Presenter() {
+            this._taskService = new TaskService();
+            this._subtaskService = new SubtaskService();
+            this._employeeService = new EmployeeService();
+            this._commentService = new CommentService();
+        }
+        
+        /// <summary>
+        /// Method to create an employee row inside a data grid view.
+        /// </summary>
+        /// <param name="employee"></param>
+        /// <returns>Returns the complete data grid view row with employee data.</returns>
         public DataGridViewRow makeEmployeeRow(Employee employee)
         {
             this._builder= new EmployeeBuilder();
@@ -61,6 +80,11 @@ namespace Project.Presenters
             return employeeBuilder.GetResult();
         }
 
+        /// <summary>
+        /// Method to create an task row inside a data grid view.
+        /// </summary>
+        /// <param name="task"></param>
+        /// <returns>Returns the complete data grid view row with task data.</returns>
         public DataGridViewRow makeTaskRow(Task task)
         {
             this._builder = new TaskBuilder();

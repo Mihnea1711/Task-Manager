@@ -20,7 +20,7 @@ namespace Project.Business.Interfaces
 
         (List<Task>, Exception) GetTasksByEmpUUID(string empUUID);
 
-        Exception UpdateTaskDetails(int taskID, string taskTitle, string taskDescription, DateTime taskDeadline);
+        Exception UpdateTaskDetails(int taskID, string taskTitle, string taskDescription, DateTime taskDeadline, string assignedEmployeeUUID);
 
         Exception UpdateTaskStatus(int taskID, string newStatus);
 

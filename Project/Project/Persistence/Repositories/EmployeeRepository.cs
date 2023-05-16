@@ -109,6 +109,11 @@ namespace Project.Persistence.Interfaces
             }
         }
 
+        /// <summary>
+        /// Method to retrieve all employees from db
+        /// </summary>
+        /// <returns>Returns the employees objects if any, otherwise null. 
+        /// Also returns an exception in case an error happened while exuting the statement.</returns>
         public (List<Employee>, Exception) GetEmployees()
         {
             string stmt = $"SELECT * FROM employees";
@@ -185,6 +190,12 @@ namespace Project.Persistence.Interfaces
             }
         }
 
+        /// <summary>
+        /// Method to retrieve an employee data model based on its uuid.
+        /// </summary>
+        /// <param name="uuid"></param>
+        /// <returns>Returns the employee data object if found, otherwise null. 
+        /// Also returns an exception in case an error happened while exuting the statement.</returns>
         public (Employee, Exception) GetEmployeeByUuid(string employeeUUID)
         {
             string stmt = $"SELECT * FROM employees WHERE employeeuuid = '{employeeUUID}'";
@@ -219,6 +230,12 @@ namespace Project.Persistence.Interfaces
             }
         }
 
+        /// <summary>
+        /// Method to retrieve all employees from db matching the string given as parameter. The search is case-insensitive.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns>Returns the employees objects if any, otherwise null. 
+        /// Also returns an exception in case an error happened while exuting the statement.</returns>
         public (List<Employee>, Exception) SearchEmployeesByName(string name)
         {
             string stmt = $"SELECT * FROM employees WHERE LOWER(firstname) || ' ' || LOWER(lastname) LIKE '%{name}%';";
@@ -254,6 +271,15 @@ namespace Project.Persistence.Interfaces
             }
         }
 
+        /// <summary>
+        /// Method to update the employee details.
+        /// </summary>
+        /// <param name="uuid"></param>
+        /// <param name="firstName"></param>
+        /// <param name="lastName"></param>
+        /// <param name="email"></param>
+        /// <param name="phoneNr"></param>
+        /// <returns>Returns an exception in case an error happened while exuting the statement.</returns>
         public Exception UpdateEmployee(string uuid, string firstName, string lastName, string email, string phoneNr)
         {
             string stmt = $"" +
@@ -273,6 +299,11 @@ namespace Project.Persistence.Interfaces
             }
         }
 
+        /// <summary>
+        /// Method to delete an employee account.
+        /// </summary>
+        /// <param name="uuid"></param>
+        /// <returns>Returns an exception in case an error happened while exuting the statement.</returns>
         public Exception DeleteEmployee(string uuid)
         {
             string stmt = $"" +

@@ -78,5 +78,54 @@ namespace Project.Controls
             }
             ((MainForm)this.TopLevelControl).LoadTasksPanel();
         }
+
+        private void buttonEdit_Click(object sender, EventArgs e)
+        {
+            (List<Employee> employees, Exception ex) = ((MainForm)this.TopLevelControl).Presenter.EmployeeSRV.GetEmployees();
+            if (ex != null)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+            Form addTaskDialog = new Form();
+            AddTaskDialogControl dialog = new AddTaskDialogControl(employees, ((MainForm)this.TopLevelControl).CurrentEmployee);
+            dialog.TaskName = this._currentTask.Name;
+            dialog.TaskDescription = this._currentTask.Description;
+            dialog.TaskDeadline = this._currentTask.Deadline;
+            dialog.TaskEmployeeAssigned = this._currentTask.EmployeeUUID;
+            dialog.SetLabelTitle("Update Task Details");
+            dialog.SetSubmitBtnText("Save");
+            dialog.Dock = DockStyle.Fill;
+
+            addTaskDialog.Height = dialog.Height + 50;
+            addTaskDialog.Width = dialog.Width;
+            addTaskDialog.Controls.Add(dialog);
+            addTaskDialog.ShowDialog();
+
+            if (addTaskDialog.DialogResult == DialogResult.OK)
+            {
+                string taskName = dialog.TaskName;
+                string taskDescription = dialog.TaskDescription;
+                string assignedEmployee = dialog.TaskEmployeeAssigned;
+                DateTime taskDeadline = dialog.TaskDeadline;
+
+                ex = ((MainForm)this.TopLevelControl).Presenter.TaskSRV.UpdateTaskDetails(_currentTask.ID, taskName, taskDescription, taskDeadline, assignedEmployee);
+                if(ex != null)
+                {
+                    MessageBox.Show(ex.Message);
+                    return;
+                }
+                ((MainForm)this.TopLevelControl).LoadTasksPanel();
+            }
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            // TODO()
+            // Delete all subtask and comments if necessary from deleted task
+            //
+            ((MainForm)this.TopLevelControl).Presenter.TaskSRV.DeleteTask(_currentTask.ID);
+            ((MainForm)this.TopLevelControl).LoadTasksPanel();
+        }
     }
 }
