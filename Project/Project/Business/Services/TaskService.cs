@@ -35,11 +35,15 @@ namespace Project.Business.Services
             return this.taskRepository.GetUnassignedTasks();
         }
 
-        public (List<Task>, Exception) SearchTasksByName(string title)
+        public (List<Task>, Exception) SearchAssignedTasksByName(string title)
         {
-            return this.taskRepository.SearchTasksByName(title);
+            return this.taskRepository.SearchAssignedTasksByName(title);
         }
 
+        public (List<Task>, Exception) SearchUnassignedTasksByName(string title)
+        {
+            return this.taskRepository.SearchUnassignedTasksByName(title);
+        }
 
         public (List<Task>, Exception) GetTasksByEmpUUID(string empUUID)
         {
@@ -69,6 +73,11 @@ namespace Project.Business.Services
         public Exception AssignTaskToEmployee(int taskID, string empUUID)
         {
             return this.taskRepository.AssignTaskToEmployee(taskID, empUUID);
+        }
+
+        public Exception UnassignTaskFromEmployee(string empUUID, int taskID)
+        {
+            return this.taskRepository.UnassignTaskFromEmployee(empUUID, taskID);
         }
 
         public Exception UnassignTasksFromEmployee(string empUUID)

@@ -35,8 +35,10 @@
             this.pictureBoxPageLogo = new System.Windows.Forms.PictureBox();
             this.labelPageTitle = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGridViewEmployees = new System.Windows.Forms.DataGridView();
             this.panelNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPageLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees)).BeginInit();
             this.SuspendLayout();
             // 
             // panelNavBar
@@ -68,6 +70,7 @@
             this.buttonSearch.TabIndex = 1;
             this.buttonSearch.Text = "Search";
             this.buttonSearch.UseVisualStyleBackColor = false;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // textBoxSearchBar
             // 
@@ -110,16 +113,29 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(306, 326);
+            this.label1.Location = new System.Drawing.Point(287, 81);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(349, 39);
             this.label1.TabIndex = 4;
             this.label1.Text = "This is the users page";
             // 
+            // dataGridViewEmployees
+            // 
+            this.dataGridViewEmployees.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewEmployees.Location = new System.Drawing.Point(15, 139);
+            this.dataGridViewEmployees.Name = "dataGridViewEmployees";
+            this.dataGridViewEmployees.RowHeadersWidth = 51;
+            this.dataGridViewEmployees.RowTemplate.Height = 24;
+            this.dataGridViewEmployees.Size = new System.Drawing.Size(953, 476);
+            this.dataGridViewEmployees.TabIndex = 6;
+            this.dataGridViewEmployees.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewEmployees_CellClick);
+            // 
             // UsersContentControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.dataGridViewEmployees);
             this.Controls.Add(this.panelNavBar);
             this.Controls.Add(this.label1);
             this.Name = "UsersContentControl";
@@ -128,6 +144,7 @@
             this.panelNavBar.ResumeLayout(false);
             this.panelNavBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPageLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -141,5 +158,6 @@
         private System.Windows.Forms.PictureBox pictureBoxPageLogo;
         private System.Windows.Forms.Label labelPageTitle;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridViewEmployees;
     }
 }

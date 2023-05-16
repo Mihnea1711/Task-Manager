@@ -2,6 +2,7 @@
 using Project.Models;
 using Project.Persistence.Interfaces;
 using System;
+using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -108,9 +109,34 @@ namespace Project.Business.Services
             }
         }
 
+        public (List<Employee>, Exception) GetEmployees()
+        {
+            return this.employeeRepository.GetEmployees();
+        }
+
         public (Employee, Exception) GetEmployeeByUUID(string uuid)
         {
             return this.employeeRepository.GetEmployeeByUuid(uuid);
+        }
+
+        public (Employee, Exception) GetEmployeeByUsername(string username)
+        {
+            return this.employeeRepository.GetEmployeeByUsername(username);
+        }
+
+        public (List<Employee>, Exception) SearchEmployeesByName(string name)
+        {
+            return this.employeeRepository.SearchEmployeesByName(name);
+        }
+
+        public Exception UpdateEmployee(string uuid, string firstName, string lastName, string email, string phoneNr)
+        {
+            return this.employeeRepository.UpdateEmployee(uuid, firstName, lastName, email, phoneNr);
+        }
+
+        public Exception DeleteEmployee(string uuid)
+        {
+            return this.employeeRepository.DeleteEmployee(uuid);
         }
     }
 }

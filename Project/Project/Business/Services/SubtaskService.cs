@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Project.Business.Services
 {
-    internal class SubtaskService : ISubtaskService
+    public class SubtaskService : ISubtaskService
     {
         private SubtaskRepository subtaskRepository;
 

@@ -14,7 +14,9 @@ namespace Project.Business.Interfaces
 
         (List<Task>, Exception) GetUnassignedTasks();
 
-        (List<Task>, Exception) SearchTasksByName(string title);
+        (List<Task>, Exception) SearchAssignedTasksByName(string title);
+
+        (List<Task>, Exception) SearchUnassignedTasksByName(string title);
 
         (List<Task>, Exception) GetTasksByEmpUUID(string empUUID);
 
@@ -25,6 +27,8 @@ namespace Project.Business.Interfaces
         Exception UpdateTaskProgress(int taskID, int progress);
 
         Exception DeleteTask(int taskID);
+
+        Exception UnassignTaskFromEmployee(string empUUID, int taskID);
 
         Exception UnassignTasksFromEmployee(string empUUID);
 

@@ -205,13 +205,54 @@ namespace Project.Persistence.Interfaces
         }
 
         /// <summary>
-        /// Method to case-insensitive search for tasks by title.
+        /// Method to case-insensitive search for assigned tasks by title.
         /// </summary>
         /// <param name="title"></param>
         /// <returns></returns>
-        public (List<Task>, Exception) SearchTasksByName(string title)
+        public (List<Task>, Exception) SearchAssignedTasksByName(string title)
         {
-            string stmt = $"SELECT * FROM tasks WHERE LOWER(tasktitle) LIKE '%{title}%';";
+            string stmt = $"SELECT * FROM tasks WHERE employeeUUID != '' and LOWER(tasktitle) LIKE '%{title}%';";
+            using (SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection))
+            {
+                try
+                {
+                    using (SQLiteDataReader dataReader = cmd.ExecuteReader())
+                    {
+                        List<Task> tasks = new List<Task>();
+                        while (dataReader.Read())
+                        {
+                            int taskID = dataReader.GetInt32(0);
+                            string taskTitle = dataReader.GetString(1);
+                            string taskDescription = dataReader.GetString(2);
+                            string taskStatus = dataReader.GetString(3);
+                            int taskProgress = dataReader.GetInt32(4);
+                            string taskDeadline = dataReader.GetString(5);
+                            DateTime deadline = DateTime.Parse(taskDeadline);
+                            string employeeUUID = dataReader.GetString(6);
+
+                            Task task = new Task(taskID, taskTitle, taskDescription, taskStatus, taskProgress, deadline, employeeUUID);
+                            tasks.Add(task);
+                        }
+                        if (tasks == null) throw new Exception("tasks is null");
+                        return (tasks, null);
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    return (null, new QueryForAllTasksException(ex.Message));
+                }
+            }
+        }
+
+        /// <summary>
+        /// Method to case-insensitive search for unassigned tasks by title.
+        /// </summary>
+        /// <param name="title"></param>
+        /// <returns></returns>
+        public (List<Task>, Exception) SearchUnassignedTasksByName(string title)
+        {
+            string stmt = $"SELECT * FROM tasks WHERE employeeUUID == '' and LOWER(tasktitle) LIKE '%{title}%';";
             using (SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection))
             {
                 try
@@ -396,6 +437,31 @@ namespace Project.Persistence.Interfaces
             $"UPDATE tasks " +
             $"SET employeeuuid = '{empUUID}' " +
             $"WHERE taskid = {taskID};";
+            SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection);
+            try
+            {
+                cmd.ExecuteNonQuery();
+
+                return null;
+            }
+            catch (Exception ex)
+            {
+                return new TaskAssignException(ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="empUUID"></param>
+        /// <param name="taskID"></param>
+        /// <returns></returns>
+        public Exception UnassignTaskFromEmployee(string empUUID, int taskID)
+        {
+            string stmt = $"" +
+            $"UPDATE tasks " +
+            $"SET employeeuuid = '' " +
+            $"WHERE taskid = {taskID} and employeeuuid = '{empUUID}';";
             SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection);
             try
             {

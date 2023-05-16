@@ -8,6 +8,8 @@ namespace Project.Presenters.Interfaces
 {
     public interface IEmployeeBuilder: IBuilder
     {
+
+        void SetUsername(string username);
         void SetName(string name);
         void SetEmail(string email);
         void SetPhoneNr(string phoneNr);

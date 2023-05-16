@@ -23,6 +23,18 @@ namespace Project.Presenters.Builders
             this.employeeRow = new DataGridViewRow();
         }
 
+        public void SetUsername(string username)
+        {
+            DataGridViewCell usernameCell = new DataGridViewTextBoxCell();
+            usernameCell.Value = username;
+
+            //custom styling
+            //..
+            //
+
+            this.employeeRow.Cells.Add(usernameCell);
+        }
+
         public void SetEmail(string email)
         {
             DataGridViewCell emailCell = new DataGridViewTextBoxCell();

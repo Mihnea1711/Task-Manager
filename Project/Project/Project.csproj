@@ -104,6 +104,12 @@
     <Compile Include="Views\Controls\Dialogs\AddTaskDialogControl.Designer.cs">
       <DependentUpon>AddTaskDialogControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Controls\Dialogs\EditProfileDialogControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\Dialogs\EditProfileDialogControl.Designer.cs">
+      <DependentUpon>EditProfileDialogControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Controls\Login\LogInControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -181,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Controls\Dialogs\AddTaskDialogControl.resx">
       <DependentUpon>AddTaskDialogControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\Dialogs\EditProfileDialogControl.resx">
+      <DependentUpon>EditProfileDialogControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Controls\Login\LogInControl.resx">
       <DependentUpon>LogInControl.cs</DependentUpon>

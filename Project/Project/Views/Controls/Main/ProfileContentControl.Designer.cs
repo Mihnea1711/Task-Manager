@@ -41,6 +41,8 @@
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.labelTasksAssigned = new System.Windows.Forms.Label();
             this.dataGridViewEmployeeTasks = new System.Windows.Forms.DataGridView();
+            this.buttonDelete = new System.Windows.Forms.Button();
+            this.buttonEdit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfileImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployeeTasks)).BeginInit();
             this.SuspendLayout();
@@ -168,7 +170,7 @@
             // 
             // dataGridViewEmployeeTasks
             // 
-            this.dataGridViewEmployeeTasks.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridViewEmployeeTasks.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewEmployeeTasks.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dataGridViewEmployeeTasks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewEmployeeTasks.Location = new System.Drawing.Point(60, 297);
@@ -178,11 +180,36 @@
             this.dataGridViewEmployeeTasks.RowTemplate.Height = 24;
             this.dataGridViewEmployeeTasks.Size = new System.Drawing.Size(860, 306);
             this.dataGridViewEmployeeTasks.TabIndex = 0;
+            this.dataGridViewEmployeeTasks.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewEmployeeTasks_CellClick);
+            // 
+            // buttonDelete
+            // 
+            this.buttonDelete.Location = new System.Drawing.Point(820, 36);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(101, 36);
+            this.buttonDelete.TabIndex = 17;
+            this.buttonDelete.Text = "Delete";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Visible = false;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
+            // 
+            // buttonEdit
+            // 
+            this.buttonEdit.Location = new System.Drawing.Point(710, 36);
+            this.buttonEdit.Name = "buttonEdit";
+            this.buttonEdit.Size = new System.Drawing.Size(101, 36);
+            this.buttonEdit.TabIndex = 16;
+            this.buttonEdit.Text = "Edit";
+            this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.Visible = false;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // ProfileContentControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonDelete);
+            this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.dataGridViewEmployeeTasks);
             this.Controls.Add(this.labelTasksAssigned);
             this.Controls.Add(this.textBoxEmail);
@@ -219,5 +246,7 @@
         private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.Label labelTasksAssigned;
         private System.Windows.Forms.DataGridView dataGridViewEmployeeTasks;
+        private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.Button buttonEdit;
     }
 }

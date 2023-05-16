@@ -8,7 +8,8 @@ namespace Project.Controls
 {
     public partial class TasksContentControl : UserControl
     {
-        //private List<Task> _availableTasks;
+        private List<Task> _tasks = new List<Task>();
+
         public TasksContentControl()
         {
             InitializeComponent();
@@ -22,38 +23,58 @@ namespace Project.Controls
             this.dataGridViewTasks.Columns.Add("taskSeeMore", "");
         }
 
+        public TasksContentControl(List<Task> tasks)
+        {
+            InitializeComponent();
+
+            this.dataGridViewTasks.Columns.Add("taskID", "ID");
+            this.dataGridViewTasks.Columns.Add("taskTitle", "Title");
+            this.dataGridViewTasks.Columns.Add("taskDescription", "Description");
+            this.dataGridViewTasks.Columns.Add("taskStatus", "Status");
+            this.dataGridViewTasks.Columns.Add("taskProgress", "Progress");
+            this.dataGridViewTasks.Columns.Add("taskDeadline", "Deadline");
+            this.dataGridViewTasks.Columns.Add("taskSeeMore", "");
+
+            this._tasks = tasks;
+        }
+
         private void TasksContentControl_Load(object sender, EventArgs e)
         {
-            //(List<Task> tasks, Exception exc) = ((MainForm)this.TopLevelControl).TaskService.GetAssignedTasks();
-            //(List<Task> taskss, Exception excs) = ((MainForm)this.TopLevelControl).TaskService.GetUnassignedTasks();
-            //(List<Task> tasks, Exception exc) = ((MainForm)this.TopLevelControl).TaskService.SearchTasksByName("task");
-            //Exception exception = ((MainForm)this.TopLevelControl).TaskService.CreateTask("task1", "descriere1", new DateTime(2023, 7, 21), "2e63341a-e627-48ac-bb1a-9d56e2e9cc4f");
-            //(List<Task> tasksEmp, Exception excEmp) = ((MainForm)this.TopLevelControl).TaskService.GetTasksByEmpUUID("2e63341a-e627-48ac-bb1a-9d56e2e9cc4f");
-            //Exception ex = ((MainForm)this.TopLevelControl).TaskService.DeleteTask(2);
-            //Exception ex = ((MainForm)this.TopLevelControl).TaskService.UnassignTasksFromEmployee("2e63341a-e627-48ac-bb1a-9d56e2e9cc4f");
-            //Exception ex = ((MainForm)this.TopLevelControl).TaskService.AssignTaskToEmployee(1, "2e63341a-e627-48ac-bb1a-9d56e2e9cc4f");
-            //Exception exception = ((MainForm)this.TopLevelControl).TaskService.UpdateTaskDetails(3, "task1", "descriere1", new DateTime(2023, 7, 21));
-            //Exception exception = ((MainForm)this.TopLevelControl).TaskService.UpdateTaskStatus(3, "in-progress");
-            //Exception exception = ((MainForm)this.TopLevelControl).TaskService.UpdateTaskProgress(3, 75);
-
-            (List<Task> availableTasks, Exception ex) = ((MainForm)this.TopLevelControl).Presenter.TaskSRV.GetAssignedTasks();
-            if(ex != null)
+            if(this._tasks.Count == 0)
             {
-                MessageBox.Show(ex.Message);
-                return;
+                (List<Task> availableTasks, Exception ex) = ((MainForm)this.TopLevelControl).Presenter.TaskSRV.GetAssignedTasks();
+                if (ex != null)
+                {
+                    MessageBox.Show(ex.Message);
+                    return;
+                }
+                this._tasks = availableTasks;
             }
 
-            availableTasks.ForEach(task =>
+            _tasks.ForEach(task =>
             {
-                DataGridViewRow taskRow = ((MainForm)this.TopLevelControl).Presenter.makeTaskRow(task);
-                this.dataGridViewTasks.Rows.Add(taskRow);
+                if (task.Deadline < DateTime.Now)
+                {
+                    ((MainForm)this.TopLevelControl).Presenter.TaskSRV.UnassignTaskFromEmployee(task.EmployeeUUID, task.ID);
+                }
+                else
+                {
+                    DataGridViewRow taskRow = ((MainForm)this.TopLevelControl).Presenter.makeTaskRow(task);
+                    this.dataGridViewTasks.Rows.Add(taskRow);
+                }
             });
         }
 
         private void buttonAddTask_Click(object sender, EventArgs e)
         {
+            (List<Employee> employees, Exception ex) = ((MainForm)this.TopLevelControl).Presenter.EmployeeSRV.GetEmployees();
+            if(ex != null)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
             Form addTaskDialog = new Form();
-            AddTaskDialogControl dialog = new AddTaskDialogControl();
+            AddTaskDialogControl dialog = new AddTaskDialogControl(employees, ((MainForm)this.TopLevelControl).CurrentEmployee);
             dialog.Dock = DockStyle.Fill;
             addTaskDialog.Height = dialog.Height + 50;
             addTaskDialog.Width = dialog.Width;
@@ -65,9 +86,10 @@ namespace Project.Controls
                 string taskName = dialog.TaskName;
                 string taskDescription = dialog.TaskDescription;
                 string assignedEmployee = dialog.TaskEmployeeAssigned;
-                int deadlineDays = dialog.TaskDeadlineInDays;
+                DateTime taskDeadline = dialog.TaskDeadline;
 
-                // working
+                ((MainForm)this.TopLevelControl).Presenter.TaskSRV.CreateTask(taskName, taskDescription, taskDeadline, assignedEmployee);
+                ((MainForm)this.TopLevelControl).LoadTasksPanel();
             }
 
         }
@@ -88,6 +110,20 @@ namespace Project.Controls
 
                 ((MainForm)this.TopLevelControl).LoadTaskContentPanel(clickedTask);
             }
+        }
+
+        private void buttonSearch_Click(object sender, EventArgs e)
+        {
+            string searchKey = this.textBoxSearchBar.Text;
+
+            (List<Task> matchingTasks, Exception ex) = ((MainForm)this.TopLevelControl).Presenter.TaskSRV.SearchAssignedTasksByName(searchKey);
+            if(ex != null)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+
+            ((MainForm)this.TopLevelControl).LoadTasksPanel(matchingTasks);
         }
     } 
 }

@@ -70,6 +70,7 @@
             this.buttonAssignToMe.TabIndex = 4;
             this.buttonAssignToMe.Text = "Assign To Me";
             this.buttonAssignToMe.UseVisualStyleBackColor = true;
+            this.buttonAssignToMe.Click += new System.EventHandler(this.buttonAssignToMe_Click);
             // 
             // labelAddTaskName
             // 
@@ -147,7 +148,6 @@
             this.buttonAddTask.TabIndex = 11;
             this.buttonAddTask.Text = "Create Task";
             this.buttonAddTask.UseVisualStyleBackColor = true;
-            this.buttonAddTask.Click += new System.EventHandler(this.buttonAddTask_Click);
             // 
             // dateTimePickerDeadline
             // 
@@ -177,6 +177,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddTaskDialogControl";
             this.Size = new System.Drawing.Size(654, 605);
+            this.Load += new System.EventHandler(this.AddTaskDialogControl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

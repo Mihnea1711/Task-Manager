@@ -17,6 +17,7 @@
         private string _email;
         private string _phone;
         private int _tasksdone;
+        private string _fullname => $"{_firstName} {_lastName}";
         #endregion
 
         /// <summary>
@@ -57,6 +58,13 @@
             get
             {
                 return _tasksdone;
+            }
+        }
+        public string FullName
+        {
+            get
+            {
+                return _fullname;
             }
         }
         #endregion

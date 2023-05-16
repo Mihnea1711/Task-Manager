@@ -38,13 +38,22 @@ namespace Project.Presenters
             }
         }
 
+        public SubtaskService SubtaskSRV
+        {
+            get
+            {
+                return (SubtaskService)this._subtaskService;
+            }
+        }
+
         public DataGridViewRow makeEmployeeRow(Employee employee)
         {
             this._builder= new EmployeeBuilder();
             EmployeeBuilder employeeBuilder = (EmployeeBuilder)_builder;
 
             employeeBuilder.Reset();
-            employeeBuilder.SetName($"{employee.FirstName} {employee.LastName}");
+            employeeBuilder.SetUsername(employee.Username);
+            employeeBuilder.SetName(employee.FullName);
             employeeBuilder.SetEmail(employee.Email);
             employeeBuilder.SetPhoneNr(employee.Phone);
             employeeBuilder.SetGoToButton();

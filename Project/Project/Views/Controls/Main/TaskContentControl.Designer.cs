@@ -40,6 +40,10 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.label5 = new System.Windows.Forms.Label();
             this.buttonToSubtask = new System.Windows.Forms.Button();
+            this.buttonAssignToMe = new System.Windows.Forms.Button();
+            this.buttonUnassign = new System.Windows.Forms.Button();
+            this.buttonEdit = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSubtasks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -67,6 +71,7 @@
             // 
             // dataGridViewSubtasks
             // 
+            this.dataGridViewSubtasks.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewSubtasks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSubtasks.Location = new System.Drawing.Point(19, 327);
             this.dataGridViewSubtasks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -119,7 +124,7 @@
             // progressBarProgress
             // 
             this.progressBarProgress.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.progressBarProgress.Location = new System.Drawing.Point(776, 44);
+            this.progressBarProgress.Location = new System.Drawing.Point(363, 38);
             this.progressBarProgress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.progressBarProgress.Name = "progressBarProgress";
             this.progressBarProgress.Size = new System.Drawing.Size(100, 23);
@@ -134,7 +139,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(881, 44);
+            this.label5.Location = new System.Drawing.Point(468, 40);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(24, 20);
             this.label5.TabIndex = 10;
@@ -142,8 +147,8 @@
             // 
             // buttonToSubtask
             // 
-            this.buttonToSubtask.Location = new System.Drawing.Point(249, 359);
-            this.buttonToSubtask.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonToSubtask.Location = new System.Drawing.Point(363, 422);
+            this.buttonToSubtask.Margin = new System.Windows.Forms.Padding(4);
             this.buttonToSubtask.Name = "buttonToSubtask";
             this.buttonToSubtask.Size = new System.Drawing.Size(213, 74);
             this.buttonToSubtask.TabIndex = 11;
@@ -151,11 +156,57 @@
             this.buttonToSubtask.UseVisualStyleBackColor = true;
             this.buttonToSubtask.Click += new System.EventHandler(this.buttonToSubtask_Click);
             // 
+            // buttonAssignToMe
+            // 
+            this.buttonAssignToMe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAssignToMe.Location = new System.Drawing.Point(673, 258);
+            this.buttonAssignToMe.Name = "buttonAssignToMe";
+            this.buttonAssignToMe.Size = new System.Drawing.Size(113, 29);
+            this.buttonAssignToMe.TabIndex = 12;
+            this.buttonAssignToMe.Text = "Assign To Me";
+            this.buttonAssignToMe.UseVisualStyleBackColor = true;
+            this.buttonAssignToMe.Visible = false;
+            this.buttonAssignToMe.Click += new System.EventHandler(this.buttonAssignToMe_Click);
+            // 
+            // buttonUnassign
+            // 
+            this.buttonUnassign.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUnassign.Location = new System.Drawing.Point(792, 258);
+            this.buttonUnassign.Name = "buttonUnassign";
+            this.buttonUnassign.Size = new System.Drawing.Size(113, 29);
+            this.buttonUnassign.TabIndex = 13;
+            this.buttonUnassign.Text = "Unassign";
+            this.buttonUnassign.UseVisualStyleBackColor = true;
+            this.buttonUnassign.Visible = false;
+            this.buttonUnassign.Click += new System.EventHandler(this.buttonUnassign_Click);
+            // 
+            // buttonEdit
+            // 
+            this.buttonEdit.Location = new System.Drawing.Point(696, 24);
+            this.buttonEdit.Name = "buttonEdit";
+            this.buttonEdit.Size = new System.Drawing.Size(101, 36);
+            this.buttonEdit.TabIndex = 14;
+            this.buttonEdit.Text = "Edit";
+            this.buttonEdit.UseVisualStyleBackColor = true;
+            // 
+            // buttonDelete
+            // 
+            this.buttonDelete.Location = new System.Drawing.Point(806, 24);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(101, 36);
+            this.buttonDelete.TabIndex = 15;
+            this.buttonDelete.Text = "Delete";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            // 
             // TaskContentControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Controls.Add(this.buttonDelete);
+            this.Controls.Add(this.buttonEdit);
+            this.Controls.Add(this.buttonUnassign);
+            this.Controls.Add(this.buttonAssignToMe);
             this.Controls.Add(this.buttonToSubtask);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.progressBarProgress);
@@ -190,5 +241,9 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button buttonToSubtask;
+        private System.Windows.Forms.Button buttonAssignToMe;
+        private System.Windows.Forms.Button buttonUnassign;
+        private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.Button buttonEdit;
     }
 }
