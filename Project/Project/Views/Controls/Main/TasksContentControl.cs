@@ -8,72 +8,73 @@ namespace Project.Controls
 {
     public partial class TasksContentControl : UserControl
     {
+        private List<Task> _tasks = new List<Task>();
+
         public TasksContentControl()
         {
             InitializeComponent();
+
+            this.dataGridViewTasks.Columns.Add("taskID", "ID");
+            this.dataGridViewTasks.Columns.Add("taskTitle", "Title");
+            this.dataGridViewTasks.Columns.Add("taskDescription", "Description");
+            this.dataGridViewTasks.Columns.Add("taskStatus", "Status");
+            this.dataGridViewTasks.Columns.Add("taskProgress", "Progress");
+            this.dataGridViewTasks.Columns.Add("taskDeadline", "Deadline");
+            this.dataGridViewTasks.Columns.Add("taskSeeMore", "");
+        }
+
+        public TasksContentControl(List<Task> tasks)
+        {
+            InitializeComponent();
+
+            this.dataGridViewTasks.Columns.Add("taskID", "ID");
+            this.dataGridViewTasks.Columns.Add("taskTitle", "Title");
+            this.dataGridViewTasks.Columns.Add("taskDescription", "Description");
+            this.dataGridViewTasks.Columns.Add("taskStatus", "Status");
+            this.dataGridViewTasks.Columns.Add("taskProgress", "Progress");
+            this.dataGridViewTasks.Columns.Add("taskDeadline", "Deadline");
+            this.dataGridViewTasks.Columns.Add("taskSeeMore", "");
+
+            this._tasks = tasks;
         }
 
         private void TasksContentControl_Load(object sender, EventArgs e)
         {
-            /*
-            // Step 5: Create a connection string to your database
-            string connectionString = "Data Source=project.db;Version=3;";
+            if(this._tasks.Count == 0)
+            {
+                (List<Task> availableTasks, Exception ex) = ((MainForm)this.TopLevelControl).Presenter.TaskSRV.GetAssignedTasks();
+                if (ex != null)
+                {
+                    MessageBox.Show(ex.Message);
+                    return;
+                }
+                this._tasks = availableTasks;
+            }
 
-            // Step 6: Write a SELECT statement to retrieve data
-            string selectStatement = "SELECT * FROM tasks";
-
-            Console.WriteLine(selectStatement);
-
-            // Step 7: Create a SQLiteDataAdapter object
-            SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(selectStatement, connectionString);
-
-            // Step 8: Create a new DataTable object
-            DataTable dataTable = new DataTable();
-
-            // Step 9: Fill the DataTable with the data
-            dataAdapter.Fill(dataTable);
-
-            
-            
-
-            // Step 10: Set the DataSource property of the DataGridView control
-            dataGridViewTasks.DataSource = dataTable;
-
-            // Add the column to the DataGridView control
-            dataGridViewTasks.Columns.Add(comboBoxColumn);
-            */
-
-            //(List<Task> tasks, Exception exc) = ((MainForm)this.TopLevelControl).TaskService.GetAssignedTasks();
-            //(List<Task> taskss, Exception excs) = ((MainForm)this.TopLevelControl).TaskService.GetUnassignedTasks();
-            (List<Task> tasks, Exception exc) = ((MainForm)this.TopLevelControl).TaskService.SearchTasksByName("task");
-            //Exception exception = ((MainForm)this.TopLevelControl).TaskService.CreateTask("task1", "descriere1", new DateTime(2023, 7, 21), "2e63341a-e627-48ac-bb1a-9d56e2e9cc4f");
-            //(List<Task> tasksEmp, Exception excEmp) = ((MainForm)this.TopLevelControl).TaskService.GetTasksByEmpUUID("2e63341a-e627-48ac-bb1a-9d56e2e9cc4f");
-            //Exception ex = ((MainForm)this.TopLevelControl).TaskService.DeleteTask(2);
-            //Exception ex = ((MainForm)this.TopLevelControl).TaskService.UnassignTasksFromEmployee("2e63341a-e627-48ac-bb1a-9d56e2e9cc4f");
-            //Exception ex = ((MainForm)this.TopLevelControl).TaskService.AssignTaskToEmployee(1, "2e63341a-e627-48ac-bb1a-9d56e2e9cc4f");
-            //Exception exception = ((MainForm)this.TopLevelControl).TaskService.UpdateTaskDetails(3, "task1", "descriere1", new DateTime(2023, 7, 21));
-            //Exception exception = ((MainForm)this.TopLevelControl).TaskService.UpdateTaskStatus(3, "in-progress");
-            //Exception exception = ((MainForm)this.TopLevelControl).TaskService.UpdateTaskProgress(3, 75);
-
-            BindingSource bindingSource = new BindingSource();
-            bindingSource.DataSource = tasks;
-
-            var seeMoreButton = new DataGridViewButtonColumn();
-            seeMoreButton.HeaderText = "My Button Column";
-            seeMoreButton.Name = "MyButtonColumn";
-            seeMoreButton.Text = "See more";
-
-            dataGridViewTasks.DataSource = bindingSource;
-
-            dataGridViewTasks.Columns.Add(seeMoreButton);
-
-            //gut
+            _tasks.ForEach(task =>
+            {
+                if (task.Deadline < DateTime.Now)
+                {
+                    ((MainForm)this.TopLevelControl).Presenter.TaskSRV.UnassignTaskFromEmployee(task.EmployeeUUID, task.ID);
+                }
+                else
+                {
+                    DataGridViewRow taskRow = ((MainForm)this.TopLevelControl).Presenter.makeTaskRow(task);
+                    this.dataGridViewTasks.Rows.Add(taskRow);
+                }
+            });
         }
 
         private void buttonAddTask_Click(object sender, EventArgs e)
         {
+            (List<Employee> employees, Exception ex) = ((MainForm)this.TopLevelControl).Presenter.EmployeeSRV.GetEmployees();
+            if(ex != null)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
             Form addTaskDialog = new Form();
-            AddTaskDialogControl dialog = new AddTaskDialogControl();
+            AddTaskDialogControl dialog = new AddTaskDialogControl(employees, ((MainForm)this.TopLevelControl).CurrentEmployee);
             dialog.Dock = DockStyle.Fill;
             addTaskDialog.Height = dialog.Height + 50;
             addTaskDialog.Width = dialog.Width;
@@ -85,16 +86,43 @@ namespace Project.Controls
                 string taskName = dialog.TaskName;
                 string taskDescription = dialog.TaskDescription;
                 string assignedEmployee = dialog.TaskEmployeeAssigned;
-                int deadlineDays = dialog.TaskDeadlineInDays;
+                DateTime taskDeadline = dialog.TaskDeadline;
 
-                // working
+                ((MainForm)this.TopLevelControl).Presenter.TaskSRV.CreateTask(taskName, taskDescription, taskDeadline, assignedEmployee);
+                ((MainForm)this.TopLevelControl).LoadTasksPanel();
             }
-
         }
 
-        private void dataGridViewTasks_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridViewTasks_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            ((MainForm)this.TopLevelControl).LoadTaskContentPanel();
+            if (e.RowIndex >= 0 && e.ColumnIndex == 6) // Checking if it's a valid row index and the button column (index 6)
+            {
+                DataGridViewCell idCell = dataGridViewTasks.Rows[e.RowIndex].Cells[0];
+                string taskID = idCell.Value.ToString();
+
+                (Task clickedTask, Exception ex) = ((MainForm)this.TopLevelControl).Presenter.TaskSRV.GetTaskByID(int.Parse(taskID));
+                if(ex != null)
+                {
+                    MessageBox.Show(ex.Message);
+                    return;
+                }
+
+                ((MainForm)this.TopLevelControl).LoadTaskContentPanel(clickedTask);
+            }
+        }
+
+        private void buttonSearch_Click(object sender, EventArgs e)
+        {
+            string searchKey = this.textBoxSearchBar.Text;
+
+            (List<Task> matchingTasks, Exception ex) = ((MainForm)this.TopLevelControl).Presenter.TaskSRV.SearchAssignedTasksByName(searchKey);
+            if(ex != null)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+
+            ((MainForm)this.TopLevelControl).LoadTasksPanel(matchingTasks);
         }
     } 
 }

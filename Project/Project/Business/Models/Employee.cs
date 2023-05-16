@@ -17,6 +17,11 @@
         private string _email;
         private string _phone;
         private int _tasksdone;
+
+        /// <summary>
+        /// for ease-of-use of the full employee name
+        /// </summary>
+        private string _fullname => $"{_firstName} {_lastName}";
         #endregion
 
         /// <summary>
@@ -57,6 +62,13 @@
             get
             {
                 return _tasksdone;
+            }
+        }
+        public string FullName
+        {
+            get
+            {
+                return _fullname;
             }
         }
         #endregion

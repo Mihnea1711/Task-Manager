@@ -2,6 +2,7 @@
 using Project.Models;
 using Project.Persistence.Interfaces;
 using System;
+using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -106,6 +107,73 @@ namespace Project.Business.Services
 
                 return hash;
             }
+        }
+
+        /// <summary>
+        /// Method to retrieve all employees from db
+        /// </summary>
+        /// <returns>Returns the employees objects if any, otherwise null. 
+        /// Also returns an exception in case an error happened while exuting the statement.</returns>
+        public (List<Employee>, Exception) GetEmployees()
+        {
+            return this.employeeRepository.GetEmployees();
+        }
+
+        /// <summary>
+        /// Method to retrieve an employee data model based on its uuid.
+        /// </summary>
+        /// <param name="uuid"></param>
+        /// <returns>Returns the employee data object if found, otherwise null. 
+        /// Also returns an exception in case an error happened while exuting the statement.</returns>
+        public (Employee, Exception) GetEmployeeByUUID(string uuid)
+        {
+            return this.employeeRepository.GetEmployeeByUuid(uuid);
+        }
+
+        /// <summary>
+        /// Method to retrieve an employee data model based on its username.
+        /// </summary>
+        /// <param name="username"></param>
+        /// <returns>Returns the employee data object if found, otherwise null. 
+        /// Also returns an exception in case an error happened while exuting the statement.</returns>
+        public (Employee, Exception) GetEmployeeByUsername(string username)
+        {
+            return this.employeeRepository.GetEmployeeByUsername(username);
+        }
+
+        /// <summary>
+        /// Method to retrieve all employees from db matching the string given as parameter. The search is case-insensitive.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns>Returns the employees objects if any, otherwise null. 
+        /// Also returns an exception in case an error happened while exuting the statement.</returns>
+        public (List<Employee>, Exception) SearchEmployeesByName(string name)
+        {
+            return this.employeeRepository.SearchEmployeesByName(name);
+        }
+
+        /// <summary>
+        /// Method to update the employee details.
+        /// </summary>
+        /// <param name="uuid"></param>
+        /// <param name="firstName"></param>
+        /// <param name="lastName"></param>
+        /// <param name="email"></param>
+        /// <param name="phoneNr"></param>
+        /// <returns>Returns an exception in case an error happened while exuting the statement.</returns>
+        public Exception UpdateEmployee(string uuid, string firstName, string lastName, string email, string phoneNr)
+        {
+            return this.employeeRepository.UpdateEmployee(uuid, firstName, lastName, email, phoneNr);
+        }
+
+        /// <summary>
+        /// Method to delete an employee account.
+        /// </summary>
+        /// <param name="uuid"></param>
+        /// <returns>Returns an exception in case an error happened while exuting the statement.</returns>
+        public Exception DeleteEmployee(string uuid)
+        {
+            return this.employeeRepository.DeleteEmployee(uuid);
         }
     }
 }

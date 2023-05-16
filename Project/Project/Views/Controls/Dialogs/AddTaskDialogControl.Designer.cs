@@ -34,7 +34,7 @@
             this.labelAddTaskName = new System.Windows.Forms.Label();
             this.labelAddTaskDescription = new System.Windows.Forms.Label();
             this.labelAddTaskAssignTo = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelDeadline = new System.Windows.Forms.Label();
             this.comboBoxAssign = new System.Windows.Forms.ComboBox();
             this.labelAddTaskHeader = new System.Windows.Forms.Label();
             this.buttonAddTask = new System.Windows.Forms.Button();
@@ -70,6 +70,7 @@
             this.buttonAssignToMe.TabIndex = 4;
             this.buttonAssignToMe.Text = "Assign To Me";
             this.buttonAssignToMe.UseVisualStyleBackColor = true;
+            this.buttonAssignToMe.Click += new System.EventHandler(this.buttonAssignToMe_Click);
             // 
             // labelAddTaskName
             // 
@@ -104,16 +105,16 @@
             this.labelAddTaskAssignTo.TabIndex = 7;
             this.labelAddTaskAssignTo.Text = "Assign To";
             // 
-            // label4
+            // labelDeadline
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(101, 458);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 20);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Deadline";
+            this.labelDeadline.AutoSize = true;
+            this.labelDeadline.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDeadline.Location = new System.Drawing.Point(101, 458);
+            this.labelDeadline.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDeadline.Name = "labelDeadline";
+            this.labelDeadline.Size = new System.Drawing.Size(75, 20);
+            this.labelDeadline.TabIndex = 8;
+            this.labelDeadline.Text = "Deadline";
             // 
             // comboBoxAssign
             // 
@@ -147,7 +148,6 @@
             this.buttonAddTask.TabIndex = 11;
             this.buttonAddTask.Text = "Create Task";
             this.buttonAddTask.UseVisualStyleBackColor = true;
-            this.buttonAddTask.Click += new System.EventHandler(this.buttonAddTask_Click);
             // 
             // dateTimePickerDeadline
             // 
@@ -166,7 +166,7 @@
             this.Controls.Add(this.buttonAddTask);
             this.Controls.Add(this.labelAddTaskHeader);
             this.Controls.Add(this.comboBoxAssign);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.labelDeadline);
             this.Controls.Add(this.labelAddTaskAssignTo);
             this.Controls.Add(this.labelAddTaskDescription);
             this.Controls.Add(this.labelAddTaskName);
@@ -177,6 +177,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddTaskDialogControl";
             this.Size = new System.Drawing.Size(654, 605);
+            this.Load += new System.EventHandler(this.AddTaskDialogControl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,7 +191,7 @@
         private System.Windows.Forms.Label labelAddTaskName;
         private System.Windows.Forms.Label labelAddTaskDescription;
         private System.Windows.Forms.Label labelAddTaskAssignTo;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelDeadline;
         private System.Windows.Forms.ComboBox comboBoxAssign;
         private System.Windows.Forms.Label labelAddTaskHeader;
         private System.Windows.Forms.Button buttonAddTask;

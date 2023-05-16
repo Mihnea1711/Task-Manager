@@ -1,6 +1,9 @@
 ﻿using Project.Models;
 using System;
+using System.Collections.Generic;
 using System.Data.SQLite;
+using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Project.Persistence.Interfaces
@@ -107,6 +110,46 @@ namespace Project.Persistence.Interfaces
         }
 
         /// <summary>
+        /// Method to retrieve all employees from db
+        /// </summary>
+        /// <returns>Returns the employees objects if any, otherwise null. 
+        /// Also returns an exception in case an error happened while exuting the statement.</returns>
+        public (List<Employee>, Exception) GetEmployees()
+        {
+            string stmt = $"SELECT * FROM employees";
+            using (SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection))
+            {
+                try
+                {
+                    using (SQLiteDataReader dataReader = cmd.ExecuteReader())
+                    {
+                        List<Employee> employees = new List<Employee>();
+                        while (dataReader.Read())
+                        {
+                            string employeeUUID = dataReader.GetString(0);
+                            string employeeUsername = dataReader.GetString(1);
+                            string employeePassword = dataReader.GetString(2);
+                            string employeeFName = dataReader.GetString(3);
+                            string employeeLName = dataReader.GetString(4);
+                            string employeeEmail = dataReader.GetString(5);
+                            string employeePhoneNr = dataReader.GetString(6);
+                            int employeeTasksDone = dataReader.GetInt32(7);
+
+                            Employee employee = new Employee(employeeUUID, employeeUsername, employeePassword, employeeFName, employeeLName, employeeEmail, employeePhoneNr, employeeTasksDone);
+                            employees.Add(employee);
+                        }
+                        return (employees, null);
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    return (null, new QueryForEmployeeException(ex.Message));
+                }
+            }
+        }
+
+        /// <summary>
         /// Method to retrieve employee data based on its username.
         /// </summary>
         /// <param name="username">Employee username.</param>
@@ -147,6 +190,12 @@ namespace Project.Persistence.Interfaces
             }
         }
 
+        /// <summary>
+        /// Method to retrieve an employee data model based on its uuid.
+        /// </summary>
+        /// <param name="uuid"></param>
+        /// <returns>Returns the employee data object if found, otherwise null. 
+        /// Also returns an exception in case an error happened while exuting the statement.</returns>
         public (Employee, Exception) GetEmployeeByUuid(string employeeUUID)
         {
             string stmt = $"SELECT * FROM employees WHERE employeeuuid = '{employeeUUID}'";
@@ -178,6 +227,98 @@ namespace Project.Persistence.Interfaces
                 {
                     return (null, new QueryForEmployeeException(ex.Message));
                 }
+            }
+        }
+
+        /// <summary>
+        /// Method to retrieve all employees from db matching the string given as parameter. The search is case-insensitive.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns>Returns the employees objects if any, otherwise null. 
+        /// Also returns an exception in case an error happened while exuting the statement.</returns>
+        public (List<Employee>, Exception) SearchEmployeesByName(string name)
+        {
+            string stmt = $"SELECT * FROM employees WHERE LOWER(firstname) || ' ' || LOWER(lastname) LIKE '%{name}%';";
+            using (SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection))
+            {
+                try
+                {
+                    using (SQLiteDataReader dataReader = cmd.ExecuteReader())
+                    {
+                        List<Employee> employees = new List<Employee>();
+                        while (dataReader.Read())
+                        {
+                            string employeeUUID = dataReader.GetString(0);
+                            string employeeUsername = dataReader.GetString(1);
+                            string employeePassword = dataReader.GetString(2);
+                            string employeeFName = dataReader.GetString(3);
+                            string employeeLName = dataReader.GetString(4);
+                            string employeeEmail = dataReader.GetString(5);
+                            string employeePhoneNr = dataReader.GetString(6);
+                            int employeeTasksDone = dataReader.GetInt32(7);
+
+                            Employee employee = new Employee(employeeUUID, employeeUsername, employeePassword, employeeFName, employeeLName, employeeEmail, employeePhoneNr, employeeTasksDone);
+                            employees.Add(employee);
+                        }
+                        return (employees, null);
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    return (null, new QueryForEmployeeException(ex.Message));
+                }
+            }
+        }
+
+        /// <summary>
+        /// Method to update the employee details.
+        /// </summary>
+        /// <param name="uuid"></param>
+        /// <param name="firstName"></param>
+        /// <param name="lastName"></param>
+        /// <param name="email"></param>
+        /// <param name="phoneNr"></param>
+        /// <returns>Returns an exception in case an error happened while exuting the statement.</returns>
+        public Exception UpdateEmployee(string uuid, string firstName, string lastName, string email, string phoneNr)
+        {
+            string stmt = $"" +
+                $"UPDATE employees " +
+                $"SET firstname = '{firstName}', lastname = '{lastName}', email = '{email}', phonenr = '{phoneNr}' " +
+                $"WHERE employeeuuid = '{uuid}';";
+            SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection);
+            try
+            {
+                cmd.ExecuteNonQuery();
+
+                return null;
+            }
+            catch (Exception ex)
+            {
+                return new EmployeeUpdateException(ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// Method to delete an employee account.
+        /// </summary>
+        /// <param name="uuid"></param>
+        /// <returns>Returns an exception in case an error happened while exuting the statement.</returns>
+        public Exception DeleteEmployee(string uuid)
+        {
+            string stmt = $"" +
+            $"DELETE FROM employees " +
+                $"WHERE employeeuuid = '{uuid}';";
+            SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection);
+            try
+            {
+                cmd.ExecuteNonQuery();
+
+                return null;
+            }
+            catch (Exception ex)
+            {
+                return new EmployeeDeleteException(ex.Message);
             }
         }
 
@@ -272,4 +413,21 @@ namespace Project.Persistence.Interfaces
         {
         }
     }
+
+    class EmployeeUpdateException : Exception
+    {
+        public EmployeeUpdateException(string message)
+            : base(message)
+        {
+        }
+    }
+
+    class EmployeeDeleteException : Exception
+    {
+        public EmployeeDeleteException(string message)
+            : base(message)
+        {
+        }
+    }
 }
+

@@ -1,42 +1,64 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
-using Project.Business.Interfaces;
-using Project.Business.Services;
 using Project.Controls;
 using Project.Models;
 using Project.Presenters;
-using Project.Presenters.Interfaces;
 
 namespace Project
 {
     public partial class MainForm : Form
     {
-        private Employee currrentEmployee;
-        private Presenter presenter;
+        private Employee _currentEmployee;
+        private Presenter _presenter;
 
-        public Employee CurrentEmployee { get { return currrentEmployee; } }
+        public Employee CurrentEmployee
+        {
+            get { return _currentEmployee; }
+            set
+            {
+                this._currentEmployee = value;
+            }
+        }
 
         public Presenter Presenter
         {
             get
             {
-                return this.presenter;
+                return this._presenter;
             }
         }
 
         public MainForm(Employee employee)
         {
             InitializeComponent();
-            this.currrentEmployee = employee;
+            this._currentEmployee = employee;
             this.labelUsername.Text = employee.Username;
+            this.labelName.Text = employee.FullName;
 
-            this.presenter = new Presenter();
+            this._presenter = new Presenter();
+        }
+
+        public void SetLabelFullName(string fullname)
+        {
+            this.labelName.Text = fullname;
         }
 
         public void LoadTasksPanel()
+        { 
+            this.panelPageContent.Controls.Clear();
+            
+            TasksContentControl tasksContentControl = new TasksContentControl();
+
+            this.panelPageContent.Controls.Add(tasksContentControl);
+        }
+
+        public void LoadTasksPanel(List<Task> tasks)
         {
             this.panelPageContent.Controls.Clear();
-            TasksContentControl tasksContentControl = new TasksContentControl();
+
+            TasksContentControl tasksContentControl = new TasksContentControl(tasks);
+
             this.panelPageContent.Controls.Add(tasksContentControl);
         }
 
@@ -52,16 +74,22 @@ namespace Project
             this.panelPageContent.Controls.Add(new UsersContentControl());
         }
 
+        public void LoadUsersPanel(List<Employee> employees)
+        {
+            this.panelPageContent.Controls.Clear();
+            this.panelPageContent.Controls.Add(new UsersContentControl(employees));
+        }
+
         public void LoadAboutPanel()
         {
             this.panelPageContent.Controls.Clear();
             this.panelPageContent.Controls.Add(new AboutContentControl());
         }
 
-        public void LoadTaskContentPanel()
+        public void LoadTaskContentPanel(Task task)
         {
             this.panelPageContent.Controls.Clear();
-            this.panelPageContent.Controls.Add(new TaskContentControl());
+            this.panelPageContent.Controls.Add(new TaskContentControl(task));
         }
 
         public void LoadSubtaskContentPanel()
@@ -70,10 +98,10 @@ namespace Project
             this.panelPageContent.Controls.Add(new SubtaskContentControl());
         }
 
-        public void LoadProfilePage()
+        public void LoadProfilePage(Employee employee)
         {
             this.panelPageContent.Controls.Clear();
-            ProfileContentControl profileContentControl = new ProfileContentControl();
+            ProfileContentControl profileContentControl = new ProfileContentControl(employee);
             profileContentControl.Dock = DockStyle.Fill;
             this.panelPageContent.Controls.Add(profileContentControl);
         }
@@ -101,6 +129,19 @@ namespace Project
         private void buttonAbout_Click(object sender, EventArgs e)
         {
             LoadAboutPanel();
+        }
+
+        private void buttonProfile_Click(object sender, EventArgs e)
+        {
+            LoadProfilePage(_currentEmployee);
+        }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            ((MainForm)this.TopLevelControl).Hide();
+            LoginPage loginPage = new LoginPage();
+            loginPage.ShowDialog();
+            ((MainForm)this.TopLevelControl).Close();
         }
     }
 }

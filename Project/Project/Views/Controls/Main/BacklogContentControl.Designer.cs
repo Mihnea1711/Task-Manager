@@ -70,6 +70,7 @@
             this.buttonSearch.TabIndex = 1;
             this.buttonSearch.Text = "Search";
             this.buttonSearch.UseVisualStyleBackColor = false;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // textBoxSearchBar
             // 
@@ -131,6 +132,7 @@
             this.dataGridViewTasks.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dataGridViewTasks.Size = new System.Drawing.Size(929, 551);
             this.dataGridViewTasks.TabIndex = 6;
+            this.dataGridViewTasks.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTasks_CellClick);
             // 
             // BacklogContentControl
             // 

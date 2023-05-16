@@ -1,15 +1,27 @@
-﻿using System;
+﻿using Project.Models;
+using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
+using System.Linq;
 
 namespace Project.Controls
 {
     public partial class AddTaskDialogControl : UserControl
     {
+        private List<Employee> _availableEmployees;
+        private Employee _currentEmployee;
+        private string _assignedEmployeeUUID = null;
+        private int _currentEmployeeIndex;
+
         public string TaskName
         {
             get
             {
                 return this.textBoxTaskName.Text;
+            }
+            set
+            {
+                this.textBoxTaskName.Text = value;
             }
         }
 
@@ -19,32 +31,81 @@ namespace Project.Controls
             {
                 return this.textBoxTaskDesc.Text;
             }
+            set
+            {
+                this.textBoxTaskDesc.Text = value;
+            }
         }
 
         public string TaskEmployeeAssigned
         {
             get
             {
-                return this.comboBoxAssign.Text;
+                return this.comboBoxAssign.SelectedValue as string;
+            }
+            set
+            {
+                this._assignedEmployeeUUID = value;
             }
         }
 
-        public int TaskDeadlineInDays
+        public DateTime TaskDeadline
         {
             get
             {
-                return (this.dateTimePickerDeadline.Value - DateTime.Now).Days;
+                return this.dateTimePickerDeadline.Value;
+            }
+            set
+            {
+                this.dateTimePickerDeadline.Value = value;
             }
         }
 
-        public AddTaskDialogControl()
+        public void SetLabelTitle(string title)
         {
-            InitializeComponent();
+            this.labelAddTaskHeader.Text = title;   
         }
 
-        private void buttonAddTask_Click(object sender, EventArgs e)
+        public void SetSubmitBtnText(string text)
         {
+            this.buttonAddTask.Text = text;
+        }
 
+        public AddTaskDialogControl(List<Employee> employees, Employee currentEmployee)
+        {
+            InitializeComponent();
+            this._availableEmployees = employees;
+            this._currentEmployee = currentEmployee;
+
+            for (int i = 0; i < this._availableEmployees.Count; i++)
+            {
+                if (this._availableEmployees[i].UUID == this._currentEmployee.UUID)
+                {
+                    this._currentEmployeeIndex = i;
+                    break;
+                }
+            }
+        }
+
+        private void AddTaskDialogControl_Load(object sender, EventArgs e)
+        {
+            this.comboBoxAssign.DisplayMember = "Fullname";
+            this.comboBoxAssign.ValueMember = "UUID";
+            this.comboBoxAssign.DataSource = this._availableEmployees;
+
+            for (int i = 0; i < this._availableEmployees.Count; i++)
+            {
+                if (this._availableEmployees[i].UUID == this._assignedEmployeeUUID)
+                {
+                    this.comboBoxAssign.SelectedIndex = i;
+                    break;
+                }
+            }
+        }
+
+        private void buttonAssignToMe_Click(object sender, EventArgs e)
+        {
+            this.comboBoxAssign.SelectedIndex = this._currentEmployeeIndex;
         }
     }
 }

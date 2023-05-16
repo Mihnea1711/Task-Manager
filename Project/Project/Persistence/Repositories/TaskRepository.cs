@@ -84,6 +84,45 @@ namespace Project.Persistence.Interfaces
         }
 
         /// <summary>
+        /// Method to get specific task data by ID
+        /// </summary>
+        /// <param name="taskID"></param>
+        /// <returns></returns>
+        public (Task, Exception) GetTaskByID(int taskID)
+        {
+            string stmt = $"SELECT * FROM tasks WHERE taskid = {taskID}";
+            using (SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection))
+            {
+                try
+                {
+                    using (SQLiteDataReader dataReader = cmd.ExecuteReader())
+                    {
+                        Task task = null;
+                        while (dataReader.Read())
+                        {
+                            string taskTitle = dataReader.GetString(1);
+                            string taskDescription = dataReader.GetString(2);
+                            string taskStatus = dataReader.GetString(3);
+                            int taskProgress = dataReader.GetInt32(4);
+                            string taskDeadline = dataReader.GetString(5);
+                            DateTime deadline = DateTime.Parse(taskDeadline);
+                            string employeeUUID = dataReader.GetString(6);
+
+                            task = new Task(taskID, taskTitle, taskDescription, taskStatus, taskProgress, deadline, employeeUUID);
+                        }
+                        if (task == null) throw new Exception("task is null");
+                        return (task, null);
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    return (null, new QueryForTaskException(ex.Message));
+                }
+            }
+        }
+
+        /// <summary>
         /// Method to retrieve all tasks from the database.
         /// </summary>
         /// <returns>Returns the tasks if there are any, otherwise null. 
@@ -166,13 +205,54 @@ namespace Project.Persistence.Interfaces
         }
 
         /// <summary>
-        /// Method to case-insensitive search for tasks by title.
+        /// Method to case-insensitive search for assigned tasks by title.
         /// </summary>
         /// <param name="title"></param>
         /// <returns></returns>
-        public (List<Task>, Exception) SearchTasksByName(string title)
+        public (List<Task>, Exception) SearchAssignedTasksByName(string title)
         {
-            string stmt = $"SELECT * FROM tasks WHERE LOWER(tasktitle) LIKE '%{title}%';";
+            string stmt = $"SELECT * FROM tasks WHERE employeeUUID != '' and LOWER(tasktitle) LIKE '%{title}%';";
+            using (SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection))
+            {
+                try
+                {
+                    using (SQLiteDataReader dataReader = cmd.ExecuteReader())
+                    {
+                        List<Task> tasks = new List<Task>();
+                        while (dataReader.Read())
+                        {
+                            int taskID = dataReader.GetInt32(0);
+                            string taskTitle = dataReader.GetString(1);
+                            string taskDescription = dataReader.GetString(2);
+                            string taskStatus = dataReader.GetString(3);
+                            int taskProgress = dataReader.GetInt32(4);
+                            string taskDeadline = dataReader.GetString(5);
+                            DateTime deadline = DateTime.Parse(taskDeadline);
+                            string employeeUUID = dataReader.GetString(6);
+
+                            Task task = new Task(taskID, taskTitle, taskDescription, taskStatus, taskProgress, deadline, employeeUUID);
+                            tasks.Add(task);
+                        }
+                        if (tasks == null) throw new Exception("tasks is null");
+                        return (tasks, null);
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    return (null, new QueryForAllTasksException(ex.Message));
+                }
+            }
+        }
+
+        /// <summary>
+        /// Method to case-insensitive search for unassigned tasks by title.
+        /// </summary>
+        /// <param name="title"></param>
+        /// <returns></returns>
+        public (List<Task>, Exception) SearchUnassignedTasksByName(string title)
+        {
+            string stmt = $"SELECT * FROM tasks WHERE employeeUUID == '' and LOWER(tasktitle) LIKE '%{title}%';";
             using (SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection))
             {
                 try
@@ -255,11 +335,11 @@ namespace Project.Persistence.Interfaces
         /// <param name="taskDescription"></param>
         /// <param name="taskDeadline"></param>
         /// <returns></returns>
-        public Exception UpdateTaskDetails(int taskID, string taskTitle, string taskDescription, DateTime taskDeadline)
+        public Exception UpdateTaskDetails(int taskID, string taskTitle, string taskDescription, DateTime taskDeadline, string assignedEmployeeUUID)
         {
             string stmt = $"" +
                 $"UPDATE tasks " +
-                $"SET tasktitle = '{taskTitle}', taskdescription = '{taskDescription}', taskdeadline = '{taskDeadline}'" +
+                $"SET tasktitle = '{taskTitle}', taskdescription = '{taskDescription}', taskdeadline = '{taskDeadline}', employeeuuid = '{assignedEmployeeUUID}'" +
                 $"WHERE taskid = {taskID};";
             SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection);
             try
@@ -357,6 +437,31 @@ namespace Project.Persistence.Interfaces
             $"UPDATE tasks " +
             $"SET employeeuuid = '{empUUID}' " +
             $"WHERE taskid = {taskID};";
+            SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection);
+            try
+            {
+                cmd.ExecuteNonQuery();
+
+                return null;
+            }
+            catch (Exception ex)
+            {
+                return new TaskAssignException(ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="empUUID"></param>
+        /// <param name="taskID"></param>
+        /// <returns></returns>
+        public Exception UnassignTaskFromEmployee(string empUUID, int taskID)
+        {
+            string stmt = $"" +
+            $"UPDATE tasks " +
+            $"SET employeeuuid = '' " +
+            $"WHERE taskid = {taskID} and employeeuuid = '{empUUID}';";
             SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection);
             try
             {

@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panelSideBar = new System.Windows.Forms.Panel();
+            this.labelName = new System.Windows.Forms.Label();
+            this.buttonProfile = new System.Windows.Forms.Button();
             this.buttonAbout = new System.Windows.Forms.Button();
             this.buttonUsers = new System.Windows.Forms.Button();
             this.buttonBacklog = new System.Windows.Forms.Button();
@@ -39,6 +41,7 @@
             this.panelFooter = new System.Windows.Forms.Panel();
             this.labelFooter = new System.Windows.Forms.Label();
             this.panelPageContent = new System.Windows.Forms.Panel();
+            this.buttonLogout = new System.Windows.Forms.Button();
             this.panelSideBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panelFooter.SuspendLayout();
@@ -47,6 +50,9 @@
             // panelSideBar
             // 
             this.panelSideBar.BackColor = System.Drawing.Color.DarkGray;
+            this.panelSideBar.Controls.Add(this.buttonLogout);
+            this.panelSideBar.Controls.Add(this.labelName);
+            this.panelSideBar.Controls.Add(this.buttonProfile);
             this.panelSideBar.Controls.Add(this.buttonAbout);
             this.panelSideBar.Controls.Add(this.buttonUsers);
             this.panelSideBar.Controls.Add(this.buttonBacklog);
@@ -59,6 +65,26 @@
             this.panelSideBar.Name = "panelSideBar";
             this.panelSideBar.Size = new System.Drawing.Size(295, 682);
             this.panelSideBar.TabIndex = 0;
+            // 
+            // labelName
+            // 
+            this.labelName.AutoSize = true;
+            this.labelName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelName.Location = new System.Drawing.Point(168, 18);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(83, 22);
+            this.labelName.TabIndex = 6;
+            this.labelName.Text = "Fullname";
+            // 
+            // buttonProfile
+            // 
+            this.buttonProfile.Location = new System.Drawing.Point(172, 91);
+            this.buttonProfile.Name = "buttonProfile";
+            this.buttonProfile.Size = new System.Drawing.Size(108, 35);
+            this.buttonProfile.TabIndex = 5;
+            this.buttonProfile.Text = "See Profile";
+            this.buttonProfile.UseVisualStyleBackColor = true;
+            this.buttonProfile.Click += new System.EventHandler(this.buttonProfile_Click);
             // 
             // buttonAbout
             // 
@@ -117,10 +143,10 @@
             // labelUsername
             // 
             this.labelUsername.AutoSize = true;
-            this.labelUsername.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUsername.Location = new System.Drawing.Point(174, 47);
+            this.labelUsername.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUsername.Location = new System.Drawing.Point(168, 56);
             this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(88, 22);
+            this.labelUsername.Size = new System.Drawing.Size(78, 19);
             this.labelUsername.TabIndex = 2;
             this.labelUsername.Text = "Username";
             // 
@@ -181,6 +207,16 @@
             this.panelPageContent.Size = new System.Drawing.Size(984, 646);
             this.panelPageContent.TabIndex = 4;
             // 
+            // buttonLogout
+            // 
+            this.buttonLogout.Location = new System.Drawing.Point(57, 607);
+            this.buttonLogout.Name = "buttonLogout";
+            this.buttonLogout.Size = new System.Drawing.Size(175, 39);
+            this.buttonLogout.TabIndex = 5;
+            this.buttonLogout.Text = "Logout";
+            this.buttonLogout.UseVisualStyleBackColor = true;
+            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -218,6 +254,9 @@
         private System.Windows.Forms.Panel panelFooter;
         private System.Windows.Forms.Label labelFooter;
         private System.Windows.Forms.Panel panelPageContent;
+        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.Button buttonProfile;
+        private System.Windows.Forms.Button buttonLogout;
     }
 }
 

@@ -8,7 +8,6 @@ namespace Project.Presenters.Interfaces
         DataGridViewRow makeTaskRow(Task task);
         DataGridViewRow makeSubtaskRow(Subtask subtask);
         DataGridViewRow makeEmployeeRow(Employee employee);
-
         DataGridViewRow makeCommentRow(Comment comment);
 
     }
