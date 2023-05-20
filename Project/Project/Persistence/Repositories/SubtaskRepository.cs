@@ -38,7 +38,6 @@ namespace Project.Persistence.Interfaces
                     "subtasktitle        VARCHAR2(50) NOT NULL," +
                     "subtaskdescription  VARCHAR2(100) NOT NULL," +
                     "subtaskstatus       VARCHAR2(20) DEFAULT 'toDo'," +
-                    "subtaskdeadline     datetime NOT NULL," +
                     "taskid              INTEGER NOT NULL," +
                     "employeeuuid        VARCHAR2(150) NOT NULL," +
                     "CONSTRAINT          subtasks_employees_fk FOREIGN KEY(employeeuuid) REFERENCES employees(employeeuuid )," +
@@ -56,6 +55,59 @@ namespace Project.Persistence.Interfaces
                 return new Exception(ex.Message);
             }
         }
+
+        /// <summary>
+        /// Method to update the task's significant details.
+        /// </summary>
+        /// <param name="taskID"></param>
+        /// <param name="taskTitle"></param>
+        /// <param name="taskDescription"></param>
+        /// <param name="taskDeadline"></param>
+        /// <returns></returns>
+        public Exception UpdateSubtaskDetails(int id, string subtaskName, string subtaskDescription)
+        {
+            string stmt = $"" +
+                $"UPDATE subtasks " +
+                $"SET subtasktitle = '{subtaskName}', subtaskdescription = '{subtaskDescription}'" +
+                $"WHERE subtaskid = {id};";
+            SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection);
+            try
+            {
+                cmd.ExecuteNonQuery();
+
+                return null;
+            }
+            catch (Exception ex)
+            {
+                return new TaskUpdateException(ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// Method to update the subtask status.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="selectedKey"></param>
+        /// <returns>Returns an exception in case an error happened while exuting the statement.</returns>
+        public Exception ChangeStatus(int id, string selectedKey)
+        {
+            string stmt = $"" +
+                $"UPDATE subtasks " +
+                $"SET subtaskstatus = '{selectedKey}'" +
+                $"WHERE subtaskid = '{id}';";
+            SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection);
+            try
+            {
+                cmd.ExecuteNonQuery();
+
+                return null;
+            }
+            catch (Exception ex)
+            {
+                return ex;
+            }
+        }
+
         /// <summary>
         /// Method to add a subtask to the database.
         /// </summary>
@@ -63,11 +115,10 @@ namespace Project.Persistence.Interfaces
         /// <returns>Returns an exception if an error happened while executing the statement.</returns>
         public Exception AddSubstask(Subtask subtask)
         {
-            string stmt = $"INSERT INTO subtasks(subtasktitle, subtaskdescription, subtaskstatus, subtaskdeadline, taskid, employeeuuid) " +
+            string stmt = $"INSERT INTO subtasks(subtasktitle, subtaskdescription, subtaskstatus, taskid, employeeuuid) " +
                 $"VALUES ('{subtask.Title}'," +
                 $" '{subtask.Description}'," +
                 $" '{subtask.Status}'," +
-                $" '{subtask.Deadline}'," +
                 $" '{subtask.TaskId}'," +
                 $" '{subtask.EmployeeId}')";
             SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection);
@@ -107,11 +158,10 @@ namespace Project.Persistence.Interfaces
                             string subtaskTitle = dataReader.GetString(1);
                             string subtaskDescription = dataReader.GetString(2);
                             string subtaskStatus = dataReader.GetString(3);
-                            DateTime subtaskDeadline = dataReader.GetDateTime(4);
-                            int taskid = dataReader.GetInt32(5);
-                            string employeeuuid = dataReader.GetString(6);
+                            int taskid = dataReader.GetInt32(4);
+                            string employeeuuid = dataReader.GetString(5);
 
-                            subtask = new Subtask(subtaskId, subtaskTitle, subtaskDescription, subtaskStatus, subtaskDeadline, taskid, employeeuuid);
+                            subtask = new Subtask(subtaskId, subtaskTitle, subtaskDescription, subtaskStatus, taskid, employeeuuid);
                         }
                         if (subtask == null) throw new Exception("subtask is null");
                         return (subtask, null);

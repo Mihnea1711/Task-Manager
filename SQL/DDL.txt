@@ -30,7 +30,6 @@ CREATE TABLE subtasks (
     subtasktitle       VARCHAR2(50) NOT NULL,
     subtaskdescription VARCHAR2(100) NOT NULL,
     subtaskstatus      VARCHAR2(20) DEFAULT 'toDo',
-    subtaskdeadline    datetime NOT NULL,
     taskid             INTEGER NOT NULL,
     employeeuuid       VARCHAR2(150) NOT NULL,
     CONSTRAINT subtasks_employees_fk FOREIGN KEY ( employeeuuid ) REFERENCES employees ( employeeuuid ),

@@ -32,7 +32,13 @@ namespace Project.Presenters
                 return (TaskService)this._taskService;
             }
         }
-
+        public CommentService CommentSRV
+        {
+            get
+            {
+                return (CommentService)this._commentService;
+            }
+        }
         public EmployeeService EmployeeSRV
         {
             get
@@ -40,7 +46,6 @@ namespace Project.Presenters
                 return (EmployeeService)this._employeeService;
             }
         }
-
         public SubtaskService SubtaskSRV
         {
             get
@@ -101,21 +106,41 @@ namespace Project.Presenters
 
             return taskBuilder.GetResult();
         }
-
+        /// <summary>
+        /// Method to create a subtask row inside a data grid view.
+        /// </summary>
+        /// <param name="subtask"></param>
+        /// <returns>Returns the complete data grid view row with subtask data.</returns>
         public DataGridViewRow makeSubtaskRow(Subtask subtask)
         {
             this._builder = new SubtaskBuilder();
             SubtaskBuilder subtaskBuilder = (SubtaskBuilder)_builder;
 
-            subtaskBuilder.SetDescription("ceva");
+            subtaskBuilder.Reset();
+            subtaskBuilder.SetID(subtask.Id.ToString());
+            subtaskBuilder.SetTitle(subtask.Title);
+            subtaskBuilder.SetDescription(subtask.Description);
+            subtaskBuilder.SetStatus(subtask.Status);
+            subtaskBuilder.SetGoToButton(); 
 
             return subtaskBuilder.GetResult();
         }
-
+        /// <summary>
+        /// Method to create a comment row inside a data grid view.
+        /// </summary>
+        /// <param name="comment"></param>
+        /// <returns>Returns the complete data grid view row with comment data.</returns>
         public DataGridViewRow makeCommentRow(Comment comment)
         {
             this._builder = new CommentBuilder();
-            throw new System.NotImplementedException();
+            CommentBuilder commentBuilder = (CommentBuilder)_builder;
+
+            commentBuilder.Reset();
+            commentBuilder.SetTitle(comment.Title);
+            commentBuilder.SetDescription(comment.Description);
+            commentBuilder.SetTimeReported(comment.TimeReported);
+
+            return commentBuilder.GetResult();
         }
 
     }

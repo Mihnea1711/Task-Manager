@@ -62,6 +62,24 @@ namespace Project
             this.panelPageContent.Controls.Add(tasksContentControl);
         }
 
+        public void LoadTaskPanel(Task task)
+        {
+            this.panelPageContent.Controls.Clear();
+
+            TaskContentControl taskContentControl = new TaskContentControl(task);
+
+            this.panelPageContent.Controls.Add(taskContentControl);
+        }
+
+        public void LoadSubtaskPanel(Subtask subtask)
+        {
+            this.panelPageContent.Controls.Clear();
+
+            SubtaskContentControl subtaskContentControl = new SubtaskContentControl(subtask);
+
+            this.panelPageContent.Controls.Add(subtaskContentControl);
+        }
+
         public void LoadBacklogPanel()
         {
             this.panelPageContent.Controls.Clear();
@@ -92,10 +110,10 @@ namespace Project
             this.panelPageContent.Controls.Add(new TaskContentControl(task));
         }
 
-        public void LoadSubtaskContentPanel()
+        public void LoadSubtaskContentPanel(Subtask subtask)
         {
             this.panelPageContent.Controls.Clear();
-            this.panelPageContent.Controls.Add(new SubtaskContentControl());
+            this.panelPageContent.Controls.Add(new SubtaskContentControl(subtask));
         }
 
         public void LoadProfilePage(Employee employee)

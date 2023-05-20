@@ -15,10 +15,10 @@ namespace Project.Business.Services
             this.subtaskRepository = new SubtaskRepository();
         }
 
-        public (bool, Exception) AddSubstask(string title, string description, string status, DateTime deadline, int taskId, string employeeId)
+        public (bool, Exception) AddSubstask(string title, string description, string status, int taskId, string employeeId)
         {
             // create the subtask model
-            Subtask subtask = new Subtask(0,title, description, status, deadline, taskId, employeeId);
+            Subtask subtask = new Subtask(0,title, description, status, taskId, employeeId);
 
             // store subtask in db
             Exception exception = this.subtaskRepository.AddSubstask(subtask);
@@ -52,6 +52,16 @@ namespace Project.Business.Services
             }
 
             return (subtasks, null);
+        }
+
+        public Exception ChangeStatus(int id, string selectedKey)
+        {
+            return subtaskRepository.ChangeStatus(id, selectedKey);
+        }
+
+        public Exception UpdateSubtaskDetails(int id, string subtaskName, string subtaskDescription)
+        {
+            return subtaskRepository.UpdateSubtaskDetails(id, subtaskName, subtaskDescription);
         }
     }
 }

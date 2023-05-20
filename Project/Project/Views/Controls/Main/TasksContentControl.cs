@@ -75,6 +75,7 @@ namespace Project.Controls
             }
             Form addTaskDialog = new Form();
             AddTaskDialogControl dialog = new AddTaskDialogControl(employees, ((MainForm)this.TopLevelControl).CurrentEmployee);
+
             dialog.Dock = DockStyle.Fill;
             addTaskDialog.Height = dialog.Height + 50;
             addTaskDialog.Width = dialog.Width;
