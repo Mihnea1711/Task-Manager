@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Project.Models;
+using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
+using System.Linq;
 
 namespace Project.Controls
 {
@@ -11,6 +14,10 @@ namespace Project.Controls
             {
                 return this.textBoxSubtaskName.Text;
             }
+            set
+            {
+                this.textBoxSubtaskName.Text = value;
+            }
         }
 
         public string SubtaskDescription
@@ -19,24 +26,25 @@ namespace Project.Controls
             {
                 return this.textBoxSubtaskDesc.Text;
             }
+            set
+            {
+                this.textBoxSubtaskDesc.Text = value;
+            }
         }
 
-        public string SubtaskEmployeeAssigned
+        public void SetLabelTitle(string title)
         {
-            get
-            {
-                return this.comboBoxAssign.Text;
-            }
+            this.labelAddSubtaskHeader.Text = title;
+        }
+
+        public void SetSubmitBtnText(string text)
+        {
+            this.buttonAddSubtask.Text = text;
         }
 
         public AddSubtaskDialogControl()
         {
             InitializeComponent();
-        }
-
-        private void buttonAddSubtask_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

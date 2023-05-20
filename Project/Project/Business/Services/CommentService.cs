@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Project.Business.Services
 {
-    internal class CommentService : ICommentService
+    public class CommentService : ICommentService
     {
         private CommentRepository commentRepository;
 
@@ -20,10 +20,10 @@ namespace Project.Business.Services
 
         public (bool, Exception) AddComment(string title, string description, int timeReported, int subtaskId)
         {
-            // create the subtask model
+            // create the comment model
             Comment comment = new Comment(0, title, description, timeReported, subtaskId);
 
-            // store subtask in db
+            // store comment in db
             Exception exception = this.commentRepository.AddComment(comment);
             if (exception != null)
             {

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 using Project.Models;
 using Project.Persistence.Interfaces;
@@ -9,9 +10,17 @@ namespace Project.Controls
     public partial class TaskContentControl : UserControl
     {
         private Task _currentTask;
+
         public TaskContentControl(Task task)
         {
             InitializeComponent();
+
+            this.dataGridViewSubtasks.Columns.Add("subtaskID", "ID");
+            this.dataGridViewSubtasks.Columns.Add("subtaskTitle", "Title");
+            this.dataGridViewSubtasks.Columns.Add("subtaskDescription", "Description");
+            this.dataGridViewSubtasks.Columns.Add("subtaskStatus", "Status");
+            this.dataGridViewSubtasks.Columns.Add("subtaskSeeMore", "");
+
             this._currentTask = task;
         }
 
@@ -43,18 +52,39 @@ namespace Project.Controls
                 this.buttonAssignToMe.Visible = true;
             }
             (IList<Subtask> subtasks, Exception exception) = ((MainForm)this.TopLevelControl).Presenter.SubtaskSRV.GetSubtasksByTask(this._currentTask.ID);
-            this.dataGridViewSubtasks.DataSource = subtasks;
-        
+            if (exception != null)
+            {
+                MessageBox.Show(exception.Message);
+                return;
+            }
+
+            subtasks.ToList().ForEach(comment =>
+            {
+                DataGridViewRow subtaskRow = ((MainForm)this.TopLevelControl).Presenter.makeSubtaskRow(comment);
+                this.dataGridViewSubtasks.Rows.Add(subtaskRow);
+            });
+            // ((MainForm)this.TopLevelControl).LoadSubtaskContentPanel(null);
         }
 
         private void buttonAddSubtask_Click(object sender, EventArgs e)
         {
+            Form addSubtaskDialog = new Form();
+            AddSubtaskDialogControl dialog = new AddSubtaskDialogControl();
 
-        }
+            dialog.Dock = DockStyle.Fill;
+            addSubtaskDialog.Height = dialog.Height + 50;
+            addSubtaskDialog.Width = dialog.Width;
+            addSubtaskDialog.Controls.Add(dialog);
+            addSubtaskDialog.ShowDialog();
 
-        private void buttonToSubtask_Click(object sender, EventArgs e)
-        {
-            ((MainForm)this.TopLevelControl).LoadSubtaskContentPanel();
+            if (addSubtaskDialog.DialogResult == DialogResult.OK)
+            {
+                string subtaskName = dialog.SubtaskName;
+                string subtaskDescription = dialog.SubtaskDescription;
+
+                ((MainForm)this.TopLevelControl).Presenter.SubtaskSRV.AddSubstask(subtaskName, subtaskDescription, "toDo", _currentTask.ID, _currentTask.EmployeeUUID);
+                ((MainForm)this.TopLevelControl).LoadTaskPanel(_currentTask);
+            }
         }
 
         private void buttonAssignToMe_Click(object sender, EventArgs e)
@@ -126,6 +156,24 @@ namespace Project.Controls
             //
             ((MainForm)this.TopLevelControl).Presenter.TaskSRV.DeleteTask(_currentTask.ID);
             ((MainForm)this.TopLevelControl).LoadTasksPanel();
+        }
+
+        private void dataGridViewSubtasks_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex == 4)
+            {
+                DataGridViewCell idCell = dataGridViewSubtasks.Rows[e.RowIndex].Cells[0];
+                string subtaskID = idCell.Value.ToString();
+
+                (Subtask clickedSubtask, Exception ex) = ((MainForm)this.TopLevelControl).Presenter.SubtaskSRV.GetSubtaskById(int.Parse(subtaskID));
+                if (ex != null)
+                {
+                    MessageBox.Show(ex.Message);
+                    return;
+                }
+
+                ((MainForm)this.TopLevelControl).LoadSubtaskContentPanel(clickedSubtask);
+            }
         }
     }
 }

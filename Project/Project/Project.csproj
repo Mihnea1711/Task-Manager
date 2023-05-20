@@ -92,6 +92,12 @@
     <Compile Include="Presenters\Builders\Interfaces\ITaskBuilder.cs" />
     <Compile Include="Presenters\Interfaces\IPresenter.cs" />
     <Compile Include="Presenters\Presenter.cs" />
+    <Compile Include="Views\Controls\Dialogs\AddCommentDialogControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\Dialogs\AddCommentDialogControl.Designer.cs">
+      <DependentUpon>AddCommentDialogControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Controls\Dialogs\AddSubtaskDialogControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -182,6 +188,9 @@
     <Compile Include="Business\Models\Employee.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Views\Controls\Dialogs\AddCommentDialogControl.resx">
+      <DependentUpon>AddCommentDialogControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Controls\Dialogs\AddSubtaskDialogControl.resx">
       <DependentUpon>AddSubtaskDialogControl.cs</DependentUpon>
     </EmbeddedResource>

@@ -105,7 +105,7 @@ namespace Project.Persistence.Interfaces
                             string commentTitle = dataReader.GetString(1);
                             string commentDescription = dataReader.GetString(2);
                             int timeReported = dataReader.GetInt32(3);
-                            int subtaskId = dataReader.GetInt32(5);
+                            int subtaskId = dataReader.GetInt32(4);
 
                             comment = new Comment(commentId, commentTitle, commentDescription, timeReported, subtaskId);
                         }
@@ -129,7 +129,7 @@ namespace Project.Persistence.Interfaces
         {
             List<Comment> comments = new List<Comment>();
 
-            string stmt = $"SELECT subtaskid FROM comments WHERE taskid = '{id}'";
+            string stmt = $"SELECT commentid FROM comments WHERE subtaskid = '{id}'";
             SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection);
             using (cmd)
             {

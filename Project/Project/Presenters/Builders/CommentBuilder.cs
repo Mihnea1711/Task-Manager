@@ -6,34 +6,62 @@ namespace Project.Presenters.Builders
 {
     public class CommentBuilder : ICommentBuilder
     {
+        /// <summary>
+        /// The final "product" of the builder.
+        /// </summary>
+        private DataGridViewRow commentRow;
+        /// <summary>
+        /// Method to retrieve the "product".
+        /// </summary>
+        /// <returns>Returns the actual data grid view row.</returns>
         public DataGridViewRow GetResult()
         {
-            throw new NotImplementedException();
+            return commentRow;
         }
-
+        /// <summary>
+        /// Method to reset the data grid view row and to create a new one.
+        /// </summary>
         public void Reset()
         {
-            throw new NotImplementedException();
+            this.commentRow = new DataGridViewRow();
+        }
+        /// <summary>
+        /// Method to set the comment description in the row.
+        /// </summary>
+        /// <param name="description"></param>
+        public void SetDescription(string description)
+        {
+            DataGridViewCell descriptionCell = new DataGridViewTextBoxCell();
+            descriptionCell.Value = description;
+
+            //custom styling
+            //..
+            //
+
+            this.commentRow.Cells.Add(descriptionCell);
+        }
+        /// <summary>
+        /// Method to set the comment time reported in the row.
+        /// </summary>
+        /// <param name="timeReported"></param>
+        public void SetTimeReported(int timeReported)
+        {
+            DataGridViewCell timeReportedCell = new DataGridViewTextBoxCell();
+            timeReportedCell.Value = timeReported;
+
+            //custom styling
+            //..
+            //
+
+            this.commentRow.Cells.Add(timeReportedCell);
         }
 
-        public void setDatePosted(DateTime datePosted)
+        public void SetTitle(string title)
         {
-            throw new NotImplementedException();
-        }
+            DataGridViewCell titleCell = new DataGridViewTextBoxCell();
+            titleCell.Value = title;
 
-        public void setDescription(string description)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void setTimeReported(int timeReported)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void setTitle(string title)
-        {
-            throw new NotImplementedException();
-        }
+            this.commentRow.Cells.Add(titleCell);
+        } 
     }
 }

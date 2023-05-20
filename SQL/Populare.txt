@@ -6,18 +6,18 @@ INSERT INTO employees VALUES ('c7cf7ded-7512-4110-8617-84456f7f8182', 'username4
 INSERT INTO employees VALUES ('7d38a09f-00f3-4924-8291-8a2e515504f8', 'username5', 'pass5',  'fname5', 'lname5', 'email5@yahoo.com', '0743991355', 0);
 
 -- tasks
-INSERT INTO tasks(tasktitle, taskdescription, taskstatus, taskprogress, taskdeadline, employeeuuid) VALUES ('task1', 'taskdesc1', 'todo', 0, CURRENT_TIMESTAMP, '2e63341a-e627-48ac-bb1a-9d56e2e9cc4f');
-INSERT INTO tasks(tasktitle, taskdescription, taskstatus, taskprogress, taskdeadline, employeeuuid) VALUES ('task2', 'taskdesc2', 'todo', 0, CURRENT_TIMESTAMP, '0f8fad5b-d9cb-469f-a165-70867728950e');
-INSERT INTO tasks(tasktitle, taskdescription, taskstatus, taskprogress, taskdeadline, employeeuuid) VALUES ('task3', 'taskdesc3', 'todo', 0, CURRENT_TIMESTAMP, '7c9e6679-7425-40de-944b-e07fc1f90ae7');
-INSERT INTO tasks(tasktitle, taskdescription, taskstatus, taskprogress, taskdeadline, employeeuuid) VALUES ('task4', 'taskdesc4', 'todo', 0, CURRENT_TIMESTAMP, 'c7cf7ded-7512-4110-8617-84456f7f8182');
-INSERT INTO tasks(tasktitle, taskdescription, taskstatus, taskprogress, taskdeadline, employeeuuid) VALUES ('task5', 'taskdesc5', 'todo', 0, CURRENT_TIMESTAMP, '7d38a09f-00f3-4924-8291-8a2e515504f8');
+INSERT INTO tasks(tasktitle, taskdescription, taskstatus, taskprogress, taskdeadline, employeeuuid) VALUES ('task1', 'taskdesc1', 'toDo', 0, CURRENT_TIMESTAMP, '2e63341a-e627-48ac-bb1a-9d56e2e9cc4f');
+INSERT INTO tasks(tasktitle, taskdescription, taskstatus, taskprogress, taskdeadline, employeeuuid) VALUES ('task2', 'taskdesc2', 'toDo', 0, CURRENT_TIMESTAMP, '0f8fad5b-d9cb-469f-a165-70867728950e');
+INSERT INTO tasks(tasktitle, taskdescription, taskstatus, taskprogress, taskdeadline, employeeuuid) VALUES ('task3', 'taskdesc3', 'toDo', 0, CURRENT_TIMESTAMP, '7c9e6679-7425-40de-944b-e07fc1f90ae7');
+INSERT INTO tasks(tasktitle, taskdescription, taskstatus, taskprogress, taskdeadline, employeeuuid) VALUES ('task4', 'taskdesc4', 'toDo', 0, CURRENT_TIMESTAMP, 'c7cf7ded-7512-4110-8617-84456f7f8182');
+INSERT INTO tasks(tasktitle, taskdescription, taskstatus, taskprogress, taskdeadline, employeeuuid) VALUES ('task5', 'taskdesc5', 'toDo', 0, CURRENT_TIMESTAMP, '7d38a09f-00f3-4924-8291-8a2e515504f8');
 
 -- subtasks
-INSERT INTO subtasks(subtasktitle, subtaskdescription, subtaskstatus, subtaskdeadline, taskid, employeeuuid) VALUES('subtask1', 'subtaskdesc1', 'todo', CURRENT_TIMESTAMP, 1, '2e63341a-e627-48ac-bb1a-9d56e2e9cc4f');
-INSERT INTO subtasks(subtasktitle, subtaskdescription, subtaskstatus, subtaskdeadline, taskid, employeeuuid) VALUES('subtask2', 'subtaskdesc2', 'todo', CURRENT_TIMESTAMP, 2, '2e63341a-e627-48ac-bb1a-9d56e2e9cc4f');
-INSERT INTO subtasks(subtasktitle, subtaskdescription, subtaskstatus, subtaskdeadline, taskid, employeeuuid) VALUES('subtask3', 'subtaskdesc3', 'todo', CURRENT_TIMESTAMP, 3, '2e63341a-e627-48ac-bb1a-9d56e2e9cc4f');
-INSERT INTO subtasks(subtasktitle, subtaskdescription, subtaskstatus, subtaskdeadline, taskid, employeeuuid) VALUES('subtask4', 'subtaskdesc4', 'todo', CURRENT_TIMESTAMP, 4, '2e63341a-e627-48ac-bb1a-9d56e2e9cc4f');
-INSERT INTO subtasks(subtasktitle, subtaskdescription, subtaskstatus, subtaskdeadline, taskid, employeeuuid) VALUES('subtask5', 'subtaskdesc5', 'todo', CURRENT_TIMESTAMP, 5, '2e63341a-e627-48ac-bb1a-9d56e2e9cc4f');
+INSERT INTO subtasks(subtasktitle, subtaskdescription, subtaskstatus, taskid, employeeuuid) VALUES('subtask1', 'subtaskdesc1', 'toDo', 1, '2e63341a-e627-48ac-bb1a-9d56e2e9cc4f');
+INSERT INTO subtasks(subtasktitle, subtaskdescription, subtaskstatus, taskid, employeeuuid) VALUES('subtask2', 'subtaskdesc2', 'toDo', 2, '2e63341a-e627-48ac-bb1a-9d56e2e9cc4f');
+INSERT INTO subtasks(subtasktitle, subtaskdescription, subtaskstatus, taskid, employeeuuid) VALUES('subtask3', 'subtaskdesc3', 'toDo', 3, '2e63341a-e627-48ac-bb1a-9d56e2e9cc4f');
+INSERT INTO subtasks(subtasktitle, subtaskdescription, subtaskstatus, taskid, employeeuuid) VALUES('subtask4', 'subtaskdesc4', 'toDo', 4, '2e63341a-e627-48ac-bb1a-9d56e2e9cc4f');
+INSERT INTO subtasks(subtasktitle, subtaskdescription, subtaskstatus, taskid, employeeuuid) VALUES('subtask5', 'subtaskdesc5', 'toDo', 5, '2e63341a-e627-48ac-bb1a-9d56e2e9cc4f');
 
 -- comments
 INSERT INTO comments(commenttitle, commentdescription, timereported, subtaskid) VALUES ('comm1', 'commdesc1', 5, 1);

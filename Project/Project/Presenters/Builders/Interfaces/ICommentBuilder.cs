@@ -10,11 +10,8 @@ namespace Project.Presenters.Builders.Interfaces
 {
     public interface ICommentBuilder: IBuilder
     {
-        void setTitle(string title);
-        void setDescription(string description);
-        void setDatePosted(DateTime datePosted);
-        void setTimeReported(int timeReported);
-
-        
+        void SetTitle(string title);
+        void SetDescription(string description);
+        void SetTimeReported(int timeReported);
     }
 }
