@@ -20,6 +20,6 @@ namespace Project.Persistence.Interfaces
         Exception DeleteTask(int taskID);
         Exception UnassignTaskFromEmployee(string empUUID, int taskID);
         Exception UnassignTasksFromEmployee(string empUUID);
-        Exception AssignTaskToEmployee(int taskID, string empUUID);
+        Exception AssignTaskToEmployee(int taskID, string empUUID, DateTime deadline);
     }
 }

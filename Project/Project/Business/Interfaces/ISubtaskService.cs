@@ -11,5 +11,7 @@ namespace Project.Business.Interfaces
         (Subtask, Exception) GetSubtaskById(int subtaskId);
 
         (IList<Subtask>, Exception) GetSubtasksByTask(int taskId);
+
+        Exception DeleteSubtask(int id);
     }
 }

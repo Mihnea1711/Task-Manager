@@ -431,11 +431,11 @@ namespace Project.Persistence.Interfaces
         /// <param name="taskID"></param>
         /// <param name="empUUID"></param>
         /// <returns></returns>
-        public Exception AssignTaskToEmployee(int taskID, string empUUID)
+        public Exception AssignTaskToEmployee(int taskID, string empUUID, DateTime deadline)
         {
             string stmt = $"" +
             $"UPDATE tasks " +
-            $"SET employeeuuid = '{empUUID}' " +
+            $"SET employeeuuid = '{empUUID}', taskdeadline = '{deadline}' " +
             $"WHERE taskid = {taskID};";
             SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection);
             try

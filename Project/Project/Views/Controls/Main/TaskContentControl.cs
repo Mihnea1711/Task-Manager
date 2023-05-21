@@ -4,6 +4,7 @@ using System.Linq;
 using System.Windows.Forms;
 using Project.Models;
 using Project.Persistence.Interfaces;
+using Project.Views.Controls.Dialogs;
 
 namespace Project.Controls
 {
@@ -63,7 +64,6 @@ namespace Project.Controls
                 DataGridViewRow subtaskRow = ((MainForm)this.TopLevelControl).Presenter.makeSubtaskRow(comment);
                 this.dataGridViewSubtasks.Rows.Add(subtaskRow);
             });
-            // ((MainForm)this.TopLevelControl).LoadSubtaskContentPanel(null);
         }
 
         private void buttonAddSubtask_Click(object sender, EventArgs e)
@@ -83,19 +83,39 @@ namespace Project.Controls
                 string subtaskDescription = dialog.SubtaskDescription;
 
                 ((MainForm)this.TopLevelControl).Presenter.SubtaskSRV.AddSubstask(subtaskName, subtaskDescription, "toDo", _currentTask.ID, _currentTask.EmployeeUUID);
-                ((MainForm)this.TopLevelControl).LoadTaskPanel(_currentTask);
+                (IList<Subtask> taskSubtasks, Exception ex) = ((MainForm)this.TopLevelControl).Presenter.SubtaskSRV.GetSubtasksByTask(_currentTask.ID);
+                if (ex != null)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                ((MainForm)this.TopLevelControl).Presenter.TaskSRV.CheckSubtasksStatus(taskSubtasks.ToList());
+                ((MainForm)this.TopLevelControl).LoadTasksPanel();
             }
         }
 
         private void buttonAssignToMe_Click(object sender, EventArgs e)
         {
-            Exception ex = ((MainForm)this.TopLevelControl).Presenter.TaskSRV.AssignTaskToEmployee(this._currentTask.ID, ((MainForm)this.TopLevelControl).CurrentEmployee.UUID);
-            if(ex != null)
+            Form assignToMeDialog = new Form();
+            AskForDeadlineDialogControl deadlineDialogControl = new AskForDeadlineDialogControl
             {
-                MessageBox.Show(ex.Message);
-                return;
-            }
-            ((MainForm)this.TopLevelControl).LoadTasksPanel();
+                Dock = DockStyle.Fill 
+            };
+            assignToMeDialog.Width = deadlineDialogControl.Width;
+            assignToMeDialog.Height = deadlineDialogControl.Height + 50;
+            assignToMeDialog.Controls.Add(deadlineDialogControl);
+            assignToMeDialog.ShowDialog();
+
+            if(assignToMeDialog.DialogResult == DialogResult.OK)
+            {
+                DateTime deadline = deadlineDialogControl.Deadline;
+                Exception ex = ((MainForm)this.TopLevelControl).Presenter.TaskSRV.AssignTaskToEmployee(this._currentTask.ID, ((MainForm)this.TopLevelControl).CurrentEmployee.UUID, deadline);
+                if (ex != null)
+                {
+                    MessageBox.Show(ex.Message);
+                    return;
+                }
+                ((MainForm)this.TopLevelControl).LoadTasksPanel();
+            }            
         }
 
         private void buttonUnassign_Click(object sender, EventArgs e)
@@ -163,16 +183,20 @@ namespace Project.Controls
             if (e.RowIndex >= 0 && e.ColumnIndex == 4)
             {
                 DataGridViewCell idCell = dataGridViewSubtasks.Rows[e.RowIndex].Cells[0];
-                string subtaskID = idCell.Value.ToString();
 
-                (Subtask clickedSubtask, Exception ex) = ((MainForm)this.TopLevelControl).Presenter.SubtaskSRV.GetSubtaskById(int.Parse(subtaskID));
-                if (ex != null)
+                if (idCell.Value != null)
                 {
-                    MessageBox.Show(ex.Message);
-                    return;
-                }
+                    string subtaskID = idCell.Value.ToString();
 
-                ((MainForm)this.TopLevelControl).LoadSubtaskContentPanel(clickedSubtask);
+                    (Subtask clickedSubtask, Exception ex) = ((MainForm)this.TopLevelControl).Presenter.SubtaskSRV.GetSubtaskById(int.Parse(subtaskID));
+                    if (ex != null)
+                    {
+                        MessageBox.Show(ex.Message);
+                        return;
+                    }
+
+                    ((MainForm)this.TopLevelControl).LoadSubtaskContentPanel(clickedSubtask);
+                }
             }
         }
     }

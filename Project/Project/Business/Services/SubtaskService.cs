@@ -63,5 +63,10 @@ namespace Project.Business.Services
         {
             return subtaskRepository.UpdateSubtaskDetails(id, subtaskName, subtaskDescription);
         }
+
+        public Exception DeleteSubtask(int id)
+        {
+            return this.subtaskRepository.DeleteSubtask(id);
+        }
     }
 }

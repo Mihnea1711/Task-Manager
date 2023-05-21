@@ -150,9 +150,9 @@ namespace Project.Business.Services
         /// <param name="taskID"></param>
         /// <param name="empUUID"></param>
         /// <returns>Returns an exception if an error happened while executing the statement.</returns>
-        public Exception AssignTaskToEmployee(int taskID, string empUUID)
+        public Exception AssignTaskToEmployee(int taskID, string empUUID, DateTime deadline)
         {
-            return this.taskRepository.AssignTaskToEmployee(taskID, empUUID);
+            return this.taskRepository.AssignTaskToEmployee(taskID, empUUID, deadline);
         }
 
         /// <summary>
@@ -174,6 +174,86 @@ namespace Project.Business.Services
         public Exception UnassignTasksFromEmployee(string empUUID)
         {
             return this.taskRepository.UnassignTasksFromEmployee(empUUID);
+        }
+
+        public Exception CheckSubtasksStatus(List<Subtask> subtasks)
+        {
+            if(subtasks == null)
+            {
+                return new NullSubtasksException("Subtask list is null");
+            }
+            if(subtasks.Count == 0)
+            {
+                return new SubtasksEmptyException("Subtask list is empty");
+            }
+
+            int taskId = subtasks[0].TaskId;
+
+            double doneSubtasks = 0;
+            double toDoSubtasks = 0;
+
+            foreach (Subtask subtask in subtasks)
+            {
+                if (subtask.Status == "toDo")
+                {
+                    toDoSubtasks++;
+                }
+                if (subtask.Status == "inProgress")
+                {
+                    Exception exc = UpdateTaskStatus(taskId, "inProgress");
+                    if (exc != null)
+                    {
+                        return exc;
+                    }
+                }
+                if (subtask.Status == "done")
+                {
+                    doneSubtasks++;
+                }
+            }
+
+            if (toDoSubtasks == subtasks.Count)
+            {
+                Exception exc = UpdateTaskStatus(taskId, "toDo");
+                if (exc != null)
+                {
+                    return exc;
+                }
+            }
+
+            if (doneSubtasks == subtasks.Count)
+            {
+                Exception exc = UpdateTaskStatus(taskId, "done");
+                if (exc != null)
+                {
+                    return exc;
+                }
+            }
+
+            int progress = (int)(doneSubtasks / subtasks.Count * 100);
+            Exception ex = UpdateTaskProgress(taskId, progress);
+            if (ex != null)
+            {
+                return ex;
+            }
+
+            return null;
+        }
+    }
+
+    class NullSubtasksException : Exception
+    {
+        public NullSubtasksException(string message)
+            : base(message)
+        {
+        }
+    }
+
+    class SubtasksEmptyException : Exception
+    {
+        public SubtasksEmptyException(string message)
+            : base(message)
+        {
         }
     }
 }
