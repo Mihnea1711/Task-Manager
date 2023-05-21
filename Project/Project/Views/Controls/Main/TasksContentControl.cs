@@ -51,9 +51,9 @@ namespace Project.Controls
                 this._tasks = availableTasks;
             }
 
-            _tasks.ForEach(task =>
+            foreach(Task task in _tasks)
             {
-                if (task.Deadline < DateTime.Now)
+                if (task.Deadline.Day < DateTime.Now.Day)
                 {
                     ((MainForm)this.TopLevelControl).Presenter.TaskSRV.UnassignTaskFromEmployee(task.EmployeeUUID, task.ID);
                 }
@@ -62,7 +62,7 @@ namespace Project.Controls
                     DataGridViewRow taskRow = ((MainForm)this.TopLevelControl).Presenter.makeTaskRow(task);
                     this.dataGridViewTasks.Rows.Add(taskRow);
                 }
-            });
+            };
         }
 
         private void buttonAddTask_Click(object sender, EventArgs e)
@@ -97,18 +97,21 @@ namespace Project.Controls
         private void dataGridViewTasks_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0 && e.ColumnIndex == 6) // Checking if it's a valid row index and the button column (index 6)
-            {
+            { 
                 DataGridViewCell idCell = dataGridViewTasks.Rows[e.RowIndex].Cells[0];
-                string taskID = idCell.Value.ToString();
-
-                (Task clickedTask, Exception ex) = ((MainForm)this.TopLevelControl).Presenter.TaskSRV.GetTaskByID(int.Parse(taskID));
-                if(ex != null)
+                if (idCell.Value != null)
                 {
-                    MessageBox.Show(ex.Message);
-                    return;
-                }
+                    string taskID = idCell.Value.ToString();
 
-                ((MainForm)this.TopLevelControl).LoadTaskContentPanel(clickedTask);
+                    (Task clickedTask, Exception ex) = ((MainForm)this.TopLevelControl).Presenter.TaskSRV.GetTaskByID(int.Parse(taskID));
+                    if (ex != null)
+                    {
+                        MessageBox.Show(ex.Message);
+                        return;
+                    }
+
+                    ((MainForm)this.TopLevelControl).LoadTaskContentPanel(clickedTask);
+                }
             }
         }
 

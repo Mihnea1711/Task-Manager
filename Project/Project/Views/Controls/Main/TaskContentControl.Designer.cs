@@ -48,21 +48,20 @@
             // 
             this.labelName.AutoSize = true;
             this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelName.Location = new System.Drawing.Point(8, 22);
-            this.labelName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelName.Location = new System.Drawing.Point(11, 27);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(240, 31);
+            this.labelName.Size = new System.Drawing.Size(298, 39);
             this.labelName.TabIndex = 2;
             this.labelName.Text = "Task <task-name>";
             // 
             // textBoxDescription
             // 
-            this.textBoxDescription.Location = new System.Drawing.Point(14, 115);
-            this.textBoxDescription.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxDescription.Location = new System.Drawing.Point(19, 142);
+            this.textBoxDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxDescription.Multiline = true;
             this.textBoxDescription.Name = "textBoxDescription";
             this.textBoxDescription.ReadOnly = true;
-            this.textBoxDescription.Size = new System.Drawing.Size(667, 77);
+            this.textBoxDescription.Size = new System.Drawing.Size(888, 94);
             this.textBoxDescription.TabIndex = 3;
             this.textBoxDescription.Text = "task description........";
             // 
@@ -70,21 +69,21 @@
             // 
             this.dataGridViewSubtasks.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewSubtasks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSubtasks.Location = new System.Drawing.Point(14, 280);
-            this.dataGridViewSubtasks.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridViewSubtasks.Location = new System.Drawing.Point(19, 345);
+            this.dataGridViewSubtasks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewSubtasks.Name = "dataGridViewSubtasks";
             this.dataGridViewSubtasks.RowHeadersWidth = 51;
             this.dataGridViewSubtasks.RowTemplate.Height = 24;
-            this.dataGridViewSubtasks.Size = new System.Drawing.Size(667, 137);
+            this.dataGridViewSubtasks.Size = new System.Drawing.Size(889, 169);
             this.dataGridViewSubtasks.TabIndex = 4;
             this.dataGridViewSubtasks.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSubtasks_CellClick);
             // 
             // buttonAddSubtask
             // 
-            this.buttonAddSubtask.Location = new System.Drawing.Point(575, 429);
-            this.buttonAddSubtask.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonAddSubtask.Location = new System.Drawing.Point(767, 528);
+            this.buttonAddSubtask.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAddSubtask.Name = "buttonAddSubtask";
-            this.buttonAddSubtask.Size = new System.Drawing.Size(106, 31);
+            this.buttonAddSubtask.Size = new System.Drawing.Size(141, 38);
             this.buttonAddSubtask.TabIndex = 5;
             this.buttonAddSubtask.Text = "Add Subtask";
             this.buttonAddSubtask.UseVisualStyleBackColor = true;
@@ -94,40 +93,39 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(10, 238);
+            this.label2.Location = new System.Drawing.Point(13, 293);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 20);
+            this.label2.Size = new System.Drawing.Size(94, 25);
             this.label2.TabIndex = 6;
             this.label2.Text = "Subtasks";
             // 
             // labelAssignedEmployee
             // 
             this.labelAssignedEmployee.AutoSize = true;
-            this.labelAssignedEmployee.Location = new System.Drawing.Point(520, 194);
-            this.labelAssignedEmployee.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelAssignedEmployee.Location = new System.Drawing.Point(693, 239);
             this.labelAssignedEmployee.Name = "labelAssignedEmployee";
-            this.labelAssignedEmployee.Size = new System.Drawing.Size(161, 13);
+            this.labelAssignedEmployee.Size = new System.Drawing.Size(206, 16);
             this.labelAssignedEmployee.TabIndex = 7;
             this.labelAssignedEmployee.Text = "Assigned To - <employee name>";
             // 
             // labelDeadline
             // 
             this.labelDeadline.AutoSize = true;
-            this.labelDeadline.Location = new System.Drawing.Point(11, 78);
-            this.labelDeadline.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDeadline.Location = new System.Drawing.Point(15, 96);
             this.labelDeadline.Name = "labelDeadline";
-            this.labelDeadline.Size = new System.Drawing.Size(87, 13);
+            this.labelDeadline.Size = new System.Drawing.Size(107, 16);
             this.labelDeadline.TabIndex = 8;
             this.labelDeadline.Text = "Time left - hh:mm";
             // 
             // progressBarProgress
             // 
             this.progressBarProgress.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.progressBarProgress.Location = new System.Drawing.Point(272, 31);
-            this.progressBarProgress.Margin = new System.Windows.Forms.Padding(2);
+            this.progressBarProgress.Location = new System.Drawing.Point(363, 38);
+            this.progressBarProgress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.progressBarProgress.Name = "progressBarProgress";
-            this.progressBarProgress.Size = new System.Drawing.Size(75, 19);
+            this.progressBarProgress.Size = new System.Drawing.Size(100, 23);
+            this.progressBarProgress.Step = 1;
             this.progressBarProgress.TabIndex = 9;
             this.progressBarProgress.Value = 50;
             // 
@@ -135,20 +133,19 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(351, 32);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(468, 39);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(20, 17);
+            this.label5.Size = new System.Drawing.Size(24, 20);
             this.label5.TabIndex = 10;
             this.label5.Text = "%";
             // 
             // buttonAssignToMe
             // 
             this.buttonAssignToMe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAssignToMe.Location = new System.Drawing.Point(505, 210);
-            this.buttonAssignToMe.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonAssignToMe.Location = new System.Drawing.Point(673, 258);
+            this.buttonAssignToMe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAssignToMe.Name = "buttonAssignToMe";
-            this.buttonAssignToMe.Size = new System.Drawing.Size(85, 24);
+            this.buttonAssignToMe.Size = new System.Drawing.Size(113, 30);
             this.buttonAssignToMe.TabIndex = 12;
             this.buttonAssignToMe.Text = "Assign To Me";
             this.buttonAssignToMe.UseVisualStyleBackColor = true;
@@ -158,10 +155,10 @@
             // buttonUnassign
             // 
             this.buttonUnassign.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUnassign.Location = new System.Drawing.Point(594, 210);
-            this.buttonUnassign.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonUnassign.Location = new System.Drawing.Point(792, 258);
+            this.buttonUnassign.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonUnassign.Name = "buttonUnassign";
-            this.buttonUnassign.Size = new System.Drawing.Size(85, 24);
+            this.buttonUnassign.Size = new System.Drawing.Size(113, 30);
             this.buttonUnassign.TabIndex = 13;
             this.buttonUnassign.Text = "Unassign";
             this.buttonUnassign.UseVisualStyleBackColor = true;
@@ -170,10 +167,10 @@
             // 
             // buttonEdit
             // 
-            this.buttonEdit.Location = new System.Drawing.Point(522, 20);
-            this.buttonEdit.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonEdit.Location = new System.Drawing.Point(696, 25);
+            this.buttonEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(76, 29);
+            this.buttonEdit.Size = new System.Drawing.Size(101, 36);
             this.buttonEdit.TabIndex = 14;
             this.buttonEdit.Text = "Edit";
             this.buttonEdit.UseVisualStyleBackColor = true;
@@ -181,10 +178,10 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(604, 20);
-            this.buttonDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonDelete.Location = new System.Drawing.Point(805, 25);
+            this.buttonDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(76, 29);
+            this.buttonDelete.Size = new System.Drawing.Size(101, 36);
             this.buttonDelete.TabIndex = 15;
             this.buttonDelete.Text = "Delete";
             this.buttonDelete.UseVisualStyleBackColor = true;
@@ -192,7 +189,7 @@
             // 
             // TaskContentControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Controls.Add(this.buttonDelete);
@@ -208,9 +205,9 @@
             this.Controls.Add(this.dataGridViewSubtasks);
             this.Controls.Add(this.textBoxDescription);
             this.Controls.Add(this.labelName);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "TaskContentControl";
-            this.Size = new System.Drawing.Size(700, 471);
+            this.Size = new System.Drawing.Size(933, 580);
             this.Load += new System.EventHandler(this.TaskContentControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSubtasks)).EndInit();
             this.ResumeLayout(false);

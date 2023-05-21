@@ -48,10 +48,9 @@ namespace Project.Controls
             // labelAssignedTo
             // 
             this.labelAssignedTo.AutoSize = true;
-            this.labelAssignedTo.Location = new System.Drawing.Point(521, 190);
-            this.labelAssignedTo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelAssignedTo.Location = new System.Drawing.Point(695, 234);
             this.labelAssignedTo.Name = "labelAssignedTo";
-            this.labelAssignedTo.Size = new System.Drawing.Size(161, 13);
+            this.labelAssignedTo.Size = new System.Drawing.Size(206, 16);
             this.labelAssignedTo.TabIndex = 17;
             this.labelAssignedTo.Text = "Assigned To - <employee name>";
             // 
@@ -59,19 +58,19 @@ namespace Project.Controls
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 221);
+            this.label2.Location = new System.Drawing.Point(15, 272);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 20);
+            this.label2.Size = new System.Drawing.Size(107, 25);
             this.label2.TabIndex = 16;
             this.label2.Text = "Comments";
             // 
             // buttonAddComment
             // 
-            this.buttonAddComment.Location = new System.Drawing.Point(583, 422);
-            this.buttonAddComment.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonAddComment.Location = new System.Drawing.Point(777, 519);
+            this.buttonAddComment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAddComment.Name = "buttonAddComment";
-            this.buttonAddComment.Size = new System.Drawing.Size(99, 31);
+            this.buttonAddComment.Size = new System.Drawing.Size(132, 38);
             this.buttonAddComment.TabIndex = 15;
             this.buttonAddComment.Text = "Add Comment";
             this.buttonAddComment.UseVisualStyleBackColor = true;
@@ -79,23 +78,24 @@ namespace Project.Controls
             // 
             // dataGridViewComments
             // 
+            this.dataGridViewComments.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewComments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewComments.Location = new System.Drawing.Point(15, 263);
-            this.dataGridViewComments.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridViewComments.Location = new System.Drawing.Point(20, 324);
+            this.dataGridViewComments.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewComments.Name = "dataGridViewComments";
             this.dataGridViewComments.RowHeadersWidth = 51;
             this.dataGridViewComments.RowTemplate.Height = 24;
-            this.dataGridViewComments.Size = new System.Drawing.Size(667, 137);
+            this.dataGridViewComments.Size = new System.Drawing.Size(889, 169);
             this.dataGridViewComments.TabIndex = 14;
             // 
             // textBoxSubtaskDescription
             // 
-            this.textBoxSubtaskDescription.Location = new System.Drawing.Point(15, 96);
-            this.textBoxSubtaskDescription.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxSubtaskDescription.Location = new System.Drawing.Point(20, 118);
+            this.textBoxSubtaskDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxSubtaskDescription.Multiline = true;
             this.textBoxSubtaskDescription.Name = "textBoxSubtaskDescription";
             this.textBoxSubtaskDescription.ReadOnly = true;
-            this.textBoxSubtaskDescription.Size = new System.Drawing.Size(667, 78);
+            this.textBoxSubtaskDescription.Size = new System.Drawing.Size(888, 95);
             this.textBoxSubtaskDescription.TabIndex = 13;
             this.textBoxSubtaskDescription.Text = "subtask description........";
             // 
@@ -103,10 +103,9 @@ namespace Project.Controls
             // 
             this.labelSubtaskName.AutoSize = true;
             this.labelSubtaskName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSubtaskName.Location = new System.Drawing.Point(9, 8);
-            this.labelSubtaskName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelSubtaskName.Location = new System.Drawing.Point(12, 10);
             this.labelSubtaskName.Name = "labelSubtaskName";
-            this.labelSubtaskName.Size = new System.Drawing.Size(279, 31);
+            this.labelSubtaskName.Size = new System.Drawing.Size(347, 39);
             this.labelSubtaskName.TabIndex = 12;
             this.labelSubtaskName.Text = "Subtask <task-name>";
             // 
@@ -116,9 +115,10 @@ namespace Project.Controls
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(188, 289);
+            this.button2.Location = new System.Drawing.Point(251, 356);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(160, 60);
+            this.button2.Size = new System.Drawing.Size(213, 74);
             this.button2.TabIndex = 21;
             this.button2.Text = "toSubtask";
             this.button2.UseVisualStyleBackColor = true;
@@ -131,28 +131,30 @@ namespace Project.Controls
             "toDo",
             "inProgress",
             "done"});
-            this.comboBoxStatus.Location = new System.Drawing.Point(606, 53);
+            this.comboBoxStatus.Location = new System.Drawing.Point(808, 65);
+            this.comboBoxStatus.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxStatus.Name = "comboBoxStatus";
-            this.comboBoxStatus.Size = new System.Drawing.Size(76, 21);
+            this.comboBoxStatus.Size = new System.Drawing.Size(100, 24);
             this.comboBoxStatus.TabIndex = 23;
             this.comboBoxStatus.SelectedIndexChanged += new System.EventHandler(this.comboBoxStatus_SelectedIndexChanged);
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(606, 10);
-            this.buttonDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonDelete.Location = new System.Drawing.Point(808, 12);
+            this.buttonDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(76, 29);
+            this.buttonDelete.Size = new System.Drawing.Size(101, 36);
             this.buttonDelete.TabIndex = 25;
             this.buttonDelete.Text = "Delete";
             this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonEdit
             // 
-            this.buttonEdit.Location = new System.Drawing.Point(524, 10);
-            this.buttonEdit.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonEdit.Location = new System.Drawing.Point(699, 12);
+            this.buttonEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(76, 29);
+            this.buttonEdit.Size = new System.Drawing.Size(101, 36);
             this.buttonEdit.TabIndex = 24;
             this.buttonEdit.Text = "Edit";
             this.buttonEdit.UseVisualStyleBackColor = true;
@@ -160,7 +162,7 @@ namespace Project.Controls
             // 
             // SubtaskContentControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonEdit);
@@ -172,8 +174,9 @@ namespace Project.Controls
             this.Controls.Add(this.textBoxSubtaskDescription);
             this.Controls.Add(this.labelSubtaskName);
             this.Controls.Add(this.button2);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SubtaskContentControl";
-            this.Size = new System.Drawing.Size(700, 477);
+            this.Size = new System.Drawing.Size(933, 587);
             this.Load += new System.EventHandler(this.SubtaskContentControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewComments)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

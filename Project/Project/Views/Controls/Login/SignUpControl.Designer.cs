@@ -128,7 +128,7 @@ namespace Project.Controls
             this.textBoxPhoneNumber.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPhoneNumber.Name = "textBoxPhoneNumber";
             this.textBoxPhoneNumber.Size = new System.Drawing.Size(255, 22);
-            this.textBoxPhoneNumber.TabIndex = 14;
+            this.textBoxPhoneNumber.TabIndex = 12;
             // 
             // labelPhone
             // 
@@ -146,7 +146,7 @@ namespace Project.Controls
             this.buttonSignUp.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSignUp.Name = "buttonSignUp";
             this.buttonSignUp.Size = new System.Drawing.Size(112, 26);
-            this.buttonSignUp.TabIndex = 12;
+            this.buttonSignUp.TabIndex = 13;
             this.buttonSignUp.Text = "SignUp";
             this.buttonSignUp.UseVisualStyleBackColor = true;
             this.buttonSignUp.Click += new System.EventHandler(this.buttonSignUp_Click);

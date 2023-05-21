@@ -10,5 +10,6 @@ namespace Project.Persistence.Interfaces
         Exception AddSubstask(Subtask subtask);
         (Subtask, Exception) GetSubtaskById(int id);
         (IList<Subtask>, Exception) GetSubtasksByTask(int id);
+        Exception DeleteSubtask(int id);
     }
 }

@@ -98,6 +98,14 @@ namespace Project.Controls
                 }
             }
             ((MainForm)this.TopLevelControl).Presenter.SubtaskSRV.ChangeStatus(_currentSubtask.Id, selectedKey);
+
+            (IList<Subtask> taskSubtasks, Exception ex) = ((MainForm)this.TopLevelControl).Presenter.SubtaskSRV.GetSubtasksByTask(_currentSubtask.TaskId);
+            if (ex != null)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            ((MainForm)this.TopLevelControl).Presenter.TaskSRV.CheckSubtasksStatus(taskSubtasks.ToList());
         }
 
         private void buttonEdit_Click(object sender, EventArgs e)
@@ -129,6 +137,30 @@ namespace Project.Controls
                 }
                 ((MainForm)this.TopLevelControl).LoadSubtaskContentPanel(_currentSubtask);
             }
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            Exception ex = ((MainForm)this.TopLevelControl).Presenter.SubtaskSRV.DeleteSubtask(this._currentSubtask.Id);
+            if (ex != null)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            (IList<Subtask> taskSubtasks, Exception exc) = ((MainForm)this.TopLevelControl).Presenter.SubtaskSRV.GetSubtasksByTask(_currentSubtask.TaskId);
+            if (ex != null)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            ((MainForm)this.TopLevelControl).Presenter.TaskSRV.CheckSubtasksStatus(taskSubtasks.ToList());
+
+            (Task task, Exception exception) = ((MainForm)this.TopLevelControl).Presenter.TaskSRV.GetTaskByID(_currentSubtask.TaskId);
+            if (ex != null)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            ((MainForm)this.TopLevelControl).LoadTaskPanel(task);
         }
     }
 }

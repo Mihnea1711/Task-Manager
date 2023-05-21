@@ -32,6 +32,8 @@ namespace Project.Business.Interfaces
 
         Exception UnassignTasksFromEmployee(string empUUID);
 
-        Exception AssignTaskToEmployee(int taskID, string empUUID);
+        Exception AssignTaskToEmployee(int taskID, string empUUID, DateTime deadline);
+
+        Exception CheckSubtasksStatus(List<Subtask> subtasks);
     }
 }

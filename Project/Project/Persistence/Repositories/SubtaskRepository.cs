@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
+using System.Threading.Tasks;
 
 namespace Project.Persistence.Interfaces
 {
@@ -210,5 +211,34 @@ namespace Project.Persistence.Interfaces
                 }
             }
         }
+
+        /// <summary>
+        /// Method to delete a subtask
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Returns an exception in case an error happened while executing the statement.</returns>
+        public Exception DeleteSubtask(int id)
+        {
+            string stmt = $"DELETE FROM subtasks WHERE subtaskid = {id}";
+            SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection);
+            try
+            {
+                cmd.ExecuteNonQuery();
+
+                return null;
+            }
+            catch (Exception ex)
+            {
+                return new SubtaskDeleteException(ex.Message);
+            }
+        }
     }
+
+    class SubtaskDeleteException : Exception
+    {
+        public SubtaskDeleteException(string message)
+            : base(message)
+        {
+        }
+    }    
 }

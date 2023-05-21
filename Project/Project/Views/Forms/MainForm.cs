@@ -39,15 +39,53 @@ namespace Project
             this._presenter = new Presenter();
         }
 
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            LoadTasksPanel();
+        }
+
+        private void buttonTasks_Click(object sender, EventArgs e)
+        {
+            LoadTasksPanel();
+        }
+
+        private void buttonBacklog_Click(object sender, EventArgs e)
+        {
+            LoadBacklogPanel();
+        }        
+
+        private void buttonUsers_Click(object sender, EventArgs e)
+        {
+            LoadUsersPanel();
+        }
+
+        private void buttonAbout_Click(object sender, EventArgs e)
+        {
+            LoadAboutPanel();
+        }
+
+        private void buttonProfile_Click(object sender, EventArgs e)
+        {
+            LoadProfilePage(_currentEmployee);
+        }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            ((MainForm)this.TopLevelControl).Hide();
+            LoginPage loginPage = new LoginPage();
+            loginPage.ShowDialog();
+            ((MainForm)this.TopLevelControl).Close();
+        }
+
         public void SetLabelFullName(string fullname)
         {
             this.labelName.Text = fullname;
         }
 
         public void LoadTasksPanel()
-        { 
+        {
             this.panelPageContent.Controls.Clear();
-            
+
             TasksContentControl tasksContentControl = new TasksContentControl();
 
             this.panelPageContent.Controls.Add(tasksContentControl);
@@ -122,44 +160,6 @@ namespace Project
             ProfileContentControl profileContentControl = new ProfileContentControl(employee);
             profileContentControl.Dock = DockStyle.Fill;
             this.panelPageContent.Controls.Add(profileContentControl);
-        }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-            LoadTasksPanel();
-        }
-
-        private void buttonTasks_Click(object sender, EventArgs e)
-        {
-            LoadTasksPanel();
-        }
-
-        private void buttonBacklog_Click(object sender, EventArgs e)
-        {
-            LoadBacklogPanel();
-        }        
-
-        private void buttonUsers_Click(object sender, EventArgs e)
-        {
-            LoadUsersPanel();
-        }
-
-        private void buttonAbout_Click(object sender, EventArgs e)
-        {
-            LoadAboutPanel();
-        }
-
-        private void buttonProfile_Click(object sender, EventArgs e)
-        {
-            LoadProfilePage(_currentEmployee);
-        }
-
-        private void buttonLogout_Click(object sender, EventArgs e)
-        {
-            ((MainForm)this.TopLevelControl).Hide();
-            LoginPage loginPage = new LoginPage();
-            loginPage.ShowDialog();
-            ((MainForm)this.TopLevelControl).Close();
         }
     }
 }

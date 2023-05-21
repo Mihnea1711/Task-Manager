@@ -10,6 +10,7 @@ namespace Project.Presenters.Builders
         /// The final "product" of the builder.
         /// </summary>
         private DataGridViewRow commentRow;
+
         /// <summary>
         /// Method to retrieve the "product".
         /// </summary>
@@ -56,6 +57,10 @@ namespace Project.Presenters.Builders
             this.commentRow.Cells.Add(timeReportedCell);
         }
 
+        /// <summary>
+        /// Method to set the title of the comment in the row.
+        /// </summary>
+        /// <param name="timeReported"></param>
         public void SetTitle(string title)
         {
             DataGridViewCell titleCell = new DataGridViewTextBoxCell();
