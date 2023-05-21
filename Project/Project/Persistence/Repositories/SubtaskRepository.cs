@@ -212,6 +212,11 @@ namespace Project.Persistence.Interfaces
             }
         }
 
+        /// <summary>
+        /// Method to delete a subtask
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Returns an exception in case an error happened while executing the statement.</returns>
         public Exception DeleteSubtask(int id)
         {
             string stmt = $"DELETE FROM subtasks WHERE subtaskid = {id}";

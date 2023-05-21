@@ -176,6 +176,11 @@ namespace Project.Business.Services
             return this.taskRepository.UnassignTasksFromEmployee(empUUID);
         }
 
+        /// <summary>
+        /// Method to update status and progress of the task after a subtask has been modified.
+        /// </summary>
+        /// <param name="subtasks"></param>
+        /// <returns>Returns an exception if an error happened while executing the statement.</returns>
         public Exception CheckSubtasksStatus(List<Subtask> subtasks)
         {
             if(subtasks == null)

@@ -33,6 +33,7 @@ namespace Project.Controls
                 return this.textBoxReportedTime.Text;
             }
         }
+
         public AddCommentDialogControl()
         {
             InitializeComponent();
