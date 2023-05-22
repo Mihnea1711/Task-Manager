@@ -11,11 +11,11 @@ namespace Project.Business.Services
 {
     public class CommentService : ICommentService
     {
-        private CommentRepository commentRepository;
+        private CommentRepository _commentRepository;
 
         public CommentService()
         {
-            this.commentRepository = new CommentRepository();
+            this._commentRepository = new CommentRepository();
         }
 
         public (bool, Exception) AddComment(string title, string description, int timeReported, int subtaskId)
@@ -24,7 +24,7 @@ namespace Project.Business.Services
             Comment comment = new Comment(0, title, description, timeReported, subtaskId);
 
             // store comment in db
-            Exception exception = this.commentRepository.AddComment(comment);
+            Exception exception = this._commentRepository.AddComment(comment);
             if (exception != null)
             {
                 return (false, exception);
@@ -34,7 +34,7 @@ namespace Project.Business.Services
         }
         public (Comment, Exception) GetCommentkById(int commentId)
         {
-            (Comment comment, Exception exception) = commentRepository.GetCommentkById(commentId);
+            (Comment comment, Exception exception) = _commentRepository.GetCommentkById(commentId);
 
             if (exception != null)
             {
@@ -46,7 +46,7 @@ namespace Project.Business.Services
 
         public (IList<Comment>, Exception) GetCommentBySubask(int subtaskId)
         {
-            (IList<Comment> comments, Exception exception) = commentRepository.GetCommentsBySubtask(subtaskId);
+            (IList<Comment> comments, Exception exception) = _commentRepository.GetCommentsBySubtask(subtaskId);
 
             if (exception != null)
             {

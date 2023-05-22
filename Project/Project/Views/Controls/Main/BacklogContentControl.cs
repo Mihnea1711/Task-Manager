@@ -7,8 +7,16 @@ namespace Project.Controls
 {
     public partial class BacklogContentControl : UserControl
     {
+        #region fields
+        /// <summary>
+        /// List of the tasks inside the control.
+        /// </summary>
         private List<Task> _tasks = new List<Task>();
+        #endregion
 
+        /// <summary>
+        /// Default constructor.
+        /// </summary>
         public BacklogContentControl()
         {
             InitializeComponent();
@@ -22,6 +30,10 @@ namespace Project.Controls
             this.dataGridViewTasks.Columns.Add("taskSeeMore", "");
         }
 
+        /// <summary>
+        /// Constructor with the list of tasks as argument. Used when searching with the search-bar.
+        /// </summary>
+        /// <param name="tasks"></param>
         public BacklogContentControl(List<Task> tasks)
         {
             InitializeComponent();
@@ -37,6 +49,12 @@ namespace Project.Controls
             this._tasks = tasks;
         }
 
+        /// <summary>
+        /// When loading, if the task list is empty, we retrieve all the tasks that are expired or unnasigned from the database 
+        /// and render them inside the data grid view.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BacklogContentControl_Load(object sender, EventArgs e)
         {
             if (this._tasks.Count == 0)
@@ -57,6 +75,11 @@ namespace Project.Controls
             });
         }
 
+        /// <summary>
+        /// Callback for the "See more" button inside the data grid view. Loads the task details page.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param
         private void dataGridViewTasks_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0 && e.ColumnIndex == 6) // Checking if it's a valid row index and the button column (index 6)
@@ -78,6 +101,11 @@ namespace Project.Controls
             }
         }
 
+        /// <summary>
+        /// Callback for the search bar.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonSearch_Click(object sender, EventArgs e)
         {
             string searchKey = this.textBoxSearchBar.Text;

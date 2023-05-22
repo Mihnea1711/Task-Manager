@@ -8,7 +8,16 @@ namespace Project.Controls
 {
     public partial class UsersContentControl : UserControl
     {
+        #region fields
+        /// <summary>
+        /// The employee list.
+        /// </summary>
         private List<Employee> _employees = new List<Employee>();
+        #endregion
+
+        /// <summary>
+        /// Default constructor. 
+        /// </summary>
         public UsersContentControl()
         {
             InitializeComponent();
@@ -20,6 +29,10 @@ namespace Project.Controls
             this.dataGridViewEmployees.Columns.Add("employeeSeeMore", "");
         }
 
+        /// <summary>
+        /// Constructor with the list of employees as argument. Used when searching in the search-bar. The page loads only matched employees.
+        /// </summary>
+        /// <param name="employees"></param>
         public UsersContentControl(List<Employee> employees)
         {
             InitializeComponent();
@@ -34,6 +47,11 @@ namespace Project.Controls
             this._employees = employees;
         }
 
+        /// <summary>
+        /// When loading control, if there are no employees in the list, retrieve all the employees from the database and render the list in the data grid view.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void UsersContentControl_Load(object sender, EventArgs e)
         {
             if (this._employees.Count == 0)
@@ -54,9 +72,15 @@ namespace Project.Controls
             });
         }
 
+        /// <summary>
+        /// Callback for the "See More" button inside the data grid view. Loads the employee data profile.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void dataGridViewEmployees_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0 && e.ColumnIndex == 4) // Checking if it's a valid row index and the button column (index 6)
+            // Checking if it's a valid row index and the button column (index 4)
+            if (e.RowIndex >= 0 && e.ColumnIndex == 4) 
             {
                 DataGridViewCell usernameCell = dataGridViewEmployees.Rows[e.RowIndex].Cells[0];
                 string employeeUsername = usernameCell.Value.ToString();
@@ -72,6 +96,11 @@ namespace Project.Controls
             }
         }
 
+        /// <summary>
+        /// Callback for the search bar.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonSearch_Click(object sender, EventArgs e)
         {
             string searchKey = this.textBoxSearchBar.Text;
@@ -84,7 +113,6 @@ namespace Project.Controls
             }
 
             ((MainForm)this.TopLevelControl).LoadUsersPanel(matchingEmployees);
-
         }
     }
 }

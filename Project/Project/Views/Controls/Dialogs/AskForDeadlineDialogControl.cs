@@ -12,16 +12,22 @@ namespace Project.Views.Controls.Dialogs
 {
     public partial class AskForDeadlineDialogControl : UserControl
     {
-        public AskForDeadlineDialogControl()
+        #region getters
+        public DateTime Deadline
         {
-            InitializeComponent();
-        }
-
-        public DateTime Deadline {
             get
             {
                 return this.dateTimePickerDeadline.Value;
-            }    
+            }
         }
+        #endregion
+
+        /// <summary>
+        /// Constructor.
+        /// </summary>
+        public AskForDeadlineDialogControl()
+        {
+            InitializeComponent();
+        }        
     }
 }

@@ -7,10 +7,12 @@ namespace Project
 {
     public partial class LoginPage : Form
     {
+        #region fields
         /// <summary>
         /// Instance of the employee service that will handle all the employee related operations.
         /// </summary>
-        private EmployeeService employeeService;
+        private EmployeeService _employeeService;
+        #endregion
 
         /// <summary>
         /// Constructor. Initializes the employee service.
@@ -18,14 +20,14 @@ namespace Project
         public LoginPage()
         {
             InitializeComponent();
-            this.employeeService = new EmployeeService();
+            this._employeeService = new EmployeeService();
         }
 
         /// <summary>
         /// Getter for the employee service.
         /// </summary>
         public EmployeeService EmployeeSRV {
-           get { return employeeService; }
+           get { return _employeeService; }
         }
 
         /// <summary>

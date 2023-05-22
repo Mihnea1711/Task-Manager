@@ -13,13 +13,13 @@ namespace Project.Business.Services
         /// <summary>
         /// Instance of the EmployeeRepository class that handles the database operations.
         /// </summary>
-        private IEmployeeRepository employeeRepository;
+        private IEmployeeRepository _employeeRepository;
 
         /// <summary>
         /// Constructor. Initializes the employee repository instance.
         /// </summary>
         public EmployeeService() {
-            this.employeeRepository = new EmployeeRepository();
+            this._employeeRepository = new EmployeeRepository();
         }
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace Project.Business.Services
         /// Also returns an exception if an error happened while executing the statement.</returns>
         public (bool, Exception) ValidateUsername(string username)
         {
-            return this.employeeRepository.IsValidUsername(username);
+            return this._employeeRepository.IsValidUsername(username);
         }
 
         /// <summary>
@@ -56,22 +56,22 @@ namespace Project.Business.Services
             Employee employee = new Employee(uuid.ToString(), username, encryptedPassword, firstName, lastName, email, phoneNr);
 
             // store employee in db
-            Exception exception = this.employeeRepository.RegisterUser(employee);
+            Exception exception = this._employeeRepository.RegisterUser(employee);
             if (exception != null) {
                 return (null, exception);
             }
 
             // return its uuid just to check that it is stored
-            (Employee employeeFromDB, Exception ex) = this.employeeRepository.GetEmployeeByUsername(username);
+            (Employee employeeFromDB, Exception ex) = this._employeeRepository.GetEmployeeByUsername(username);
             if (ex != null)
             {
                 return (null, ex);
             }
 
-            // if it doesn't match
+            // if it doesn't match, throw exception
             if(employeeFromDB.UUID != uuid.ToString()) 
             {
-                return (null, new Exception("something went wrong trying to get the uuid from the db. match error"));
+                return (null, new EmployeeUUIDMacthException("something went wrong trying to get the uuid from the db. match error"));
             }
 
             return (employeeFromDB, null);
@@ -88,7 +88,7 @@ namespace Project.Business.Services
         {
             string encyptedPass = EncryptPassword(password);
 
-            return this.employeeRepository.CheckEmployeeLogIn(username, encyptedPass);
+            return this._employeeRepository.CheckEmployeeLogIn(username, encyptedPass);
         }
 
         /// <summary>
@@ -116,7 +116,7 @@ namespace Project.Business.Services
         /// Also returns an exception in case an error happened while exuting the statement.</returns>
         public (List<Employee>, Exception) GetEmployees()
         {
-            return this.employeeRepository.GetEmployees();
+            return this._employeeRepository.GetEmployees();
         }
 
         /// <summary>
@@ -127,7 +127,7 @@ namespace Project.Business.Services
         /// Also returns an exception in case an error happened while exuting the statement.</returns>
         public (Employee, Exception) GetEmployeeByUUID(string uuid)
         {
-            return this.employeeRepository.GetEmployeeByUuid(uuid);
+            return this._employeeRepository.GetEmployeeByUuid(uuid);
         }
 
         /// <summary>
@@ -138,7 +138,7 @@ namespace Project.Business.Services
         /// Also returns an exception in case an error happened while exuting the statement.</returns>
         public (Employee, Exception) GetEmployeeByUsername(string username)
         {
-            return this.employeeRepository.GetEmployeeByUsername(username);
+            return this._employeeRepository.GetEmployeeByUsername(username);
         }
 
         /// <summary>
@@ -149,7 +149,7 @@ namespace Project.Business.Services
         /// Also returns an exception in case an error happened while exuting the statement.</returns>
         public (List<Employee>, Exception) SearchEmployeesByName(string name)
         {
-            return this.employeeRepository.SearchEmployeesByName(name);
+            return this._employeeRepository.SearchEmployeesByName(name);
         }
 
         /// <summary>
@@ -163,7 +163,7 @@ namespace Project.Business.Services
         /// <returns>Returns an exception in case an error happened while exuting the statement.</returns>
         public Exception UpdateEmployee(string uuid, string firstName, string lastName, string email, string phoneNr)
         {
-            return this.employeeRepository.UpdateEmployee(uuid, firstName, lastName, email, phoneNr);
+            return this._employeeRepository.UpdateEmployee(uuid, firstName, lastName, email, phoneNr);
         }
 
         /// <summary>
@@ -173,7 +173,32 @@ namespace Project.Business.Services
         /// <returns>Returns an exception in case an error happened while exuting the statement.</returns>
         public Exception DeleteEmployee(string uuid)
         {
-            return this.employeeRepository.DeleteEmployee(uuid);
+            return this._employeeRepository.DeleteEmployee(uuid);
+        }
+    }
+
+    class EmployeeNameException : Exception
+    {
+        public EmployeeNameException(string message)
+            : base(message)
+        {
+        }
+    }
+
+    class EmployeeEmailException : Exception
+    {
+        public EmployeeEmailException(string message)
+            : base(message)
+        {
+        }
+    }
+
+    class EmployeeUUIDMacthException : Exception
+    {
+        public EmployeeUUIDMacthException(string message)
+            : base(message)
+        {
         }
     }
 }
+

@@ -8,7 +8,12 @@ namespace Project.Controls
 {
     public partial class ProfileContentControl : UserControl
     {
+        #region fields
+        /// <summary>
+        /// The employee data model that needs to be loaded inside the profile content control.
+        /// </summary>
         private Employee _employee;
+        #endregion
 
         /// <summary>
         /// Constructor.
@@ -69,6 +74,11 @@ namespace Project.Controls
             }
         }
 
+        /// <summary>
+        /// Callback for the "See More" button inside the data grid view. Loads the task data control.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void dataGridViewEmployeeTasks_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0 && e.ColumnIndex == 6) // Checking if it's a valid row index and the button column (index 6)
@@ -87,6 +97,11 @@ namespace Project.Controls
             }
         }
 
+        /// <summary>
+        /// Callback for the edit button. Shows an edit dialog to edit user data if the current logged in user is the same as _employee.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonEdit_Click(object sender, EventArgs e)
         {
             Form editProfileDialog = new Form();
@@ -117,15 +132,46 @@ namespace Project.Controls
             }
         }
 
+        /// <summary>
+        /// Callback for the delete button. it asks for confrmation and then deletes the employee from the db.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-            ((MainForm)this.TopLevelControl).Presenter.TaskSRV.UnassignTasksFromEmployee(((MainForm)this.TopLevelControl).CurrentEmployee.UUID);
-            ((MainForm)this.TopLevelControl).Presenter.EmployeeSRV.DeleteEmployee(((MainForm)this.TopLevelControl).CurrentEmployee.UUID);
+            // confirmation
+            Form dialogBox = new Form();
+            dialogBox.Text = "Confirmation";
+            dialogBox.ClientSize = new System.Drawing.Size(300, 120);
+            dialogBox.FormBorderStyle = FormBorderStyle.FixedDialog;
+            dialogBox.MaximizeBox = false;
 
-            ((MainForm)this.TopLevelControl).Hide();
-            LoginPage loginPage = new LoginPage();
-            loginPage.ShowDialog();
-            ((MainForm)this.TopLevelControl).Close();
+            Label label = new System.Windows.Forms.Label();
+            label.Text = "Are you sure you want to delete your account?";
+            label.Location = new System.Drawing.Point(20, 20);
+            label.AutoSize = true;
+
+            Button okButton = new Button();
+            okButton.Text = "OK";
+            okButton.Location = new System.Drawing.Point(110, 70);
+            okButton.DialogResult = DialogResult.OK;
+
+            dialogBox.Controls.Add(label);
+            dialogBox.Controls.Add(okButton);
+
+            dialogBox.ShowDialog();
+            //
+
+            if (dialogBox.DialogResult == DialogResult.OK)
+            {
+                ((MainForm)this.TopLevelControl).Presenter.TaskSRV.UnassignTasksFromEmployee(((MainForm)this.TopLevelControl).CurrentEmployee.UUID);
+                ((MainForm)this.TopLevelControl).Presenter.EmployeeSRV.DeleteEmployee(((MainForm)this.TopLevelControl).CurrentEmployee.UUID);
+
+                ((MainForm)this.TopLevelControl).Hide();
+                LoginPage loginPage = new LoginPage();
+                loginPage.ShowDialog();
+                ((MainForm)this.TopLevelControl).Close();
+            }            
         }
     }
 
