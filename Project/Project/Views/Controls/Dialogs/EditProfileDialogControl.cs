@@ -5,13 +5,14 @@ namespace Project.Views.Controls.Dialogs
 {
     public partial class EditProfileDialogControl : UserControl
     {
+        #region fields
+        /// <summary>
+        /// Current employee that is displayed in the edit control.
+        /// </summary>
         private Employee _currentEmployee;
-        public EditProfileDialogControl(Employee employee)
-        {
-            InitializeComponent();
-            this._currentEmployee = employee;
-        }
+        #endregion
 
+        #region getters
         public string FirstName
         {
             get
@@ -43,7 +44,23 @@ namespace Project.Views.Controls.Dialogs
                 return this.textBoxPhone.Text;
             }
         }
+        #endregion
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="employee"></param>
+        public EditProfileDialogControl(Employee employee)
+        {
+            InitializeComponent();
+            this._currentEmployee = employee;
+        }
+
+        /// <summary>
+        /// When the page loads, it displays the employee data.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void EditProfileDialogControl_Load(object sender, System.EventArgs e)
         {
             this.textBoxFName.Text = _currentEmployee.FirstName;

@@ -23,6 +23,7 @@ namespace ProjectUnitTest
         [ExpectedException(typeof(Exception))]
         public void EmployeeNameTestException()
         {
+
         }
 
         [TestMethod]

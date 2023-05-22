@@ -106,7 +106,7 @@ namespace Project.Controls
                                             exception is ArgumentNullException)
             {
                 MessageBox.Show("email not in the right format");
-            } 
+            }
             
             catch (Exception exception)
             {

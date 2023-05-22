@@ -3,15 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 using Project.Models;
-using Project.Persistence.Interfaces;
 using Project.Views.Controls.Dialogs;
 
 namespace Project.Controls
 {
     public partial class TaskContentControl : UserControl
     {
+        #region fields
+        /// <summary>
+        /// Private field that stores information about the task that is rendered inside the control.
+        /// </summary>
         private Task _currentTask;
+        #endregion
 
+        /// <summary>
+        /// Constructor. Initializes the task data and the control elements.
+        /// </summary>
+        /// <param name="task"></param>
         public TaskContentControl(Task task)
         {
             InitializeComponent();
@@ -25,6 +33,11 @@ namespace Project.Controls
             this._currentTask = task;
         }
 
+        /// <summary>
+        /// When the control loads, it displays the task data.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TaskContentControl_Load(object sender, EventArgs e)
         {
             this.labelName.Text = this._currentTask.Name;
@@ -66,6 +79,11 @@ namespace Project.Controls
             });
         }
 
+        /// <summary>
+        /// Callback method to add a subtask. Displays a dialog to input the subtask data.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonAddSubtask_Click(object sender, EventArgs e)
         {
             Form addSubtaskDialog = new Form();
@@ -93,6 +111,11 @@ namespace Project.Controls
             }
         }
 
+        /// <summary>
+        /// In case the task is unassigned, clicking "Assign to me" assigned the displayed task to the current logged in employee.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonAssignToMe_Click(object sender, EventArgs e)
         {
             Form assignToMeDialog = new Form();
@@ -118,6 +141,12 @@ namespace Project.Controls
             }            
         }
 
+        /// <summary>
+        /// In case the task is assigned, clicking "Unassign" unassignes the displayed task from the current logged in employee. 
+        /// For now we can unassign any task from any employee. Just for checking everything works well.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonUnassign_Click(object sender, EventArgs e)
         {
             Exception ex = ((MainForm)this.TopLevelControl).Presenter.TaskSRV.UnassignTaskFromEmployee(((MainForm)this.TopLevelControl).CurrentEmployee.UUID, this._currentTask.ID);
@@ -129,6 +158,11 @@ namespace Project.Controls
             ((MainForm)this.TopLevelControl).LoadTasksPanel();
         }
 
+        /// <summary>
+        /// Callback for the edit button. Shows an edit dialog to edit task data.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonEdit_Click(object sender, EventArgs e)
         {
             (List<Employee> employees, Exception ex) = ((MainForm)this.TopLevelControl).Presenter.EmployeeSRV.GetEmployees();
@@ -169,15 +203,50 @@ namespace Project.Controls
             }
         }
 
+        /// <summary>
+        /// Callback for the delete button. Shows an delete dialog to ask for confirmation and then deletes the task.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-            // TODO()
-            // Delete all subtask and comments if necessary from deleted task
+            // confirmation
+            Form dialogBox = new Form();
+            dialogBox.Text = "Confirmation";
+            dialogBox.ClientSize = new System.Drawing.Size(300, 120);
+            dialogBox.FormBorderStyle = FormBorderStyle.FixedDialog;
+            dialogBox.MaximizeBox = false;
+
+            Label label = new System.Windows.Forms.Label();
+            label.Text = "Are you sure you want to delete the task?";
+            label.Location = new System.Drawing.Point(20, 20);
+            label.AutoSize = true;
+
+            Button okButton = new Button();
+            okButton.Text = "OK";
+            okButton.Location = new System.Drawing.Point(110, 70);
+            okButton.DialogResult = DialogResult.OK;
+
+            dialogBox.Controls.Add(label);
+            dialogBox.Controls.Add(okButton);
+
+            dialogBox.ShowDialog();
             //
-            ((MainForm)this.TopLevelControl).Presenter.TaskSRV.DeleteTask(_currentTask.ID);
-            ((MainForm)this.TopLevelControl).LoadTasksPanel();
+
+            if (dialogBox.DialogResult == DialogResult.OK)
+            {
+                // Delete all subtask and comments if necessary from deleted task
+                //
+                ((MainForm)this.TopLevelControl).Presenter.TaskSRV.DeleteTask(_currentTask.ID);
+                ((MainForm)this.TopLevelControl).LoadTasksPanel();
+            }
         }
 
+        /// <summary>
+        /// Callback for the "See More" button inside the data grid view. Loads the subtask data control.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void dataGridViewSubtasks_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0 && e.ColumnIndex == 4)

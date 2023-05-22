@@ -11,14 +11,14 @@ namespace Project.Business.Services
         /// <summary>
         /// Instance of the TaskRepository class that handles the database operations.
         /// </summary>
-        private ITaskRepository taskRepository;
+        private ITaskRepository _taskRepository;
 
         /// <summary>
         /// Constructor. Initializes the task repository instance.
         /// </summary>
         public TaskService() 
         {        
-            this.taskRepository = new TaskRepository();
+            this._taskRepository = new TaskRepository();
         }
 
         /// <summary>
@@ -31,7 +31,7 @@ namespace Project.Business.Services
         /// <returns>Returns an exception if an error happened while executing the statement.</returns>
         public Exception CreateTask(string taskName, string taskDescription, DateTime taskDeadline, string employeeUUID)
         {
-            return this.taskRepository.CreateTask(taskName, taskDescription, taskDeadline, employeeUUID);
+            return this._taskRepository.CreateTask(taskName, taskDescription, taskDeadline, employeeUUID);
         }
 
         /// <summary>
@@ -42,7 +42,7 @@ namespace Project.Business.Services
         /// Also returns an exception if an error happened while executing the statement.</returns>
         public (Task, Exception) GetTaskByID(int taskID)
         {
-            return this.taskRepository.GetTaskByID(taskID);
+            return this._taskRepository.GetTaskByID(taskID);
         }
 
         /// <summary>
@@ -52,7 +52,7 @@ namespace Project.Business.Services
         /// Also returns an exception if an error happened while executing the statement.</returns>
         public (List<Task>, Exception) GetAssignedTasks()
         {
-            return this.taskRepository.GetAssignedTasks();
+            return this._taskRepository.GetAssignedTasks();
         }
 
         /// <summary>
@@ -62,7 +62,7 @@ namespace Project.Business.Services
         /// Also returns an exception if an error happened while executing the statement.</returns>
         public (List<Task>, Exception) GetUnassignedTasks()
         {
-            return this.taskRepository.GetUnassignedTasks();
+            return this._taskRepository.GetUnassignedTasks();
         }
 
         /// <summary>
@@ -73,7 +73,7 @@ namespace Project.Business.Services
         /// Also returns an exception if an error happened while executing the statement.</returns>
         public (List<Task>, Exception) SearchAssignedTasksByName(string title)
         {
-            return this.taskRepository.SearchAssignedTasksByName(title);
+            return this._taskRepository.SearchAssignedTasksByName(title);
         }
 
         /// <summary>
@@ -84,7 +84,7 @@ namespace Project.Business.Services
         /// Also returns an exception if an error happened while executing the statement.</returns>
         public (List<Task>, Exception) SearchUnassignedTasksByName(string title)
         {
-            return this.taskRepository.SearchUnassignedTasksByName(title);
+            return this._taskRepository.SearchUnassignedTasksByName(title);
         }
 
         /// <summary>
@@ -95,7 +95,7 @@ namespace Project.Business.Services
         /// Also returns an exception if an error happened while executing the statement.</returns>
         public (List<Task>, Exception) GetTasksByEmpUUID(string empUUID)
         {
-            return this.taskRepository.GetTasksByEmpUUID(empUUID);
+            return this._taskRepository.GetTasksByEmpUUID(empUUID);
         }
 
         /// <summary>
@@ -109,7 +109,7 @@ namespace Project.Business.Services
         /// <returns>Returns an exception if an error happened while executing the statement.</returns>
         public Exception UpdateTaskDetails(int taskID, string taskTitle, string taskDescription, DateTime taskDeadline, string assignedEmployeeUUID)
         {
-            return this.taskRepository.UpdateTaskDetails(taskID, taskTitle, taskDescription, taskDeadline, assignedEmployeeUUID);
+            return this._taskRepository.UpdateTaskDetails(taskID, taskTitle, taskDescription, taskDeadline, assignedEmployeeUUID);
         }
 
         /// <summary>
@@ -120,7 +120,7 @@ namespace Project.Business.Services
         /// <returns>Returns an exception if an error happened while executing the statement.</returns>
         public Exception UpdateTaskProgress(int taskID, int progress)
         {
-            return this.taskRepository.UpdateTaskProgress(taskID, progress);
+            return this._taskRepository.UpdateTaskProgress(taskID, progress);
         }
 
         /// <summary>
@@ -131,7 +131,7 @@ namespace Project.Business.Services
         /// <returns>Returns an exception if an error happened while executing the statement.</returns>
         public Exception UpdateTaskStatus(int taskID, string newStatus)
         {
-            return this.taskRepository.UpdateTaskStatus(taskID, newStatus);
+            return this._taskRepository.UpdateTaskStatus(taskID, newStatus);
         }
 
         /// <summary>
@@ -141,7 +141,7 @@ namespace Project.Business.Services
         /// <returns>Returns an exception if an error happened while executing the statement.</returns>
         public Exception DeleteTask(int taskID)
         {
-            return this.taskRepository.DeleteTask(taskID);
+            return this._taskRepository.DeleteTask(taskID);
         }
 
         /// <summary>
@@ -152,7 +152,7 @@ namespace Project.Business.Services
         /// <returns>Returns an exception if an error happened while executing the statement.</returns>
         public Exception AssignTaskToEmployee(int taskID, string empUUID, DateTime deadline)
         {
-            return this.taskRepository.AssignTaskToEmployee(taskID, empUUID, deadline);
+            return this._taskRepository.AssignTaskToEmployee(taskID, empUUID, deadline);
         }
 
         /// <summary>
@@ -163,7 +163,7 @@ namespace Project.Business.Services
         /// <returns>Returns an exception if an error happened while executing the statement.</returns>
         public Exception UnassignTaskFromEmployee(string empUUID, int taskID)
         {
-            return this.taskRepository.UnassignTaskFromEmployee(empUUID, taskID);
+            return this._taskRepository.UnassignTaskFromEmployee(empUUID, taskID);
         }
 
         /// <summary>
@@ -173,7 +173,7 @@ namespace Project.Business.Services
         /// <returns>Returns an exception if an error happened while executing the statement.</returns>
         public Exception UnassignTasksFromEmployee(string empUUID)
         {
-            return this.taskRepository.UnassignTasksFromEmployee(empUUID);
+            return this._taskRepository.UnassignTasksFromEmployee(empUUID);
         }
 
         /// <summary>

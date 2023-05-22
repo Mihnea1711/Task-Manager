@@ -9,9 +9,19 @@ namespace Project
 {
     public partial class MainForm : Form
     {
+        #region
+        /// <summary>
+        /// Current logged in employee.
+        /// </summary>
         private Employee _currentEmployee;
-        private Presenter _presenter;
 
+        /// <summary>
+        /// The application presenter. Holds references to the services and controls how the data is rendered in the data grid views.
+        /// </summary>
+        private Presenter _presenter;
+        #endregion
+
+        #region getters|setters
         public Employee CurrentEmployee
         {
             get { return _currentEmployee; }
@@ -29,6 +39,16 @@ namespace Project
             }
         }
 
+        public void SetLabelFullName(string fullname)
+        {
+            this.labelName.Text = fullname;
+        }
+        #endregion
+
+        /// <summary>
+        /// Constructor. Initializes the logged in employee.
+        /// </summary>
+        /// <param name="employee"></param>
         public MainForm(Employee employee)
         {
             InitializeComponent();
@@ -39,11 +59,17 @@ namespace Project
             this._presenter = new Presenter();
         }
 
+        /// <summary>
+        /// When we load the control, first display the tasks page.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MainForm_Load(object sender, EventArgs e)
         {
             LoadTasksPanel();
         }
 
+        #region private navigation callbacks
         private void buttonTasks_Click(object sender, EventArgs e)
         {
             LoadTasksPanel();
@@ -52,7 +78,7 @@ namespace Project
         private void buttonBacklog_Click(object sender, EventArgs e)
         {
             LoadBacklogPanel();
-        }        
+        }
 
         private void buttonUsers_Click(object sender, EventArgs e)
         {
@@ -76,11 +102,9 @@ namespace Project
             loginPage.ShowDialog();
             ((MainForm)this.TopLevelControl).Close();
         }
+        #endregion
 
-        public void SetLabelFullName(string fullname)
-        {
-            this.labelName.Text = fullname;
-        }
+        #region public navigation methods
 
         public void LoadTasksPanel()
         {
@@ -161,5 +185,6 @@ namespace Project
             profileContentControl.Dock = DockStyle.Fill;
             this.panelPageContent.Controls.Add(profileContentControl);
         }
+        #endregion
     }
 }
