@@ -11,6 +11,7 @@ namespace Project.Persistence.Interfaces
         (Task, Exception) GetTaskByID(int taskID);
         (List<Task>, Exception) GetAssignedTasks();
         (List<Task>, Exception) GetUnassignedTasks();
+        (int, Exception) GetTasksDoneCount(string empUUID);
         (List<Task>, Exception) SearchAssignedTasksByName(string title);
         (List<Task>, Exception) SearchUnassignedTasksByName(string title);
         (List<Task>, Exception) GetTasksByEmpUUID(string empUUID);
