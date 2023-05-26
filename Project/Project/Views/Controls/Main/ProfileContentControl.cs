@@ -49,7 +49,7 @@ namespace Project.Controls
                 this.textBoxPhone.Text = _employee.Phone;
                 this.textBoxTasksDone.Text = _employee.Tasksdone.ToString();
 
-                //(int tasksDone, Exception ex) = ((MainForm)this.TopLevelControl).Presenter.EmployeeSRV.UpdateTasksDone(_employee.UUID);
+                (int tasksDone, Exception ex) = ((MainForm)this.TopLevelControl).Presenter.EmployeeSRV.UpdateTasksDone(_employee.UUID);
 
                 if (_employee.UUID == ((MainForm)this.TopLevelControl).CurrentEmployee.UUID)
                 {

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
+using System.Threading.Tasks;
 using Project.Models;
 
 namespace Project.Persistence.Interfaces
@@ -496,6 +497,40 @@ namespace Project.Persistence.Interfaces
             catch (Exception ex)
             {
                 return new TaskUnassignException(ex.Message);
+            }
+        }
+
+        public (int, Exception) GetTasksDoneCount(string UUID)
+        {
+            string stmt = $"SELECT * FROM tasks WHERE taskid = {taskID}";
+            using (SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection))
+            {
+                try
+                {
+                    using (SQLiteDataReader dataReader = cmd.ExecuteReader())
+                    {
+                        Task task = null;
+                        while (dataReader.Read())
+                        {
+                            string taskTitle = dataReader.GetString(1);
+                            string taskDescription = dataReader.GetString(2);
+                            string taskStatus = dataReader.GetString(3);
+                            int taskProgress = dataReader.GetInt32(4);
+                            string taskDeadline = dataReader.GetString(5);
+                            DateTime deadline = DateTime.Parse(taskDeadline);
+                            string employeeUUID = dataReader.GetString(6);
+
+                            task = new Task(taskID, taskTitle, taskDescription, taskStatus, taskProgress, deadline, employeeUUID);
+                        }
+                        if (task == null) throw new Exception("task is null");
+                        return (task, null);
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    return (null, new QueryForTaskException(ex.Message));
+                }
             }
         }
     }
