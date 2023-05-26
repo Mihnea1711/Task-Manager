@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using Project.Controls;
 using Project.Models;
 using Project.Presenters;
+using Project.Views.Controls.Dialogs;
 
 namespace Project
 {
@@ -186,5 +187,19 @@ namespace Project
             this.panelPageContent.Controls.Add(profileContentControl);
         }
         #endregion
+
+        private void buttonHelper_Click(object sender, EventArgs e)
+        {
+            Form dialogForm = new Form();
+            HelperDialogControl helperDialogControl = new HelperDialogControl();
+
+            // properties
+            dialogForm.Dock = DockStyle.Fill;
+            dialogForm.Width = helperDialogControl.Width;
+            dialogForm.Height = helperDialogControl.Height + 50;
+
+            dialogForm.Controls.Add(helperDialogControl);
+            dialogForm.ShowDialog();
+        }
     }
 }

@@ -363,6 +363,11 @@ namespace Project.Persistence.Interfaces
                 }
             }
         }
+
+        private (int, Exception) UpdateTasksDone(string uuid)
+        {
+            return (0, null);
+        }
     }
 
 
