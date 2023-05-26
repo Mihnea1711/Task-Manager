@@ -364,9 +364,23 @@ namespace Project.Persistence.Interfaces
             }
         }
 
-        private (int, Exception) UpdateTasksDone(string uuid)
+        public Exception UpdateEmployeeTasksDone(string uuid, int tasksDone)
         {
-            return (0, null);
+            string stmt = $"" +
+                $"UPDATE employees " +
+                $"SET tasksdone = {tasksDone} " +
+                $"WHERE employeeuuid = '{uuid}';";
+            SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection);
+            try
+            {
+                cmd.ExecuteNonQuery();
+
+                return null;
+            }
+            catch (Exception ex)
+            {
+                return new EmployeeTasksDoneException(ex.Message);
+            }
         }
     }
 
@@ -426,6 +440,14 @@ namespace Project.Persistence.Interfaces
         {
         }
     }
+
+    class EmployeeTasksDoneException : Exception
+    {
+        public EmployeeTasksDoneException(string message)
+            : base(message)
+        {
+        }
+    }    
 
     class EmployeeDeleteException : Exception
     {
