@@ -122,6 +122,12 @@
     <Compile Include="Views\Controls\Dialogs\EditProfileDialogControl.Designer.cs">
       <DependentUpon>EditProfileDialogControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Controls\Dialogs\HelperDialogControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\Dialogs\HelperDialogControl.Designer.cs">
+      <DependentUpon>HelperDialogControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Controls\Login\LogInControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -208,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Controls\Dialogs\EditProfileDialogControl.resx">
       <DependentUpon>EditProfileDialogControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\Dialogs\HelperDialogControl.resx">
+      <DependentUpon>HelperDialogControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Controls\Login\LogInControl.resx">
       <DependentUpon>LogInControl.cs</DependentUpon>

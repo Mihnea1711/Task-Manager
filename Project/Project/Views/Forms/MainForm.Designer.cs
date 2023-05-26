@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panelSideBar = new System.Windows.Forms.Panel();
+            this.buttonLogout = new System.Windows.Forms.Button();
             this.labelName = new System.Windows.Forms.Label();
             this.buttonProfile = new System.Windows.Forms.Button();
             this.buttonAbout = new System.Windows.Forms.Button();
@@ -41,7 +42,7 @@
             this.panelFooter = new System.Windows.Forms.Panel();
             this.labelFooter = new System.Windows.Forms.Label();
             this.panelPageContent = new System.Windows.Forms.Panel();
-            this.buttonLogout = new System.Windows.Forms.Button();
+            this.buttonHelper = new System.Windows.Forms.Button();
             this.panelSideBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panelFooter.SuspendLayout();
@@ -50,6 +51,7 @@
             // panelSideBar
             // 
             this.panelSideBar.BackColor = System.Drawing.Color.DarkGray;
+            this.panelSideBar.Controls.Add(this.buttonHelper);
             this.panelSideBar.Controls.Add(this.buttonLogout);
             this.panelSideBar.Controls.Add(this.labelName);
             this.panelSideBar.Controls.Add(this.buttonProfile);
@@ -65,6 +67,16 @@
             this.panelSideBar.Name = "panelSideBar";
             this.panelSideBar.Size = new System.Drawing.Size(295, 682);
             this.panelSideBar.TabIndex = 0;
+            // 
+            // buttonLogout
+            // 
+            this.buttonLogout.Location = new System.Drawing.Point(57, 607);
+            this.buttonLogout.Name = "buttonLogout";
+            this.buttonLogout.Size = new System.Drawing.Size(175, 39);
+            this.buttonLogout.TabIndex = 5;
+            this.buttonLogout.Text = "Logout";
+            this.buttonLogout.UseVisualStyleBackColor = true;
+            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
             // labelName
             // 
@@ -95,7 +107,7 @@
             this.buttonAbout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.buttonAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAbout.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAbout.Location = new System.Drawing.Point(57, 440);
+            this.buttonAbout.Location = new System.Drawing.Point(57, 408);
             this.buttonAbout.Margin = new System.Windows.Forms.Padding(0);
             this.buttonAbout.Name = "buttonAbout";
             this.buttonAbout.Size = new System.Drawing.Size(175, 41);
@@ -113,7 +125,7 @@
             this.buttonUsers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.buttonUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUsers.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUsers.Location = new System.Drawing.Point(57, 370);
+            this.buttonUsers.Location = new System.Drawing.Point(57, 338);
             this.buttonUsers.Margin = new System.Windows.Forms.Padding(0);
             this.buttonUsers.Name = "buttonUsers";
             this.buttonUsers.Size = new System.Drawing.Size(175, 41);
@@ -131,7 +143,7 @@
             this.buttonBacklog.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.buttonBacklog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBacklog.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBacklog.Location = new System.Drawing.Point(57, 302);
+            this.buttonBacklog.Location = new System.Drawing.Point(57, 270);
             this.buttonBacklog.Margin = new System.Windows.Forms.Padding(0);
             this.buttonBacklog.Name = "buttonBacklog";
             this.buttonBacklog.Size = new System.Drawing.Size(175, 41);
@@ -168,7 +180,7 @@
             this.buttonTasks.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.buttonTasks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonTasks.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTasks.Location = new System.Drawing.Point(57, 229);
+            this.buttonTasks.Location = new System.Drawing.Point(57, 197);
             this.buttonTasks.Margin = new System.Windows.Forms.Padding(0);
             this.buttonTasks.Name = "buttonTasks";
             this.buttonTasks.Size = new System.Drawing.Size(175, 41);
@@ -207,15 +219,23 @@
             this.panelPageContent.Size = new System.Drawing.Size(984, 646);
             this.panelPageContent.TabIndex = 4;
             // 
-            // buttonLogout
+            // buttonHelper
             // 
-            this.buttonLogout.Location = new System.Drawing.Point(57, 607);
-            this.buttonLogout.Name = "buttonLogout";
-            this.buttonLogout.Size = new System.Drawing.Size(175, 39);
-            this.buttonLogout.TabIndex = 5;
-            this.buttonLogout.Text = "Logout";
-            this.buttonLogout.UseVisualStyleBackColor = true;
-            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
+            this.buttonHelper.BackColor = System.Drawing.Color.DarkGray;
+            this.buttonHelper.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonHelper.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonHelper.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.buttonHelper.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.buttonHelper.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.buttonHelper.Font = new System.Drawing.Font("Segoe UI Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHelper.Location = new System.Drawing.Point(57, 481);
+            this.buttonHelper.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonHelper.Name = "buttonHelper";
+            this.buttonHelper.Size = new System.Drawing.Size(175, 41);
+            this.buttonHelper.TabIndex = 7;
+            this.buttonHelper.Text = "IHelpU";
+            this.buttonHelper.UseVisualStyleBackColor = false;
+            this.buttonHelper.Click += new System.EventHandler(this.buttonHelper_Click);
             // 
             // MainForm
             // 
@@ -257,6 +277,7 @@
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.Button buttonProfile;
         private System.Windows.Forms.Button buttonLogout;
+        private System.Windows.Forms.Button buttonHelper;
     }
 }
 
