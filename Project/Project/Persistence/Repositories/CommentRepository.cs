@@ -36,7 +36,7 @@ namespace Project.Persistence.Interfaces
         public Exception CreateCommentTable()
         {
             string stmt = "" +
-                "CREATE TABLE comments("+
+                "CREATE TABLE IF NOT EXISTS comments (" +
                     "commentid           INTEGER PRIMARY KEY AUTOINCREMENT," +
                     "commenttitle        VARCHAR2(50) NOT NULL," +
                     "commentdescription  VARCHAR2(100) NOT NULL," +
