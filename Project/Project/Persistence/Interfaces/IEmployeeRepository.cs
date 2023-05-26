@@ -16,5 +16,6 @@ namespace Project.Persistence.Interfaces
         (List<Employee>, Exception) SearchEmployeesByName(string name);
         Exception UpdateEmployee(string uuid, string firstName, string lastName, string email, string phoneNr);
         Exception DeleteEmployee(string uuid);
+        //(int, Exception) UpdateTasksDone(string uuid);
     }
 }
