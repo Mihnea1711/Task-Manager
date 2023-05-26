@@ -57,19 +57,15 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<<< HEAD:Project/ProjectTests/ProjectTests.csproj
     <Compile Include="Views\Controls\Dialogs\HelperDialogControlTests.cs" />
-========
-    <Compile Include="Services\EmployeeServiceTest.cs" />
->>>>>>>> 415f02d46ca182e922ca5beea44f4baf077e78d8:Project/ProjectTest/ProjectUnitTest.csproj
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Project\Project.csproj">
-      <Project>{3CE50F26-BB84-4B37-A4B3-3229F411F7D7}</Project>
-      <Name>Project</Name>
+    <ProjectReference Include="..\View\View.csproj">
+      <Project>{30854044-748f-468c-b901-7798a8af892c}</Project>
+      <Name>View</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
