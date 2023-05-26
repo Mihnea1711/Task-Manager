@@ -235,6 +235,15 @@ namespace Project.Business.Services
                 }
             }
 
+            if (toDoSubtasks != subtasks.Count && doneSubtasks != subtasks.Count)
+            {
+                Exception exc = UpdateTaskStatus(taskId, "in-progress");
+                if (exc != null)
+                {
+                    return exc;
+                }
+            }
+
             int progress = (int)(doneSubtasks / subtasks.Count * 100);
             Exception ex = UpdateTaskProgress(taskId, progress);
             if (ex != null)
@@ -243,6 +252,16 @@ namespace Project.Business.Services
             }
 
             return null;
+        }
+
+        /// <summary>
+        /// Method to retrieve all done tasks by an employee.
+        /// </summary>
+        /// <param name="empUUID"></param>
+        /// <returns></returns>
+        public (int, Exception) GetTasksDoneCount(string empUUID)
+        {
+            return this._taskRepository.GetTasksDoneCount(empUUID);
         }
     }
 

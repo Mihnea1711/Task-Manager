@@ -14,6 +14,8 @@ namespace Project.Business.Interfaces
 
         (List<Task>, Exception) GetUnassignedTasks();
 
+        (int, Exception) GetTasksDoneCount(string empUUID);
+
         (List<Task>, Exception) SearchAssignedTasksByName(string title);
 
         (List<Task>, Exception) SearchUnassignedTasksByName(string title);

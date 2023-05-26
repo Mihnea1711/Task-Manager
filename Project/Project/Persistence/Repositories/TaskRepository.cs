@@ -499,9 +499,28 @@ namespace Project.Persistence.Interfaces
             }
         }
 
-        public (int, Exception) GetTasksDoneCount(string UUID)
+        /// <summary>
+        /// Method to retrieve all done tasks by an employee.
+        /// </summary>
+        /// <param name="empUUID"></param>
+        /// <returns></returns>
+        public (int, Exception) GetTasksDoneCount(string empUUID)
         {
-            return (0, null);
+            string stmt = $"SELECT COUNT(*) FROM tasks WHERE employeeuuid = '{empUUID}' and taskstatus = 'done'";
+            using (SQLiteCommand command = new SQLiteCommand(stmt, Program.DbConnection))
+            {
+                try
+                {
+                    // Execute the query and get the count
+                    int count = Convert.ToInt32(command.ExecuteScalar());
+
+                    return (count, null);
+
+                } catch (Exception ex)
+                {
+                    return (0, ex);
+                }
+            }
         }
     }
 

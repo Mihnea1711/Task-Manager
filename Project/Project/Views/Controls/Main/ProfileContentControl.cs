@@ -47,9 +47,15 @@ namespace Project.Controls
                 this.textBoxUsername.Text = _employee.Username;
                 this.textBoxEmail.Text = _employee.Email;
                 this.textBoxPhone.Text = _employee.Phone;
-                this.textBoxTasksDone.Text = _employee.Tasksdone.ToString();
+                
 
-                //(int tasksDone, Exception ex) = ((MainForm)this.TopLevelControl).Presenter.EmployeeSRV.UpdateTasksDone(_employee.UUID);
+                (int tasksDone, Exception ex) = ((MainForm)this.TopLevelControl).Presenter.TaskSRV.GetTasksDoneCount(_employee.UUID);
+                if (ex != null)
+                {
+                    MessageBox.Show(ex.Message);
+                    return;
+                }
+                this.textBoxTasksDone.Text = tasksDone.ToString();
 
                 if (_employee.UUID == ((MainForm)this.TopLevelControl).CurrentEmployee.UUID)
                 {
@@ -58,8 +64,8 @@ namespace Project.Controls
                 }
 
                 // continue to add data in the data grid view
-                (List<Task> assignedTasks, Exception ex) = ((MainForm)this.TopLevelControl).Presenter.TaskSRV.GetTasksByEmpUUID(this._employee.UUID);
-                if(ex != null)
+                (List<Task> assignedTasks, Exception exception) = ((MainForm)this.TopLevelControl).Presenter.TaskSRV.GetTasksByEmpUUID(this._employee.UUID);
+                if(exception != null)
                 {
                     MessageBox.Show(ex.Message);
                     return;
