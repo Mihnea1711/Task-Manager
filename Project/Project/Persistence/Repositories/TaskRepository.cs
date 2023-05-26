@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
-using System.Threading.Tasks;
 using Project.Models;
 
 namespace Project.Persistence.Interfaces
@@ -500,36 +499,26 @@ namespace Project.Persistence.Interfaces
             }
         }
 
-        public (int, Exception) GetTasksDoneCount(string UUID)
+        /// <summary>
+        /// Method to retrieve all done tasks by an employee.
+        /// </summary>
+        /// <param name="empUUID"></param>
+        /// <returns></returns>
+        public (int, Exception) GetTasksDoneCount(string empUUID)
         {
-            string stmt = $"SELECT * FROM tasks WHERE taskid = {taskID}";
-            using (SQLiteCommand cmd = new SQLiteCommand(stmt, Program.DbConnection))
+            string stmt = $"SELECT COUNT(*) FROM tasks WHERE employeeuuid = '{empUUID}' and taskstatus = 'done'";
+            using (SQLiteCommand command = new SQLiteCommand(stmt, Program.DbConnection))
             {
                 try
                 {
-                    using (SQLiteDataReader dataReader = cmd.ExecuteReader())
-                    {
-                        Task task = null;
-                        while (dataReader.Read())
-                        {
-                            string taskTitle = dataReader.GetString(1);
-                            string taskDescription = dataReader.GetString(2);
-                            string taskStatus = dataReader.GetString(3);
-                            int taskProgress = dataReader.GetInt32(4);
-                            string taskDeadline = dataReader.GetString(5);
-                            DateTime deadline = DateTime.Parse(taskDeadline);
-                            string employeeUUID = dataReader.GetString(6);
+                    // Execute the query and get the count
+                    int count = Convert.ToInt32(command.ExecuteScalar());
 
-                            task = new Task(taskID, taskTitle, taskDescription, taskStatus, taskProgress, deadline, employeeUUID);
-                        }
-                        if (task == null) throw new Exception("task is null");
-                        return (task, null);
-                    }
+                    return (count, null);
 
-                }
-                catch (Exception ex)
+                } catch (Exception ex)
                 {
-                    return (null, new QueryForTaskException(ex.Message));
+                    return (0, ex);
                 }
             }
         }
