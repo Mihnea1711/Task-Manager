@@ -20,7 +20,8 @@ using System.Data.SQLite;
 namespace Persistence
 {
     public class TaskRepository : ITaskRepository
-    {   /// <summary>
+    {   
+        /// <summary>
         /// The main connection to the database of the application
         /// </summary>
         private static SQLiteConnection dbConnection;
