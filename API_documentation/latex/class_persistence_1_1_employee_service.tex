@@ -1,0 +1,319 @@
+\doxysection{Persistence.\+Employee\+Service Class Reference}
+\hypertarget{class_persistence_1_1_employee_service}{}\label{class_persistence_1_1_employee_service}\index{Persistence.EmployeeService@{Persistence.EmployeeService}}
+Inheritance diagram for Persistence.\+Employee\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_persistence_1_1_employee_service}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_persistence_1_1_employee_service_a05acc2dca4befda8554b41cc050edd0c}\label{class_persistence_1_1_employee_service_a05acc2dca4befda8554b41cc050edd0c} 
+{\bfseries Employee\+Service} ()
+\begin{DoxyCompactList}\small\item\em Constructor. Initializes the employee repository instance. \end{DoxyCompactList}\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_employee_service_a8aeb1a73935665f6908beb293b7a56ec}{Validate\+Username}} (string username)
+\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_employee_service_a8e7ea06d291ccbc37fd41b3fb4ca3926}{Register\+User}} (string username, string password, string first\+Name, string last\+Name, string email, string phone\+Nr)
+\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_employee_service_a8dd3b5ac89da2464653300c9befe0e58}{Check\+Employee\+Log\+In}} (string username, string password)
+\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_employee_service_a0510287f1019314f4af42bd4e8f475ca}{Get\+Employees}} ()
+\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_employee_service_a45e7f4717fcc2ddc7457458fe4c38912}{Get\+Employee\+By\+UUID}} (string uuid)
+\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_employee_service_a1ede75117b4a342668339451bace9b17}{Get\+Employee\+By\+Username}} (string username)
+\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_employee_service_a4eeadc3fb4ddefc01d45ad0ad4895051}{Search\+Employees\+By\+Name}} (string name)
+\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_employee_service_a6fd8f2a93fcce062a2725f1ddcbf41f3}{Update\+Employee}} (string uuid, string first\+Name, string last\+Name, string email, string phone\+Nr)
+\begin{DoxyCompactList}\small\item\em Method to update the employee details. \end{DoxyCompactList}\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_employee_service_af89bc5815a09d467a0813881580bd346}{Delete\+Employee}} (string uuid)
+\begin{DoxyCompactList}\small\item\em Method to delete an employee account. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_service_a794479339f3b449c44068a022525de47}\label{interface_persistence_1_1_i_employee_service_a794479339f3b449c44068a022525de47} 
+Exception {\bfseries Validate\+Username} (string username)
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_service_a1f9699b9ee0e7c0ad5b62a60f09eebb1}\label{interface_persistence_1_1_i_employee_service_a1f9699b9ee0e7c0ad5b62a60f09eebb1} 
+Exception {\bfseries Register\+User} (string username, string password, string first\+Name, string last\+Name, string email, string phone\+Nr)
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_service_a7c4451bfdb49a41979ab5260d01198bf}\label{interface_persistence_1_1_i_employee_service_a7c4451bfdb49a41979ab5260d01198bf} 
+Exception {\bfseries Check\+Employee\+Log\+In} (string username, string password)
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_service_aa0faccbd81ba5683284ab41d4d634511}\label{interface_persistence_1_1_i_employee_service_aa0faccbd81ba5683284ab41d4d634511} 
+Exception {\bfseries Get\+Employees} ()
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_service_a11e8de6666856bc81df145b99991806a}\label{interface_persistence_1_1_i_employee_service_a11e8de6666856bc81df145b99991806a} 
+Exception {\bfseries Get\+Employee\+By\+UUID} (string uuid)
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_service_a5a8e244ae3024f1562f7ab94be12f636}\label{interface_persistence_1_1_i_employee_service_a5a8e244ae3024f1562f7ab94be12f636} 
+Exception {\bfseries Get\+Employee\+By\+Username} (string username)
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_service_a245480898f087d92c59192696bcbc360}\label{interface_persistence_1_1_i_employee_service_a245480898f087d92c59192696bcbc360} 
+Exception {\bfseries Search\+Employees\+By\+Name} (string name)
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_employee_service_a7711fc1c9ce1ba577c2991a056c8a957}{Update\+Employee}} (string uuid, string first\+Name, string last\+Name, string email, string phone\+Nr)
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_employee_service_a73a54ff63373a7eba253ab2244a8dd90}{Delete\+Employee}} (string uuid)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_persistence_1_1_employee_service_ad64cde73a3e65b83d15d84aad3954e95}{bool}}
+\begin{DoxyCompactList}\small\item\em Calls the employee repository class to check if the username is available. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_persistence_1_1_employee_service_a8cac003accd81de95ab71c2e61438e2e}{Employee}}
+\begin{DoxyCompactList}\small\item\em Method to register the employee. Creates an uuid for the employee and hashes the password. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_persistence_1_1_employee_service_a8c1241f196dfac3d915b81ee0b8c867a}{List$<$ Employee $>$}}
+\begin{DoxyCompactList}\small\item\em Method to retrieve all employees from db. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{interface_persistence_1_1_i_employee_service}{Persistence.\+IEmployee\+Service}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries bool}
+\item 
+{\bfseries Employee}
+\item 
+{\bfseries List$<$ Employee $>$}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_persistence_1_1_employee_service_a8dd3b5ac89da2464653300c9befe0e58}\label{class_persistence_1_1_employee_service_a8dd3b5ac89da2464653300c9befe0e58} 
+\index{Persistence.EmployeeService@{Persistence.EmployeeService}!CheckEmployeeLogIn@{CheckEmployeeLogIn}}
+\index{CheckEmployeeLogIn@{CheckEmployeeLogIn}!Persistence.EmployeeService@{Persistence.EmployeeService}}
+\doxysubsubsection{\texorpdfstring{CheckEmployeeLogIn()}{CheckEmployeeLogIn()}}
+{\footnotesize\ttfamily Exception Persistence.\+Employee\+Service.\+Check\+Employee\+Log\+In (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_employee_service}{Persistence.\+IEmployee\+Service}}.
+
+\Hypertarget{class_persistence_1_1_employee_service_af89bc5815a09d467a0813881580bd346}\label{class_persistence_1_1_employee_service_af89bc5815a09d467a0813881580bd346} 
+\index{Persistence.EmployeeService@{Persistence.EmployeeService}!DeleteEmployee@{DeleteEmployee}}
+\index{DeleteEmployee@{DeleteEmployee}!Persistence.EmployeeService@{Persistence.EmployeeService}}
+\doxysubsubsection{\texorpdfstring{DeleteEmployee()}{DeleteEmployee()}}
+{\footnotesize\ttfamily Exception Persistence.\+Employee\+Service.\+Delete\+Employee (\begin{DoxyParamCaption}\item[{string}]{uuid }\end{DoxyParamCaption})}
+
+
+
+Method to delete an employee account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uuid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an exception in case an error happened while exuting the statement.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_employee_service}{Persistence.\+IEmployee\+Service}}.
+
+\Hypertarget{class_persistence_1_1_employee_service_a1ede75117b4a342668339451bace9b17}\label{class_persistence_1_1_employee_service_a1ede75117b4a342668339451bace9b17} 
+\index{Persistence.EmployeeService@{Persistence.EmployeeService}!GetEmployeeByUsername@{GetEmployeeByUsername}}
+\index{GetEmployeeByUsername@{GetEmployeeByUsername}!Persistence.EmployeeService@{Persistence.EmployeeService}}
+\doxysubsubsection{\texorpdfstring{GetEmployeeByUsername()}{GetEmployeeByUsername()}}
+{\footnotesize\ttfamily Exception Persistence.\+Employee\+Service.\+Get\+Employee\+By\+Username (\begin{DoxyParamCaption}\item[{string}]{username }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_employee_service}{Persistence.\+IEmployee\+Service}}.
+
+\Hypertarget{class_persistence_1_1_employee_service_a45e7f4717fcc2ddc7457458fe4c38912}\label{class_persistence_1_1_employee_service_a45e7f4717fcc2ddc7457458fe4c38912} 
+\index{Persistence.EmployeeService@{Persistence.EmployeeService}!GetEmployeeByUUID@{GetEmployeeByUUID}}
+\index{GetEmployeeByUUID@{GetEmployeeByUUID}!Persistence.EmployeeService@{Persistence.EmployeeService}}
+\doxysubsubsection{\texorpdfstring{GetEmployeeByUUID()}{GetEmployeeByUUID()}}
+{\footnotesize\ttfamily Exception Persistence.\+Employee\+Service.\+Get\+Employee\+By\+UUID (\begin{DoxyParamCaption}\item[{string}]{uuid }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_employee_service}{Persistence.\+IEmployee\+Service}}.
+
+\Hypertarget{class_persistence_1_1_employee_service_a0510287f1019314f4af42bd4e8f475ca}\label{class_persistence_1_1_employee_service_a0510287f1019314f4af42bd4e8f475ca} 
+\index{Persistence.EmployeeService@{Persistence.EmployeeService}!GetEmployees@{GetEmployees}}
+\index{GetEmployees@{GetEmployees}!Persistence.EmployeeService@{Persistence.EmployeeService}}
+\doxysubsubsection{\texorpdfstring{GetEmployees()}{GetEmployees()}}
+{\footnotesize\ttfamily Exception Persistence.\+Employee\+Service.\+Get\+Employees (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_employee_service}{Persistence.\+IEmployee\+Service}}.
+
+\Hypertarget{class_persistence_1_1_employee_service_a8e7ea06d291ccbc37fd41b3fb4ca3926}\label{class_persistence_1_1_employee_service_a8e7ea06d291ccbc37fd41b3fb4ca3926} 
+\index{Persistence.EmployeeService@{Persistence.EmployeeService}!RegisterUser@{RegisterUser}}
+\index{RegisterUser@{RegisterUser}!Persistence.EmployeeService@{Persistence.EmployeeService}}
+\doxysubsubsection{\texorpdfstring{RegisterUser()}{RegisterUser()}}
+{\footnotesize\ttfamily Exception Persistence.\+Employee\+Service.\+Register\+User (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{password,  }\item[{string}]{first\+Name,  }\item[{string}]{last\+Name,  }\item[{string}]{email,  }\item[{string}]{phone\+Nr }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_employee_service}{Persistence.\+IEmployee\+Service}}.
+
+\Hypertarget{class_persistence_1_1_employee_service_a4eeadc3fb4ddefc01d45ad0ad4895051}\label{class_persistence_1_1_employee_service_a4eeadc3fb4ddefc01d45ad0ad4895051} 
+\index{Persistence.EmployeeService@{Persistence.EmployeeService}!SearchEmployeesByName@{SearchEmployeesByName}}
+\index{SearchEmployeesByName@{SearchEmployeesByName}!Persistence.EmployeeService@{Persistence.EmployeeService}}
+\doxysubsubsection{\texorpdfstring{SearchEmployeesByName()}{SearchEmployeesByName()}}
+{\footnotesize\ttfamily Exception Persistence.\+Employee\+Service.\+Search\+Employees\+By\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_employee_service}{Persistence.\+IEmployee\+Service}}.
+
+\Hypertarget{class_persistence_1_1_employee_service_a6fd8f2a93fcce062a2725f1ddcbf41f3}\label{class_persistence_1_1_employee_service_a6fd8f2a93fcce062a2725f1ddcbf41f3} 
+\index{Persistence.EmployeeService@{Persistence.EmployeeService}!UpdateEmployee@{UpdateEmployee}}
+\index{UpdateEmployee@{UpdateEmployee}!Persistence.EmployeeService@{Persistence.EmployeeService}}
+\doxysubsubsection{\texorpdfstring{UpdateEmployee()}{UpdateEmployee()}}
+{\footnotesize\ttfamily Exception Persistence.\+Employee\+Service.\+Update\+Employee (\begin{DoxyParamCaption}\item[{string}]{uuid,  }\item[{string}]{first\+Name,  }\item[{string}]{last\+Name,  }\item[{string}]{email,  }\item[{string}]{phone\+Nr }\end{DoxyParamCaption})}
+
+
+
+Method to update the employee details. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uuid} & \\
+\hline
+{\em first\+Name} & \\
+\hline
+{\em last\+Name} & \\
+\hline
+{\em email} & \\
+\hline
+{\em phone\+Nr} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an exception in case an error happened while exuting the statement.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_employee_service}{Persistence.\+IEmployee\+Service}}.
+
+\Hypertarget{class_persistence_1_1_employee_service_a8aeb1a73935665f6908beb293b7a56ec}\label{class_persistence_1_1_employee_service_a8aeb1a73935665f6908beb293b7a56ec} 
+\index{Persistence.EmployeeService@{Persistence.EmployeeService}!ValidateUsername@{ValidateUsername}}
+\index{ValidateUsername@{ValidateUsername}!Persistence.EmployeeService@{Persistence.EmployeeService}}
+\doxysubsubsection{\texorpdfstring{ValidateUsername()}{ValidateUsername()}}
+{\footnotesize\ttfamily Exception Persistence.\+Employee\+Service.\+Validate\+Username (\begin{DoxyParamCaption}\item[{string}]{username }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_employee_service}{Persistence.\+IEmployee\+Service}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_persistence_1_1_employee_service_ad64cde73a3e65b83d15d84aad3954e95}\label{class_persistence_1_1_employee_service_ad64cde73a3e65b83d15d84aad3954e95} 
+\index{Persistence.EmployeeService@{Persistence.EmployeeService}!bool@{bool}}
+\index{bool@{bool}!Persistence.EmployeeService@{Persistence.EmployeeService}}
+\doxysubsubsection{\texorpdfstring{bool}{bool}}
+{\footnotesize\ttfamily Persistence.\+Employee\+Service.\+bool}
+
+
+
+Calls the employee repository class to check if the username is available. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & Employee username\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\texorpdfstring{$>$}{>}Returns true if the username is valid, otherwise false. Also returns an exception if an error happened while executing the statement.
+\end{DoxyReturn}
+\Hypertarget{class_persistence_1_1_employee_service_a8cac003accd81de95ab71c2e61438e2e}\label{class_persistence_1_1_employee_service_a8cac003accd81de95ab71c2e61438e2e} 
+\index{Persistence.EmployeeService@{Persistence.EmployeeService}!Employee@{Employee}}
+\index{Employee@{Employee}!Persistence.EmployeeService@{Persistence.EmployeeService}}
+\doxysubsubsection{\texorpdfstring{Employee}{Employee}}
+{\footnotesize\ttfamily Persistence.\+Employee\+Service.\+Employee}
+
+
+
+Method to register the employee. Creates an uuid for the employee and hashes the password. 
+
+Method to retrieve an employee data model based on its username.
+
+Method to retrieve an employee data model based on its uuid.
+
+Method to check if there is an employee account created with the username and password provided. Encrypts the password and then checks the database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & Employee username.\\
+\hline
+{\em password} & Employee not hashed password.\\
+\hline
+{\em first\+Name} & Employee first name.\\
+\hline
+{\em last\+Name} & Employee last name.\\
+\hline
+{\em email} & Employee email.\\
+\hline
+{\em phone\+Nr} & Employee phone number.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the employee from the database after it is stored and an exception in case an error happened while executing the statements.
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & Employee username.\\
+\hline
+{\em password} & Employee not hashed password.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the employee data model object in case the account was found, otherwise null. Also returns an exception in case an error happened while exuting the statement.
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em uuid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the employee data object if found, otherwise null. Also returns an exception in case an error happened while exuting the statement.
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the employee data object if found, otherwise null. Also returns an exception in case an error happened while exuting the statement.
+\end{DoxyReturn}
+\Hypertarget{class_persistence_1_1_employee_service_a8c1241f196dfac3d915b81ee0b8c867a}\label{class_persistence_1_1_employee_service_a8c1241f196dfac3d915b81ee0b8c867a} 
+\index{Persistence.EmployeeService@{Persistence.EmployeeService}!List$<$ Employee $>$@{List$<$ Employee $>$}}
+\index{List$<$ Employee $>$@{List$<$ Employee $>$}!Persistence.EmployeeService@{Persistence.EmployeeService}}
+\doxysubsubsection{\texorpdfstring{List$<$ Employee $>$}{List< Employee >}}
+{\footnotesize\ttfamily Persistence.\+Employee\+Service.\+List$<$ \mbox{\hyperlink{class_persistence_1_1_employee}{Employee}} $>$}
+
+
+
+Method to retrieve all employees from db. 
+
+Method to retrieve all employees from db matching the string given as parameter. The search is case-\/insensitive.
+
+\begin{DoxyReturn}{Returns}
+Returns the employees objects if any, otherwise null. Also returns an exception in case an error happened while exuting the statement.
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the employees objects if any, otherwise null. Also returns an exception in case an error happened while exuting the statement.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+FACULTATE/\+ANUL III/\+SEM II/\+IP/\+Proiect/\+Project\+IP/\+Project/\+Persistence/\+Business/\+Services/Employee\+Service.\+cs\end{DoxyCompactItemize}

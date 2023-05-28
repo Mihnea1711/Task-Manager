@@ -1,0 +1,100 @@
+\doxysection{Persistence.\+IEmployee\+Repository Interface Reference}
+\hypertarget{interface_persistence_1_1_i_employee_repository}{}\label{interface_persistence_1_1_i_employee_repository}\index{Persistence.IEmployeeRepository@{Persistence.IEmployeeRepository}}
+Inheritance diagram for Persistence.\+IEmployee\+Repository\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_persistence_1_1_i_employee_repository}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_employee_repository_aa10a4a123edf1921757d53503b524818}{Create\+Employee\+Table}} ()
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_repository_a0d42503da9320820e24d05165caed7ce}\label{interface_persistence_1_1_i_employee_repository_a0d42503da9320820e24d05165caed7ce} 
+Exception {\bfseries Is\+Valid\+Username} (string username)
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_employee_repository_a13adf3b77ed865bc991977fa2d46cca3}{Register\+User}} (\mbox{\hyperlink{class_persistence_1_1_employee}{Employee}} employee)
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_repository_acac289d1b21ba06c01ddc63b5d2c7239}\label{interface_persistence_1_1_i_employee_repository_acac289d1b21ba06c01ddc63b5d2c7239} 
+Exception {\bfseries Get\+Employees} ()
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_repository_a449ee10469ff5e7e59443519847683a8}\label{interface_persistence_1_1_i_employee_repository_a449ee10469ff5e7e59443519847683a8} 
+Exception {\bfseries Get\+Employee\+By\+Uuid} (string employee\+UUID)
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_repository_a59b3bc3c3512a46382b7998bf24b75e4}\label{interface_persistence_1_1_i_employee_repository_a59b3bc3c3512a46382b7998bf24b75e4} 
+Exception {\bfseries Get\+Employee\+By\+Username} (string username)
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_repository_acf42ddffed449fd215dd6ba67db7fcc4}\label{interface_persistence_1_1_i_employee_repository_acf42ddffed449fd215dd6ba67db7fcc4} 
+Exception {\bfseries Check\+Employee\+Log\+In} (string username, string password)
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_repository_a61dd993e1a1a555e4c4c61785f6e5da2}\label{interface_persistence_1_1_i_employee_repository_a61dd993e1a1a555e4c4c61785f6e5da2} 
+Exception {\bfseries Search\+Employees\+By\+Name} (string name)
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_employee_repository_ad1d4b388e67894cde338cfab4c98bded}{Update\+Employee}} (string uuid, string first\+Name, string last\+Name, string email, string phone\+Nr)
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_employee_repository_a7412da454ae59ad1ea6d008d19e5fc82}{Delete\+Employee}} (string uuid)
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_repository_a69d79035f9adc80238ca4463d8ceac1c}\label{interface_persistence_1_1_i_employee_repository_a69d79035f9adc80238ca4463d8ceac1c} 
+Exception {\bfseries Update\+Employee\+Tasks\+Done} (string uuid, int tasks\+Done)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_repository_ab0c08fe7cb017f2a2d9d1e5dc4ee3783}\label{interface_persistence_1_1_i_employee_repository_ab0c08fe7cb017f2a2d9d1e5dc4ee3783} 
+{\bfseries bool}
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_repository_a2cb822f57bc0cbcba9389ec510937b52}\label{interface_persistence_1_1_i_employee_repository_a2cb822f57bc0cbcba9389ec510937b52} 
+{\bfseries List$<$ Employee $>$}
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_repository_abb546b979b422a2ae89a1de1429c9493}\label{interface_persistence_1_1_i_employee_repository_abb546b979b422a2ae89a1de1429c9493} 
+{\bfseries Employee}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_persistence_1_1_i_employee_repository_aa10a4a123edf1921757d53503b524818}\label{interface_persistence_1_1_i_employee_repository_aa10a4a123edf1921757d53503b524818} 
+\index{Persistence.IEmployeeRepository@{Persistence.IEmployeeRepository}!CreateEmployeeTable@{CreateEmployeeTable}}
+\index{CreateEmployeeTable@{CreateEmployeeTable}!Persistence.IEmployeeRepository@{Persistence.IEmployeeRepository}}
+\doxysubsubsection{\texorpdfstring{CreateEmployeeTable()}{CreateEmployeeTable()}}
+{\footnotesize\ttfamily Exception Persistence.\+IEmployee\+Repository.\+Create\+Employee\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_persistence_1_1_employee_repository_a1a536f4b021cfec87b70fdf5a19d674d}{Persistence.\+Employee\+Repository}}.
+
+\Hypertarget{interface_persistence_1_1_i_employee_repository_a7412da454ae59ad1ea6d008d19e5fc82}\label{interface_persistence_1_1_i_employee_repository_a7412da454ae59ad1ea6d008d19e5fc82} 
+\index{Persistence.IEmployeeRepository@{Persistence.IEmployeeRepository}!DeleteEmployee@{DeleteEmployee}}
+\index{DeleteEmployee@{DeleteEmployee}!Persistence.IEmployeeRepository@{Persistence.IEmployeeRepository}}
+\doxysubsubsection{\texorpdfstring{DeleteEmployee()}{DeleteEmployee()}}
+{\footnotesize\ttfamily Exception Persistence.\+IEmployee\+Repository.\+Delete\+Employee (\begin{DoxyParamCaption}\item[{string}]{uuid }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_persistence_1_1_employee_repository_a77fc082aae0fb98bb4e88822c655f6b7}{Persistence.\+Employee\+Repository}}.
+
+\Hypertarget{interface_persistence_1_1_i_employee_repository_a13adf3b77ed865bc991977fa2d46cca3}\label{interface_persistence_1_1_i_employee_repository_a13adf3b77ed865bc991977fa2d46cca3} 
+\index{Persistence.IEmployeeRepository@{Persistence.IEmployeeRepository}!RegisterUser@{RegisterUser}}
+\index{RegisterUser@{RegisterUser}!Persistence.IEmployeeRepository@{Persistence.IEmployeeRepository}}
+\doxysubsubsection{\texorpdfstring{RegisterUser()}{RegisterUser()}}
+{\footnotesize\ttfamily Exception Persistence.\+IEmployee\+Repository.\+Register\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_persistence_1_1_employee}{Employee}}}]{employee }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_persistence_1_1_employee_repository_a28b812149067df61edb6548291af06a6}{Persistence.\+Employee\+Repository}}.
+
+\Hypertarget{interface_persistence_1_1_i_employee_repository_ad1d4b388e67894cde338cfab4c98bded}\label{interface_persistence_1_1_i_employee_repository_ad1d4b388e67894cde338cfab4c98bded} 
+\index{Persistence.IEmployeeRepository@{Persistence.IEmployeeRepository}!UpdateEmployee@{UpdateEmployee}}
+\index{UpdateEmployee@{UpdateEmployee}!Persistence.IEmployeeRepository@{Persistence.IEmployeeRepository}}
+\doxysubsubsection{\texorpdfstring{UpdateEmployee()}{UpdateEmployee()}}
+{\footnotesize\ttfamily Exception Persistence.\+IEmployee\+Repository.\+Update\+Employee (\begin{DoxyParamCaption}\item[{string}]{uuid,  }\item[{string}]{first\+Name,  }\item[{string}]{last\+Name,  }\item[{string}]{email,  }\item[{string}]{phone\+Nr }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_persistence_1_1_employee_repository_ae47c3ca344c6ac2f6fdf58fd863306d4}{Persistence.\+Employee\+Repository}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+FACULTATE/\+ANUL III/\+SEM II/\+IP/\+Proiect/\+Project\+IP/\+Project/\+Persistence/\+Interfaces/IEmployee\+Repository.\+cs\end{DoxyCompactItemize}

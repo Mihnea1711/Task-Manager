@@ -1,0 +1,1102 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_repository.html#af8bd5e2ae87947c9e7e7ef9d2b756f99"><param name="Name" value="AddComment(Comment comment)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html#ae19f430e5ed26be163fcf311d7412d78"><param name="Name" value="AddSubstask(Subtask subtask)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_add_task_dialog_control.html#a7ee6746b3f13147384e79bbd84ad93b2"><param name="Name" value="AddTaskDialogControl(List&lt; Employee &gt; employees, Employee currentEmployee)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_ask_for_deadline_dialog_control.html#aff6d9c649e76ccc428708eb0d4b9edfc"><param name="Name" value="AskForDeadlineDialogControl()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a02f29128f4a77ad07300b6d4337eb198"><param name="Name" value="AssignTaskToEmployee(int taskID, string empUUID, DateTime deadline)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a02f29128f4a77ad07300b6d4337eb198"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#a030f7e4f12cecb01f8d6ecec53d1a715"><param name="Name" value="AssignTaskToEmployee(int taskID, string empUUID, DateTime deadline)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#a030f7e4f12cecb01f8d6ecec53d1a715"><param name="Name" value="Persistence::TaskService"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_backlog_content_control.html#a6c0c8ca32c667203cc72ae63df453ae9"><param name="Name" value="BacklogContentControl()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_backlog_content_control.html#a11e94c14c6c53282a76e3b22eb357041"><param name="Name" value="BacklogContentControl(List&lt; Task &gt; tasks)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html#ae5dbbb95850b05da7be036b211a7848f"><param name="Name" value="ChangeStatus(int id, string selectedKey)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html#ae5dbbb95850b05da7be036b211a7848f"><param name="Name" value="Persistence::SubtaskRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html#adec2a97fa2f40d1d00c0ddece6d9b1f1"><param name="Name" value="ChangeStatus(int id, string selectedKey)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html#adec2a97fa2f40d1d00c0ddece6d9b1f1"><param name="Name" value="Persistence::SubtaskService"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_login_page.html#a9ec90115195bd119de810f1e49d8e366"><param name="Name" value="ChangeToLogIn()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_login_page.html#abacfd920b35b3541697cbaccb6dac4bf"><param name="Name" value="ChangeToSignUp()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#a5896b0a2ac3a162c32ef7c2ffb131190"><param name="Name" value="CheckSubtasksStatus(List&lt; Subtask &gt; subtasks)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_repository.html#a9d0e94779e6a32cbef35829a6ff8bac3"><param name="Name" value="CloseConnection()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment.html#a1ebb95fdb53e7adb27347a09419ad3c7"><param name="Name" value="Comment(int id, string title, string description, int timeReported, int subtaskId)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_repository.html#a5a257962fa65639e228270edc0f6c783"><param name="Name" value="Comment"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_repository.html#a5a257962fa65639e228270edc0f6c783"><param name="Name" value="Persistence::CommentRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_service.html#aa4bb0e6aa4f845f17c47eee65b49e193"><param name="Name" value="Comment"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_service.html#aa4bb0e6aa4f845f17c47eee65b49e193"><param name="Name" value="Persistence::CommentService"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_repository.html#adb97c2c23526f01c5579cbb8c10c482f"><param name="Name" value="CommentRepository()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_service.html#a3f09f2cb16711f8706f3138999df4cf0"><param name="Name" value="CommentService()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_repository.html#a346363c1b3306a610a395f72205efa21"><param name="Name" value="Connect()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_repository.html#a346363c1b3306a610a395f72205efa21"><param name="Name" value="Persistence::CommentRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html#a249ce43dda5492ac4866b75e494f221e"><param name="Name" value="Connect()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html#a249ce43dda5492ac4866b75e494f221e"><param name="Name" value="Persistence::EmployeeRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a16b9ab61e726bb8411e6f2f5c01798a7"><param name="Name" value="Connect()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a16b9ab61e726bb8411e6f2f5c01798a7"><param name="Name" value="Persistence::SubtaskRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a2192223a35946ed8565c1b14b08f4a97"><param name="Name" value="Connect()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a2192223a35946ed8565c1b14b08f4a97"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_repository.html#ac163c3ee2891cf4742360fe25e5efc25"><param name="Name" value="CreateCommentTable()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html#a1a536f4b021cfec87b70fdf5a19d674d"><param name="Name" value="CreateEmployeeTable()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a04e774149589f6e26456abdf15ebf692"><param name="Name" value="CreateSubtaskTable()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a09703ad265adc22f227dfcff74edcecf"><param name="Name" value="CreateTask(string taskName, string taskDescription, DateTime taskDeadline, string employeeUUID)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a09703ad265adc22f227dfcff74edcecf"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#acdf397110b05f8c9deace11a2561704c"><param name="Name" value="CreateTask(string taskName, string taskDescription, DateTime taskDeadline, string employeeUUID)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#acdf397110b05f8c9deace11a2561704c"><param name="Name" value="Persistence::TaskService"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#ae31409038bc14ddd559c6ccc1d03934f"><param name="Name" value="CreateTaskTable()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html#a77fc082aae0fb98bb4e88822c655f6b7"><param name="Name" value="DeleteEmployee(string uuid)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html#a77fc082aae0fb98bb4e88822c655f6b7"><param name="Name" value="Persistence::EmployeeRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_service.html#af89bc5815a09d467a0813881580bd346"><param name="Name" value="DeleteEmployee(string uuid)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_service.html#af89bc5815a09d467a0813881580bd346"><param name="Name" value="Persistence::EmployeeService"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a47109990af5c2fe080e1019c426f0161"><param name="Name" value="DeleteSubtask(int id)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a47109990af5c2fe080e1019c426f0161"><param name="Name" value="Persistence::SubtaskRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html#a882c7c48bb82e891e7ba36309c3ca507"><param name="Name" value="DeleteSubtask(int id)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html#a882c7c48bb82e891e7ba36309c3ca507"><param name="Name" value="Persistence::SubtaskService"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#afad780a3b8f0351b0812cc9180591396"><param name="Name" value="DeleteTask(int taskID)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#afad780a3b8f0351b0812cc9180591396"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#ac7f7e214d836d0a397e6996dd9938d8e"><param name="Name" value="DeleteTask(int taskID)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#ac7f7e214d836d0a397e6996dd9938d8e"><param name="Name" value="Persistence::TaskService"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_about_content_control.html#a99da05c25885b1afea3a2edefda71c5b"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_about_content_control.html#a99da05c25885b1afea3a2edefda71c5b"><param name="Name" value="View::AboutContentControl"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_add_comment_dialog_control.html#a4d99672a2eb3317ae450ec7642516395"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_add_comment_dialog_control.html#a4d99672a2eb3317ae450ec7642516395"><param name="Name" value="View::AddCommentDialogControl"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_add_subtask_dialog_control.html#a6f82d56354c25760ed85f0bc3016bde5"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_add_subtask_dialog_control.html#a6f82d56354c25760ed85f0bc3016bde5"><param name="Name" value="View::AddSubtaskDialogControl"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_add_task_dialog_control.html#a95098837fca94286622d938ab84fb21d"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_add_task_dialog_control.html#a95098837fca94286622d938ab84fb21d"><param name="Name" value="View::AddTaskDialogControl"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_ask_for_deadline_dialog_control.html#a7507052e87ca6c47ffd417e08d427297"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_ask_for_deadline_dialog_control.html#a7507052e87ca6c47ffd417e08d427297"><param name="Name" value="View::AskForDeadlineDialogControl"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_backlog_content_control.html#a951f7166bf7512f89e1c8363a315b929"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_backlog_content_control.html#a951f7166bf7512f89e1c8363a315b929"><param name="Name" value="View::BacklogContentControl"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_edit_profile_dialog_control.html#ab344a36eaf5f5fa4e7c78c5d6ca7ed11"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_edit_profile_dialog_control.html#ab344a36eaf5f5fa4e7c78c5d6ca7ed11"><param name="Name" value="View::EditProfileDialogControl"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_helper_dialog_control.html#a5ee2977fa318d48f8a34bed4555c41db"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_helper_dialog_control.html#a5ee2977fa318d48f8a34bed4555c41db"><param name="Name" value="View::HelperDialogControl"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_log_in_control.html#a7c98aa913a85d6e60379183245c6d251"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_log_in_control.html#a7c98aa913a85d6e60379183245c6d251"><param name="Name" value="View::LogInControl"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_login_page.html#aff3d47f5408666ea01ba0181d17fb68a"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_login_page.html#aff3d47f5408666ea01ba0181d17fb68a"><param name="Name" value="View::LoginPage"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_main_form.html#a49a1b7c042904f66fb2b883bf5969e97"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_main_form.html#a49a1b7c042904f66fb2b883bf5969e97"><param name="Name" value="View::MainForm"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_profile_content_control.html#a05eb07ed9d91658405dc0501df0b7439"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_profile_content_control.html#a05eb07ed9d91658405dc0501df0b7439"><param name="Name" value="View::ProfileContentControl"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_sign_up_control.html#a1d544d8d48463d6999d8d7f209067b28"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_sign_up_control.html#a1d544d8d48463d6999d8d7f209067b28"><param name="Name" value="View::SignUpControl"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_subtask_content_control.html#a8429f41f360d4ee770588d49e2c1607e"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_subtask_content_control.html#a8429f41f360d4ee770588d49e2c1607e"><param name="Name" value="View::SubtaskContentControl"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_task_content_control.html#a27afab65748a4b0db1bbd91ccc255033"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_task_content_control.html#a27afab65748a4b0db1bbd91ccc255033"><param name="Name" value="View::TaskContentControl"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_tasks_content_control.html#abc0a5ca9345984e8074c9228e3335d64"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_tasks_content_control.html#abc0a5ca9345984e8074c9228e3335d64"><param name="Name" value="View::TasksContentControl"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_users_content_control.html#a85152c35459b1c836c9283937d9a23af"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_users_content_control.html#a85152c35459b1c836c9283937d9a23af"><param name="Name" value="View::UsersContentControl"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_edit_profile_dialog_control.html#a95a44112061b7eb7b605780f03e24da1"><param name="Name" value="EditProfileDialogControl(Employee employee)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee.html#abe9070fe216374264545095990bdd527"><param name="Name" value="Employee(string employeeUUID, string username, string password, string firstName, string lastName, string email, string phoneNr, int tasksDone=0)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html#a341f18d539803c9abf322fad6f0a3ef7"><param name="Name" value="Employee"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html#a341f18d539803c9abf322fad6f0a3ef7"><param name="Name" value="Persistence::EmployeeRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_service.html#a8cac003accd81de95ab71c2e61438e2e"><param name="Name" value="Employee"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_service.html#a8cac003accd81de95ab71c2e61438e2e"><param name="Name" value="Persistence::EmployeeService"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html#a4de2b752228fccd32d9c6fa9786f88c8"><param name="Name" value="EmployeeRepository()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_login_page.html#ac1176aba59b8a7c438c31a52cb1bf035"><param name="Name" value="EmployeeSRV"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_service.html#a05acc2dca4befda8554b41cc050edd0c"><param name="Name" value="EmployeeService()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_comment_builder.html#afa7b0af36be6cdd05d3194431a86ec34"><param name="Name" value="GetResult()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_comment_builder.html#afa7b0af36be6cdd05d3194431a86ec34"><param name="Name" value="Presenters::CommentBuilder"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_employee_builder.html#a5a1eb5eb5f5496f92f83b8a2e6f74864"><param name="Name" value="GetResult()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_employee_builder.html#a5a1eb5eb5f5496f92f83b8a2e6f74864"><param name="Name" value="Presenters::EmployeeBuilder"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a9daf34f5451dd58c8debc05a1ee4a141"><param name="Name" value="GetResult()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a9daf34f5451dd58c8debc05a1ee4a141"><param name="Name" value="Presenters::SubtaskBuilder"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html#ad356d4d0059647bddb7a697471a17aae"><param name="Name" value="GetResult()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html#ad356d4d0059647bddb7a697471a17aae"><param name="Name" value="Presenters::TaskBuilder"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task.html#a9c6661587b19922876aa44f637531488"><param name="Name" value="ID"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_repository.html#aadf20a1f3e16c922ca0dea6bee391bba"><param name="Name" value="IList&lt; Comment &gt;"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_repository.html#aadf20a1f3e16c922ca0dea6bee391bba"><param name="Name" value="Persistence::CommentRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_service.html#adfcd662d73de51275998f01edbb8168c"><param name="Name" value="IList&lt; Comment &gt;"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_service.html#adfcd662d73de51275998f01edbb8168c"><param name="Name" value="Persistence::CommentService"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a121b77e92d0b3dd59f9e35a3a0449204"><param name="Name" value="IList&lt; Subtask &gt;"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a121b77e92d0b3dd59f9e35a3a0449204"><param name="Name" value="Persistence::SubtaskRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html#a4efe0aba7bef333deb161081f9d01797"><param name="Name" value="IList&lt; Subtask &gt;"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html#a4efe0aba7bef333deb161081f9d01797"><param name="Name" value="Persistence::SubtaskService"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment.html#aa92a9379eac659ccf66db94960b86611"><param name="Name" value="Id"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment.html#aa92a9379eac659ccf66db94960b86611"><param name="Name" value="Persistence::Comment"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask.html#acad5f306ed79a97ee80fd78b55c14345"><param name="Name" value="Id"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask.html#acad5f306ed79a97ee80fd78b55c14345"><param name="Name" value="Persistence::Subtask"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html#a210a4f068aac6ccc74947530577842fd"><param name="Name" value="List&lt; Employee &gt;"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html#a210a4f068aac6ccc74947530577842fd"><param name="Name" value="Persistence::EmployeeRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_service.html#a8c1241f196dfac3d915b81ee0b8c867a"><param name="Name" value="List&lt; Employee &gt;"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_service.html#a8c1241f196dfac3d915b81ee0b8c867a"><param name="Name" value="Persistence::EmployeeService"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a3dab4382e195ca3dc27b2c7d12f9d040"><param name="Name" value="List&lt; Task &gt;"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a3dab4382e195ca3dc27b2c7d12f9d040"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#ad7ec2a0f2504b5d4c87509f2ccba42d1"><param name="Name" value="List&lt; Task &gt;"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#ad7ec2a0f2504b5d4c87509f2ccba42d1"><param name="Name" value="Persistence::TaskService"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_log_in_control.html#a797d34798803b48724fa8a8db67a5013"><param name="Name" value="LogInControl()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_login_page.html#ac11042fce6bb3e494428e3e1ba0b8240"><param name="Name" value="LoginPage()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_main_form.html#ac81ae21866f472ce823a2d64ea75558b"><param name="Name" value="MainForm(Employee employee)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_persistence.html"><param name="Name" value="Persistence"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment.html"><param name="Name" value="Persistence::Comment"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment.html"><param name="Name" value="Persistence::Comment"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment.html#a1ebb95fdb53e7adb27347a09419ad3c7"><param name="Name" value="Comment(int id, string title, string description, int timeReported, int subtaskId)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment.html"><param name="Name" value="Persistence::Comment"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment.html#aa92a9379eac659ccf66db94960b86611"><param name="Name" value="Id"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_repository.html"><param name="Name" value="Persistence::CommentRepository"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_repository.html"><param name="Name" value="Persistence::CommentRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_repository.html#af8bd5e2ae87947c9e7e7ef9d2b756f99"><param name="Name" value="AddComment(Comment comment)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_repository.html"><param name="Name" value="Persistence::CommentRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_repository.html#a9d0e94779e6a32cbef35829a6ff8bac3"><param name="Name" value="CloseConnection()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_repository.html"><param name="Name" value="Persistence::CommentRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_repository.html#a5a257962fa65639e228270edc0f6c783"><param name="Name" value="Comment"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_repository.html"><param name="Name" value="Persistence::CommentRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_repository.html#adb97c2c23526f01c5579cbb8c10c482f"><param name="Name" value="CommentRepository()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_repository.html"><param name="Name" value="Persistence::CommentRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_repository.html#a346363c1b3306a610a395f72205efa21"><param name="Name" value="Connect()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_repository.html"><param name="Name" value="Persistence::CommentRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_repository.html#ac163c3ee2891cf4742360fe25e5efc25"><param name="Name" value="CreateCommentTable()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_repository.html"><param name="Name" value="Persistence::CommentRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_repository.html#aadf20a1f3e16c922ca0dea6bee391bba"><param name="Name" value="IList&lt; Comment &gt;"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_service.html"><param name="Name" value="Persistence::CommentService"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_service.html"><param name="Name" value="Persistence::CommentService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_service.html#aa4bb0e6aa4f845f17c47eee65b49e193"><param name="Name" value="Comment"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_service.html"><param name="Name" value="Persistence::CommentService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_service.html#a3f09f2cb16711f8706f3138999df4cf0"><param name="Name" value="CommentService()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_service.html"><param name="Name" value="Persistence::CommentService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_service.html#adfcd662d73de51275998f01edbb8168c"><param name="Name" value="IList&lt; Comment &gt;"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_service.html"><param name="Name" value="Persistence::CommentService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_service.html#a9fa45f882bc8fdb4710eac023ca4b118"><param name="Name" value="bool"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee.html"><param name="Name" value="Persistence::Employee"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee.html"><param name="Name" value="Persistence::Employee"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee.html#abe9070fe216374264545095990bdd527"><param name="Name" value="Employee(string employeeUUID, string username, string password, string firstName, string lastName, string email, string phoneNr, int tasksDone=0)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee.html"><param name="Name" value="Persistence::Employee"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee.html#aa0c9cb328ee7bc04f7e0836f8702ac0e"><param name="Name" value="UUID"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_delete_exception.html"><param name="Name" value="Persistence::EmployeeDeleteException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_email_exception.html"><param name="Name" value="Persistence::EmployeeEmailException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_name_exception.html"><param name="Name" value="Persistence::EmployeeNameException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html"><param name="Name" value="Persistence::EmployeeRepository"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html"><param name="Name" value="Persistence::EmployeeRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html#a249ce43dda5492ac4866b75e494f221e"><param name="Name" value="Connect()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html"><param name="Name" value="Persistence::EmployeeRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html#a1a536f4b021cfec87b70fdf5a19d674d"><param name="Name" value="CreateEmployeeTable()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html"><param name="Name" value="Persistence::EmployeeRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html#a77fc082aae0fb98bb4e88822c655f6b7"><param name="Name" value="DeleteEmployee(string uuid)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html"><param name="Name" value="Persistence::EmployeeRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html#a341f18d539803c9abf322fad6f0a3ef7"><param name="Name" value="Employee"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html"><param name="Name" value="Persistence::EmployeeRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html#a4de2b752228fccd32d9c6fa9786f88c8"><param name="Name" value="EmployeeRepository()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html"><param name="Name" value="Persistence::EmployeeRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html#a210a4f068aac6ccc74947530577842fd"><param name="Name" value="List&lt; Employee &gt;"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html"><param name="Name" value="Persistence::EmployeeRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html#a28b812149067df61edb6548291af06a6"><param name="Name" value="RegisterUser(Employee employee)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html"><param name="Name" value="Persistence::EmployeeRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html#ae47c3ca344c6ac2f6fdf58fd863306d4"><param name="Name" value="UpdateEmployee(string uuid, string firstName, string lastName, string email, string phoneNr)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html"><param name="Name" value="Persistence::EmployeeRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html#a9b7f3bcb504fc144b4fd817cf4556446"><param name="Name" value="bool"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_service.html"><param name="Name" value="Persistence::EmployeeService"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_service.html"><param name="Name" value="Persistence::EmployeeService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_service.html#af89bc5815a09d467a0813881580bd346"><param name="Name" value="DeleteEmployee(string uuid)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_service.html"><param name="Name" value="Persistence::EmployeeService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_service.html#a8cac003accd81de95ab71c2e61438e2e"><param name="Name" value="Employee"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_service.html"><param name="Name" value="Persistence::EmployeeService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_service.html#a05acc2dca4befda8554b41cc050edd0c"><param name="Name" value="EmployeeService()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_service.html"><param name="Name" value="Persistence::EmployeeService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_service.html#a8c1241f196dfac3d915b81ee0b8c867a"><param name="Name" value="List&lt; Employee &gt;"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_service.html"><param name="Name" value="Persistence::EmployeeService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_service.html#a6fd8f2a93fcce062a2725f1ddcbf41f3"><param name="Name" value="UpdateEmployee(string uuid, string firstName, string lastName, string email, string phoneNr)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_service.html"><param name="Name" value="Persistence::EmployeeService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_service.html#ad64cde73a3e65b83d15d84aad3954e95"><param name="Name" value="bool"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_table_creation_exception.html"><param name="Name" value="Persistence::EmployeeTableCreationException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_tasks_done_exception.html"><param name="Name" value="Persistence::EmployeeTasksDoneException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_u_u_i_d_macth_exception.html"><param name="Name" value="Persistence::EmployeeUUIDMacthException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_update_exception.html"><param name="Name" value="Persistence::EmployeeUpdateException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_get_tasks_exception.html"><param name="Name" value="Persistence::GetTasksException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_persistence_1_1_i_comment_repository.html"><param name="Name" value="Persistence::ICommentRepository"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_persistence_1_1_i_comment_service.html"><param name="Name" value="Persistence::ICommentService"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_persistence_1_1_i_employee_repository.html"><param name="Name" value="Persistence::IEmployeeRepository"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_persistence_1_1_i_employee_service.html"><param name="Name" value="Persistence::IEmployeeService"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_persistence_1_1_i_subtask_repository.html"><param name="Name" value="Persistence::ISubtaskRepository"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_persistence_1_1_i_subtask_service.html"><param name="Name" value="Persistence::ISubtaskService"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_persistence_1_1_i_task_repository.html"><param name="Name" value="Persistence::ITaskRepository"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_persistence_1_1_i_task_service.html"><param name="Name" value="Persistence::ITaskService"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_log_in_exception.html"><param name="Name" value="Persistence::LogInException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_null_subtasks_exception.html"><param name="Name" value="Persistence::NullSubtasksException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_query_for_all_tasks_exception.html"><param name="Name" value="Persistence::QueryForAllTasksException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_query_for_employee_exception.html"><param name="Name" value="Persistence::QueryForEmployeeException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_query_for_task_exception.html"><param name="Name" value="Persistence::QueryForTaskException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_register_employee_exception.html"><param name="Name" value="Persistence::RegisterEmployeeException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask.html"><param name="Name" value="Persistence::Subtask"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask.html"><param name="Name" value="Persistence::Subtask"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask.html#acad5f306ed79a97ee80fd78b55c14345"><param name="Name" value="Id"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask.html"><param name="Name" value="Persistence::Subtask"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask.html#acbfd439c3db1fcaf3f18ee40766d7d79"><param name="Name" value="Subtask(int id, string title, string description, string status, int taskId, string employeeId)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_delete_exception.html"><param name="Name" value="Persistence::SubtaskDeleteException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html"><param name="Name" value="Persistence::SubtaskRepository"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html"><param name="Name" value="Persistence::SubtaskRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html#ae19f430e5ed26be163fcf311d7412d78"><param name="Name" value="AddSubstask(Subtask subtask)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html"><param name="Name" value="Persistence::SubtaskRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html#ae5dbbb95850b05da7be036b211a7848f"><param name="Name" value="ChangeStatus(int id, string selectedKey)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html"><param name="Name" value="Persistence::SubtaskRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a16b9ab61e726bb8411e6f2f5c01798a7"><param name="Name" value="Connect()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html"><param name="Name" value="Persistence::SubtaskRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a04e774149589f6e26456abdf15ebf692"><param name="Name" value="CreateSubtaskTable()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html"><param name="Name" value="Persistence::SubtaskRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a47109990af5c2fe080e1019c426f0161"><param name="Name" value="DeleteSubtask(int id)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html"><param name="Name" value="Persistence::SubtaskRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a121b77e92d0b3dd59f9e35a3a0449204"><param name="Name" value="IList&lt; Subtask &gt;"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html"><param name="Name" value="Persistence::SubtaskRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a860c884ce430e84880ae22ee8b8a03e2"><param name="Name" value="Subtask"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html"><param name="Name" value="Persistence::SubtaskRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a99c431c96bc7a7a29f5312b6e6637a91"><param name="Name" value="SubtaskRepository()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html"><param name="Name" value="Persistence::SubtaskRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a43b8e3341334c599a31120e13410995a"><param name="Name" value="UpdateSubtaskDetails(int id, string subtaskName, string subtaskDescription)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html"><param name="Name" value="Persistence::SubtaskService"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html"><param name="Name" value="Persistence::SubtaskService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html#adec2a97fa2f40d1d00c0ddece6d9b1f1"><param name="Name" value="ChangeStatus(int id, string selectedKey)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html"><param name="Name" value="Persistence::SubtaskService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html#a882c7c48bb82e891e7ba36309c3ca507"><param name="Name" value="DeleteSubtask(int id)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html"><param name="Name" value="Persistence::SubtaskService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html#a4efe0aba7bef333deb161081f9d01797"><param name="Name" value="IList&lt; Subtask &gt;"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html"><param name="Name" value="Persistence::SubtaskService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html#a340c8ab56d57dd7e73ec2d687ada1705"><param name="Name" value="Subtask"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html"><param name="Name" value="Persistence::SubtaskService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html#ae07639b3991852a312af405e807e816c"><param name="Name" value="SubtaskService()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html"><param name="Name" value="Persistence::SubtaskService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html#a6bce2c2164cec35acb86b358f78235cc"><param name="Name" value="UpdateSubtaskDetails(int id, string subtaskName, string subtaskDescription)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html"><param name="Name" value="Persistence::SubtaskService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html#a2dfadb91ee42fe61c42f627035ef2a3b"><param name="Name" value="bool"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtasks_empty_exception.html"><param name="Name" value="Persistence::SubtasksEmptyException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task.html"><param name="Name" value="Persistence::Task"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task.html"><param name="Name" value="Persistence::Task"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task.html#a9c6661587b19922876aa44f637531488"><param name="Name" value="ID"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task.html"><param name="Name" value="Persistence::Task"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task.html#aa5593e31bb060357adbf5367734356bf"><param name="Name" value="Task(int taskID, string taskName, string taskDescription, string taskStatus, int taskProgress, DateTime taskDeadline, string employeeUUID)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_assign_exception.html"><param name="Name" value="Persistence::TaskAssignException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_delete_exception.html"><param name="Name" value="Persistence::TaskDeleteException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_insert_exception.html"><param name="Name" value="Persistence::TaskInsertException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a02f29128f4a77ad07300b6d4337eb198"><param name="Name" value="AssignTaskToEmployee(int taskID, string empUUID, DateTime deadline)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a2192223a35946ed8565c1b14b08f4a97"><param name="Name" value="Connect()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a09703ad265adc22f227dfcff74edcecf"><param name="Name" value="CreateTask(string taskName, string taskDescription, DateTime taskDeadline, string employeeUUID)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#ae31409038bc14ddd559c6ccc1d03934f"><param name="Name" value="CreateTaskTable()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#afad780a3b8f0351b0812cc9180591396"><param name="Name" value="DeleteTask(int taskID)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a3dab4382e195ca3dc27b2c7d12f9d040"><param name="Name" value="List&lt; Task &gt;"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a3f1fe30376ad473b515b8d2baff44565"><param name="Name" value="Task"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a4e3cc2379820475e7b0a9c28a180f415"><param name="Name" value="TaskRepository()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a257d0127a68b5f42f943976b757a543c"><param name="Name" value="UnassignTaskFromEmployee(string empUUID, int taskID)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a4422ceeebcae5c3df928341fa56ec18d"><param name="Name" value="UnassignTasksFromEmployee(string empUUID)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a10322d8b431f097d200b7c1fe11c59ea"><param name="Name" value="UpdateTaskDetails(int taskID, string taskTitle, string taskDescription, DateTime taskDeadline, string assignedEmployeeUUID)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a95bfab6d79866701d95c353db68d4846"><param name="Name" value="UpdateTaskProgress(int taskID, int progress)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a3a424bbd4908444f45dc1235ca138082"><param name="Name" value="UpdateTaskStatus(int taskID, string newStatus)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#ad63527c0682ee9df67b64e2fcadaba36"><param name="Name" value="int"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html"><param name="Name" value="Persistence::TaskService"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html"><param name="Name" value="Persistence::TaskService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#a030f7e4f12cecb01f8d6ecec53d1a715"><param name="Name" value="AssignTaskToEmployee(int taskID, string empUUID, DateTime deadline)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html"><param name="Name" value="Persistence::TaskService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#a5896b0a2ac3a162c32ef7c2ffb131190"><param name="Name" value="CheckSubtasksStatus(List&lt; Subtask &gt; subtasks)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html"><param name="Name" value="Persistence::TaskService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#acdf397110b05f8c9deace11a2561704c"><param name="Name" value="CreateTask(string taskName, string taskDescription, DateTime taskDeadline, string employeeUUID)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html"><param name="Name" value="Persistence::TaskService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#ac7f7e214d836d0a397e6996dd9938d8e"><param name="Name" value="DeleteTask(int taskID)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html"><param name="Name" value="Persistence::TaskService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#ad7ec2a0f2504b5d4c87509f2ccba42d1"><param name="Name" value="List&lt; Task &gt;"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html"><param name="Name" value="Persistence::TaskService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#a3523616822bbdf2c76747a1b1dcfe078"><param name="Name" value="Task"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html"><param name="Name" value="Persistence::TaskService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#a8d308dc55ad2761b7baec40c1716c533"><param name="Name" value="TaskService()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html"><param name="Name" value="Persistence::TaskService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#a9777676b1297dd8d75e1cc3ca31c38c6"><param name="Name" value="UnassignTaskFromEmployee(string empUUID, int taskID)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html"><param name="Name" value="Persistence::TaskService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#a3b786f8c0a8ac3c51e92efe9bd66a25d"><param name="Name" value="UnassignTasksFromEmployee(string empUUID)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html"><param name="Name" value="Persistence::TaskService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#af37e350c1a7eb25f6d447d4f18a6ab10"><param name="Name" value="UpdateTaskDetails(int taskID, string taskTitle, string taskDescription, DateTime taskDeadline, string assignedEmployeeUUID)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html"><param name="Name" value="Persistence::TaskService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#adf0c4f2c49924ea00849f9f245ba997c"><param name="Name" value="UpdateTaskProgress(int taskID, int progress)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html"><param name="Name" value="Persistence::TaskService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#a14354c08a8d73574f57635966d512725"><param name="Name" value="UpdateTaskStatus(int taskID, string newStatus)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html"><param name="Name" value="Persistence::TaskService"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#a8bdbc8c57fe4837e157f4b9531002d25"><param name="Name" value="int"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_table_creation_exception.html"><param name="Name" value="Persistence::TaskTableCreationException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_unassign_exception.html"><param name="Name" value="Persistence::TaskUnassignException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_update_exception.html"><param name="Name" value="Persistence::TaskUpdateException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_validate_username_exception.html"><param name="Name" value="Persistence::ValidateUsernameException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_presenter.html"><param name="Name" value="Presenter"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_presenter.html#a6e133eeac7196efa6946d2dda86534b0"><param name="Name" value="Presenter()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_presenter_1_1_properties.html"><param name="Name" value="Presenter::Properties"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_presenters.html"><param name="Name" value="Presenters"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_comment_builder.html"><param name="Name" value="Presenters::CommentBuilder"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_comment_builder.html"><param name="Name" value="Presenters::CommentBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_comment_builder.html#afa7b0af36be6cdd05d3194431a86ec34"><param name="Name" value="GetResult()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_comment_builder.html"><param name="Name" value="Presenters::CommentBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_comment_builder.html#ae8fa5ceeaaeb16443c5828fd1e4349f9"><param name="Name" value="Reset()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_comment_builder.html"><param name="Name" value="Presenters::CommentBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_comment_builder.html#aa6da7d5e7f9f84867f1cc98634a3f6f6"><param name="Name" value="SetDescription(string description)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_comment_builder.html"><param name="Name" value="Presenters::CommentBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_comment_builder.html#ac75ad59e862c78d5a50f3ed28b14e43b"><param name="Name" value="SetTimeReported(int timeReported)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_comment_builder.html"><param name="Name" value="Presenters::CommentBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_comment_builder.html#ae7fb788c4419b9ad8b7a02786feb258d"><param name="Name" value="SetTitle(string title)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_employee_builder.html"><param name="Name" value="Presenters::EmployeeBuilder"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_employee_builder.html"><param name="Name" value="Presenters::EmployeeBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_employee_builder.html#a5a1eb5eb5f5496f92f83b8a2e6f74864"><param name="Name" value="GetResult()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_employee_builder.html"><param name="Name" value="Presenters::EmployeeBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_employee_builder.html#a317761701aee7b1a96ee53670fcab2c1"><param name="Name" value="Reset()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_employee_builder.html"><param name="Name" value="Presenters::EmployeeBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_employee_builder.html#a5c2a7806fd319abe0c0468134693e8b7"><param name="Name" value="SetEmail(string email)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_employee_builder.html"><param name="Name" value="Presenters::EmployeeBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_employee_builder.html#aae66d791de8d31917450cb9de0b37f2e"><param name="Name" value="SetGoToButton()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_employee_builder.html"><param name="Name" value="Presenters::EmployeeBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_employee_builder.html#a2f40095676c4dd46225cbd3b8a071dc4"><param name="Name" value="SetName(string name)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_employee_builder.html"><param name="Name" value="Presenters::EmployeeBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_employee_builder.html#a33b772fd9022d79a01a8b5ef8b6f136b"><param name="Name" value="SetPhoneNr(string phoneNr)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_employee_builder.html"><param name="Name" value="Presenters::EmployeeBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_employee_builder.html#ae5de2768285379bdcee7a261143f4a26"><param name="Name" value="SetUsername(string username)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_presenters_1_1_i_builder.html"><param name="Name" value="Presenters::IBuilder"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_presenters_1_1_i_comment_builder.html"><param name="Name" value="Presenters::ICommentBuilder"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_presenters_1_1_i_employee_builder.html"><param name="Name" value="Presenters::IEmployeeBuilder"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_presenters_1_1_i_presenter.html"><param name="Name" value="Presenters::IPresenter"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_presenters_1_1_i_subtask_builder.html"><param name="Name" value="Presenters::ISubtaskBuilder"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_presenters_1_1_i_task_builder.html"><param name="Name" value="Presenters::ITaskBuilder"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_presenter.html"><param name="Name" value="Presenters::Presenter"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_presenter.html"><param name="Name" value="Presenters::Presenter"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_presenter.html#a6e133eeac7196efa6946d2dda86534b0"><param name="Name" value="Presenter()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_presenter.html"><param name="Name" value="Presenters::Presenter"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_presenter.html#a02ccdbfaa2da4c0270ba411eccd4e789"><param name="Name" value="makeCommentRow(Comment comment)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_presenter.html"><param name="Name" value="Presenters::Presenter"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_presenter.html#a8c0b3b1b0bbb725337a5b7eea8e18d98"><param name="Name" value="makeEmployeeRow(Employee employee)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_presenter.html"><param name="Name" value="Presenters::Presenter"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_presenter.html#a4f4371648074f28959991fdc0792b795"><param name="Name" value="makeSubtaskRow(Subtask subtask)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_presenter.html"><param name="Name" value="Presenters::Presenter"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_presenter.html#a0748a50e6ee07aa70ee3a52e882d5e6f"><param name="Name" value="makeTaskRow(Task task)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html"><param name="Name" value="Presenters::SubtaskBuilder"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html"><param name="Name" value="Presenters::SubtaskBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a9daf34f5451dd58c8debc05a1ee4a141"><param name="Name" value="GetResult()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html"><param name="Name" value="Presenters::SubtaskBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html#ae739e5be9e5d58356a06074ee8be8627"><param name="Name" value="Reset()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html"><param name="Name" value="Presenters::SubtaskBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a5cf3becedf26032c8f32d57fcb988fea"><param name="Name" value="SetDescription(string description)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html"><param name="Name" value="Presenters::SubtaskBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a30a487f94347a34350b5ed2232c4b4e4"><param name="Name" value="SetGoToButton()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html"><param name="Name" value="Presenters::SubtaskBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a680b1df4a8be97c826d5aaeb8985f840"><param name="Name" value="SetID(string ID)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html"><param name="Name" value="Presenters::SubtaskBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a1c2752cb6b33874c9d2c20b08f1053b9"><param name="Name" value="SetStatus(string status)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html"><param name="Name" value="Presenters::SubtaskBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a3cc11249f2f777b5660cb6a0d3f9736d"><param name="Name" value="SetTitle(string title)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html"><param name="Name" value="Presenters::TaskBuilder"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html"><param name="Name" value="Presenters::TaskBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html#ad356d4d0059647bddb7a697471a17aae"><param name="Name" value="GetResult()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html"><param name="Name" value="Presenters::TaskBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html#ad967bb0585ce6c7bf31398b25cc57fff"><param name="Name" value="Reset()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html"><param name="Name" value="Presenters::TaskBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html#ad271285754f0ac250c2a8a8604593094"><param name="Name" value="SetDeadline(DateTime deadline)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html"><param name="Name" value="Presenters::TaskBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html#abc28b55e268151255800b5a889828f65"><param name="Name" value="SetDescription(string description)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html"><param name="Name" value="Presenters::TaskBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html#abdee761852d5b74ace084605f40a63d6"><param name="Name" value="SetGoToButton()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html"><param name="Name" value="Presenters::TaskBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html#ad290601e099362351063bf5b3b9fa269"><param name="Name" value="SetID(string ID)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html"><param name="Name" value="Presenters::TaskBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html#a442489fa1a389142459f69639dd2f64c"><param name="Name" value="SetProgress(int progress)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html"><param name="Name" value="Presenters::TaskBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html#add6737cc07c66e6264e352a4752613a1"><param name="Name" value="SetStatus(string status)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html"><param name="Name" value="Presenters::TaskBuilder"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html#aa021aa6a20f34e118f46c3d3c30a83b7"><param name="Name" value="SetTitle(string title)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_profile_content_control.html#acb242a2af00eb0848138d81aca8fac84"><param name="Name" value="ProfileContentControl(Employee employee)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_project.html"><param name="Name" value="Project"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_project_1_1_properties.html"><param name="Name" value="Project::Properties"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_project_1_1_views.html"><param name="Name" value="Project::Views"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_project_1_1_views_1_1_controls.html"><param name="Name" value="Project::Views::Controls"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_project_1_1_views_1_1_controls_1_1_dialogs.html"><param name="Name" value="Project::Views::Controls::Dialogs"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_project_1_1_views_1_1_controls_1_1_dialogs_1_1_tests.html"><param name="Name" value="Project::Views::Controls::Dialogs::Tests"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_project_1_1_views_1_1_controls_1_1_dialogs_1_1_tests_1_1_helper_dialog_control_tests.html"><param name="Name" value="Project::Views::Controls::Dialogs::Tests::HelperDialogControlTests"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html#a28b812149067df61edb6548291af06a6"><param name="Name" value="RegisterUser(Employee employee)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_comment_builder.html#ae8fa5ceeaaeb16443c5828fd1e4349f9"><param name="Name" value="Reset()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_comment_builder.html#ae8fa5ceeaaeb16443c5828fd1e4349f9"><param name="Name" value="Presenters::CommentBuilder"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_employee_builder.html#a317761701aee7b1a96ee53670fcab2c1"><param name="Name" value="Reset()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_employee_builder.html#a317761701aee7b1a96ee53670fcab2c1"><param name="Name" value="Presenters::EmployeeBuilder"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html#ae739e5be9e5d58356a06074ee8be8627"><param name="Name" value="Reset()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html#ae739e5be9e5d58356a06074ee8be8627"><param name="Name" value="Presenters::SubtaskBuilder"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html#ad967bb0585ce6c7bf31398b25cc57fff"><param name="Name" value="Reset()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html#ad967bb0585ce6c7bf31398b25cc57fff"><param name="Name" value="Presenters::TaskBuilder"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html#ad271285754f0ac250c2a8a8604593094"><param name="Name" value="SetDeadline(DateTime deadline)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_comment_builder.html#aa6da7d5e7f9f84867f1cc98634a3f6f6"><param name="Name" value="SetDescription(string description)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_comment_builder.html#aa6da7d5e7f9f84867f1cc98634a3f6f6"><param name="Name" value="Presenters::CommentBuilder"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a5cf3becedf26032c8f32d57fcb988fea"><param name="Name" value="SetDescription(string description)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a5cf3becedf26032c8f32d57fcb988fea"><param name="Name" value="Presenters::SubtaskBuilder"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html#abc28b55e268151255800b5a889828f65"><param name="Name" value="SetDescription(string description)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html#abc28b55e268151255800b5a889828f65"><param name="Name" value="Presenters::TaskBuilder"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_employee_builder.html#a5c2a7806fd319abe0c0468134693e8b7"><param name="Name" value="SetEmail(string email)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_employee_builder.html#aae66d791de8d31917450cb9de0b37f2e"><param name="Name" value="SetGoToButton()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_employee_builder.html#aae66d791de8d31917450cb9de0b37f2e"><param name="Name" value="Presenters::EmployeeBuilder"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a30a487f94347a34350b5ed2232c4b4e4"><param name="Name" value="SetGoToButton()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a30a487f94347a34350b5ed2232c4b4e4"><param name="Name" value="Presenters::SubtaskBuilder"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html#abdee761852d5b74ace084605f40a63d6"><param name="Name" value="SetGoToButton()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html#abdee761852d5b74ace084605f40a63d6"><param name="Name" value="Presenters::TaskBuilder"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a680b1df4a8be97c826d5aaeb8985f840"><param name="Name" value="SetID(string ID)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a680b1df4a8be97c826d5aaeb8985f840"><param name="Name" value="Presenters::SubtaskBuilder"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html#ad290601e099362351063bf5b3b9fa269"><param name="Name" value="SetID(string ID)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html#ad290601e099362351063bf5b3b9fa269"><param name="Name" value="Presenters::TaskBuilder"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_employee_builder.html#a2f40095676c4dd46225cbd3b8a071dc4"><param name="Name" value="SetName(string name)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_employee_builder.html#a33b772fd9022d79a01a8b5ef8b6f136b"><param name="Name" value="SetPhoneNr(string phoneNr)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html#a442489fa1a389142459f69639dd2f64c"><param name="Name" value="SetProgress(int progress)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a1c2752cb6b33874c9d2c20b08f1053b9"><param name="Name" value="SetStatus(string status)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a1c2752cb6b33874c9d2c20b08f1053b9"><param name="Name" value="Presenters::SubtaskBuilder"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html#add6737cc07c66e6264e352a4752613a1"><param name="Name" value="SetStatus(string status)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html#add6737cc07c66e6264e352a4752613a1"><param name="Name" value="Presenters::TaskBuilder"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_comment_builder.html#ac75ad59e862c78d5a50f3ed28b14e43b"><param name="Name" value="SetTimeReported(int timeReported)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_comment_builder.html#ae7fb788c4419b9ad8b7a02786feb258d"><param name="Name" value="SetTitle(string title)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_comment_builder.html#ae7fb788c4419b9ad8b7a02786feb258d"><param name="Name" value="Presenters::CommentBuilder"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a3cc11249f2f777b5660cb6a0d3f9736d"><param name="Name" value="SetTitle(string title)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a3cc11249f2f777b5660cb6a0d3f9736d"><param name="Name" value="Presenters::SubtaskBuilder"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html#aa021aa6a20f34e118f46c3d3c30a83b7"><param name="Name" value="SetTitle(string title)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_task_builder.html#aa021aa6a20f34e118f46c3d3c30a83b7"><param name="Name" value="Presenters::TaskBuilder"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_employee_builder.html#ae5de2768285379bdcee7a261143f4a26"><param name="Name" value="SetUsername(string username)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_sign_up_control.html#aa479c3e5a93ae044a9b636bd8ebecafe"><param name="Name" value="SignUpControl()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask.html#acbfd439c3db1fcaf3f18ee40766d7d79"><param name="Name" value="Subtask(int id, string title, string description, string status, int taskId, string employeeId)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a860c884ce430e84880ae22ee8b8a03e2"><param name="Name" value="Subtask"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a860c884ce430e84880ae22ee8b8a03e2"><param name="Name" value="Persistence::SubtaskRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html#a340c8ab56d57dd7e73ec2d687ada1705"><param name="Name" value="Subtask"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html#a340c8ab56d57dd7e73ec2d687ada1705"><param name="Name" value="Persistence::SubtaskService"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a99c431c96bc7a7a29f5312b6e6637a91"><param name="Name" value="SubtaskRepository()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html#ae07639b3991852a312af405e807e816c"><param name="Name" value="SubtaskService()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task.html#aa5593e31bb060357adbf5367734356bf"><param name="Name" value="Task(int taskID, string taskName, string taskDescription, string taskStatus, int taskProgress, DateTime taskDeadline, string employeeUUID)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a3f1fe30376ad473b515b8d2baff44565"><param name="Name" value="Task"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a3f1fe30376ad473b515b8d2baff44565"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#a3523616822bbdf2c76747a1b1dcfe078"><param name="Name" value="Task"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#a3523616822bbdf2c76747a1b1dcfe078"><param name="Name" value="Persistence::TaskService"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_task_content_control.html#ab9ef41c5addfe735c9a86e2210a93616"><param name="Name" value="TaskContentControl(Task task)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a4e3cc2379820475e7b0a9c28a180f415"><param name="Name" value="TaskRepository()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#a8d308dc55ad2761b7baec40c1716c533"><param name="Name" value="TaskService()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_tasks_content_control.html#a2caa61452585c9b17bc9e89f2165e5f6"><param name="Name" value="TasksContentControl()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_tasks_content_control.html#ad1363d2fef9dfdde321d4206dd6284d5"><param name="Name" value="TasksContentControl(List&lt; Task &gt; tasks)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee.html#aa0c9cb328ee7bc04f7e0836f8702ac0e"><param name="Name" value="UUID"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a257d0127a68b5f42f943976b757a543c"><param name="Name" value="UnassignTaskFromEmployee(string empUUID, int taskID)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a257d0127a68b5f42f943976b757a543c"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#a9777676b1297dd8d75e1cc3ca31c38c6"><param name="Name" value="UnassignTaskFromEmployee(string empUUID, int taskID)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#a9777676b1297dd8d75e1cc3ca31c38c6"><param name="Name" value="Persistence::TaskService"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a4422ceeebcae5c3df928341fa56ec18d"><param name="Name" value="UnassignTasksFromEmployee(string empUUID)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a4422ceeebcae5c3df928341fa56ec18d"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#a3b786f8c0a8ac3c51e92efe9bd66a25d"><param name="Name" value="UnassignTasksFromEmployee(string empUUID)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#a3b786f8c0a8ac3c51e92efe9bd66a25d"><param name="Name" value="Persistence::TaskService"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html#ae47c3ca344c6ac2f6fdf58fd863306d4"><param name="Name" value="UpdateEmployee(string uuid, string firstName, string lastName, string email, string phoneNr)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html#ae47c3ca344c6ac2f6fdf58fd863306d4"><param name="Name" value="Persistence::EmployeeRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_service.html#a6fd8f2a93fcce062a2725f1ddcbf41f3"><param name="Name" value="UpdateEmployee(string uuid, string firstName, string lastName, string email, string phoneNr)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_service.html#a6fd8f2a93fcce062a2725f1ddcbf41f3"><param name="Name" value="Persistence::EmployeeService"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a43b8e3341334c599a31120e13410995a"><param name="Name" value="UpdateSubtaskDetails(int id, string subtaskName, string subtaskDescription)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a43b8e3341334c599a31120e13410995a"><param name="Name" value="Persistence::SubtaskRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html#a6bce2c2164cec35acb86b358f78235cc"><param name="Name" value="UpdateSubtaskDetails(int id, string subtaskName, string subtaskDescription)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html#a6bce2c2164cec35acb86b358f78235cc"><param name="Name" value="Persistence::SubtaskService"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a10322d8b431f097d200b7c1fe11c59ea"><param name="Name" value="UpdateTaskDetails(int taskID, string taskTitle, string taskDescription, DateTime taskDeadline, string assignedEmployeeUUID)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a10322d8b431f097d200b7c1fe11c59ea"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#af37e350c1a7eb25f6d447d4f18a6ab10"><param name="Name" value="UpdateTaskDetails(int taskID, string taskTitle, string taskDescription, DateTime taskDeadline, string assignedEmployeeUUID)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#af37e350c1a7eb25f6d447d4f18a6ab10"><param name="Name" value="Persistence::TaskService"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a95bfab6d79866701d95c353db68d4846"><param name="Name" value="UpdateTaskProgress(int taskID, int progress)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a95bfab6d79866701d95c353db68d4846"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#adf0c4f2c49924ea00849f9f245ba997c"><param name="Name" value="UpdateTaskProgress(int taskID, int progress)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#adf0c4f2c49924ea00849f9f245ba997c"><param name="Name" value="Persistence::TaskService"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a3a424bbd4908444f45dc1235ca138082"><param name="Name" value="UpdateTaskStatus(int taskID, string newStatus)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#a3a424bbd4908444f45dc1235ca138082"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#a14354c08a8d73574f57635966d512725"><param name="Name" value="UpdateTaskStatus(int taskID, string newStatus)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#a14354c08a8d73574f57635966d512725"><param name="Name" value="Persistence::TaskService"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_users_content_control.html#a245b890a448066478b6b6c44041cf55a"><param name="Name" value="UsersContentControl()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_users_content_control.html#a4f5bcfce39406fe27bb7f9da6c16f8d2"><param name="Name" value="UsersContentControl(List&lt; Employee &gt; employees)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_view.html"><param name="Name" value="View"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_about_content_control.html"><param name="Name" value="View::AboutContentControl"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_about_content_control.html"><param name="Name" value="View::AboutContentControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_about_content_control.html#a99da05c25885b1afea3a2edefda71c5b"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_add_comment_dialog_control.html"><param name="Name" value="View::AddCommentDialogControl"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_add_comment_dialog_control.html"><param name="Name" value="View::AddCommentDialogControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_add_comment_dialog_control.html#a4d99672a2eb3317ae450ec7642516395"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_add_subtask_dialog_control.html"><param name="Name" value="View::AddSubtaskDialogControl"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_add_subtask_dialog_control.html"><param name="Name" value="View::AddSubtaskDialogControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_add_subtask_dialog_control.html#a6f82d56354c25760ed85f0bc3016bde5"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_add_task_dialog_control.html"><param name="Name" value="View::AddTaskDialogControl"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_add_task_dialog_control.html"><param name="Name" value="View::AddTaskDialogControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_add_task_dialog_control.html#a7ee6746b3f13147384e79bbd84ad93b2"><param name="Name" value="AddTaskDialogControl(List&lt; Employee &gt; employees, Employee currentEmployee)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_add_task_dialog_control.html"><param name="Name" value="View::AddTaskDialogControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_add_task_dialog_control.html#a95098837fca94286622d938ab84fb21d"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_ask_for_deadline_dialog_control.html"><param name="Name" value="View::AskForDeadlineDialogControl"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_ask_for_deadline_dialog_control.html"><param name="Name" value="View::AskForDeadlineDialogControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_ask_for_deadline_dialog_control.html#aff6d9c649e76ccc428708eb0d4b9edfc"><param name="Name" value="AskForDeadlineDialogControl()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_ask_for_deadline_dialog_control.html"><param name="Name" value="View::AskForDeadlineDialogControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_ask_for_deadline_dialog_control.html#a7507052e87ca6c47ffd417e08d427297"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_backlog_content_control.html"><param name="Name" value="View::BacklogContentControl"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_backlog_content_control.html"><param name="Name" value="View::BacklogContentControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_backlog_content_control.html#a6c0c8ca32c667203cc72ae63df453ae9"><param name="Name" value="BacklogContentControl()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_backlog_content_control.html"><param name="Name" value="View::BacklogContentControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_backlog_content_control.html#a11e94c14c6c53282a76e3b22eb357041"><param name="Name" value="BacklogContentControl(List&lt; Task &gt; tasks)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_backlog_content_control.html"><param name="Name" value="View::BacklogContentControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_backlog_content_control.html#a951f7166bf7512f89e1c8363a315b929"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_edit_profile_dialog_control.html"><param name="Name" value="View::EditProfileDialogControl"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_edit_profile_dialog_control.html"><param name="Name" value="View::EditProfileDialogControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_edit_profile_dialog_control.html#ab344a36eaf5f5fa4e7c78c5d6ca7ed11"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_edit_profile_dialog_control.html"><param name="Name" value="View::EditProfileDialogControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_edit_profile_dialog_control.html#a95a44112061b7eb7b605780f03e24da1"><param name="Name" value="EditProfileDialogControl(Employee employee)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_email_not_valid_exception.html"><param name="Name" value="View::EmailNotValidException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_fields_empty_exception.html"><param name="Name" value="View::FieldsEmptyException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_first_name_exception.html"><param name="Name" value="View::FirstNameException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_helper_dialog_control.html"><param name="Name" value="View::HelperDialogControl"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_helper_dialog_control.html"><param name="Name" value="View::HelperDialogControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_helper_dialog_control.html#a5ee2977fa318d48f8a34bed4555c41db"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_last_name_exception.html"><param name="Name" value="View::LastNameException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_log_in_control.html"><param name="Name" value="View::LogInControl"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_log_in_control.html"><param name="Name" value="View::LogInControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_log_in_control.html#a7c98aa913a85d6e60379183245c6d251"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_log_in_control.html"><param name="Name" value="View::LogInControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_log_in_control.html#a797d34798803b48724fa8a8db67a5013"><param name="Name" value="LogInControl()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_log_in_exception.html"><param name="Name" value="View::LogInException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_login_page.html"><param name="Name" value="View::LoginPage"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_login_page.html"><param name="Name" value="View::LoginPage"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_login_page.html#a9ec90115195bd119de810f1e49d8e366"><param name="Name" value="ChangeToLogIn()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_login_page.html"><param name="Name" value="View::LoginPage"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_login_page.html#abacfd920b35b3541697cbaccb6dac4bf"><param name="Name" value="ChangeToSignUp()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_login_page.html"><param name="Name" value="View::LoginPage"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_login_page.html#aff3d47f5408666ea01ba0181d17fb68a"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_login_page.html"><param name="Name" value="View::LoginPage"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_login_page.html#ac1176aba59b8a7c438c31a52cb1bf035"><param name="Name" value="EmployeeSRV"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_login_page.html"><param name="Name" value="View::LoginPage"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_login_page.html#ac11042fce6bb3e494428e3e1ba0b8240"><param name="Name" value="LoginPage()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_main_form.html"><param name="Name" value="View::MainForm"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_main_form.html"><param name="Name" value="View::MainForm"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_main_form.html#a49a1b7c042904f66fb2b883bf5969e97"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_main_form.html"><param name="Name" value="View::MainForm"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_main_form.html#ac81ae21866f472ce823a2d64ea75558b"><param name="Name" value="MainForm(Employee employee)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_password_match_exception.html"><param name="Name" value="View::PasswordMatchException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_phone_number_exception.html"><param name="Name" value="View::PhoneNumberException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_profile_content_control.html"><param name="Name" value="View::ProfileContentControl"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_profile_content_control.html"><param name="Name" value="View::ProfileContentControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_profile_content_control.html#a05eb07ed9d91658405dc0501df0b7439"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_profile_content_control.html"><param name="Name" value="View::ProfileContentControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_profile_content_control.html#acb242a2af00eb0848138d81aca8fac84"><param name="Name" value="ProfileContentControl(Employee employee)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_view_1_1_properties.html"><param name="Name" value="View::Properties"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_sign_up_control.html"><param name="Name" value="View::SignUpControl"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_sign_up_control.html"><param name="Name" value="View::SignUpControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_sign_up_control.html#a1d544d8d48463d6999d8d7f209067b28"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_sign_up_control.html"><param name="Name" value="View::SignUpControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_sign_up_control.html#aa479c3e5a93ae044a9b636bd8ebecafe"><param name="Name" value="SignUpControl()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_subtask_content_control.html"><param name="Name" value="View::SubtaskContentControl"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_subtask_content_control.html"><param name="Name" value="View::SubtaskContentControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_subtask_content_control.html#a8429f41f360d4ee770588d49e2c1607e"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_task_content_control.html"><param name="Name" value="View::TaskContentControl"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_task_content_control.html"><param name="Name" value="View::TaskContentControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_task_content_control.html#a27afab65748a4b0db1bbd91ccc255033"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_task_content_control.html"><param name="Name" value="View::TaskContentControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_task_content_control.html#ab9ef41c5addfe735c9a86e2210a93616"><param name="Name" value="TaskContentControl(Task task)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_tasks_content_control.html"><param name="Name" value="View::TasksContentControl"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_tasks_content_control.html"><param name="Name" value="View::TasksContentControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_tasks_content_control.html#abc0a5ca9345984e8074c9228e3335d64"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_tasks_content_control.html"><param name="Name" value="View::TasksContentControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_tasks_content_control.html#a2caa61452585c9b17bc9e89f2165e5f6"><param name="Name" value="TasksContentControl()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_tasks_content_control.html"><param name="Name" value="View::TasksContentControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_tasks_content_control.html#ad1363d2fef9dfdde321d4206dd6284d5"><param name="Name" value="TasksContentControl(List&lt; Task &gt; tasks)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_username_taken_exception.html"><param name="Name" value="View::UsernameTakenException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_users_content_control.html"><param name="Name" value="View::UsersContentControl"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_users_content_control.html"><param name="Name" value="View::UsersContentControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_users_content_control.html#a85152c35459b1c836c9283937d9a23af"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_users_content_control.html"><param name="Name" value="View::UsersContentControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_users_content_control.html#a245b890a448066478b6b6c44041cf55a"><param name="Name" value="UsersContentControl()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_users_content_control.html"><param name="Name" value="View::UsersContentControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_view_1_1_users_content_control.html#a4f5bcfce39406fe27bb7f9da6c16f8d2"><param name="Name" value="UsersContentControl(List&lt; Employee &gt; employees)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_service.html#a9fa45f882bc8fdb4710eac023ca4b118"><param name="Name" value="bool"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_comment_service.html#a9fa45f882bc8fdb4710eac023ca4b118"><param name="Name" value="Persistence::CommentService"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html#a9b7f3bcb504fc144b4fd817cf4556446"><param name="Name" value="bool"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_repository.html#a9b7f3bcb504fc144b4fd817cf4556446"><param name="Name" value="Persistence::EmployeeRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_service.html#ad64cde73a3e65b83d15d84aad3954e95"><param name="Name" value="bool"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_employee_service.html#ad64cde73a3e65b83d15d84aad3954e95"><param name="Name" value="Persistence::EmployeeService"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html#a2dfadb91ee42fe61c42f627035ef2a3b"><param name="Name" value="bool"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_subtask_service.html#a2dfadb91ee42fe61c42f627035ef2a3b"><param name="Name" value="Persistence::SubtaskService"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#ad63527c0682ee9df67b64e2fcadaba36"><param name="Name" value="int"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_repository.html#ad63527c0682ee9df67b64e2fcadaba36"><param name="Name" value="Persistence::TaskRepository"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#a8bdbc8c57fe4837e157f4b9531002d25"><param name="Name" value="int"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_persistence_1_1_task_service.html#a8bdbc8c57fe4837e157f4b9531002d25"><param name="Name" value="Persistence::TaskService"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_presenter.html#a02ccdbfaa2da4c0270ba411eccd4e789"><param name="Name" value="makeCommentRow(Comment comment)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_presenter.html#a8c0b3b1b0bbb725337a5b7eea8e18d98"><param name="Name" value="makeEmployeeRow(Employee employee)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_presenter.html#a4f4371648074f28959991fdc0792b795"><param name="Name" value="makeSubtaskRow(Subtask subtask)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_presenters_1_1_presenter.html#a0748a50e6ee07aa70ee3a52e882d5e6f"><param name="Name" value="makeTaskRow(Task task)"></OBJECT>
+</UL>
+</BODY>
+</HTML>

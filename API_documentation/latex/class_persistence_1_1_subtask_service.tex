@@ -1,0 +1,224 @@
+\doxysection{Persistence.\+Subtask\+Service Class Reference}
+\hypertarget{class_persistence_1_1_subtask_service}{}\label{class_persistence_1_1_subtask_service}\index{Persistence.SubtaskService@{Persistence.SubtaskService}}
+Inheritance diagram for Persistence.\+Subtask\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_persistence_1_1_subtask_service}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_persistence_1_1_subtask_service_ae07639b3991852a312af405e807e816c}\label{class_persistence_1_1_subtask_service_ae07639b3991852a312af405e807e816c} 
+{\bfseries Subtask\+Service} ()
+\begin{DoxyCompactList}\small\item\em Constructor. Initializes the subtask repository instance. \end{DoxyCompactList}\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_subtask_service_af454ddf7560f69cee33490949d8b04dc}{Add\+Substask}} (string title, string description, string status, int task\+Id, string employee\+Id)
+\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_subtask_service_a180c9596611137f0049ac1185846f404}{Get\+Subtask\+By\+Id}} (int subtask\+Id)
+\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_subtask_service_a1b4e0a9774d28cf55bc393a8857267da}{Get\+Subtasks\+By\+Task}} (int task\+Id)
+\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_subtask_service_adec2a97fa2f40d1d00c0ddece6d9b1f1}{Change\+Status}} (int id, string selected\+Key)
+\begin{DoxyCompactList}\small\item\em Method to change a subtask status based on its id. \end{DoxyCompactList}\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_subtask_service_a6bce2c2164cec35acb86b358f78235cc}{Update\+Subtask\+Details}} (int id, string subtask\+Name, string subtask\+Description)
+\begin{DoxyCompactList}\small\item\em Method to change the subtask details(name, description) based on its id. \end{DoxyCompactList}\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_subtask_service_a882c7c48bb82e891e7ba36309c3ca507}{Delete\+Subtask}} (int id)
+\begin{DoxyCompactList}\small\item\em Method to delete a subtask based on its id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{interface_persistence_1_1_i_subtask_service_a4e9d17290b4f36c04640199e28a3ad91}\label{interface_persistence_1_1_i_subtask_service_a4e9d17290b4f36c04640199e28a3ad91} 
+Exception {\bfseries Add\+Substask} (string title, string description, string status, int task\+Id, string employee\+Id)
+\item 
+\Hypertarget{interface_persistence_1_1_i_subtask_service_a5935fb76fc3bddadf4edcf5d8d6a6770}\label{interface_persistence_1_1_i_subtask_service_a5935fb76fc3bddadf4edcf5d8d6a6770} 
+Exception {\bfseries Get\+Subtask\+By\+Id} (int subtask\+Id)
+\item 
+\Hypertarget{interface_persistence_1_1_i_subtask_service_a1bc0bd4c4d31bd1c87f6362fbed9a408}\label{interface_persistence_1_1_i_subtask_service_a1bc0bd4c4d31bd1c87f6362fbed9a408} 
+Exception {\bfseries Get\+Subtasks\+By\+Task} (int task\+Id)
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_subtask_service_adf122feeda6d3b79ada70c9f47953c2d}{Delete\+Subtask}} (int id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_persistence_1_1_subtask_service_a2dfadb91ee42fe61c42f627035ef2a3b}{bool}}
+\begin{DoxyCompactList}\small\item\em Calls the subtask repository class to add a subtask. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_persistence_1_1_subtask_service_a340c8ab56d57dd7e73ec2d687ada1705}{Subtask}}
+\begin{DoxyCompactList}\small\item\em Method to retrieve a subtask data model based on its id. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_persistence_1_1_subtask_service_a4efe0aba7bef333deb161081f9d01797}{IList$<$ Subtask $>$}}
+\begin{DoxyCompactList}\small\item\em Method to retrieve all the subtask data models based on its (parent)task id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{interface_persistence_1_1_i_subtask_service}{Persistence.\+ISubtask\+Service}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries bool}
+\item 
+{\bfseries Subtask}
+\item 
+{\bfseries IList$<$ Subtask $>$}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_persistence_1_1_subtask_service_af454ddf7560f69cee33490949d8b04dc}\label{class_persistence_1_1_subtask_service_af454ddf7560f69cee33490949d8b04dc} 
+\index{Persistence.SubtaskService@{Persistence.SubtaskService}!AddSubstask@{AddSubstask}}
+\index{AddSubstask@{AddSubstask}!Persistence.SubtaskService@{Persistence.SubtaskService}}
+\doxysubsubsection{\texorpdfstring{AddSubstask()}{AddSubstask()}}
+{\footnotesize\ttfamily Exception Persistence.\+Subtask\+Service.\+Add\+Substask (\begin{DoxyParamCaption}\item[{string}]{title,  }\item[{string}]{description,  }\item[{string}]{status,  }\item[{int}]{task\+Id,  }\item[{string}]{employee\+Id }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_subtask_service}{Persistence.\+ISubtask\+Service}}.
+
+\Hypertarget{class_persistence_1_1_subtask_service_adec2a97fa2f40d1d00c0ddece6d9b1f1}\label{class_persistence_1_1_subtask_service_adec2a97fa2f40d1d00c0ddece6d9b1f1} 
+\index{Persistence.SubtaskService@{Persistence.SubtaskService}!ChangeStatus@{ChangeStatus}}
+\index{ChangeStatus@{ChangeStatus}!Persistence.SubtaskService@{Persistence.SubtaskService}}
+\doxysubsubsection{\texorpdfstring{ChangeStatus()}{ChangeStatus()}}
+{\footnotesize\ttfamily Exception Persistence.\+Subtask\+Service.\+Change\+Status (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{string}]{selected\+Key }\end{DoxyParamCaption})}
+
+
+
+Method to change a subtask status based on its id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+{\em selected\+Key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the change was successfully done. Also returns an exception in case an error happened while exuting the statement.
+\end{DoxyReturn}
+\Hypertarget{class_persistence_1_1_subtask_service_a882c7c48bb82e891e7ba36309c3ca507}\label{class_persistence_1_1_subtask_service_a882c7c48bb82e891e7ba36309c3ca507} 
+\index{Persistence.SubtaskService@{Persistence.SubtaskService}!DeleteSubtask@{DeleteSubtask}}
+\index{DeleteSubtask@{DeleteSubtask}!Persistence.SubtaskService@{Persistence.SubtaskService}}
+\doxysubsubsection{\texorpdfstring{DeleteSubtask()}{DeleteSubtask()}}
+{\footnotesize\ttfamily Exception Persistence.\+Subtask\+Service.\+Delete\+Subtask (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Method to delete a subtask based on its id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the delete was successfully done. Also returns an exception in case an error happened while exuting the statement.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_subtask_service}{Persistence.\+ISubtask\+Service}}.
+
+\Hypertarget{class_persistence_1_1_subtask_service_a180c9596611137f0049ac1185846f404}\label{class_persistence_1_1_subtask_service_a180c9596611137f0049ac1185846f404} 
+\index{Persistence.SubtaskService@{Persistence.SubtaskService}!GetSubtaskById@{GetSubtaskById}}
+\index{GetSubtaskById@{GetSubtaskById}!Persistence.SubtaskService@{Persistence.SubtaskService}}
+\doxysubsubsection{\texorpdfstring{GetSubtaskById()}{GetSubtaskById()}}
+{\footnotesize\ttfamily Exception Persistence.\+Subtask\+Service.\+Get\+Subtask\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{subtask\+Id }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_subtask_service}{Persistence.\+ISubtask\+Service}}.
+
+\Hypertarget{class_persistence_1_1_subtask_service_a1b4e0a9774d28cf55bc393a8857267da}\label{class_persistence_1_1_subtask_service_a1b4e0a9774d28cf55bc393a8857267da} 
+\index{Persistence.SubtaskService@{Persistence.SubtaskService}!GetSubtasksByTask@{GetSubtasksByTask}}
+\index{GetSubtasksByTask@{GetSubtasksByTask}!Persistence.SubtaskService@{Persistence.SubtaskService}}
+\doxysubsubsection{\texorpdfstring{GetSubtasksByTask()}{GetSubtasksByTask()}}
+{\footnotesize\ttfamily Exception Persistence.\+Subtask\+Service.\+Get\+Subtasks\+By\+Task (\begin{DoxyParamCaption}\item[{int}]{task\+Id }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_subtask_service}{Persistence.\+ISubtask\+Service}}.
+
+\Hypertarget{class_persistence_1_1_subtask_service_a6bce2c2164cec35acb86b358f78235cc}\label{class_persistence_1_1_subtask_service_a6bce2c2164cec35acb86b358f78235cc} 
+\index{Persistence.SubtaskService@{Persistence.SubtaskService}!UpdateSubtaskDetails@{UpdateSubtaskDetails}}
+\index{UpdateSubtaskDetails@{UpdateSubtaskDetails}!Persistence.SubtaskService@{Persistence.SubtaskService}}
+\doxysubsubsection{\texorpdfstring{UpdateSubtaskDetails()}{UpdateSubtaskDetails()}}
+{\footnotesize\ttfamily Exception Persistence.\+Subtask\+Service.\+Update\+Subtask\+Details (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{string}]{subtask\+Name,  }\item[{string}]{subtask\+Description }\end{DoxyParamCaption})}
+
+
+
+Method to change the subtask details(name, description) based on its id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+{\em subtask\+Name} & \\
+\hline
+{\em subtask\+Description} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the change was successfully done. Also returns an exception in case an error happened while exuting the statement.
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_persistence_1_1_subtask_service_a2dfadb91ee42fe61c42f627035ef2a3b}\label{class_persistence_1_1_subtask_service_a2dfadb91ee42fe61c42f627035ef2a3b} 
+\index{Persistence.SubtaskService@{Persistence.SubtaskService}!bool@{bool}}
+\index{bool@{bool}!Persistence.SubtaskService@{Persistence.SubtaskService}}
+\doxysubsubsection{\texorpdfstring{bool}{bool}}
+{\footnotesize\ttfamily Persistence.\+Subtask\+Service.\+bool}
+
+
+
+Calls the subtask repository class to add a subtask. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Subtask title\\
+\hline
+{\em description} & Subtask description\\
+\hline
+{\em status} & Subtask status\\
+\hline
+{\em task\+Id} & Subtask\textquotesingle{}s parent(task) id\\
+\hline
+{\em employee\+Id} & The employee id of the given subtask\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\texorpdfstring{$>$}{>}Returns true if the subtask was added successfully , otherwise false. Also returns an exception if an error happened while executing the statement.
+\end{DoxyReturn}
+\Hypertarget{class_persistence_1_1_subtask_service_a4efe0aba7bef333deb161081f9d01797}\label{class_persistence_1_1_subtask_service_a4efe0aba7bef333deb161081f9d01797} 
+\index{Persistence.SubtaskService@{Persistence.SubtaskService}!IList$<$ Subtask $>$@{IList$<$ Subtask $>$}}
+\index{IList$<$ Subtask $>$@{IList$<$ Subtask $>$}!Persistence.SubtaskService@{Persistence.SubtaskService}}
+\doxysubsubsection{\texorpdfstring{IList$<$ Subtask $>$}{IList< Subtask >}}
+{\footnotesize\ttfamily Persistence.\+Subtask\+Service.\+IList$<$ \mbox{\hyperlink{class_persistence_1_1_subtask}{Subtask}} $>$}
+
+
+
+Method to retrieve all the subtask data models based on its (parent)task id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em task\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a list of subtask data objects if found, otherwise null. Also returns an exception in case an error happened while exuting the statement.
+\end{DoxyReturn}
+\Hypertarget{class_persistence_1_1_subtask_service_a340c8ab56d57dd7e73ec2d687ada1705}\label{class_persistence_1_1_subtask_service_a340c8ab56d57dd7e73ec2d687ada1705} 
+\index{Persistence.SubtaskService@{Persistence.SubtaskService}!Subtask@{Subtask}}
+\index{Subtask@{Subtask}!Persistence.SubtaskService@{Persistence.SubtaskService}}
+\doxysubsubsection{\texorpdfstring{Subtask}{Subtask}}
+{\footnotesize\ttfamily Persistence.\+Subtask\+Service.\+Subtask}
+
+
+
+Method to retrieve a subtask data model based on its id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em subtask\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the subtask data object if found, otherwise null. Also returns an exception in case an error happened while exuting the statement.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+FACULTATE/\+ANUL III/\+SEM II/\+IP/\+Proiect/\+Project\+IP/\+Project/\+Persistence/\+Business/\+Services/Subtask\+Service.\+cs\end{DoxyCompactItemize}

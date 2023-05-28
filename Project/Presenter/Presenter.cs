@@ -9,7 +9,7 @@
  *  any kind, either expressed or implied, including but not limited      *
  *  to the implied warranties of merchantability or fitness for a         *
  *  particular purpose. You are free to use this source code in your      *
- *  applications as long as the original copyright notice is included.    *
+ *  applications as long as the original copyright not                    *
  *                                                                        *
  **************************************************************************/
 
@@ -17,7 +17,7 @@ using System.Windows.Forms;
 using Persistence;
 
 namespace Presenters
-{
+{   
     public class Presenter : IPresenter
     {
         /// <summary>

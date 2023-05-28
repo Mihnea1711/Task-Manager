@@ -149,7 +149,14 @@ namespace View
                     MessageBox.Show(ex.Message);
                     return;
                 }
-                ((MainForm)this.TopLevelControl).LoadSubtaskContentPanel(_currentSubtask);
+                //((MainForm)this.TopLevelControl).LoadSubtaskContentPanel(_currentSubtask);
+                (Task parentTask, Exception exc) = ((MainForm)this.TopLevelControl).Presenter.TaskSRV.GetTaskByID(_currentSubtask.TaskId);
+                if (ex != null)
+                {
+                    MessageBox.Show(ex.Message);
+                    return;
+                }
+                ((MainForm)this.TopLevelControl).LoadTaskContentPanel(parentTask);
             }
         }
 

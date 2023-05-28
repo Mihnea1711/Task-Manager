@@ -1,0 +1,963 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Packages"><param name="Local" value="namespaces.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Package List"><param name="Local" value="namespaces.html#top"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence"><param name="Local" value="namespace_persistence.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Comment"><param name="Local" value="class_persistence_1_1_comment.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Comment"><param name="Local" value="class_persistence_1_1_comment.html#a1ebb95fdb53e7adb27347a09419ad3c7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Id"><param name="Local" value="class_persistence_1_1_comment.html#aa92a9379eac659ccf66db94960b86611"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CommentRepository"><param name="Local" value="class_persistence_1_1_comment_repository.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CommentRepository"><param name="Local" value="class_persistence_1_1_comment_repository.html#adb97c2c23526f01c5579cbb8c10c482f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AddComment"><param name="Local" value="class_persistence_1_1_comment_repository.html#af8bd5e2ae87947c9e7e7ef9d2b756f99"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CreateCommentTable"><param name="Local" value="class_persistence_1_1_comment_repository.html#ac163c3ee2891cf4742360fe25e5efc25"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Comment"><param name="Local" value="class_persistence_1_1_comment_repository.html#a5a257962fa65639e228270edc0f6c783"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="IList&lt; Comment &gt;"><param name="Local" value="class_persistence_1_1_comment_repository.html#aadf20a1f3e16c922ca0dea6bee391bba"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CommentService"><param name="Local" value="class_persistence_1_1_comment_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CommentService"><param name="Local" value="class_persistence_1_1_comment_service.html#a3f09f2cb16711f8706f3138999df4cf0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="bool"><param name="Local" value="class_persistence_1_1_comment_service.html#a9fa45f882bc8fdb4710eac023ca4b118"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Comment"><param name="Local" value="class_persistence_1_1_comment_service.html#aa4bb0e6aa4f845f17c47eee65b49e193"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="IList&lt; Comment &gt;"><param name="Local" value="class_persistence_1_1_comment_service.html#adfcd662d73de51275998f01edbb8168c"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Employee"><param name="Local" value="class_persistence_1_1_employee.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Employee"><param name="Local" value="class_persistence_1_1_employee.html#abe9070fe216374264545095990bdd527"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UUID"><param name="Local" value="class_persistence_1_1_employee.html#aa0c9cb328ee7bc04f7e0836f8702ac0e"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeDeleteException"><param name="Local" value="class_persistence_1_1_employee_delete_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeEmailException"><param name="Local" value="class_persistence_1_1_employee_email_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeNameException"><param name="Local" value="class_persistence_1_1_employee_name_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeRepository"><param name="Local" value="class_persistence_1_1_employee_repository.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeRepository"><param name="Local" value="class_persistence_1_1_employee_repository.html#a4de2b752228fccd32d9c6fa9786f88c8"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CreateEmployeeTable"><param name="Local" value="class_persistence_1_1_employee_repository.html#a1a536f4b021cfec87b70fdf5a19d674d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DeleteEmployee"><param name="Local" value="class_persistence_1_1_employee_repository.html#a77fc082aae0fb98bb4e88822c655f6b7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="RegisterUser"><param name="Local" value="class_persistence_1_1_employee_repository.html#a28b812149067df61edb6548291af06a6"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UpdateEmployee"><param name="Local" value="class_persistence_1_1_employee_repository.html#ae47c3ca344c6ac2f6fdf58fd863306d4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="bool"><param name="Local" value="class_persistence_1_1_employee_repository.html#a9b7f3bcb504fc144b4fd817cf4556446"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Employee"><param name="Local" value="class_persistence_1_1_employee_repository.html#a341f18d539803c9abf322fad6f0a3ef7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="List&lt; Employee &gt;"><param name="Local" value="class_persistence_1_1_employee_repository.html#a210a4f068aac6ccc74947530577842fd"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeService"><param name="Local" value="class_persistence_1_1_employee_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeService"><param name="Local" value="class_persistence_1_1_employee_service.html#a05acc2dca4befda8554b41cc050edd0c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DeleteEmployee"><param name="Local" value="class_persistence_1_1_employee_service.html#af89bc5815a09d467a0813881580bd346"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UpdateEmployee"><param name="Local" value="class_persistence_1_1_employee_service.html#a6fd8f2a93fcce062a2725f1ddcbf41f3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="bool"><param name="Local" value="class_persistence_1_1_employee_service.html#ad64cde73a3e65b83d15d84aad3954e95"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Employee"><param name="Local" value="class_persistence_1_1_employee_service.html#a8cac003accd81de95ab71c2e61438e2e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="List&lt; Employee &gt;"><param name="Local" value="class_persistence_1_1_employee_service.html#a8c1241f196dfac3d915b81ee0b8c867a"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeTableCreationException"><param name="Local" value="class_persistence_1_1_employee_table_creation_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeTasksDoneException"><param name="Local" value="class_persistence_1_1_employee_tasks_done_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeUpdateException"><param name="Local" value="class_persistence_1_1_employee_update_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeUUIDMacthException"><param name="Local" value="class_persistence_1_1_employee_u_u_i_d_macth_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="GetTasksException"><param name="Local" value="class_persistence_1_1_get_tasks_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ICommentRepository"><param name="Local" value="interface_persistence_1_1_i_comment_repository.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ICommentService"><param name="Local" value="interface_persistence_1_1_i_comment_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="IEmployeeRepository"><param name="Local" value="interface_persistence_1_1_i_employee_repository.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="IEmployeeService"><param name="Local" value="interface_persistence_1_1_i_employee_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ISubtaskRepository"><param name="Local" value="interface_persistence_1_1_i_subtask_repository.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ISubtaskService"><param name="Local" value="interface_persistence_1_1_i_subtask_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ITaskRepository"><param name="Local" value="interface_persistence_1_1_i_task_repository.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ITaskService"><param name="Local" value="interface_persistence_1_1_i_task_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LogInException"><param name="Local" value="class_persistence_1_1_log_in_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="NullSubtasksException"><param name="Local" value="class_persistence_1_1_null_subtasks_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="QueryForAllTasksException"><param name="Local" value="class_persistence_1_1_query_for_all_tasks_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="QueryForEmployeeException"><param name="Local" value="class_persistence_1_1_query_for_employee_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="QueryForTaskException"><param name="Local" value="class_persistence_1_1_query_for_task_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RegisterEmployeeException"><param name="Local" value="class_persistence_1_1_register_employee_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Subtask"><param name="Local" value="class_persistence_1_1_subtask.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Subtask"><param name="Local" value="class_persistence_1_1_subtask.html#acbfd439c3db1fcaf3f18ee40766d7d79"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Id"><param name="Local" value="class_persistence_1_1_subtask.html#acad5f306ed79a97ee80fd78b55c14345"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SubtaskDeleteException"><param name="Local" value="class_persistence_1_1_subtask_delete_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SubtaskRepository"><param name="Local" value="class_persistence_1_1_subtask_repository.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SubtaskRepository"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a99c431c96bc7a7a29f5312b6e6637a91"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AddSubstask"><param name="Local" value="class_persistence_1_1_subtask_repository.html#ae19f430e5ed26be163fcf311d7412d78"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ChangeStatus"><param name="Local" value="class_persistence_1_1_subtask_repository.html#ae5dbbb95850b05da7be036b211a7848f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CreateSubtaskTable"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a04e774149589f6e26456abdf15ebf692"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DeleteSubtask"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a47109990af5c2fe080e1019c426f0161"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UpdateSubtaskDetails"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a43b8e3341334c599a31120e13410995a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="IList&lt; Subtask &gt;"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a121b77e92d0b3dd59f9e35a3a0449204"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Subtask"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a860c884ce430e84880ae22ee8b8a03e2"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SubtasksEmptyException"><param name="Local" value="class_persistence_1_1_subtasks_empty_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SubtaskService"><param name="Local" value="class_persistence_1_1_subtask_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SubtaskService"><param name="Local" value="class_persistence_1_1_subtask_service.html#ae07639b3991852a312af405e807e816c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ChangeStatus"><param name="Local" value="class_persistence_1_1_subtask_service.html#adec2a97fa2f40d1d00c0ddece6d9b1f1"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DeleteSubtask"><param name="Local" value="class_persistence_1_1_subtask_service.html#a882c7c48bb82e891e7ba36309c3ca507"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UpdateSubtaskDetails"><param name="Local" value="class_persistence_1_1_subtask_service.html#a6bce2c2164cec35acb86b358f78235cc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="bool"><param name="Local" value="class_persistence_1_1_subtask_service.html#a2dfadb91ee42fe61c42f627035ef2a3b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="IList&lt; Subtask &gt;"><param name="Local" value="class_persistence_1_1_subtask_service.html#a4efe0aba7bef333deb161081f9d01797"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Subtask"><param name="Local" value="class_persistence_1_1_subtask_service.html#a340c8ab56d57dd7e73ec2d687ada1705"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Task"><param name="Local" value="class_persistence_1_1_task.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Task"><param name="Local" value="class_persistence_1_1_task.html#aa5593e31bb060357adbf5367734356bf"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ID"><param name="Local" value="class_persistence_1_1_task.html#a9c6661587b19922876aa44f637531488"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskAssignException"><param name="Local" value="class_persistence_1_1_task_assign_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskDeleteException"><param name="Local" value="class_persistence_1_1_task_delete_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskInsertException"><param name="Local" value="class_persistence_1_1_task_insert_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskRepository"><param name="Local" value="class_persistence_1_1_task_repository.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskRepository"><param name="Local" value="class_persistence_1_1_task_repository.html#a4e3cc2379820475e7b0a9c28a180f415"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AssignTaskToEmployee"><param name="Local" value="class_persistence_1_1_task_repository.html#a02f29128f4a77ad07300b6d4337eb198"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CreateTask"><param name="Local" value="class_persistence_1_1_task_repository.html#a09703ad265adc22f227dfcff74edcecf"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CreateTaskTable"><param name="Local" value="class_persistence_1_1_task_repository.html#ae31409038bc14ddd559c6ccc1d03934f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DeleteTask"><param name="Local" value="class_persistence_1_1_task_repository.html#afad780a3b8f0351b0812cc9180591396"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UnassignTaskFromEmployee"><param name="Local" value="class_persistence_1_1_task_repository.html#a257d0127a68b5f42f943976b757a543c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UnassignTasksFromEmployee"><param name="Local" value="class_persistence_1_1_task_repository.html#a4422ceeebcae5c3df928341fa56ec18d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UpdateTaskDetails"><param name="Local" value="class_persistence_1_1_task_repository.html#a10322d8b431f097d200b7c1fe11c59ea"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UpdateTaskProgress"><param name="Local" value="class_persistence_1_1_task_repository.html#a95bfab6d79866701d95c353db68d4846"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UpdateTaskStatus"><param name="Local" value="class_persistence_1_1_task_repository.html#a3a424bbd4908444f45dc1235ca138082"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="int"><param name="Local" value="class_persistence_1_1_task_repository.html#ad63527c0682ee9df67b64e2fcadaba36"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="List&lt; Task &gt;"><param name="Local" value="class_persistence_1_1_task_repository.html#a3dab4382e195ca3dc27b2c7d12f9d040"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Task"><param name="Local" value="class_persistence_1_1_task_repository.html#a3f1fe30376ad473b515b8d2baff44565"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskService"><param name="Local" value="class_persistence_1_1_task_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskService"><param name="Local" value="class_persistence_1_1_task_service.html#a8d308dc55ad2761b7baec40c1716c533"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AssignTaskToEmployee"><param name="Local" value="class_persistence_1_1_task_service.html#a030f7e4f12cecb01f8d6ecec53d1a715"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CheckSubtasksStatus"><param name="Local" value="class_persistence_1_1_task_service.html#a5896b0a2ac3a162c32ef7c2ffb131190"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CreateTask"><param name="Local" value="class_persistence_1_1_task_service.html#acdf397110b05f8c9deace11a2561704c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DeleteTask"><param name="Local" value="class_persistence_1_1_task_service.html#ac7f7e214d836d0a397e6996dd9938d8e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UnassignTaskFromEmployee"><param name="Local" value="class_persistence_1_1_task_service.html#a9777676b1297dd8d75e1cc3ca31c38c6"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UnassignTasksFromEmployee"><param name="Local" value="class_persistence_1_1_task_service.html#a3b786f8c0a8ac3c51e92efe9bd66a25d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UpdateTaskDetails"><param name="Local" value="class_persistence_1_1_task_service.html#af37e350c1a7eb25f6d447d4f18a6ab10"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UpdateTaskProgress"><param name="Local" value="class_persistence_1_1_task_service.html#adf0c4f2c49924ea00849f9f245ba997c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UpdateTaskStatus"><param name="Local" value="class_persistence_1_1_task_service.html#a14354c08a8d73574f57635966d512725"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="int"><param name="Local" value="class_persistence_1_1_task_service.html#a8bdbc8c57fe4837e157f4b9531002d25"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="List&lt; Task &gt;"><param name="Local" value="class_persistence_1_1_task_service.html#ad7ec2a0f2504b5d4c87509f2ccba42d1"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Task"><param name="Local" value="class_persistence_1_1_task_service.html#a3523616822bbdf2c76747a1b1dcfe078"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskTableCreationException"><param name="Local" value="class_persistence_1_1_task_table_creation_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskUnassignException"><param name="Local" value="class_persistence_1_1_task_unassign_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskUpdateException"><param name="Local" value="class_persistence_1_1_task_update_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ValidateUsernameException"><param name="Local" value="class_persistence_1_1_validate_username_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Presenter"><param name="Local" value="namespace_presenter.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Properties"><param name="Local" value="namespace_presenter_1_1_properties.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Presenters"><param name="Local" value="namespace_presenters.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CommentBuilder"><param name="Local" value="class_presenters_1_1_comment_builder.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetResult"><param name="Local" value="class_presenters_1_1_comment_builder.html#afa7b0af36be6cdd05d3194431a86ec34"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Reset"><param name="Local" value="class_presenters_1_1_comment_builder.html#ae8fa5ceeaaeb16443c5828fd1e4349f9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetDescription"><param name="Local" value="class_presenters_1_1_comment_builder.html#aa6da7d5e7f9f84867f1cc98634a3f6f6"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetTimeReported"><param name="Local" value="class_presenters_1_1_comment_builder.html#ac75ad59e862c78d5a50f3ed28b14e43b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetTitle"><param name="Local" value="class_presenters_1_1_comment_builder.html#ae7fb788c4419b9ad8b7a02786feb258d"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeBuilder"><param name="Local" value="class_presenters_1_1_employee_builder.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetResult"><param name="Local" value="class_presenters_1_1_employee_builder.html#a5a1eb5eb5f5496f92f83b8a2e6f74864"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Reset"><param name="Local" value="class_presenters_1_1_employee_builder.html#a317761701aee7b1a96ee53670fcab2c1"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetEmail"><param name="Local" value="class_presenters_1_1_employee_builder.html#a5c2a7806fd319abe0c0468134693e8b7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetGoToButton"><param name="Local" value="class_presenters_1_1_employee_builder.html#aae66d791de8d31917450cb9de0b37f2e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetName"><param name="Local" value="class_presenters_1_1_employee_builder.html#a2f40095676c4dd46225cbd3b8a071dc4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetPhoneNr"><param name="Local" value="class_presenters_1_1_employee_builder.html#a33b772fd9022d79a01a8b5ef8b6f136b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetUsername"><param name="Local" value="class_presenters_1_1_employee_builder.html#ae5de2768285379bdcee7a261143f4a26"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="IBuilder"><param name="Local" value="interface_presenters_1_1_i_builder.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ICommentBuilder"><param name="Local" value="interface_presenters_1_1_i_comment_builder.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="IEmployeeBuilder"><param name="Local" value="interface_presenters_1_1_i_employee_builder.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="IPresenter"><param name="Local" value="interface_presenters_1_1_i_presenter.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ISubtaskBuilder"><param name="Local" value="interface_presenters_1_1_i_subtask_builder.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ITaskBuilder"><param name="Local" value="interface_presenters_1_1_i_task_builder.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Presenter"><param name="Local" value="class_presenters_1_1_presenter.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Presenter"><param name="Local" value="class_presenters_1_1_presenter.html#a6e133eeac7196efa6946d2dda86534b0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="makeCommentRow"><param name="Local" value="class_presenters_1_1_presenter.html#a02ccdbfaa2da4c0270ba411eccd4e789"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="makeEmployeeRow"><param name="Local" value="class_presenters_1_1_presenter.html#a8c0b3b1b0bbb725337a5b7eea8e18d98"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="makeSubtaskRow"><param name="Local" value="class_presenters_1_1_presenter.html#a4f4371648074f28959991fdc0792b795"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="makeTaskRow"><param name="Local" value="class_presenters_1_1_presenter.html#a0748a50e6ee07aa70ee3a52e882d5e6f"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SubtaskBuilder"><param name="Local" value="class_presenters_1_1_subtask_builder.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetResult"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a9daf34f5451dd58c8debc05a1ee4a141"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Reset"><param name="Local" value="class_presenters_1_1_subtask_builder.html#ae739e5be9e5d58356a06074ee8be8627"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetDescription"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a5cf3becedf26032c8f32d57fcb988fea"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetGoToButton"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a30a487f94347a34350b5ed2232c4b4e4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetID"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a680b1df4a8be97c826d5aaeb8985f840"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetStatus"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a1c2752cb6b33874c9d2c20b08f1053b9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetTitle"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a3cc11249f2f777b5660cb6a0d3f9736d"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskBuilder"><param name="Local" value="class_presenters_1_1_task_builder.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetResult"><param name="Local" value="class_presenters_1_1_task_builder.html#ad356d4d0059647bddb7a697471a17aae"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Reset"><param name="Local" value="class_presenters_1_1_task_builder.html#ad967bb0585ce6c7bf31398b25cc57fff"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetDeadline"><param name="Local" value="class_presenters_1_1_task_builder.html#ad271285754f0ac250c2a8a8604593094"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetDescription"><param name="Local" value="class_presenters_1_1_task_builder.html#abc28b55e268151255800b5a889828f65"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetGoToButton"><param name="Local" value="class_presenters_1_1_task_builder.html#abdee761852d5b74ace084605f40a63d6"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetID"><param name="Local" value="class_presenters_1_1_task_builder.html#ad290601e099362351063bf5b3b9fa269"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetProgress"><param name="Local" value="class_presenters_1_1_task_builder.html#a442489fa1a389142459f69639dd2f64c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetStatus"><param name="Local" value="class_presenters_1_1_task_builder.html#add6737cc07c66e6264e352a4752613a1"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetTitle"><param name="Local" value="class_presenters_1_1_task_builder.html#aa021aa6a20f34e118f46c3d3c30a83b7"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Project"><param name="Local" value="namespace_project.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Properties"><param name="Local" value="namespace_project_1_1_properties.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Views"><param name="Local" value="namespace_project_1_1_views.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Controls"><param name="Local" value="namespace_project_1_1_views_1_1_controls.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Dialogs"><param name="Local" value="namespace_project_1_1_views_1_1_controls_1_1_dialogs.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="Tests"><param name="Local" value="namespace_project_1_1_views_1_1_controls_1_1_dialogs_1_1_tests.html"><param name="ImageNumber" value="1"></OBJECT>
+              <UL>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="HelperDialogControlTests"><param name="Local" value="class_project_1_1_views_1_1_controls_1_1_dialogs_1_1_tests_1_1_helper_dialog_control_tests.html"><param name="ImageNumber" value="1"></OBJECT>
+                <UL>
+                </UL>
+              </UL>
+            </UL>
+          </UL>
+        </UL>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="View"><param name="Local" value="namespace_view.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Properties"><param name="Local" value="namespace_view_1_1_properties.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="AboutContentControl"><param name="Local" value="class_view_1_1_about_content_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_about_content_control.html#a99da05c25885b1afea3a2edefda71c5b"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="AddCommentDialogControl"><param name="Local" value="class_view_1_1_add_comment_dialog_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_add_comment_dialog_control.html#a4d99672a2eb3317ae450ec7642516395"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="AddSubtaskDialogControl"><param name="Local" value="class_view_1_1_add_subtask_dialog_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_add_subtask_dialog_control.html#a6f82d56354c25760ed85f0bc3016bde5"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="AddTaskDialogControl"><param name="Local" value="class_view_1_1_add_task_dialog_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AddTaskDialogControl"><param name="Local" value="class_view_1_1_add_task_dialog_control.html#a7ee6746b3f13147384e79bbd84ad93b2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_add_task_dialog_control.html#a95098837fca94286622d938ab84fb21d"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="AskForDeadlineDialogControl"><param name="Local" value="class_view_1_1_ask_for_deadline_dialog_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AskForDeadlineDialogControl"><param name="Local" value="class_view_1_1_ask_for_deadline_dialog_control.html#aff6d9c649e76ccc428708eb0d4b9edfc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_ask_for_deadline_dialog_control.html#a7507052e87ca6c47ffd417e08d427297"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="BacklogContentControl"><param name="Local" value="class_view_1_1_backlog_content_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="BacklogContentControl"><param name="Local" value="class_view_1_1_backlog_content_control.html#a6c0c8ca32c667203cc72ae63df453ae9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="BacklogContentControl"><param name="Local" value="class_view_1_1_backlog_content_control.html#a11e94c14c6c53282a76e3b22eb357041"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_backlog_content_control.html#a951f7166bf7512f89e1c8363a315b929"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="EditProfileDialogControl"><param name="Local" value="class_view_1_1_edit_profile_dialog_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="EditProfileDialogControl"><param name="Local" value="class_view_1_1_edit_profile_dialog_control.html#a95a44112061b7eb7b605780f03e24da1"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_edit_profile_dialog_control.html#ab344a36eaf5f5fa4e7c78c5d6ca7ed11"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="EmailNotValidException"><param name="Local" value="class_view_1_1_email_not_valid_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="FieldsEmptyException"><param name="Local" value="class_view_1_1_fields_empty_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="FirstNameException"><param name="Local" value="class_view_1_1_first_name_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="HelperDialogControl"><param name="Local" value="class_view_1_1_helper_dialog_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_helper_dialog_control.html#a5ee2977fa318d48f8a34bed4555c41db"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LastNameException"><param name="Local" value="class_view_1_1_last_name_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LogInControl"><param name="Local" value="class_view_1_1_log_in_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="LogInControl"><param name="Local" value="class_view_1_1_log_in_control.html#a797d34798803b48724fa8a8db67a5013"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_log_in_control.html#a7c98aa913a85d6e60379183245c6d251"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LogInException"><param name="Local" value="class_view_1_1_log_in_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LoginPage"><param name="Local" value="class_view_1_1_login_page.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="LoginPage"><param name="Local" value="class_view_1_1_login_page.html#ac11042fce6bb3e494428e3e1ba0b8240"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ChangeToLogIn"><param name="Local" value="class_view_1_1_login_page.html#a9ec90115195bd119de810f1e49d8e366"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ChangeToSignUp"><param name="Local" value="class_view_1_1_login_page.html#abacfd920b35b3541697cbaccb6dac4bf"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_login_page.html#aff3d47f5408666ea01ba0181d17fb68a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeSRV"><param name="Local" value="class_view_1_1_login_page.html#ac1176aba59b8a7c438c31a52cb1bf035"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="MainForm"><param name="Local" value="class_view_1_1_main_form.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="MainForm"><param name="Local" value="class_view_1_1_main_form.html#ac81ae21866f472ce823a2d64ea75558b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_main_form.html#a49a1b7c042904f66fb2b883bf5969e97"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="PasswordMatchException"><param name="Local" value="class_view_1_1_password_match_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="PhoneNumberException"><param name="Local" value="class_view_1_1_phone_number_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ProfileContentControl"><param name="Local" value="class_view_1_1_profile_content_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ProfileContentControl"><param name="Local" value="class_view_1_1_profile_content_control.html#acb242a2af00eb0848138d81aca8fac84"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_profile_content_control.html#a05eb07ed9d91658405dc0501df0b7439"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SignUpControl"><param name="Local" value="class_view_1_1_sign_up_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SignUpControl"><param name="Local" value="class_view_1_1_sign_up_control.html#aa479c3e5a93ae044a9b636bd8ebecafe"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_sign_up_control.html#a1d544d8d48463d6999d8d7f209067b28"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SubtaskContentControl"><param name="Local" value="class_view_1_1_subtask_content_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_subtask_content_control.html#a8429f41f360d4ee770588d49e2c1607e"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskContentControl"><param name="Local" value="class_view_1_1_task_content_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskContentControl"><param name="Local" value="class_view_1_1_task_content_control.html#ab9ef41c5addfe735c9a86e2210a93616"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_task_content_control.html#a27afab65748a4b0db1bbd91ccc255033"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TasksContentControl"><param name="Local" value="class_view_1_1_tasks_content_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="TasksContentControl"><param name="Local" value="class_view_1_1_tasks_content_control.html#a2caa61452585c9b17bc9e89f2165e5f6"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="TasksContentControl"><param name="Local" value="class_view_1_1_tasks_content_control.html#ad1363d2fef9dfdde321d4206dd6284d5"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_tasks_content_control.html#abc0a5ca9345984e8074c9228e3335d64"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="UsernameTakenException"><param name="Local" value="class_view_1_1_username_taken_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="UsersContentControl"><param name="Local" value="class_view_1_1_users_content_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UsersContentControl"><param name="Local" value="class_view_1_1_users_content_control.html#a245b890a448066478b6b6c44041cf55a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UsersContentControl"><param name="Local" value="class_view_1_1_users_content_control.html#a4f5bcfce39406fe27bb7f9da6c16f8d2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_users_content_control.html#a85152c35459b1c836c9283937d9a23af"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      </UL>
+    </UL>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Classes"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class List"><param name="Local" value="annotated.html#top"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence"><param name="Local" value="namespace_persistence.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Comment"><param name="Local" value="class_persistence_1_1_comment.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Comment"><param name="Local" value="class_persistence_1_1_comment.html#a1ebb95fdb53e7adb27347a09419ad3c7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Id"><param name="Local" value="class_persistence_1_1_comment.html#aa92a9379eac659ccf66db94960b86611"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CommentRepository"><param name="Local" value="class_persistence_1_1_comment_repository.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CommentRepository"><param name="Local" value="class_persistence_1_1_comment_repository.html#adb97c2c23526f01c5579cbb8c10c482f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AddComment"><param name="Local" value="class_persistence_1_1_comment_repository.html#af8bd5e2ae87947c9e7e7ef9d2b756f99"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CreateCommentTable"><param name="Local" value="class_persistence_1_1_comment_repository.html#ac163c3ee2891cf4742360fe25e5efc25"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Comment"><param name="Local" value="class_persistence_1_1_comment_repository.html#a5a257962fa65639e228270edc0f6c783"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="IList&lt; Comment &gt;"><param name="Local" value="class_persistence_1_1_comment_repository.html#aadf20a1f3e16c922ca0dea6bee391bba"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CommentService"><param name="Local" value="class_persistence_1_1_comment_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CommentService"><param name="Local" value="class_persistence_1_1_comment_service.html#a3f09f2cb16711f8706f3138999df4cf0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="bool"><param name="Local" value="class_persistence_1_1_comment_service.html#a9fa45f882bc8fdb4710eac023ca4b118"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Comment"><param name="Local" value="class_persistence_1_1_comment_service.html#aa4bb0e6aa4f845f17c47eee65b49e193"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="IList&lt; Comment &gt;"><param name="Local" value="class_persistence_1_1_comment_service.html#adfcd662d73de51275998f01edbb8168c"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Employee"><param name="Local" value="class_persistence_1_1_employee.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Employee"><param name="Local" value="class_persistence_1_1_employee.html#abe9070fe216374264545095990bdd527"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UUID"><param name="Local" value="class_persistence_1_1_employee.html#aa0c9cb328ee7bc04f7e0836f8702ac0e"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeDeleteException"><param name="Local" value="class_persistence_1_1_employee_delete_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeEmailException"><param name="Local" value="class_persistence_1_1_employee_email_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeNameException"><param name="Local" value="class_persistence_1_1_employee_name_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeRepository"><param name="Local" value="class_persistence_1_1_employee_repository.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeRepository"><param name="Local" value="class_persistence_1_1_employee_repository.html#a4de2b752228fccd32d9c6fa9786f88c8"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CreateEmployeeTable"><param name="Local" value="class_persistence_1_1_employee_repository.html#a1a536f4b021cfec87b70fdf5a19d674d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DeleteEmployee"><param name="Local" value="class_persistence_1_1_employee_repository.html#a77fc082aae0fb98bb4e88822c655f6b7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="RegisterUser"><param name="Local" value="class_persistence_1_1_employee_repository.html#a28b812149067df61edb6548291af06a6"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UpdateEmployee"><param name="Local" value="class_persistence_1_1_employee_repository.html#ae47c3ca344c6ac2f6fdf58fd863306d4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="bool"><param name="Local" value="class_persistence_1_1_employee_repository.html#a9b7f3bcb504fc144b4fd817cf4556446"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Employee"><param name="Local" value="class_persistence_1_1_employee_repository.html#a341f18d539803c9abf322fad6f0a3ef7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="List&lt; Employee &gt;"><param name="Local" value="class_persistence_1_1_employee_repository.html#a210a4f068aac6ccc74947530577842fd"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeService"><param name="Local" value="class_persistence_1_1_employee_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeService"><param name="Local" value="class_persistence_1_1_employee_service.html#a05acc2dca4befda8554b41cc050edd0c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DeleteEmployee"><param name="Local" value="class_persistence_1_1_employee_service.html#af89bc5815a09d467a0813881580bd346"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UpdateEmployee"><param name="Local" value="class_persistence_1_1_employee_service.html#a6fd8f2a93fcce062a2725f1ddcbf41f3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="bool"><param name="Local" value="class_persistence_1_1_employee_service.html#ad64cde73a3e65b83d15d84aad3954e95"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Employee"><param name="Local" value="class_persistence_1_1_employee_service.html#a8cac003accd81de95ab71c2e61438e2e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="List&lt; Employee &gt;"><param name="Local" value="class_persistence_1_1_employee_service.html#a8c1241f196dfac3d915b81ee0b8c867a"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeTableCreationException"><param name="Local" value="class_persistence_1_1_employee_table_creation_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeTasksDoneException"><param name="Local" value="class_persistence_1_1_employee_tasks_done_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeUpdateException"><param name="Local" value="class_persistence_1_1_employee_update_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeUUIDMacthException"><param name="Local" value="class_persistence_1_1_employee_u_u_i_d_macth_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="GetTasksException"><param name="Local" value="class_persistence_1_1_get_tasks_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ICommentRepository"><param name="Local" value="interface_persistence_1_1_i_comment_repository.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ICommentService"><param name="Local" value="interface_persistence_1_1_i_comment_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="IEmployeeRepository"><param name="Local" value="interface_persistence_1_1_i_employee_repository.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="IEmployeeService"><param name="Local" value="interface_persistence_1_1_i_employee_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ISubtaskRepository"><param name="Local" value="interface_persistence_1_1_i_subtask_repository.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ISubtaskService"><param name="Local" value="interface_persistence_1_1_i_subtask_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ITaskRepository"><param name="Local" value="interface_persistence_1_1_i_task_repository.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ITaskService"><param name="Local" value="interface_persistence_1_1_i_task_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LogInException"><param name="Local" value="class_persistence_1_1_log_in_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="NullSubtasksException"><param name="Local" value="class_persistence_1_1_null_subtasks_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="QueryForAllTasksException"><param name="Local" value="class_persistence_1_1_query_for_all_tasks_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="QueryForEmployeeException"><param name="Local" value="class_persistence_1_1_query_for_employee_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="QueryForTaskException"><param name="Local" value="class_persistence_1_1_query_for_task_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RegisterEmployeeException"><param name="Local" value="class_persistence_1_1_register_employee_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Subtask"><param name="Local" value="class_persistence_1_1_subtask.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Subtask"><param name="Local" value="class_persistence_1_1_subtask.html#acbfd439c3db1fcaf3f18ee40766d7d79"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Id"><param name="Local" value="class_persistence_1_1_subtask.html#acad5f306ed79a97ee80fd78b55c14345"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SubtaskDeleteException"><param name="Local" value="class_persistence_1_1_subtask_delete_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SubtaskRepository"><param name="Local" value="class_persistence_1_1_subtask_repository.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SubtaskRepository"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a99c431c96bc7a7a29f5312b6e6637a91"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AddSubstask"><param name="Local" value="class_persistence_1_1_subtask_repository.html#ae19f430e5ed26be163fcf311d7412d78"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ChangeStatus"><param name="Local" value="class_persistence_1_1_subtask_repository.html#ae5dbbb95850b05da7be036b211a7848f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CreateSubtaskTable"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a04e774149589f6e26456abdf15ebf692"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DeleteSubtask"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a47109990af5c2fe080e1019c426f0161"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UpdateSubtaskDetails"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a43b8e3341334c599a31120e13410995a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="IList&lt; Subtask &gt;"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a121b77e92d0b3dd59f9e35a3a0449204"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Subtask"><param name="Local" value="class_persistence_1_1_subtask_repository.html#a860c884ce430e84880ae22ee8b8a03e2"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SubtasksEmptyException"><param name="Local" value="class_persistence_1_1_subtasks_empty_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SubtaskService"><param name="Local" value="class_persistence_1_1_subtask_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SubtaskService"><param name="Local" value="class_persistence_1_1_subtask_service.html#ae07639b3991852a312af405e807e816c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ChangeStatus"><param name="Local" value="class_persistence_1_1_subtask_service.html#adec2a97fa2f40d1d00c0ddece6d9b1f1"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DeleteSubtask"><param name="Local" value="class_persistence_1_1_subtask_service.html#a882c7c48bb82e891e7ba36309c3ca507"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UpdateSubtaskDetails"><param name="Local" value="class_persistence_1_1_subtask_service.html#a6bce2c2164cec35acb86b358f78235cc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="bool"><param name="Local" value="class_persistence_1_1_subtask_service.html#a2dfadb91ee42fe61c42f627035ef2a3b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="IList&lt; Subtask &gt;"><param name="Local" value="class_persistence_1_1_subtask_service.html#a4efe0aba7bef333deb161081f9d01797"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Subtask"><param name="Local" value="class_persistence_1_1_subtask_service.html#a340c8ab56d57dd7e73ec2d687ada1705"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Task"><param name="Local" value="class_persistence_1_1_task.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Task"><param name="Local" value="class_persistence_1_1_task.html#aa5593e31bb060357adbf5367734356bf"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ID"><param name="Local" value="class_persistence_1_1_task.html#a9c6661587b19922876aa44f637531488"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskAssignException"><param name="Local" value="class_persistence_1_1_task_assign_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskDeleteException"><param name="Local" value="class_persistence_1_1_task_delete_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskInsertException"><param name="Local" value="class_persistence_1_1_task_insert_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskRepository"><param name="Local" value="class_persistence_1_1_task_repository.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskRepository"><param name="Local" value="class_persistence_1_1_task_repository.html#a4e3cc2379820475e7b0a9c28a180f415"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AssignTaskToEmployee"><param name="Local" value="class_persistence_1_1_task_repository.html#a02f29128f4a77ad07300b6d4337eb198"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CreateTask"><param name="Local" value="class_persistence_1_1_task_repository.html#a09703ad265adc22f227dfcff74edcecf"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CreateTaskTable"><param name="Local" value="class_persistence_1_1_task_repository.html#ae31409038bc14ddd559c6ccc1d03934f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DeleteTask"><param name="Local" value="class_persistence_1_1_task_repository.html#afad780a3b8f0351b0812cc9180591396"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UnassignTaskFromEmployee"><param name="Local" value="class_persistence_1_1_task_repository.html#a257d0127a68b5f42f943976b757a543c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UnassignTasksFromEmployee"><param name="Local" value="class_persistence_1_1_task_repository.html#a4422ceeebcae5c3df928341fa56ec18d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UpdateTaskDetails"><param name="Local" value="class_persistence_1_1_task_repository.html#a10322d8b431f097d200b7c1fe11c59ea"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UpdateTaskProgress"><param name="Local" value="class_persistence_1_1_task_repository.html#a95bfab6d79866701d95c353db68d4846"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UpdateTaskStatus"><param name="Local" value="class_persistence_1_1_task_repository.html#a3a424bbd4908444f45dc1235ca138082"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="int"><param name="Local" value="class_persistence_1_1_task_repository.html#ad63527c0682ee9df67b64e2fcadaba36"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="List&lt; Task &gt;"><param name="Local" value="class_persistence_1_1_task_repository.html#a3dab4382e195ca3dc27b2c7d12f9d040"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Task"><param name="Local" value="class_persistence_1_1_task_repository.html#a3f1fe30376ad473b515b8d2baff44565"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskService"><param name="Local" value="class_persistence_1_1_task_service.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskService"><param name="Local" value="class_persistence_1_1_task_service.html#a8d308dc55ad2761b7baec40c1716c533"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AssignTaskToEmployee"><param name="Local" value="class_persistence_1_1_task_service.html#a030f7e4f12cecb01f8d6ecec53d1a715"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CheckSubtasksStatus"><param name="Local" value="class_persistence_1_1_task_service.html#a5896b0a2ac3a162c32ef7c2ffb131190"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CreateTask"><param name="Local" value="class_persistence_1_1_task_service.html#acdf397110b05f8c9deace11a2561704c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DeleteTask"><param name="Local" value="class_persistence_1_1_task_service.html#ac7f7e214d836d0a397e6996dd9938d8e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UnassignTaskFromEmployee"><param name="Local" value="class_persistence_1_1_task_service.html#a9777676b1297dd8d75e1cc3ca31c38c6"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UnassignTasksFromEmployee"><param name="Local" value="class_persistence_1_1_task_service.html#a3b786f8c0a8ac3c51e92efe9bd66a25d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UpdateTaskDetails"><param name="Local" value="class_persistence_1_1_task_service.html#af37e350c1a7eb25f6d447d4f18a6ab10"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UpdateTaskProgress"><param name="Local" value="class_persistence_1_1_task_service.html#adf0c4f2c49924ea00849f9f245ba997c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UpdateTaskStatus"><param name="Local" value="class_persistence_1_1_task_service.html#a14354c08a8d73574f57635966d512725"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="int"><param name="Local" value="class_persistence_1_1_task_service.html#a8bdbc8c57fe4837e157f4b9531002d25"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="List&lt; Task &gt;"><param name="Local" value="class_persistence_1_1_task_service.html#ad7ec2a0f2504b5d4c87509f2ccba42d1"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Task"><param name="Local" value="class_persistence_1_1_task_service.html#a3523616822bbdf2c76747a1b1dcfe078"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskTableCreationException"><param name="Local" value="class_persistence_1_1_task_table_creation_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskUnassignException"><param name="Local" value="class_persistence_1_1_task_unassign_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskUpdateException"><param name="Local" value="class_persistence_1_1_task_update_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ValidateUsernameException"><param name="Local" value="class_persistence_1_1_validate_username_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Presenters"><param name="Local" value="namespace_presenters.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CommentBuilder"><param name="Local" value="class_presenters_1_1_comment_builder.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetResult"><param name="Local" value="class_presenters_1_1_comment_builder.html#afa7b0af36be6cdd05d3194431a86ec34"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Reset"><param name="Local" value="class_presenters_1_1_comment_builder.html#ae8fa5ceeaaeb16443c5828fd1e4349f9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetDescription"><param name="Local" value="class_presenters_1_1_comment_builder.html#aa6da7d5e7f9f84867f1cc98634a3f6f6"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetTimeReported"><param name="Local" value="class_presenters_1_1_comment_builder.html#ac75ad59e862c78d5a50f3ed28b14e43b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetTitle"><param name="Local" value="class_presenters_1_1_comment_builder.html#ae7fb788c4419b9ad8b7a02786feb258d"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeBuilder"><param name="Local" value="class_presenters_1_1_employee_builder.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetResult"><param name="Local" value="class_presenters_1_1_employee_builder.html#a5a1eb5eb5f5496f92f83b8a2e6f74864"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Reset"><param name="Local" value="class_presenters_1_1_employee_builder.html#a317761701aee7b1a96ee53670fcab2c1"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetEmail"><param name="Local" value="class_presenters_1_1_employee_builder.html#a5c2a7806fd319abe0c0468134693e8b7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetGoToButton"><param name="Local" value="class_presenters_1_1_employee_builder.html#aae66d791de8d31917450cb9de0b37f2e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetName"><param name="Local" value="class_presenters_1_1_employee_builder.html#a2f40095676c4dd46225cbd3b8a071dc4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetPhoneNr"><param name="Local" value="class_presenters_1_1_employee_builder.html#a33b772fd9022d79a01a8b5ef8b6f136b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetUsername"><param name="Local" value="class_presenters_1_1_employee_builder.html#ae5de2768285379bdcee7a261143f4a26"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="IBuilder"><param name="Local" value="interface_presenters_1_1_i_builder.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ICommentBuilder"><param name="Local" value="interface_presenters_1_1_i_comment_builder.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="IEmployeeBuilder"><param name="Local" value="interface_presenters_1_1_i_employee_builder.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="IPresenter"><param name="Local" value="interface_presenters_1_1_i_presenter.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ISubtaskBuilder"><param name="Local" value="interface_presenters_1_1_i_subtask_builder.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ITaskBuilder"><param name="Local" value="interface_presenters_1_1_i_task_builder.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Presenter"><param name="Local" value="class_presenters_1_1_presenter.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Presenter"><param name="Local" value="class_presenters_1_1_presenter.html#a6e133eeac7196efa6946d2dda86534b0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="makeCommentRow"><param name="Local" value="class_presenters_1_1_presenter.html#a02ccdbfaa2da4c0270ba411eccd4e789"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="makeEmployeeRow"><param name="Local" value="class_presenters_1_1_presenter.html#a8c0b3b1b0bbb725337a5b7eea8e18d98"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="makeSubtaskRow"><param name="Local" value="class_presenters_1_1_presenter.html#a4f4371648074f28959991fdc0792b795"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="makeTaskRow"><param name="Local" value="class_presenters_1_1_presenter.html#a0748a50e6ee07aa70ee3a52e882d5e6f"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SubtaskBuilder"><param name="Local" value="class_presenters_1_1_subtask_builder.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetResult"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a9daf34f5451dd58c8debc05a1ee4a141"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Reset"><param name="Local" value="class_presenters_1_1_subtask_builder.html#ae739e5be9e5d58356a06074ee8be8627"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetDescription"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a5cf3becedf26032c8f32d57fcb988fea"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetGoToButton"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a30a487f94347a34350b5ed2232c4b4e4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetID"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a680b1df4a8be97c826d5aaeb8985f840"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetStatus"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a1c2752cb6b33874c9d2c20b08f1053b9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetTitle"><param name="Local" value="class_presenters_1_1_subtask_builder.html#a3cc11249f2f777b5660cb6a0d3f9736d"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskBuilder"><param name="Local" value="class_presenters_1_1_task_builder.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetResult"><param name="Local" value="class_presenters_1_1_task_builder.html#ad356d4d0059647bddb7a697471a17aae"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Reset"><param name="Local" value="class_presenters_1_1_task_builder.html#ad967bb0585ce6c7bf31398b25cc57fff"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetDeadline"><param name="Local" value="class_presenters_1_1_task_builder.html#ad271285754f0ac250c2a8a8604593094"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetDescription"><param name="Local" value="class_presenters_1_1_task_builder.html#abc28b55e268151255800b5a889828f65"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetGoToButton"><param name="Local" value="class_presenters_1_1_task_builder.html#abdee761852d5b74ace084605f40a63d6"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetID"><param name="Local" value="class_presenters_1_1_task_builder.html#ad290601e099362351063bf5b3b9fa269"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetProgress"><param name="Local" value="class_presenters_1_1_task_builder.html#a442489fa1a389142459f69639dd2f64c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetStatus"><param name="Local" value="class_presenters_1_1_task_builder.html#add6737cc07c66e6264e352a4752613a1"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetTitle"><param name="Local" value="class_presenters_1_1_task_builder.html#aa021aa6a20f34e118f46c3d3c30a83b7"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Project"><param name="Local" value="namespace_project.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Views"><param name="Local" value="namespace_project_1_1_views.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Controls"><param name="Local" value="namespace_project_1_1_views_1_1_controls.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Dialogs"><param name="Local" value="namespace_project_1_1_views_1_1_controls_1_1_dialogs.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="Tests"><param name="Local" value="namespace_project_1_1_views_1_1_controls_1_1_dialogs_1_1_tests.html"><param name="ImageNumber" value="1"></OBJECT>
+              <UL>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="HelperDialogControlTests"><param name="Local" value="class_project_1_1_views_1_1_controls_1_1_dialogs_1_1_tests_1_1_helper_dialog_control_tests.html"><param name="ImageNumber" value="1"></OBJECT>
+                <UL>
+                </UL>
+              </UL>
+            </UL>
+          </UL>
+        </UL>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="View"><param name="Local" value="namespace_view.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="AboutContentControl"><param name="Local" value="class_view_1_1_about_content_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_about_content_control.html#a99da05c25885b1afea3a2edefda71c5b"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="AddCommentDialogControl"><param name="Local" value="class_view_1_1_add_comment_dialog_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_add_comment_dialog_control.html#a4d99672a2eb3317ae450ec7642516395"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="AddSubtaskDialogControl"><param name="Local" value="class_view_1_1_add_subtask_dialog_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_add_subtask_dialog_control.html#a6f82d56354c25760ed85f0bc3016bde5"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="AddTaskDialogControl"><param name="Local" value="class_view_1_1_add_task_dialog_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AddTaskDialogControl"><param name="Local" value="class_view_1_1_add_task_dialog_control.html#a7ee6746b3f13147384e79bbd84ad93b2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_add_task_dialog_control.html#a95098837fca94286622d938ab84fb21d"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="AskForDeadlineDialogControl"><param name="Local" value="class_view_1_1_ask_for_deadline_dialog_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AskForDeadlineDialogControl"><param name="Local" value="class_view_1_1_ask_for_deadline_dialog_control.html#aff6d9c649e76ccc428708eb0d4b9edfc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_ask_for_deadline_dialog_control.html#a7507052e87ca6c47ffd417e08d427297"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="BacklogContentControl"><param name="Local" value="class_view_1_1_backlog_content_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="BacklogContentControl"><param name="Local" value="class_view_1_1_backlog_content_control.html#a6c0c8ca32c667203cc72ae63df453ae9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="BacklogContentControl"><param name="Local" value="class_view_1_1_backlog_content_control.html#a11e94c14c6c53282a76e3b22eb357041"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_backlog_content_control.html#a951f7166bf7512f89e1c8363a315b929"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="EditProfileDialogControl"><param name="Local" value="class_view_1_1_edit_profile_dialog_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="EditProfileDialogControl"><param name="Local" value="class_view_1_1_edit_profile_dialog_control.html#a95a44112061b7eb7b605780f03e24da1"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_edit_profile_dialog_control.html#ab344a36eaf5f5fa4e7c78c5d6ca7ed11"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="EmailNotValidException"><param name="Local" value="class_view_1_1_email_not_valid_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="FieldsEmptyException"><param name="Local" value="class_view_1_1_fields_empty_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="FirstNameException"><param name="Local" value="class_view_1_1_first_name_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="HelperDialogControl"><param name="Local" value="class_view_1_1_helper_dialog_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_helper_dialog_control.html#a5ee2977fa318d48f8a34bed4555c41db"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LastNameException"><param name="Local" value="class_view_1_1_last_name_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LogInControl"><param name="Local" value="class_view_1_1_log_in_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="LogInControl"><param name="Local" value="class_view_1_1_log_in_control.html#a797d34798803b48724fa8a8db67a5013"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_log_in_control.html#a7c98aa913a85d6e60379183245c6d251"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LogInException"><param name="Local" value="class_view_1_1_log_in_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LoginPage"><param name="Local" value="class_view_1_1_login_page.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="LoginPage"><param name="Local" value="class_view_1_1_login_page.html#ac11042fce6bb3e494428e3e1ba0b8240"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ChangeToLogIn"><param name="Local" value="class_view_1_1_login_page.html#a9ec90115195bd119de810f1e49d8e366"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ChangeToSignUp"><param name="Local" value="class_view_1_1_login_page.html#abacfd920b35b3541697cbaccb6dac4bf"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_login_page.html#aff3d47f5408666ea01ba0181d17fb68a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="EmployeeSRV"><param name="Local" value="class_view_1_1_login_page.html#ac1176aba59b8a7c438c31a52cb1bf035"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="MainForm"><param name="Local" value="class_view_1_1_main_form.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="MainForm"><param name="Local" value="class_view_1_1_main_form.html#ac81ae21866f472ce823a2d64ea75558b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_main_form.html#a49a1b7c042904f66fb2b883bf5969e97"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="PasswordMatchException"><param name="Local" value="class_view_1_1_password_match_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="PhoneNumberException"><param name="Local" value="class_view_1_1_phone_number_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ProfileContentControl"><param name="Local" value="class_view_1_1_profile_content_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ProfileContentControl"><param name="Local" value="class_view_1_1_profile_content_control.html#acb242a2af00eb0848138d81aca8fac84"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_profile_content_control.html#a05eb07ed9d91658405dc0501df0b7439"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SignUpControl"><param name="Local" value="class_view_1_1_sign_up_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SignUpControl"><param name="Local" value="class_view_1_1_sign_up_control.html#aa479c3e5a93ae044a9b636bd8ebecafe"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_sign_up_control.html#a1d544d8d48463d6999d8d7f209067b28"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SubtaskContentControl"><param name="Local" value="class_view_1_1_subtask_content_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_subtask_content_control.html#a8429f41f360d4ee770588d49e2c1607e"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskContentControl"><param name="Local" value="class_view_1_1_task_content_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="TaskContentControl"><param name="Local" value="class_view_1_1_task_content_control.html#ab9ef41c5addfe735c9a86e2210a93616"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_task_content_control.html#a27afab65748a4b0db1bbd91ccc255033"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TasksContentControl"><param name="Local" value="class_view_1_1_tasks_content_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="TasksContentControl"><param name="Local" value="class_view_1_1_tasks_content_control.html#a2caa61452585c9b17bc9e89f2165e5f6"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="TasksContentControl"><param name="Local" value="class_view_1_1_tasks_content_control.html#ad1363d2fef9dfdde321d4206dd6284d5"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_tasks_content_control.html#abc0a5ca9345984e8074c9228e3335d64"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="UsernameTakenException"><param name="Local" value="class_view_1_1_username_taken_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="UsersContentControl"><param name="Local" value="class_view_1_1_users_content_control.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UsersContentControl"><param name="Local" value="class_view_1_1_users_content_control.html#a245b890a448066478b6b6c44041cf55a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UsersContentControl"><param name="Local" value="class_view_1_1_users_content_control.html#a4f5bcfce39406fe27bb7f9da6c16f8d2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_view_1_1_users_content_control.html#a85152c35459b1c836c9283937d9a23af"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      </UL>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Index"><param name="Local" value="classes.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Hierarchy"><param name="Local" value="hierarchy.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.Comment"><param name="Local" value="class_persistence_1_1_comment.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.Employee"><param name="Local" value="class_persistence_1_1_employee.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Exception"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.EmployeeDeleteException"><param name="Local" value="class_persistence_1_1_employee_delete_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.EmployeeEmailException"><param name="Local" value="class_persistence_1_1_employee_email_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.EmployeeNameException"><param name="Local" value="class_persistence_1_1_employee_name_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.EmployeeTableCreationException"><param name="Local" value="class_persistence_1_1_employee_table_creation_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.EmployeeTasksDoneException"><param name="Local" value="class_persistence_1_1_employee_tasks_done_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.EmployeeUUIDMacthException"><param name="Local" value="class_persistence_1_1_employee_u_u_i_d_macth_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.EmployeeUpdateException"><param name="Local" value="class_persistence_1_1_employee_update_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.GetTasksException"><param name="Local" value="class_persistence_1_1_get_tasks_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.LogInException"><param name="Local" value="class_persistence_1_1_log_in_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.NullSubtasksException"><param name="Local" value="class_persistence_1_1_null_subtasks_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.QueryForAllTasksException"><param name="Local" value="class_persistence_1_1_query_for_all_tasks_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.QueryForEmployeeException"><param name="Local" value="class_persistence_1_1_query_for_employee_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.QueryForTaskException"><param name="Local" value="class_persistence_1_1_query_for_task_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.RegisterEmployeeException"><param name="Local" value="class_persistence_1_1_register_employee_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.SubtaskDeleteException"><param name="Local" value="class_persistence_1_1_subtask_delete_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.SubtasksEmptyException"><param name="Local" value="class_persistence_1_1_subtasks_empty_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.TaskAssignException"><param name="Local" value="class_persistence_1_1_task_assign_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.TaskDeleteException"><param name="Local" value="class_persistence_1_1_task_delete_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.TaskInsertException"><param name="Local" value="class_persistence_1_1_task_insert_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.TaskTableCreationException"><param name="Local" value="class_persistence_1_1_task_table_creation_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.TaskUnassignException"><param name="Local" value="class_persistence_1_1_task_unassign_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.TaskUpdateException"><param name="Local" value="class_persistence_1_1_task_update_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.ValidateUsernameException"><param name="Local" value="class_persistence_1_1_validate_username_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="View.EmailNotValidException"><param name="Local" value="class_view_1_1_email_not_valid_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="View.FieldsEmptyException"><param name="Local" value="class_view_1_1_fields_empty_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="View.FirstNameException"><param name="Local" value="class_view_1_1_first_name_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="View.LastNameException"><param name="Local" value="class_view_1_1_last_name_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="View.LogInException"><param name="Local" value="class_view_1_1_log_in_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="View.PasswordMatchException"><param name="Local" value="class_view_1_1_password_match_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="View.PhoneNumberException"><param name="Local" value="class_view_1_1_phone_number_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="View.UsernameTakenException"><param name="Local" value="class_view_1_1_username_taken_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Form"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="View.LoginPage"><param name="Local" value="class_view_1_1_login_page.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="View.MainForm"><param name="Local" value="class_view_1_1_main_form.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Project.Views.Controls.Dialogs.Tests.HelperDialogControlTests"><param name="Local" value="class_project_1_1_views_1_1_controls_1_1_dialogs_1_1_tests_1_1_helper_dialog_control_tests.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Presenters.IBuilder"><param name="Local" value="interface_presenters_1_1_i_builder.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Presenters.ICommentBuilder"><param name="Local" value="interface_presenters_1_1_i_comment_builder.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Presenters.CommentBuilder"><param name="Local" value="class_presenters_1_1_comment_builder.html"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Presenters.IEmployeeBuilder"><param name="Local" value="interface_presenters_1_1_i_employee_builder.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Presenters.EmployeeBuilder"><param name="Local" value="class_presenters_1_1_employee_builder.html"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Presenters.ISubtaskBuilder"><param name="Local" value="interface_presenters_1_1_i_subtask_builder.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Presenters.SubtaskBuilder"><param name="Local" value="class_presenters_1_1_subtask_builder.html"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Presenters.ITaskBuilder"><param name="Local" value="interface_presenters_1_1_i_task_builder.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Presenters.TaskBuilder"><param name="Local" value="class_presenters_1_1_task_builder.html"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.ICommentRepository"><param name="Local" value="interface_persistence_1_1_i_comment_repository.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.CommentRepository"><param name="Local" value="class_persistence_1_1_comment_repository.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.ICommentService"><param name="Local" value="interface_persistence_1_1_i_comment_service.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.CommentService"><param name="Local" value="class_persistence_1_1_comment_service.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.IEmployeeRepository"><param name="Local" value="interface_persistence_1_1_i_employee_repository.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.EmployeeRepository"><param name="Local" value="class_persistence_1_1_employee_repository.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.IEmployeeService"><param name="Local" value="interface_persistence_1_1_i_employee_service.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.EmployeeService"><param name="Local" value="class_persistence_1_1_employee_service.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Presenters.IPresenter"><param name="Local" value="interface_presenters_1_1_i_presenter.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Presenters.Presenter"><param name="Local" value="class_presenters_1_1_presenter.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.ISubtaskRepository"><param name="Local" value="interface_persistence_1_1_i_subtask_repository.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.SubtaskRepository"><param name="Local" value="class_persistence_1_1_subtask_repository.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.ISubtaskService"><param name="Local" value="interface_persistence_1_1_i_subtask_service.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.SubtaskService"><param name="Local" value="class_persistence_1_1_subtask_service.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.ITaskRepository"><param name="Local" value="interface_persistence_1_1_i_task_repository.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.TaskRepository"><param name="Local" value="class_persistence_1_1_task_repository.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.ITaskService"><param name="Local" value="interface_persistence_1_1_i_task_service.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.TaskService"><param name="Local" value="class_persistence_1_1_task_service.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.Subtask"><param name="Local" value="class_persistence_1_1_subtask.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Persistence.Task"><param name="Local" value="class_persistence_1_1_task.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="UserControl"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="View.AboutContentControl"><param name="Local" value="class_view_1_1_about_content_control.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="View.AddCommentDialogControl"><param name="Local" value="class_view_1_1_add_comment_dialog_control.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="View.AddSubtaskDialogControl"><param name="Local" value="class_view_1_1_add_subtask_dialog_control.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="View.AddTaskDialogControl"><param name="Local" value="class_view_1_1_add_task_dialog_control.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="View.AskForDeadlineDialogControl"><param name="Local" value="class_view_1_1_ask_for_deadline_dialog_control.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="View.BacklogContentControl"><param name="Local" value="class_view_1_1_backlog_content_control.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="View.EditProfileDialogControl"><param name="Local" value="class_view_1_1_edit_profile_dialog_control.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="View.HelperDialogControl"><param name="Local" value="class_view_1_1_helper_dialog_control.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="View.LogInControl"><param name="Local" value="class_view_1_1_log_in_control.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="View.ProfileContentControl"><param name="Local" value="class_view_1_1_profile_content_control.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="View.SignUpControl"><param name="Local" value="class_view_1_1_sign_up_control.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="View.SubtaskContentControl"><param name="Local" value="class_view_1_1_subtask_content_control.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="View.TaskContentControl"><param name="Local" value="class_view_1_1_task_content_control.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="View.TasksContentControl"><param name="Local" value="class_view_1_1_tasks_content_control.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="View.UsersContentControl"><param name="Local" value="class_view_1_1_users_content_control.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Members"><param name="Local" value="functions.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="All"><param name="Local" value="functions.html#top"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Functions"><param name="Local" value="functions_func.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Variables"><param name="Local" value="functions_vars.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Properties"><param name="Local" value="functions_prop.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  </UL>
+</UL>
+</BODY>
+</HTML>

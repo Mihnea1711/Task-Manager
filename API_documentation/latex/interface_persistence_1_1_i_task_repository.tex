@@ -1,0 +1,160 @@
+\doxysection{Persistence.\+ITask\+Repository Interface Reference}
+\hypertarget{interface_persistence_1_1_i_task_repository}{}\label{interface_persistence_1_1_i_task_repository}\index{Persistence.ITaskRepository@{Persistence.ITaskRepository}}
+Inheritance diagram for Persistence.\+ITask\+Repository\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_persistence_1_1_i_task_repository}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_task_repository_a2ada94c605421fe89cc9ad82d419c887}{Create\+Task\+Table}} ()
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_task_repository_a736633b5dd7d2a48268375cc77d58cd6}{Create\+Task}} (string task\+Name, string task\+Description, Date\+Time task\+Deadline, string employee\+UUID)
+\item 
+\Hypertarget{interface_persistence_1_1_i_task_repository_aa686cb60f107b13b1168f7532c16f652}\label{interface_persistence_1_1_i_task_repository_aa686cb60f107b13b1168f7532c16f652} 
+Exception {\bfseries Get\+Task\+By\+ID} (int task\+ID)
+\item 
+\Hypertarget{interface_persistence_1_1_i_task_repository_ab8f7487d8769610b729cf1b8da354ade}\label{interface_persistence_1_1_i_task_repository_ab8f7487d8769610b729cf1b8da354ade} 
+Exception {\bfseries Get\+Assigned\+Tasks} ()
+\item 
+\Hypertarget{interface_persistence_1_1_i_task_repository_aea2781fedbf359997899df858681ce01}\label{interface_persistence_1_1_i_task_repository_aea2781fedbf359997899df858681ce01} 
+Exception {\bfseries Get\+Unassigned\+Tasks} ()
+\item 
+\Hypertarget{interface_persistence_1_1_i_task_repository_a868237e7d7d27f4f18b6a2235c370b44}\label{interface_persistence_1_1_i_task_repository_a868237e7d7d27f4f18b6a2235c370b44} 
+Exception {\bfseries Get\+Tasks\+Done\+Count} (string emp\+UUID)
+\item 
+\Hypertarget{interface_persistence_1_1_i_task_repository_af772760d71c7e312f163ee59c8bc1d14}\label{interface_persistence_1_1_i_task_repository_af772760d71c7e312f163ee59c8bc1d14} 
+Exception {\bfseries Search\+Assigned\+Tasks\+By\+Name} (string title)
+\item 
+\Hypertarget{interface_persistence_1_1_i_task_repository_a40be9cf26f0cfeeff9825102043d396b}\label{interface_persistence_1_1_i_task_repository_a40be9cf26f0cfeeff9825102043d396b} 
+Exception {\bfseries Search\+Unassigned\+Tasks\+By\+Name} (string title)
+\item 
+\Hypertarget{interface_persistence_1_1_i_task_repository_adeecbe5f26a6372843327fca32d9257c}\label{interface_persistence_1_1_i_task_repository_adeecbe5f26a6372843327fca32d9257c} 
+Exception {\bfseries Get\+Tasks\+By\+Emp\+UUID} (string emp\+UUID)
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_task_repository_af53c2a8f71de544ee4789737aeec4639}{Update\+Task\+Details}} (int task\+ID, string task\+Title, string task\+Description, Date\+Time task\+Deadline, string assigned\+Employee\+UUID)
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_task_repository_aaf8ef5dffad98c8ced6d9624065c4111}{Update\+Task\+Status}} (int task\+ID, string new\+Status)
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_task_repository_a54d3ab5857e48c823fd003bbd62ea13c}{Update\+Task\+Progress}} (int task\+ID, int progress)
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_task_repository_ac05e9a7048b3c97dc9cb345fac41e69e}{Delete\+Task}} (int task\+ID)
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_task_repository_af89a45aa3e22375b7262c3f87d7c5224}{Unassign\+Task\+From\+Employee}} (string emp\+UUID, int task\+ID)
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_task_repository_a9d624dec79d32425d8d5b9cb06ce5487}{Unassign\+Tasks\+From\+Employee}} (string emp\+UUID)
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_task_repository_aaa97579028274a60f9de76bbafa8a921}{Assign\+Task\+To\+Employee}} (int task\+ID, string emp\+UUID, Date\+Time deadline)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{interface_persistence_1_1_i_task_repository_aaff928517ebd3d24a7acbaafd0354bdf}\label{interface_persistence_1_1_i_task_repository_aaff928517ebd3d24a7acbaafd0354bdf} 
+{\bfseries Task}
+\item 
+\Hypertarget{interface_persistence_1_1_i_task_repository_ac10741251625d231dcc715274a52fbf3}\label{interface_persistence_1_1_i_task_repository_ac10741251625d231dcc715274a52fbf3} 
+{\bfseries List$<$ Task $>$}
+\item 
+\Hypertarget{interface_persistence_1_1_i_task_repository_a08e65cdba8bcdbe723c35d3914460d9f}\label{interface_persistence_1_1_i_task_repository_a08e65cdba8bcdbe723c35d3914460d9f} 
+{\bfseries int}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_persistence_1_1_i_task_repository_aaa97579028274a60f9de76bbafa8a921}\label{interface_persistence_1_1_i_task_repository_aaa97579028274a60f9de76bbafa8a921} 
+\index{Persistence.ITaskRepository@{Persistence.ITaskRepository}!AssignTaskToEmployee@{AssignTaskToEmployee}}
+\index{AssignTaskToEmployee@{AssignTaskToEmployee}!Persistence.ITaskRepository@{Persistence.ITaskRepository}}
+\doxysubsubsection{\texorpdfstring{AssignTaskToEmployee()}{AssignTaskToEmployee()}}
+{\footnotesize\ttfamily Exception Persistence.\+ITask\+Repository.\+Assign\+Task\+To\+Employee (\begin{DoxyParamCaption}\item[{int}]{task\+ID,  }\item[{string}]{emp\+UUID,  }\item[{Date\+Time}]{deadline }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_persistence_1_1_task_repository_a02f29128f4a77ad07300b6d4337eb198}{Persistence.\+Task\+Repository}}.
+
+\Hypertarget{interface_persistence_1_1_i_task_repository_a736633b5dd7d2a48268375cc77d58cd6}\label{interface_persistence_1_1_i_task_repository_a736633b5dd7d2a48268375cc77d58cd6} 
+\index{Persistence.ITaskRepository@{Persistence.ITaskRepository}!CreateTask@{CreateTask}}
+\index{CreateTask@{CreateTask}!Persistence.ITaskRepository@{Persistence.ITaskRepository}}
+\doxysubsubsection{\texorpdfstring{CreateTask()}{CreateTask()}}
+{\footnotesize\ttfamily Exception Persistence.\+ITask\+Repository.\+Create\+Task (\begin{DoxyParamCaption}\item[{string}]{task\+Name,  }\item[{string}]{task\+Description,  }\item[{Date\+Time}]{task\+Deadline,  }\item[{string}]{employee\+UUID }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_persistence_1_1_task_repository_a09703ad265adc22f227dfcff74edcecf}{Persistence.\+Task\+Repository}}.
+
+\Hypertarget{interface_persistence_1_1_i_task_repository_a2ada94c605421fe89cc9ad82d419c887}\label{interface_persistence_1_1_i_task_repository_a2ada94c605421fe89cc9ad82d419c887} 
+\index{Persistence.ITaskRepository@{Persistence.ITaskRepository}!CreateTaskTable@{CreateTaskTable}}
+\index{CreateTaskTable@{CreateTaskTable}!Persistence.ITaskRepository@{Persistence.ITaskRepository}}
+\doxysubsubsection{\texorpdfstring{CreateTaskTable()}{CreateTaskTable()}}
+{\footnotesize\ttfamily Exception Persistence.\+ITask\+Repository.\+Create\+Task\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_persistence_1_1_task_repository_ae31409038bc14ddd559c6ccc1d03934f}{Persistence.\+Task\+Repository}}.
+
+\Hypertarget{interface_persistence_1_1_i_task_repository_ac05e9a7048b3c97dc9cb345fac41e69e}\label{interface_persistence_1_1_i_task_repository_ac05e9a7048b3c97dc9cb345fac41e69e} 
+\index{Persistence.ITaskRepository@{Persistence.ITaskRepository}!DeleteTask@{DeleteTask}}
+\index{DeleteTask@{DeleteTask}!Persistence.ITaskRepository@{Persistence.ITaskRepository}}
+\doxysubsubsection{\texorpdfstring{DeleteTask()}{DeleteTask()}}
+{\footnotesize\ttfamily Exception Persistence.\+ITask\+Repository.\+Delete\+Task (\begin{DoxyParamCaption}\item[{int}]{task\+ID }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_persistence_1_1_task_repository_afad780a3b8f0351b0812cc9180591396}{Persistence.\+Task\+Repository}}.
+
+\Hypertarget{interface_persistence_1_1_i_task_repository_af89a45aa3e22375b7262c3f87d7c5224}\label{interface_persistence_1_1_i_task_repository_af89a45aa3e22375b7262c3f87d7c5224} 
+\index{Persistence.ITaskRepository@{Persistence.ITaskRepository}!UnassignTaskFromEmployee@{UnassignTaskFromEmployee}}
+\index{UnassignTaskFromEmployee@{UnassignTaskFromEmployee}!Persistence.ITaskRepository@{Persistence.ITaskRepository}}
+\doxysubsubsection{\texorpdfstring{UnassignTaskFromEmployee()}{UnassignTaskFromEmployee()}}
+{\footnotesize\ttfamily Exception Persistence.\+ITask\+Repository.\+Unassign\+Task\+From\+Employee (\begin{DoxyParamCaption}\item[{string}]{emp\+UUID,  }\item[{int}]{task\+ID }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_persistence_1_1_task_repository_a257d0127a68b5f42f943976b757a543c}{Persistence.\+Task\+Repository}}.
+
+\Hypertarget{interface_persistence_1_1_i_task_repository_a9d624dec79d32425d8d5b9cb06ce5487}\label{interface_persistence_1_1_i_task_repository_a9d624dec79d32425d8d5b9cb06ce5487} 
+\index{Persistence.ITaskRepository@{Persistence.ITaskRepository}!UnassignTasksFromEmployee@{UnassignTasksFromEmployee}}
+\index{UnassignTasksFromEmployee@{UnassignTasksFromEmployee}!Persistence.ITaskRepository@{Persistence.ITaskRepository}}
+\doxysubsubsection{\texorpdfstring{UnassignTasksFromEmployee()}{UnassignTasksFromEmployee()}}
+{\footnotesize\ttfamily Exception Persistence.\+ITask\+Repository.\+Unassign\+Tasks\+From\+Employee (\begin{DoxyParamCaption}\item[{string}]{emp\+UUID }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_persistence_1_1_task_repository_a4422ceeebcae5c3df928341fa56ec18d}{Persistence.\+Task\+Repository}}.
+
+\Hypertarget{interface_persistence_1_1_i_task_repository_af53c2a8f71de544ee4789737aeec4639}\label{interface_persistence_1_1_i_task_repository_af53c2a8f71de544ee4789737aeec4639} 
+\index{Persistence.ITaskRepository@{Persistence.ITaskRepository}!UpdateTaskDetails@{UpdateTaskDetails}}
+\index{UpdateTaskDetails@{UpdateTaskDetails}!Persistence.ITaskRepository@{Persistence.ITaskRepository}}
+\doxysubsubsection{\texorpdfstring{UpdateTaskDetails()}{UpdateTaskDetails()}}
+{\footnotesize\ttfamily Exception Persistence.\+ITask\+Repository.\+Update\+Task\+Details (\begin{DoxyParamCaption}\item[{int}]{task\+ID,  }\item[{string}]{task\+Title,  }\item[{string}]{task\+Description,  }\item[{Date\+Time}]{task\+Deadline,  }\item[{string}]{assigned\+Employee\+UUID }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_persistence_1_1_task_repository_a10322d8b431f097d200b7c1fe11c59ea}{Persistence.\+Task\+Repository}}.
+
+\Hypertarget{interface_persistence_1_1_i_task_repository_a54d3ab5857e48c823fd003bbd62ea13c}\label{interface_persistence_1_1_i_task_repository_a54d3ab5857e48c823fd003bbd62ea13c} 
+\index{Persistence.ITaskRepository@{Persistence.ITaskRepository}!UpdateTaskProgress@{UpdateTaskProgress}}
+\index{UpdateTaskProgress@{UpdateTaskProgress}!Persistence.ITaskRepository@{Persistence.ITaskRepository}}
+\doxysubsubsection{\texorpdfstring{UpdateTaskProgress()}{UpdateTaskProgress()}}
+{\footnotesize\ttfamily Exception Persistence.\+ITask\+Repository.\+Update\+Task\+Progress (\begin{DoxyParamCaption}\item[{int}]{task\+ID,  }\item[{int}]{progress }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_persistence_1_1_task_repository_a95bfab6d79866701d95c353db68d4846}{Persistence.\+Task\+Repository}}.
+
+\Hypertarget{interface_persistence_1_1_i_task_repository_aaf8ef5dffad98c8ced6d9624065c4111}\label{interface_persistence_1_1_i_task_repository_aaf8ef5dffad98c8ced6d9624065c4111} 
+\index{Persistence.ITaskRepository@{Persistence.ITaskRepository}!UpdateTaskStatus@{UpdateTaskStatus}}
+\index{UpdateTaskStatus@{UpdateTaskStatus}!Persistence.ITaskRepository@{Persistence.ITaskRepository}}
+\doxysubsubsection{\texorpdfstring{UpdateTaskStatus()}{UpdateTaskStatus()}}
+{\footnotesize\ttfamily Exception Persistence.\+ITask\+Repository.\+Update\+Task\+Status (\begin{DoxyParamCaption}\item[{int}]{task\+ID,  }\item[{string}]{new\+Status }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_persistence_1_1_task_repository_a3a424bbd4908444f45dc1235ca138082}{Persistence.\+Task\+Repository}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+FACULTATE/\+ANUL III/\+SEM II/\+IP/\+Proiect/\+Project\+IP/\+Project/\+Persistence/\+Interfaces/ITask\+Repository.\+cs\end{DoxyCompactItemize}
