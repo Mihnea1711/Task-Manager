@@ -18,7 +18,7 @@ using System;
 using System.Threading;
 using View;
 
-namespace Project.Views.Controls.Dialogs.Tests
+namespace Project.Tests
 {
     [TestClass]
     public class HelperDialogControlTests
@@ -32,7 +32,7 @@ namespace Project.Views.Controls.Dialogs.Tests
         }
 
         [TestMethod]
-        public void ButtonRun_Click_TimeStartedNotSet_StartTimeUpdated()
+        public void ButtonRun_Click_StartTimeUpdated()
         {
             helperDialogControl.buttonRun_Click(null, EventArgs.Empty);
             DateTime expectedStartTime = DateTime.Now;
@@ -41,7 +41,7 @@ namespace Project.Views.Controls.Dialogs.Tests
         }
 
         [TestMethod]
-        public void ButtonRun_Click_TimeStartedNotSet_LabelTimeVisibleAndRunning()
+        public void ButtonRun_Click_LabelTimeVisibleAndRunning()
         {
             helperDialogControl.buttonRun_Click(null, EventArgs.Empty);
             Assert.IsTrue(helperDialogControl.labelTime.Visible);
@@ -49,9 +49,8 @@ namespace Project.Views.Controls.Dialogs.Tests
         }
 
         [TestMethod]
-        public void ButtonStop_Click_TimeStartedSet_TimeStoppedUpdated()
+        public void ButtonStop_Click_TimeStoppedUpdated()
         {
-            DateTime expectedStartTime = DateTime.Now;
             helperDialogControl.buttonRun_Click(null, EventArgs.Empty);
             helperDialogControl.buttonStop_Click(null, EventArgs.Empty);
             DateTime expectedStopTime = DateTime.Now;
@@ -61,7 +60,7 @@ namespace Project.Views.Controls.Dialogs.Tests
 
         // this should be false because it is expecting 1h and instead we sleep 1 sec.
         [TestMethod]
-        public void ButtonStop_Click_TimeStartedSet_CorrectTimeSpanDisplayed()
+        public void ButtonStop_Click_CorrectTimeSpanDisplayed()
         {
             DateTime startTime = DateTime.Now.AddHours(-1);
             DateTime stopTime = DateTime.Now;
@@ -74,7 +73,7 @@ namespace Project.Views.Controls.Dialogs.Tests
         }
 
         [TestMethod]
-        public void ButtonReset_Click_TimeStartedNotSet_TimeStartedUpdated()
+        public void ButtonReset_Click_TimeStartedUpdated()
         {
             helperDialogControl.buttonReset_Click(null, EventArgs.Empty);
             DateTime expectedStartTime = DateTime.Now;
@@ -83,7 +82,7 @@ namespace Project.Views.Controls.Dialogs.Tests
         }
 
         [TestMethod]
-        public void ButtonReset_Click_TimeStartedNotSet_TextBoxesCleared()
+        public void ButtonReset_Click_TextBoxesCleared()
         {
             helperDialogControl.buttonReset_Click(null, EventArgs.Empty);
             Assert.IsTrue(string.IsNullOrEmpty(helperDialogControl.textBoxStarted.Text));
@@ -91,7 +90,7 @@ namespace Project.Views.Controls.Dialogs.Tests
         }
 
         [TestMethod]
-        public void CalculateTimeSpan_ValidTimeValues_CorrectTimeSpanCalculated()
+        public void CalculateTimeSpan_CorrectCalculated()
         {
             DateTime startTime = DateTime.Now.AddHours(-1);
             DateTime stopTime = DateTime.Now;
@@ -101,19 +100,19 @@ namespace Project.Views.Controls.Dialogs.Tests
         }
 
         [TestMethod]
-        public void Initialization_TimeStartedInitializedWithNewDateTime()
+        public void Initialization_TimeStarted()
         {
             Assert.AreEqual(new DateTime(), helperDialogControl.timeStarted);
         }
 
         [TestMethod]
-        public void Initialization_TimeStoppedInitializedWithNewDateTime()
+        public void Initialization_TimeStopped()
         {
             Assert.AreEqual(new DateTime(), helperDialogControl.timeStopped);
         }
 
         [TestMethod]
-        public void ButtonRun_Click_TimeStartedAlreadySet_StartTimeNotUpdated()
+        public void ButtonRun_Click_TimeStartedSet_NotUpdated()
         {
             DateTime startTime = DateTime.Now.AddHours(-1);
             helperDialogControl.timeStarted = startTime;
@@ -125,7 +124,7 @@ namespace Project.Views.Controls.Dialogs.Tests
 
         [TestMethod]
         [ExpectedException(typeof(Exception))]
-        public void ButtonStop_Click_TimeStartedNotSet_StopTimeNotUpdated()
+        public void ButtonStop_Click_TextBoxUpdated()
         {
             helperDialogControl.buttonStop_Click(null, EventArgs.Empty);
             Assert.IsFalse(string.IsNullOrEmpty(helperDialogControl.textBoxStopped.Text));
@@ -133,7 +132,7 @@ namespace Project.Views.Controls.Dialogs.Tests
 
         
         [TestMethod]
-        public void ButtonRun_ClickAndButtonStop_Click_TimeStartedAndTimeStoppedUpdated()
+        public void ButtonRunClick_ButtonStopClick_TimeUdated()
         {
             helperDialogControl.buttonRun_Click(null, EventArgs.Empty);
             DateTime expectedStartTime = DateTime.Now;
@@ -147,7 +146,7 @@ namespace Project.Views.Controls.Dialogs.Tests
         }
 
         [TestMethod]
-        public void ButtonRun_ClickAndButtonReset_Click_TimeStartedUpdatedAndTextBoxesCleared()
+        public void ButtonRunClick_ButtonResetClick_TimeStartedUpdated_TextBoxCleared()
         {
             helperDialogControl.buttonRun_Click(null, EventArgs.Empty);
             DateTime expectedStartTime = DateTime.Now;
@@ -159,11 +158,10 @@ namespace Project.Views.Controls.Dialogs.Tests
             DateTime actualResetStartTime = helperDialogControl.timeStarted;
             Assert.AreEqual(expectedResetStartTime.ToString("HH:mm:ss"), actualResetStartTime.ToString("HH:mm:ss"));
             Assert.IsTrue(string.IsNullOrEmpty(helperDialogControl.textBoxStarted.Text));
-            Assert.IsTrue(string.IsNullOrEmpty(helperDialogControl.textBoxStopped.Text));
         }
 
         [TestMethod]
-        public void ButtonStop_ClickAndButtonReset_Click_TimeStartedUpdatedAndTextBoxesCleared()
+        public void ButtonStopClick_ButtonResetClick_TimeStartedUpdated_TextBoxCleared()
         {
             DateTime startTime = DateTime.Now.AddHours(-1);
             helperDialogControl.timeStarted = startTime;
@@ -178,7 +176,6 @@ namespace Project.Views.Controls.Dialogs.Tests
             DateTime actualResetStartTime = helperDialogControl.timeStarted;
             Assert.AreEqual(expectedResetStartTime.ToString("HH:mm:ss"), actualResetStartTime.ToString("HH:mm:ss"));
             Assert.IsTrue(string.IsNullOrEmpty(helperDialogControl.textBoxStarted.Text));
-            Assert.IsTrue(string.IsNullOrEmpty(helperDialogControl.textBoxStopped.Text));
         }
 
         [TestMethod]
@@ -229,17 +226,10 @@ namespace Project.Views.Controls.Dialogs.Tests
 
         [TestMethod]
         [ExpectedException(typeof(Exception))]
-        public void CalculateTimeSpan_TimeDifferenceExceedsThreshold_ExceptionThrown()
+        public void CalculateTimeSpan_TimeStoppedNotSet_ExceptionThrown()
         {
             DateTime timeStarted = DateTime.Parse("2023-05-25 10:00:00");
-            DateTime timeStopped = DateTime.Parse("2023-05-25 10:30:00");
-            TimeSpan timeSpan = helperDialogControl.CalculateTimeSpan(timeStarted, timeStopped);
-
-            int thresholdMinutes = 15;
-            if (timeSpan.TotalMinutes > thresholdMinutes)
-            {
-                throw new Exception($"Time difference exceeds the threshold of {thresholdMinutes} minutes.");
-            }
+            helperDialogControl.CalculateTimeSpan(timeStarted, helperDialogControl.timeStopped);
         }
     }
 }

@@ -19,5 +19,6 @@ namespace Presenters
     {
         void SetTitle(string title);
         void SetDescription(string title);
+        void SetGoToButton();
     }
 }
