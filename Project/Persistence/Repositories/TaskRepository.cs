@@ -5,11 +5,14 @@
  *  Website Robert: https://github.com/cioocan               	          *
  *  Copyright:   (c) 2023, Mihnea Bejinaru, Robert Ciocan                 *
  *                                                                        *
- *  This code and information is provided "as is" without warranty of     *
- *  any kind, either expressed or implied, including but not limited      *
- *  to the implied warranties of merchantability or fitness for a         *
- *  particular purpose. You are free to use this source code in your      *
- *  applications as long as the original copyright notice is included.    *
+ *  This class, TaskRepository, provides functionality for                *
+ *  managing tasks                                                        *
+ * within a task management tool. It interacts with a SQLite database to  *
+ * perform operations such as creating tasks, retrieving tasks, updating  *
+ * task details, and deleting tasks. It also includes methods for         *
+ * searching tasks and retrieving tasks based on their status or assigned *
+ * employee. The class ensures a connection to the database and handles   *
+ * exceptions related to database operations.                             *
  *                                                                        *
  **************************************************************************/
 

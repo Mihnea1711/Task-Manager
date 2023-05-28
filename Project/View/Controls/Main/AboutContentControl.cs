@@ -25,9 +25,21 @@ namespace View
             InitializeComponent();
         }
 
-        private void AboutContentControl_Load(object sender, EventArgs e)
+        /// <summary>
+        /// Shows Help for Project
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void buttonDocs_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                System.Diagnostics.Process.Start("help.chm");
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
     }
 }

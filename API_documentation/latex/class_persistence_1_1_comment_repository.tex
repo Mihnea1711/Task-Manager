@@ -1,0 +1,163 @@
+\doxysection{Persistence.\+Comment\+Repository Class Reference}
+\hypertarget{class_persistence_1_1_comment_repository}{}\label{class_persistence_1_1_comment_repository}\index{Persistence.CommentRepository@{Persistence.CommentRepository}}
+Inheritance diagram for Persistence.\+Comment\+Repository\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_persistence_1_1_comment_repository}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_persistence_1_1_comment_repository_adb97c2c23526f01c5579cbb8c10c482f}\label{class_persistence_1_1_comment_repository_adb97c2c23526f01c5579cbb8c10c482f} 
+{\bfseries Comment\+Repository} ()
+\begin{DoxyCompactList}\small\item\em Class constructor. Checks the connection to the db and creates the comments table if it does not exist. \end{DoxyCompactList}\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_comment_repository_ac163c3ee2891cf4742360fe25e5efc25}{Create\+Comment\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Method to create the comments table in the database, in case it is not created yet. \end{DoxyCompactList}\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_comment_repository_af8bd5e2ae87947c9e7e7ef9d2b756f99}{Add\+Comment}} (\mbox{\hyperlink{class_persistence_1_1_comment}{Comment}} comment)
+\begin{DoxyCompactList}\small\item\em Method to add a comment to the database. \end{DoxyCompactList}\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_comment_repository_af638a0947eae4502749a95a127d9bacb}{Get\+Commentk\+By\+Id}} (int id)
+\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_comment_repository_addc52b404a36414a8550d687d41bbeb1}{Get\+Comments\+By\+Subtask}} (int id)
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_comment_repository_a8706e63955d803951622a44df20343b7}{Create\+Comment\+Table}} ()
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_comment_repository_ae07fdb4e45da00a43d0fe24b376cff9d}{Add\+Comment}} (\mbox{\hyperlink{class_persistence_1_1_comment}{Comment}} subtask)
+\item 
+\Hypertarget{interface_persistence_1_1_i_comment_repository_aad63717a44f5a2b50c28a06fec236417}\label{interface_persistence_1_1_i_comment_repository_aad63717a44f5a2b50c28a06fec236417} 
+Exception {\bfseries Get\+Commentk\+By\+Id} (int id)
+\item 
+\Hypertarget{interface_persistence_1_1_i_comment_repository_ad822bb1f63ccfb8a3d6ed921fa924124}\label{interface_persistence_1_1_i_comment_repository_ad822bb1f63ccfb8a3d6ed921fa924124} 
+Exception {\bfseries Get\+Comments\+By\+Subtask} (int id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_persistence_1_1_comment_repository_a346363c1b3306a610a395f72205efa21}\label{class_persistence_1_1_comment_repository_a346363c1b3306a610a395f72205efa21} 
+static void {\bfseries Connect} ()
+\begin{DoxyCompactList}\small\item\em Method of the application to connect to the db. \end{DoxyCompactList}\item 
+\Hypertarget{class_persistence_1_1_comment_repository_a9d0e94779e6a32cbef35829a6ff8bac3}\label{class_persistence_1_1_comment_repository_a9d0e94779e6a32cbef35829a6ff8bac3} 
+static void {\bfseries Close\+Connection} ()
+\begin{DoxyCompactList}\small\item\em Method of the application to close the db connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_persistence_1_1_comment_repository_a5a257962fa65639e228270edc0f6c783}{Comment}}
+\begin{DoxyCompactList}\small\item\em Method to retrieve a comment data based on its id. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_persistence_1_1_comment_repository_aadf20a1f3e16c922ca0dea6bee391bba}{IList$<$ Comment $>$}}
+\begin{DoxyCompactList}\small\item\em Method to retrieve all comments based on a task\+Id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{interface_persistence_1_1_i_comment_repository}{Persistence.\+IComment\+Repository}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Comment}
+\item 
+{\bfseries IList$<$ Comment $>$}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_persistence_1_1_comment_repository_af8bd5e2ae87947c9e7e7ef9d2b756f99}\label{class_persistence_1_1_comment_repository_af8bd5e2ae87947c9e7e7ef9d2b756f99} 
+\index{Persistence.CommentRepository@{Persistence.CommentRepository}!AddComment@{AddComment}}
+\index{AddComment@{AddComment}!Persistence.CommentRepository@{Persistence.CommentRepository}}
+\doxysubsubsection{\texorpdfstring{AddComment()}{AddComment()}}
+{\footnotesize\ttfamily Exception Persistence.\+Comment\+Repository.\+Add\+Comment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_persistence_1_1_comment}{Comment}}}]{comment }\end{DoxyParamCaption})}
+
+
+
+Method to add a comment to the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em comment} & Comment data model.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an exception if an error happened while executing the statement.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_comment_repository}{Persistence.\+IComment\+Repository}}.
+
+\Hypertarget{class_persistence_1_1_comment_repository_ac163c3ee2891cf4742360fe25e5efc25}\label{class_persistence_1_1_comment_repository_ac163c3ee2891cf4742360fe25e5efc25} 
+\index{Persistence.CommentRepository@{Persistence.CommentRepository}!CreateCommentTable@{CreateCommentTable}}
+\index{CreateCommentTable@{CreateCommentTable}!Persistence.CommentRepository@{Persistence.CommentRepository}}
+\doxysubsubsection{\texorpdfstring{CreateCommentTable()}{CreateCommentTable()}}
+{\footnotesize\ttfamily Exception Persistence.\+Comment\+Repository.\+Create\+Comment\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method to create the comments table in the database, in case it is not created yet. 
+
+\begin{DoxyReturn}{Returns}
+Returns an exception if the statement did not execute properly.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_comment_repository}{Persistence.\+IComment\+Repository}}.
+
+\Hypertarget{class_persistence_1_1_comment_repository_af638a0947eae4502749a95a127d9bacb}\label{class_persistence_1_1_comment_repository_af638a0947eae4502749a95a127d9bacb} 
+\index{Persistence.CommentRepository@{Persistence.CommentRepository}!GetCommentkById@{GetCommentkById}}
+\index{GetCommentkById@{GetCommentkById}!Persistence.CommentRepository@{Persistence.CommentRepository}}
+\doxysubsubsection{\texorpdfstring{GetCommentkById()}{GetCommentkById()}}
+{\footnotesize\ttfamily Exception Persistence.\+Comment\+Repository.\+Get\+Commentk\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_comment_repository}{Persistence.\+IComment\+Repository}}.
+
+\Hypertarget{class_persistence_1_1_comment_repository_addc52b404a36414a8550d687d41bbeb1}\label{class_persistence_1_1_comment_repository_addc52b404a36414a8550d687d41bbeb1} 
+\index{Persistence.CommentRepository@{Persistence.CommentRepository}!GetCommentsBySubtask@{GetCommentsBySubtask}}
+\index{GetCommentsBySubtask@{GetCommentsBySubtask}!Persistence.CommentRepository@{Persistence.CommentRepository}}
+\doxysubsubsection{\texorpdfstring{GetCommentsBySubtask()}{GetCommentsBySubtask()}}
+{\footnotesize\ttfamily Exception Persistence.\+Comment\+Repository.\+Get\+Comments\+By\+Subtask (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_comment_repository}{Persistence.\+IComment\+Repository}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_persistence_1_1_comment_repository_a5a257962fa65639e228270edc0f6c783}\label{class_persistence_1_1_comment_repository_a5a257962fa65639e228270edc0f6c783} 
+\index{Persistence.CommentRepository@{Persistence.CommentRepository}!Comment@{Comment}}
+\index{Comment@{Comment}!Persistence.CommentRepository@{Persistence.CommentRepository}}
+\doxysubsubsection{\texorpdfstring{Comment}{Comment}}
+{\footnotesize\ttfamily Persistence.\+Comment\+Repository.\+Comment}
+
+
+
+Method to retrieve a comment data based on its id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Subtask id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the comment data if it was found, otherwise null. Also returns an exception in case an error happened while executing the statement.
+\end{DoxyReturn}
+\Hypertarget{class_persistence_1_1_comment_repository_aadf20a1f3e16c922ca0dea6bee391bba}\label{class_persistence_1_1_comment_repository_aadf20a1f3e16c922ca0dea6bee391bba} 
+\index{Persistence.CommentRepository@{Persistence.CommentRepository}!IList$<$ Comment $>$@{IList$<$ Comment $>$}}
+\index{IList$<$ Comment $>$@{IList$<$ Comment $>$}!Persistence.CommentRepository@{Persistence.CommentRepository}}
+\doxysubsubsection{\texorpdfstring{IList$<$ Comment $>$}{IList< Comment >}}
+{\footnotesize\ttfamily Persistence.\+Comment\+Repository.\+IList$<$ \mbox{\hyperlink{class_persistence_1_1_comment}{Comment}} $>$}
+
+
+
+Method to retrieve all comments based on a task\+Id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Subtask\+Id id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns all the comments if they were found, otherwise null. Also returns an exception in case an error happened while executing the statement.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+FACULTATE/\+ANUL III/\+SEM II/\+IP/\+Proiect/\+Project\+IP/\+Project/\+Persistence/\+Repositories/Comment\+Repository.\+cs\end{DoxyCompactItemize}

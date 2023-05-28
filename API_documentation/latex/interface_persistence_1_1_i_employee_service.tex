@@ -1,0 +1,76 @@
+\doxysection{Persistence.\+IEmployee\+Service Interface Reference}
+\hypertarget{interface_persistence_1_1_i_employee_service}{}\label{interface_persistence_1_1_i_employee_service}\index{Persistence.IEmployeeService@{Persistence.IEmployeeService}}
+Inheritance diagram for Persistence.\+IEmployee\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_persistence_1_1_i_employee_service}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_service_a794479339f3b449c44068a022525de47}\label{interface_persistence_1_1_i_employee_service_a794479339f3b449c44068a022525de47} 
+Exception {\bfseries Validate\+Username} (string username)
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_service_a1f9699b9ee0e7c0ad5b62a60f09eebb1}\label{interface_persistence_1_1_i_employee_service_a1f9699b9ee0e7c0ad5b62a60f09eebb1} 
+Exception {\bfseries Register\+User} (string username, string password, string first\+Name, string last\+Name, string email, string phone\+Nr)
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_service_a7c4451bfdb49a41979ab5260d01198bf}\label{interface_persistence_1_1_i_employee_service_a7c4451bfdb49a41979ab5260d01198bf} 
+Exception {\bfseries Check\+Employee\+Log\+In} (string username, string password)
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_service_aa0faccbd81ba5683284ab41d4d634511}\label{interface_persistence_1_1_i_employee_service_aa0faccbd81ba5683284ab41d4d634511} 
+Exception {\bfseries Get\+Employees} ()
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_service_a11e8de6666856bc81df145b99991806a}\label{interface_persistence_1_1_i_employee_service_a11e8de6666856bc81df145b99991806a} 
+Exception {\bfseries Get\+Employee\+By\+UUID} (string uuid)
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_service_a5a8e244ae3024f1562f7ab94be12f636}\label{interface_persistence_1_1_i_employee_service_a5a8e244ae3024f1562f7ab94be12f636} 
+Exception {\bfseries Get\+Employee\+By\+Username} (string username)
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_service_a245480898f087d92c59192696bcbc360}\label{interface_persistence_1_1_i_employee_service_a245480898f087d92c59192696bcbc360} 
+Exception {\bfseries Search\+Employees\+By\+Name} (string name)
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_employee_service_a7711fc1c9ce1ba577c2991a056c8a957}{Update\+Employee}} (string uuid, string first\+Name, string last\+Name, string email, string phone\+Nr)
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_employee_service_a73a54ff63373a7eba253ab2244a8dd90}{Delete\+Employee}} (string uuid)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_service_a42abe61b4ee339a54aeea15f75c3d028}\label{interface_persistence_1_1_i_employee_service_a42abe61b4ee339a54aeea15f75c3d028} 
+{\bfseries bool}
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_service_a60c100194adb6d58e72db2a4bdc25501}\label{interface_persistence_1_1_i_employee_service_a60c100194adb6d58e72db2a4bdc25501} 
+{\bfseries Employee}
+\item 
+\Hypertarget{interface_persistence_1_1_i_employee_service_a9e563145c4fb86d0edd74c2209704b6b}\label{interface_persistence_1_1_i_employee_service_a9e563145c4fb86d0edd74c2209704b6b} 
+{\bfseries List$<$ Employee $>$}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_persistence_1_1_i_employee_service_a73a54ff63373a7eba253ab2244a8dd90}\label{interface_persistence_1_1_i_employee_service_a73a54ff63373a7eba253ab2244a8dd90} 
+\index{Persistence.IEmployeeService@{Persistence.IEmployeeService}!DeleteEmployee@{DeleteEmployee}}
+\index{DeleteEmployee@{DeleteEmployee}!Persistence.IEmployeeService@{Persistence.IEmployeeService}}
+\doxysubsubsection{\texorpdfstring{DeleteEmployee()}{DeleteEmployee()}}
+{\footnotesize\ttfamily Exception Persistence.\+IEmployee\+Service.\+Delete\+Employee (\begin{DoxyParamCaption}\item[{string}]{uuid }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_persistence_1_1_employee_service_af89bc5815a09d467a0813881580bd346}{Persistence.\+Employee\+Service}}.
+
+\Hypertarget{interface_persistence_1_1_i_employee_service_a7711fc1c9ce1ba577c2991a056c8a957}\label{interface_persistence_1_1_i_employee_service_a7711fc1c9ce1ba577c2991a056c8a957} 
+\index{Persistence.IEmployeeService@{Persistence.IEmployeeService}!UpdateEmployee@{UpdateEmployee}}
+\index{UpdateEmployee@{UpdateEmployee}!Persistence.IEmployeeService@{Persistence.IEmployeeService}}
+\doxysubsubsection{\texorpdfstring{UpdateEmployee()}{UpdateEmployee()}}
+{\footnotesize\ttfamily Exception Persistence.\+IEmployee\+Service.\+Update\+Employee (\begin{DoxyParamCaption}\item[{string}]{uuid,  }\item[{string}]{first\+Name,  }\item[{string}]{last\+Name,  }\item[{string}]{email,  }\item[{string}]{phone\+Nr }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_persistence_1_1_employee_service_a6fd8f2a93fcce062a2725f1ddcbf41f3}{Persistence.\+Employee\+Service}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+FACULTATE/\+ANUL III/\+SEM II/\+IP/\+Proiect/\+Project\+IP/\+Project/\+Persistence/\+Business/\+Interfaces/IEmployee\+Service.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,476 @@
+\doxysection{Persistence.\+Task\+Repository Class Reference}
+\hypertarget{class_persistence_1_1_task_repository}{}\label{class_persistence_1_1_task_repository}\index{Persistence.TaskRepository@{Persistence.TaskRepository}}
+Inheritance diagram for Persistence.\+Task\+Repository\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_persistence_1_1_task_repository}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_persistence_1_1_task_repository_a4e3cc2379820475e7b0a9c28a180f415}\label{class_persistence_1_1_task_repository_a4e3cc2379820475e7b0a9c28a180f415} 
+{\bfseries Task\+Repository} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the Task class. \end{DoxyCompactList}\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_task_repository_ae31409038bc14ddd559c6ccc1d03934f}{Create\+Task\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Method to create the task table in the database, in case it is not created yet. \end{DoxyCompactList}\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_task_repository_a09703ad265adc22f227dfcff74edcecf}{Create\+Task}} (string task\+Name, string task\+Description, Date\+Time task\+Deadline, string employee\+UUID)
+\begin{DoxyCompactList}\small\item\em Method to create a new task and store it inside the database. \end{DoxyCompactList}\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_task_repository_a1426a6006ce23e9626bd51ff8ca6fb78}{Get\+Task\+By\+ID}} (\mbox{\hyperlink{class_persistence_1_1_task_repository_ad63527c0682ee9df67b64e2fcadaba36}{int}} task\+ID)
+\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_task_repository_ac13faa5bda438c642ede712acf953c68}{Get\+Assigned\+Tasks}} ()
+\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_task_repository_a083fe7f3618e97e3e4afb6bc11fbf314}{Get\+Unassigned\+Tasks}} ()
+\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_task_repository_a36d382f47e982e6a19c1354f7105d9cf}{Search\+Assigned\+Tasks\+By\+Name}} (string title)
+\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_task_repository_a6f094e3341f41038f9502b9c61746807}{Search\+Unassigned\+Tasks\+By\+Name}} (string title)
+\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_task_repository_a3624e623eb4f41eb19351d437d30c647}{Get\+Tasks\+By\+Emp\+UUID}} (string emp\+UUID)
+\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_task_repository_a10322d8b431f097d200b7c1fe11c59ea}{Update\+Task\+Details}} (\mbox{\hyperlink{class_persistence_1_1_task_repository_ad63527c0682ee9df67b64e2fcadaba36}{int}} task\+ID, string task\+Title, string task\+Description, Date\+Time task\+Deadline, string assigned\+Employee\+UUID)
+\begin{DoxyCompactList}\small\item\em Method to update the task\textquotesingle{}s significant details. \end{DoxyCompactList}\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_task_repository_a3a424bbd4908444f45dc1235ca138082}{Update\+Task\+Status}} (\mbox{\hyperlink{class_persistence_1_1_task_repository_ad63527c0682ee9df67b64e2fcadaba36}{int}} task\+ID, string new\+Status)
+\begin{DoxyCompactList}\small\item\em Method to update the task\textquotesingle{}s status. \end{DoxyCompactList}\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_task_repository_a95bfab6d79866701d95c353db68d4846}{Update\+Task\+Progress}} (\mbox{\hyperlink{class_persistence_1_1_task_repository_ad63527c0682ee9df67b64e2fcadaba36}{int}} task\+ID, \mbox{\hyperlink{class_persistence_1_1_task_repository_ad63527c0682ee9df67b64e2fcadaba36}{int}} progress)
+\begin{DoxyCompactList}\small\item\em Method to update the task\textquotesingle{}s progress. \end{DoxyCompactList}\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_task_repository_afad780a3b8f0351b0812cc9180591396}{Delete\+Task}} (\mbox{\hyperlink{class_persistence_1_1_task_repository_ad63527c0682ee9df67b64e2fcadaba36}{int}} task\+ID)
+\begin{DoxyCompactList}\small\item\em Method to delete a certain task from the database by its ID. \end{DoxyCompactList}\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_task_repository_a02f29128f4a77ad07300b6d4337eb198}{Assign\+Task\+To\+Employee}} (\mbox{\hyperlink{class_persistence_1_1_task_repository_ad63527c0682ee9df67b64e2fcadaba36}{int}} task\+ID, string emp\+UUID, Date\+Time deadline)
+\begin{DoxyCompactList}\small\item\em Method to assign a task to a certain employee based on the task id and on the employee uuid. \end{DoxyCompactList}\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_task_repository_a257d0127a68b5f42f943976b757a543c}{Unassign\+Task\+From\+Employee}} (string emp\+UUID, \mbox{\hyperlink{class_persistence_1_1_task_repository_ad63527c0682ee9df67b64e2fcadaba36}{int}} task\+ID)
+\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_task_repository_a4422ceeebcae5c3df928341fa56ec18d}{Unassign\+Tasks\+From\+Employee}} (string emp\+UUID)
+\begin{DoxyCompactList}\small\item\em Method to unassign all tasks from an employee based on its uuid. \end{DoxyCompactList}\item 
+Exception \mbox{\hyperlink{class_persistence_1_1_task_repository_aee831216b3a2a82650bf970e407a08db}{Get\+Tasks\+Done\+Count}} (string emp\+UUID)
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_task_repository_a2ada94c605421fe89cc9ad82d419c887}{Create\+Task\+Table}} ()
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_task_repository_a736633b5dd7d2a48268375cc77d58cd6}{Create\+Task}} (string task\+Name, string task\+Description, Date\+Time task\+Deadline, string employee\+UUID)
+\item 
+\Hypertarget{interface_persistence_1_1_i_task_repository_aa686cb60f107b13b1168f7532c16f652}\label{interface_persistence_1_1_i_task_repository_aa686cb60f107b13b1168f7532c16f652} 
+Exception {\bfseries Get\+Task\+By\+ID} (int task\+ID)
+\item 
+\Hypertarget{interface_persistence_1_1_i_task_repository_ab8f7487d8769610b729cf1b8da354ade}\label{interface_persistence_1_1_i_task_repository_ab8f7487d8769610b729cf1b8da354ade} 
+Exception {\bfseries Get\+Assigned\+Tasks} ()
+\item 
+\Hypertarget{interface_persistence_1_1_i_task_repository_aea2781fedbf359997899df858681ce01}\label{interface_persistence_1_1_i_task_repository_aea2781fedbf359997899df858681ce01} 
+Exception {\bfseries Get\+Unassigned\+Tasks} ()
+\item 
+\Hypertarget{interface_persistence_1_1_i_task_repository_a868237e7d7d27f4f18b6a2235c370b44}\label{interface_persistence_1_1_i_task_repository_a868237e7d7d27f4f18b6a2235c370b44} 
+Exception {\bfseries Get\+Tasks\+Done\+Count} (string emp\+UUID)
+\item 
+\Hypertarget{interface_persistence_1_1_i_task_repository_af772760d71c7e312f163ee59c8bc1d14}\label{interface_persistence_1_1_i_task_repository_af772760d71c7e312f163ee59c8bc1d14} 
+Exception {\bfseries Search\+Assigned\+Tasks\+By\+Name} (string title)
+\item 
+\Hypertarget{interface_persistence_1_1_i_task_repository_a40be9cf26f0cfeeff9825102043d396b}\label{interface_persistence_1_1_i_task_repository_a40be9cf26f0cfeeff9825102043d396b} 
+Exception {\bfseries Search\+Unassigned\+Tasks\+By\+Name} (string title)
+\item 
+\Hypertarget{interface_persistence_1_1_i_task_repository_adeecbe5f26a6372843327fca32d9257c}\label{interface_persistence_1_1_i_task_repository_adeecbe5f26a6372843327fca32d9257c} 
+Exception {\bfseries Get\+Tasks\+By\+Emp\+UUID} (string emp\+UUID)
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_task_repository_af53c2a8f71de544ee4789737aeec4639}{Update\+Task\+Details}} (int task\+ID, string task\+Title, string task\+Description, Date\+Time task\+Deadline, string assigned\+Employee\+UUID)
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_task_repository_aaf8ef5dffad98c8ced6d9624065c4111}{Update\+Task\+Status}} (int task\+ID, string new\+Status)
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_task_repository_a54d3ab5857e48c823fd003bbd62ea13c}{Update\+Task\+Progress}} (int task\+ID, int progress)
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_task_repository_ac05e9a7048b3c97dc9cb345fac41e69e}{Delete\+Task}} (int task\+ID)
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_task_repository_af89a45aa3e22375b7262c3f87d7c5224}{Unassign\+Task\+From\+Employee}} (string emp\+UUID, int task\+ID)
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_task_repository_a9d624dec79d32425d8d5b9cb06ce5487}{Unassign\+Tasks\+From\+Employee}} (string emp\+UUID)
+\item 
+Exception \mbox{\hyperlink{interface_persistence_1_1_i_task_repository_aaa97579028274a60f9de76bbafa8a921}{Assign\+Task\+To\+Employee}} (int task\+ID, string emp\+UUID, Date\+Time deadline)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_persistence_1_1_task_repository_a2192223a35946ed8565c1b14b08f4a97}\label{class_persistence_1_1_task_repository_a2192223a35946ed8565c1b14b08f4a97} 
+static void {\bfseries Connect} ()
+\begin{DoxyCompactList}\small\item\em Method of the application to connect to the db. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_persistence_1_1_task_repository_a3f1fe30376ad473b515b8d2baff44565}{Task}}
+\begin{DoxyCompactList}\small\item\em Method to get specific task data by ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_persistence_1_1_task_repository_a3dab4382e195ca3dc27b2c7d12f9d040}{List$<$ Task $>$}}
+\begin{DoxyCompactList}\small\item\em Method to retrieve all tasks from the database. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_persistence_1_1_task_repository_ad63527c0682ee9df67b64e2fcadaba36}{int}}
+\begin{DoxyCompactList}\small\item\em Method to retrieve all done tasks by an employee. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{interface_persistence_1_1_i_task_repository}{Persistence.\+ITask\+Repository}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Task}
+\item 
+{\bfseries List$<$ Task $>$}
+\item 
+{\bfseries int}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_persistence_1_1_task_repository_a02f29128f4a77ad07300b6d4337eb198}\label{class_persistence_1_1_task_repository_a02f29128f4a77ad07300b6d4337eb198} 
+\index{Persistence.TaskRepository@{Persistence.TaskRepository}!AssignTaskToEmployee@{AssignTaskToEmployee}}
+\index{AssignTaskToEmployee@{AssignTaskToEmployee}!Persistence.TaskRepository@{Persistence.TaskRepository}}
+\doxysubsubsection{\texorpdfstring{AssignTaskToEmployee()}{AssignTaskToEmployee()}}
+{\footnotesize\ttfamily Exception Persistence.\+Task\+Repository.\+Assign\+Task\+To\+Employee (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_persistence_1_1_task_repository_ad63527c0682ee9df67b64e2fcadaba36}{int}}}]{task\+ID,  }\item[{string}]{emp\+UUID,  }\item[{Date\+Time}]{deadline }\end{DoxyParamCaption})}
+
+
+
+Method to assign a task to a certain employee based on the task id and on the employee uuid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em task\+ID} & \\
+\hline
+{\em emp\+UUID} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_task_repository}{Persistence.\+ITask\+Repository}}.
+
+\Hypertarget{class_persistence_1_1_task_repository_a09703ad265adc22f227dfcff74edcecf}\label{class_persistence_1_1_task_repository_a09703ad265adc22f227dfcff74edcecf} 
+\index{Persistence.TaskRepository@{Persistence.TaskRepository}!CreateTask@{CreateTask}}
+\index{CreateTask@{CreateTask}!Persistence.TaskRepository@{Persistence.TaskRepository}}
+\doxysubsubsection{\texorpdfstring{CreateTask()}{CreateTask()}}
+{\footnotesize\ttfamily Exception Persistence.\+Task\+Repository.\+Create\+Task (\begin{DoxyParamCaption}\item[{string}]{task\+Name,  }\item[{string}]{task\+Description,  }\item[{Date\+Time}]{task\+Deadline,  }\item[{string}]{employee\+UUID }\end{DoxyParamCaption})}
+
+
+
+Method to create a new task and store it inside the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em task\+Name} & \\
+\hline
+{\em task\+Description} & \\
+\hline
+{\em task\+Deadline} & \\
+\hline
+{\em employee\+UUID} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_task_repository}{Persistence.\+ITask\+Repository}}.
+
+\Hypertarget{class_persistence_1_1_task_repository_ae31409038bc14ddd559c6ccc1d03934f}\label{class_persistence_1_1_task_repository_ae31409038bc14ddd559c6ccc1d03934f} 
+\index{Persistence.TaskRepository@{Persistence.TaskRepository}!CreateTaskTable@{CreateTaskTable}}
+\index{CreateTaskTable@{CreateTaskTable}!Persistence.TaskRepository@{Persistence.TaskRepository}}
+\doxysubsubsection{\texorpdfstring{CreateTaskTable()}{CreateTaskTable()}}
+{\footnotesize\ttfamily Exception Persistence.\+Task\+Repository.\+Create\+Task\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method to create the task table in the database, in case it is not created yet. 
+
+\begin{DoxyReturn}{Returns}
+Returns an exception if the statement did not execute properly.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_task_repository}{Persistence.\+ITask\+Repository}}.
+
+\Hypertarget{class_persistence_1_1_task_repository_afad780a3b8f0351b0812cc9180591396}\label{class_persistence_1_1_task_repository_afad780a3b8f0351b0812cc9180591396} 
+\index{Persistence.TaskRepository@{Persistence.TaskRepository}!DeleteTask@{DeleteTask}}
+\index{DeleteTask@{DeleteTask}!Persistence.TaskRepository@{Persistence.TaskRepository}}
+\doxysubsubsection{\texorpdfstring{DeleteTask()}{DeleteTask()}}
+{\footnotesize\ttfamily Exception Persistence.\+Task\+Repository.\+Delete\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_persistence_1_1_task_repository_ad63527c0682ee9df67b64e2fcadaba36}{int}}}]{task\+ID }\end{DoxyParamCaption})}
+
+
+
+Method to delete a certain task from the database by its ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em task\+ID} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_task_repository}{Persistence.\+ITask\+Repository}}.
+
+\Hypertarget{class_persistence_1_1_task_repository_ac13faa5bda438c642ede712acf953c68}\label{class_persistence_1_1_task_repository_ac13faa5bda438c642ede712acf953c68} 
+\index{Persistence.TaskRepository@{Persistence.TaskRepository}!GetAssignedTasks@{GetAssignedTasks}}
+\index{GetAssignedTasks@{GetAssignedTasks}!Persistence.TaskRepository@{Persistence.TaskRepository}}
+\doxysubsubsection{\texorpdfstring{GetAssignedTasks()}{GetAssignedTasks()}}
+{\footnotesize\ttfamily Exception Persistence.\+Task\+Repository.\+Get\+Assigned\+Tasks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_task_repository}{Persistence.\+ITask\+Repository}}.
+
+\Hypertarget{class_persistence_1_1_task_repository_a1426a6006ce23e9626bd51ff8ca6fb78}\label{class_persistence_1_1_task_repository_a1426a6006ce23e9626bd51ff8ca6fb78} 
+\index{Persistence.TaskRepository@{Persistence.TaskRepository}!GetTaskByID@{GetTaskByID}}
+\index{GetTaskByID@{GetTaskByID}!Persistence.TaskRepository@{Persistence.TaskRepository}}
+\doxysubsubsection{\texorpdfstring{GetTaskByID()}{GetTaskByID()}}
+{\footnotesize\ttfamily Exception Persistence.\+Task\+Repository.\+Get\+Task\+By\+ID (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_persistence_1_1_task_repository_ad63527c0682ee9df67b64e2fcadaba36}{int}}}]{task\+ID }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_task_repository}{Persistence.\+ITask\+Repository}}.
+
+\Hypertarget{class_persistence_1_1_task_repository_a3624e623eb4f41eb19351d437d30c647}\label{class_persistence_1_1_task_repository_a3624e623eb4f41eb19351d437d30c647} 
+\index{Persistence.TaskRepository@{Persistence.TaskRepository}!GetTasksByEmpUUID@{GetTasksByEmpUUID}}
+\index{GetTasksByEmpUUID@{GetTasksByEmpUUID}!Persistence.TaskRepository@{Persistence.TaskRepository}}
+\doxysubsubsection{\texorpdfstring{GetTasksByEmpUUID()}{GetTasksByEmpUUID()}}
+{\footnotesize\ttfamily Exception Persistence.\+Task\+Repository.\+Get\+Tasks\+By\+Emp\+UUID (\begin{DoxyParamCaption}\item[{string}]{emp\+UUID }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_task_repository}{Persistence.\+ITask\+Repository}}.
+
+\Hypertarget{class_persistence_1_1_task_repository_aee831216b3a2a82650bf970e407a08db}\label{class_persistence_1_1_task_repository_aee831216b3a2a82650bf970e407a08db} 
+\index{Persistence.TaskRepository@{Persistence.TaskRepository}!GetTasksDoneCount@{GetTasksDoneCount}}
+\index{GetTasksDoneCount@{GetTasksDoneCount}!Persistence.TaskRepository@{Persistence.TaskRepository}}
+\doxysubsubsection{\texorpdfstring{GetTasksDoneCount()}{GetTasksDoneCount()}}
+{\footnotesize\ttfamily Exception Persistence.\+Task\+Repository.\+Get\+Tasks\+Done\+Count (\begin{DoxyParamCaption}\item[{string}]{emp\+UUID }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_task_repository}{Persistence.\+ITask\+Repository}}.
+
+\Hypertarget{class_persistence_1_1_task_repository_a083fe7f3618e97e3e4afb6bc11fbf314}\label{class_persistence_1_1_task_repository_a083fe7f3618e97e3e4afb6bc11fbf314} 
+\index{Persistence.TaskRepository@{Persistence.TaskRepository}!GetUnassignedTasks@{GetUnassignedTasks}}
+\index{GetUnassignedTasks@{GetUnassignedTasks}!Persistence.TaskRepository@{Persistence.TaskRepository}}
+\doxysubsubsection{\texorpdfstring{GetUnassignedTasks()}{GetUnassignedTasks()}}
+{\footnotesize\ttfamily Exception Persistence.\+Task\+Repository.\+Get\+Unassigned\+Tasks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_task_repository}{Persistence.\+ITask\+Repository}}.
+
+\Hypertarget{class_persistence_1_1_task_repository_a36d382f47e982e6a19c1354f7105d9cf}\label{class_persistence_1_1_task_repository_a36d382f47e982e6a19c1354f7105d9cf} 
+\index{Persistence.TaskRepository@{Persistence.TaskRepository}!SearchAssignedTasksByName@{SearchAssignedTasksByName}}
+\index{SearchAssignedTasksByName@{SearchAssignedTasksByName}!Persistence.TaskRepository@{Persistence.TaskRepository}}
+\doxysubsubsection{\texorpdfstring{SearchAssignedTasksByName()}{SearchAssignedTasksByName()}}
+{\footnotesize\ttfamily Exception Persistence.\+Task\+Repository.\+Search\+Assigned\+Tasks\+By\+Name (\begin{DoxyParamCaption}\item[{string}]{title }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_task_repository}{Persistence.\+ITask\+Repository}}.
+
+\Hypertarget{class_persistence_1_1_task_repository_a6f094e3341f41038f9502b9c61746807}\label{class_persistence_1_1_task_repository_a6f094e3341f41038f9502b9c61746807} 
+\index{Persistence.TaskRepository@{Persistence.TaskRepository}!SearchUnassignedTasksByName@{SearchUnassignedTasksByName}}
+\index{SearchUnassignedTasksByName@{SearchUnassignedTasksByName}!Persistence.TaskRepository@{Persistence.TaskRepository}}
+\doxysubsubsection{\texorpdfstring{SearchUnassignedTasksByName()}{SearchUnassignedTasksByName()}}
+{\footnotesize\ttfamily Exception Persistence.\+Task\+Repository.\+Search\+Unassigned\+Tasks\+By\+Name (\begin{DoxyParamCaption}\item[{string}]{title }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_task_repository}{Persistence.\+ITask\+Repository}}.
+
+\Hypertarget{class_persistence_1_1_task_repository_a257d0127a68b5f42f943976b757a543c}\label{class_persistence_1_1_task_repository_a257d0127a68b5f42f943976b757a543c} 
+\index{Persistence.TaskRepository@{Persistence.TaskRepository}!UnassignTaskFromEmployee@{UnassignTaskFromEmployee}}
+\index{UnassignTaskFromEmployee@{UnassignTaskFromEmployee}!Persistence.TaskRepository@{Persistence.TaskRepository}}
+\doxysubsubsection{\texorpdfstring{UnassignTaskFromEmployee()}{UnassignTaskFromEmployee()}}
+{\footnotesize\ttfamily Exception Persistence.\+Task\+Repository.\+Unassign\+Task\+From\+Employee (\begin{DoxyParamCaption}\item[{string}]{emp\+UUID,  }\item[{\mbox{\hyperlink{class_persistence_1_1_task_repository_ad63527c0682ee9df67b64e2fcadaba36}{int}}}]{task\+ID }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em emp\+UUID} & \\
+\hline
+{\em task\+ID} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_task_repository}{Persistence.\+ITask\+Repository}}.
+
+\Hypertarget{class_persistence_1_1_task_repository_a4422ceeebcae5c3df928341fa56ec18d}\label{class_persistence_1_1_task_repository_a4422ceeebcae5c3df928341fa56ec18d} 
+\index{Persistence.TaskRepository@{Persistence.TaskRepository}!UnassignTasksFromEmployee@{UnassignTasksFromEmployee}}
+\index{UnassignTasksFromEmployee@{UnassignTasksFromEmployee}!Persistence.TaskRepository@{Persistence.TaskRepository}}
+\doxysubsubsection{\texorpdfstring{UnassignTasksFromEmployee()}{UnassignTasksFromEmployee()}}
+{\footnotesize\ttfamily Exception Persistence.\+Task\+Repository.\+Unassign\+Tasks\+From\+Employee (\begin{DoxyParamCaption}\item[{string}]{emp\+UUID }\end{DoxyParamCaption})}
+
+
+
+Method to unassign all tasks from an employee based on its uuid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em emp\+UUID} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_task_repository}{Persistence.\+ITask\+Repository}}.
+
+\Hypertarget{class_persistence_1_1_task_repository_a10322d8b431f097d200b7c1fe11c59ea}\label{class_persistence_1_1_task_repository_a10322d8b431f097d200b7c1fe11c59ea} 
+\index{Persistence.TaskRepository@{Persistence.TaskRepository}!UpdateTaskDetails@{UpdateTaskDetails}}
+\index{UpdateTaskDetails@{UpdateTaskDetails}!Persistence.TaskRepository@{Persistence.TaskRepository}}
+\doxysubsubsection{\texorpdfstring{UpdateTaskDetails()}{UpdateTaskDetails()}}
+{\footnotesize\ttfamily Exception Persistence.\+Task\+Repository.\+Update\+Task\+Details (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_persistence_1_1_task_repository_ad63527c0682ee9df67b64e2fcadaba36}{int}}}]{task\+ID,  }\item[{string}]{task\+Title,  }\item[{string}]{task\+Description,  }\item[{Date\+Time}]{task\+Deadline,  }\item[{string}]{assigned\+Employee\+UUID }\end{DoxyParamCaption})}
+
+
+
+Method to update the task\textquotesingle{}s significant details. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em task\+ID} & \\
+\hline
+{\em task\+Title} & \\
+\hline
+{\em task\+Description} & \\
+\hline
+{\em task\+Deadline} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_task_repository}{Persistence.\+ITask\+Repository}}.
+
+\Hypertarget{class_persistence_1_1_task_repository_a95bfab6d79866701d95c353db68d4846}\label{class_persistence_1_1_task_repository_a95bfab6d79866701d95c353db68d4846} 
+\index{Persistence.TaskRepository@{Persistence.TaskRepository}!UpdateTaskProgress@{UpdateTaskProgress}}
+\index{UpdateTaskProgress@{UpdateTaskProgress}!Persistence.TaskRepository@{Persistence.TaskRepository}}
+\doxysubsubsection{\texorpdfstring{UpdateTaskProgress()}{UpdateTaskProgress()}}
+{\footnotesize\ttfamily Exception Persistence.\+Task\+Repository.\+Update\+Task\+Progress (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_persistence_1_1_task_repository_ad63527c0682ee9df67b64e2fcadaba36}{int}}}]{task\+ID,  }\item[{\mbox{\hyperlink{class_persistence_1_1_task_repository_ad63527c0682ee9df67b64e2fcadaba36}{int}}}]{progress }\end{DoxyParamCaption})}
+
+
+
+Method to update the task\textquotesingle{}s progress. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em task\+ID} & \\
+\hline
+{\em progress} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_task_repository}{Persistence.\+ITask\+Repository}}.
+
+\Hypertarget{class_persistence_1_1_task_repository_a3a424bbd4908444f45dc1235ca138082}\label{class_persistence_1_1_task_repository_a3a424bbd4908444f45dc1235ca138082} 
+\index{Persistence.TaskRepository@{Persistence.TaskRepository}!UpdateTaskStatus@{UpdateTaskStatus}}
+\index{UpdateTaskStatus@{UpdateTaskStatus}!Persistence.TaskRepository@{Persistence.TaskRepository}}
+\doxysubsubsection{\texorpdfstring{UpdateTaskStatus()}{UpdateTaskStatus()}}
+{\footnotesize\ttfamily Exception Persistence.\+Task\+Repository.\+Update\+Task\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_persistence_1_1_task_repository_ad63527c0682ee9df67b64e2fcadaba36}{int}}}]{task\+ID,  }\item[{string}]{new\+Status }\end{DoxyParamCaption})}
+
+
+
+Method to update the task\textquotesingle{}s status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em task\+ID} & \\
+\hline
+{\em new\+Status} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_persistence_1_1_i_task_repository}{Persistence.\+ITask\+Repository}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_persistence_1_1_task_repository_ad63527c0682ee9df67b64e2fcadaba36}\label{class_persistence_1_1_task_repository_ad63527c0682ee9df67b64e2fcadaba36} 
+\index{Persistence.TaskRepository@{Persistence.TaskRepository}!int@{int}}
+\index{int@{int}!Persistence.TaskRepository@{Persistence.TaskRepository}}
+\doxysubsubsection{\texorpdfstring{int}{int}}
+{\footnotesize\ttfamily Persistence.\+Task\+Repository.\+int}
+
+
+
+Method to retrieve all done tasks by an employee. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em emp\+UUID} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_persistence_1_1_task_repository_a3dab4382e195ca3dc27b2c7d12f9d040}\label{class_persistence_1_1_task_repository_a3dab4382e195ca3dc27b2c7d12f9d040} 
+\index{Persistence.TaskRepository@{Persistence.TaskRepository}!List$<$ Task $>$@{List$<$ Task $>$}}
+\index{List$<$ Task $>$@{List$<$ Task $>$}!Persistence.TaskRepository@{Persistence.TaskRepository}}
+\doxysubsubsection{\texorpdfstring{List$<$ Task $>$}{List< Task >}}
+{\footnotesize\ttfamily Persistence.\+Task\+Repository.\+List$<$ \mbox{\hyperlink{class_persistence_1_1_task}{Task}} $>$}
+
+
+
+Method to retrieve all tasks from the database. 
+
+Method to retrieve all tasks from the database which are assigned to a specific employee.
+
+Method to case-\/insensitive search for unassigned tasks by title.
+
+Method to case-\/insensitive search for assigned tasks by title.
+
+\begin{DoxyReturn}{Returns}
+Returns the tasks if there are any, otherwise null. Also returns an exception in case an error happened while executing the statement.
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em emp\+UUID} & Employee UUID.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the tasks if there are any, otherwise null. Also returns an exception in case an error happened while executing the statement.
+\end{DoxyReturn}
+\Hypertarget{class_persistence_1_1_task_repository_a3f1fe30376ad473b515b8d2baff44565}\label{class_persistence_1_1_task_repository_a3f1fe30376ad473b515b8d2baff44565} 
+\index{Persistence.TaskRepository@{Persistence.TaskRepository}!Task@{Task}}
+\index{Task@{Task}!Persistence.TaskRepository@{Persistence.TaskRepository}}
+\doxysubsubsection{\texorpdfstring{Task}{Task}}
+{\footnotesize\ttfamily Persistence.\+Task\+Repository.\+Task}
+
+
+
+Method to get specific task data by ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em task\+ID} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+FACULTATE/\+ANUL III/\+SEM II/\+IP/\+Proiect/\+Project\+IP/\+Project/\+Persistence/\+Repositories/Task\+Repository.\+cs\end{DoxyCompactItemize}
