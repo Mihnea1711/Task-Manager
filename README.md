@@ -12,6 +12,6 @@ TaskMaster is a collaborative project developed for the Programming Engineering 
 - **SQLite Database**: Stores task-related information in a lightweight and efficient SQLite database.
 - **Efficient Codebase**: Follows strict naming and design conventions for easy maintenance and scalability.
 
-![image](Docs\Screenshots\Subtask.png)
-![image](Docs\Screenshots\Profile.png)
-![image](Docs\Screenshots\Users.png)
+![image](Docs/Screenshots/Subtask.png)
+![image](Docs/Screenshots/Profile.png)
+![image](Docs/Screenshots/Users.png)
