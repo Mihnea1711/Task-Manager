@@ -42,7 +42,7 @@
             // buttonRun
             // 
             this.buttonRun.Font = new System.Drawing.Font("Broadway", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRun.Location = new System.Drawing.Point(84, 406);
+            this.buttonRun.Location = new System.Drawing.Point(46, 406);
             this.buttonRun.Name = "buttonRun";
             this.buttonRun.Size = new System.Drawing.Size(128, 48);
             this.buttonRun.TabIndex = 0;
@@ -53,9 +53,9 @@
             // buttonStop
             // 
             this.buttonStop.Font = new System.Drawing.Font("Broadway", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonStop.Location = new System.Drawing.Point(250, 406);
+            this.buttonStop.Location = new System.Drawing.Point(223, 406);
             this.buttonStop.Name = "buttonStop";
-            this.buttonStop.Size = new System.Drawing.Size(128, 48);
+            this.buttonStop.Size = new System.Drawing.Size(171, 48);
             this.buttonStop.TabIndex = 1;
             this.buttonStop.Text = "PAUSE";
             this.buttonStop.UseVisualStyleBackColor = true;
@@ -125,7 +125,7 @@
             // buttonReset
             // 
             this.buttonReset.Font = new System.Drawing.Font("Broadway", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonReset.Location = new System.Drawing.Point(415, 406);
+            this.buttonReset.Location = new System.Drawing.Point(425, 406);
             this.buttonReset.Name = "buttonReset";
             this.buttonReset.Size = new System.Drawing.Size(128, 48);
             this.buttonReset.TabIndex = 9;
